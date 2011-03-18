@@ -1,0 +1,33 @@
+Introduccion.
+
+%Texto del anteproyecto
+Actualmente la fotografía digital ha ocupado el lugar de la fotografía analógica, quedando esta última reducida al ámbito artístico o profesional de altas prestaciones. No obstante, las aplicaciones software dedicadas actualmente a la clasificación o gestión de colecciones de imágenes digitales, adolecen de varios inconvenientes para el usuario medio; entre ellos: 
+
+(1) suelen ser programas pesados que consumen bastantes recursos, por lo que son difíciles de ejecutar en computadores con pocas prestaciones; 
+(2) la mayoría de ellos no son intuitivos, poseyendo una curva de aprendizaje en absoluto despreciable; y 
+(3) la clasificación y ordenación de imágenes de una colección de fotografías digitales suele ser tediosa, y cuando es realizable, no suele ser posible exportar las imágenes de forma que éstas puedan ser correctamente visualizadas, en el orden especificado, en un computador que carezca de la aplicación que se ha utilizado para ordenarlas. De hecho en muchos casos, es incluso imposible visualizar dichas colecciones en computadoras con la misma aplicación que se ha usado para ordenarlas pero distinta a la usada para crear dicha clasificación/ordenación.
+
+El objetivo del presente proyecto fin de carrera es crear una aplicación software sencilla, usable y ligera para la clasificación de un conjunto de imágenes digitales. La interfaz gráfica de dicha aplicación deberá ser lo más parecida posible a un clasificador retroiluminado de diapositivas analógicas. El usuario deberá interactuar con la aplicación como si un clasificador de este tipo se tratase. Una vez seleccionadas, clasificadas y ordenadas las fotografías de una colección de imágenes, la aplicación debe permitir exportarlas a una carpeta concreta como un conjunto de archivos ordenados de manera adecuada.
+
+El proyecto se realizará en Java, con objeto de hacer la aplicación multiplataforma. Para la interfaz gráfica se desarrollarán una serie de componentes visuales (o widgets), usando para ello las facilidades proporcionadas por las Graphical Beans de Java para la creación de nuevos componentes software para interfaces gráficas.
+
+%Introduccion acerca de la programacion por comoponentes
+El proyecto se desarrollara bajo una programacion orientada a componentes. Esta rama de la ingenieria software trata de construir sistemas a base de componentes funcionales, como si de un lego se tratase. Para ello cada componente debe tener una interfaz bien definida.
+El nivel de abstraccion de de los componentes se considera mas alto que el de los objetos al agrupar unidades funcionalas autonomamente. De esta manera se explota en gran medida las posibilidades de reutilizacion. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rapida y sencilla.
+Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. basicamente un componente es un objeto escrito siguiento unas especificaciones, si las cumple adquiere la caracteristica de reusabilidad.
+Los componentes deben poder ser serializados para garantizar el envio del estado del objeto a traves de flujos de datos.
+Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfatica, es decir, se seben probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; tambien se debe preveer el uso del componente de manera imprevista o incorrecta.
+
+
+%Introduccion a JavaBeans
+JavaBeans es la tecnologia de componentes de Java, cada componente se le conoce como bean, como se dijo anteriormente, un bean no es mas que una clase de objetos con unas caracteristicas especiales:
+
+(1) Es una clase publica que implementa la interfaz serializable
+(2) Expone una seria de propiedades que pueden ser leidas y modificadas por el entorno de desarrollo.
+(3) Los evento que posea pueden ser capturados y asociados a una serie de acciones.
+
+Las propiedades no son mas que atributos del objeto que pueden ser modificados y leidos por el entorno de desarrollo. Cada propiedad debe tener al menos un metodo get para obtener el valor, y un set para modificarlo. En caso de que no se implemente el metodo set se entendera que es una propiedad de solo lectura.
+
+%%%%%
+%%%%% Continuar, tipos de propiedades, explicar eventos...
+%%%%%
