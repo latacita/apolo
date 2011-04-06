@@ -34,72 +34,53 @@
 %Texto del anteproyecto
 Actualmente la fotografía digital ha ocupado el lugar de la fotografía analógica, quedando esta última reducida al ámbito artístico o profesional de altas prestaciones. No obstante, las aplicaciones software dedicadas actualmente a la clasificación o gestión de colecciones de imágenes digitales, adolecen de varios inconvenientes para el usuario medio; entre ellos:
 
-(1) suelen ser programas pesados que consumen bastantes recursos, por lo que son difíciles de ejecutar en computadores con pocas prestaciones;
-(2) la mayoría de ellos no son intuitivos, poseyendo una curva de aprendizaje en absoluto despreciable; y
-(3) la clasificación y ordenación de imágenes de una colección de fotografías digitales suele ser tediosa, y cuando es realizable, no suele ser posible exportar las imágenes de forma que éstas puedan ser correctamente visualizadas, en el orden especificado, en un computador que carezca de la aplicación que se ha utilizado para ordenarlas. De hecho en muchos casos, es incluso imposible visualizar dichas colecciones en computadoras con la misma aplicación que se ha usado para ordenarlas pero distinta a la usada para crear dicha clasificación/ordenación.
+\begin{enumerate}
+\item Suelen ser programas pesados que consumen bastantes recursos, por lo que son difíciles de ejecutar en computadores con pocas prestaciones;
+\item La mayoría de ellos no son intuitivos, poseyendo una curva de aprendizaje en absoluto despreciable; y
+\item La clasificación y ordenación de imágenes de una colección de fotografías digitales suele ser tediosa, y cuando es realizable, no suele ser posible exportar las imágenes de forma que éstas puedan ser correctamente visualizadas, en el orden especificado, en un computador que carezca de la aplicación que se ha utilizado para ordenarlas. De hecho en muchos casos, es incluso imposible visualizar dichas colecciones en computadoras con la misma aplicación que se ha usado para ordenarlas pero distinta a la usada para crear dicha clasificación/ordenación.
+\end{enumerate}
 
 El objetivo del presente proyecto fin de carrera es crear una aplicación software sencilla, usable y ligera para la clasificación de un conjunto de imágenes digitales. La interfaz gráfica de dicha aplicación deberá ser lo más parecida posible a un clasificador retroiluminado de diapositivas analógicas. El usuario deberá interactuar con la aplicación como si un clasificador de este tipo se tratase. Una vez seleccionadas, clasificadas y ordenadas las fotografías de una colección de imágenes, la aplicación debe permitir exportarlas a una carpeta concreta como un conjunto de archivos ordenados de manera adecuada.
 
 El proyecto se realizará en Java, con objeto de hacer la aplicación multiplataforma. Para la interfaz gráfica se desarrollarán una serie de componentes visuales (o widgets), usando para ello las facilidades proporcionadas por las Graphical Beans de Java para la creación de nuevos componentes software para interfaces gráficas.
 
-%Introducción acerca de la programación por comoponentes
-El proyecto se desarrollara bajo una programación orientada a componentes. Esta rama de la ingeniería software trata de construir sistemas a base de componentes funcionales, como si de un lego se tratase. Para ello cada componente debe tener una interfaz bien definida.
-El nivel de abstracción de de los componentes se considera mas alto que el de los objetos al agrupar unidades funcionales autonomamente. De esta manera se explota en gran medida las posibilidades de reutilización. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rápida y sencilla.
-Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de reusabilidad.
-Los componentes deben poder ser serializados para garantizar el envió del estado del objeto a través de flujos de datos.
-Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfática, es decir, se deben probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; también se debe prever el uso del componente de manera imprevista o incorrecta.
-
-
-%Introducción a JavaBeans
-JavaBeans es la tecnología de componentes de Java, cada componente se le conoce como bean, como se dijo anteriormente, un bean no es mas que una clase de objetos con unas características especiales:
-
-(1) Es una clase publica que implementa la interfaz serializable
-(2) Expone una seria de propiedades que pueden ser leídas y modificadas por el entorno de desarrollo.
-(3) Los evento que posea pueden ser capturados y asociados a una serie de acciones.
-
-Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método get para obtener el valor, y un set para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
-
-%%%%%
-%%%%% Continuar, tipos de propiedades, explicar eventos...
-%%%%%
-
 \chaptertoc
 
-\section{Introducciï¿½n}
+\section{Introducción}
 \label{sec:intr:introduction}
 
-\section{Motivaciï¿½n and Contribuciones}
+\section{Motivación and Contribuciones}
 \label{sec:intr:motivation}
 
-TODO: Esta secciï¿½n es mï¿½s para tesis doctorales que para proyectos fin de carrera. La dejamos de momento pero se podrï¿½a eliminar
+TODO: Esta sección es más para tesis doctorales que para proyectos fin de carrera. La dejamos de momento pero se podría eliminar
 
-\section{Visiï¿½n General del Proyecto}
+\section{Visión General del Proyecto}
 \label{sec:intr:overview}
 
-TODO: Esto estï¿½ bien dejarlo, pero tambiï¿½n es suprimible
+TODO: Esto está bien dejarlo, pero también es suprimible
 
 \section{Estructura del Documento}
 \label{sec:intr:organization}
 
-Esto es una especie de ï¿½ndice ampliado y se deja, suele ser bastante ï¿½til para que el que estï¿½ vago se lea esto y se acabe el problema.
+Esto es una especie de índice ampliado y se deja, suele ser bastante útil para que el que esté vago se lea esto y se acabe el problema.
 
-\paragraph{Capï¿½tulo 2: Resumen del Estado del Arte} \ \\
+\paragraph{Capítulo 2: Resumen del Estado del Arte} \ \\
 
-\paragraph{Capï¿½tulo 3: Descripciï¿½n General del Proceso} \ \\
+\paragraph{Capítulo 3: Descripción General del Proceso} \ \\
 
-\paragraph{Capï¿½tulo 4: Definiciï¿½n y Planificaciï¿½n del Proyecto} \ \\
+\paragraph{Capítulo 4: Definición y Planificación del Proyecto} \ \\
 
-\paragraph{Capï¿½tulo 5: Ingenierï¿½a de Requisitos} \ \\
+\paragraph{Capítulo 5: Ingeniería de Requisitos} \ \\
 
-\paragraph{Capï¿½tulo 6: Definiciï¿½n Arquitectï¿½nica y Diseï¿½o Software} \ \\
+\paragraph{Capítulo 6: Definición Arquitectónica y Diseño Software} \ \\
 
-\paragraph{Capï¿½tulo 7: Construcciï¿½n e Implementaciï¿½n} \ \\
+\paragraph{Capítulo 7: Construcción e Implementación} \ \\
 
-\paragraph{Capï¿½tulo 8: Pruebas} \ \\
+\paragraph{Capítulo 8: Pruebas} \ \\
 
-\paragraph{Capï¿½tulo 9: Despliegue y Aceptaciï¿½n} \ \\
+\paragraph{Capítulo 9: Despliegue y Aceptación} \ \\
 
-\paragraph{Capï¿½tulo 8: Discusiï¿½n, Conclusiones y Trabajos Futuros} \ \\
+\paragraph{Capítulo 8: Discusión, Conclusiones y Trabajos Futuros} \ \\
 
 
 

@@ -47,7 +47,7 @@ El proyecto se desarrollara bajo una programación orientada a componentes. Esta 
 El nivel de abstracción de de los componentes se considera mas alto que el de los objetos al agrupar unidades funcionales autonomamente. De esta manera se explota en gran medida las posibilidades de reutilización. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rápida y sencilla.
 Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de reusabilidad.
 Los componentes deben poder ser serializados para garantizar el envió del estado del objeto a través de flujos de datos.
-Para que un componente este bien diseÃ±ado requiere un esfuerzo en la fase de diseÃ±o, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfatica, es decir, se seben probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; tambien se debe preveer el uso del componente de manera imprevista o incorrecta.
+Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfática, es decir, se deben probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; también se debe prever el uso del componente de manera imprevista o incorrecta.
 
 
 %Introducción a JavaBeans
@@ -65,18 +65,18 @@ Las propiedades no son mas que atributos del objeto que pueden ser modificados y
 
 \chaptertoc
 
-\section{Introducciï¿½n}
+\section{Introducción}
 \label{sec:intr:introduction}
 
-\section{Motivaciï¿½n and Contribuciones}
+\section{Motivación and Contribuciones}
 \label{sec:intr:motivation}
 
-TODO: Esta secciï¿½n es mï¿½s para tesis doctorales que para proyectos fin de carrera. La dejamos de momento pero se podrï¿½a eliminar
+TODO: Esta sección es más para tesis doctorales que para proyectos fin de carrera. La dejamos de momento pero se podría eliminar
 
-\section{Visiï¿½n General del Proyecto}
+\section{Visión General del Proyecto}
 \label{sec:intr:overview}
 
-TODO: Esto estï¿½ bien dejarlo, pero tambiï¿½n es suprimible
+TODO: Esto está bien dejarlo, pero también es suprimible
 
 \section{Estructura del Documento}
 \label{sec:intr:organization}
