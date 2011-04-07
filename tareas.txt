@@ -43,7 +43,6 @@ Descripción: Ver R07 y R09.
 Solución:
 Prueba:
 
-
  
 
 
