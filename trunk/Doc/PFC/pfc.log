@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  6 APR 2011 13:39
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  7 APR 2011 09:54
 entering extended mode
-**pfc.tex
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.tex
+**C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
+(C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -355,7 +355,7 @@ Cap\'{\i }tulo 1.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [1
 
 
-] [2])
+] [2] [3])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -363,7 +363,7 @@ Package minitoc Info: I0009
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
- [3]
+ [4]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux) ) 
 Here is how much of TeX's memory you used:
  3916 strings out of 494020
@@ -372,6 +372,6 @@ Here is how much of TeX's memory you used:
  6899 multiletter control sequences out of 15000+200000
  22379 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,11n,43p,613b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,11n,43p,650b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (15 pages, 21264 bytes).
+Output written on pfc.dvi (16 pages, 22760 bytes).
