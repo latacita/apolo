@@ -1,0 +1,50 @@
+ Angel
+===============================================
+(1) Nombre del proyecto DONE
+(2) Anteproyecto DONE
+(3) Subversion DONE  
+(4) googlecode DONE
+(5) Java beans  DONE
+(6) GUIs con Java beans DONE
+(7) Memoria PFc DONE
+
+ Pablo
+===============================================
+
+(1) Abrir googlecode DONE 
+(2) Escribir anteproyecto DONE
+(3) Buscar tutorial de beans DONE
+
+ Angel
+===============================================
+(1) Metodologia Desarollo
+(2) Clasificar Requisitos
+
+Elementos
+- ¿Hace falta una arquitectura global de la aplicación 
+   o ni eso? Al menos un diagrama de clases con las 
+   estructuras de datos
+
+Prototipo: la bean diapositiva, cargar una diapositiva
+           y moverla
+
+Por cada iteración (hacer las iteraciones pequeñas)
+- Casos de uso
+- Refinamiento de requisitos
+- Diagrama si fuese necesario
+- Implementación
+- Pruebas
+
+Por cada caso de uso
+- Nombre y breve descripción
+Ejemplo
+Caso de Uso: Importar fotos
+Descripción: Ver R07 y R09.
+Solución:
+Prueba:
+
+
+ 
+
+
+
