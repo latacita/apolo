@@ -1,5 +1,10 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Antecedentes}{1}
-\contentsline {section}{\numberline {1.1}Desarrollo de Software basado en Componentes}{1}
-\contentsline {section}{\numberline {1.2}Java beans como modelo de componentes}{2}
-\contentsline {section}{\numberline {1.3}\'Ambito Funcional}{2}
+\contentsline {chapter}{\numberline {1}Planificaci\'on del Proyecto}{3}
+\contentsline {section}{\numberline {1.1}\'Ambito Funcional del Proyecto}{3}
+\contentsline {section}{\numberline {1.2}Metodolog\IeC {\'\i }a de Desarrollo}{5}
+\contentsline {section}{\numberline {1.3}Requisitos de Alto Nivel de la Aplicaci\'on}{5}
+\contentsline {section}{\numberline {1.4}Dise\~no de los Artefactos Base del Proyecto}{5}
+\contentsline {section}{\numberline {1.5}Construcci\'on de Prototipos}{5}
+\contentsline {chapter}{\numberline {2}Antecedentes}{7}
+\contentsline {section}{\numberline {2.1}Desarrollo de Software basado en Componentes}{7}
+\contentsline {section}{\numberline {2.2}Java beans como modelo de componentes}{8}

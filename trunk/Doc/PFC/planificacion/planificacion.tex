@@ -1,6 +1,6 @@
 =============================================================================%
 % Author : Angel Tezanos Ibañez                                              %
-% Author : Pablo Sánchez Barreiro                                            %  
+% Author : Pablo Sánchez Barreiro                                            %
 % Version: 2.0, 07/04/2011                                                   %
 % Master Thesis: Planificación del Proyecto                                  %
 %============================================================================%
@@ -15,7 +15,7 @@
 \section{Ámbito Funcional del Proyecto}
 \label{sec:plannning:ambito}
 
-posibilidad de ordenar cómodamente sus fotografías, así como descartar las que no satisfagan la calidad esperada o deseada.
+El objetivo general de la aplicación \emph{Apolo} es ofrecer al usuario la posibilidad de ordenar cómodamente sus fotografías, así como descartar las que no satisfagan la calidad esperada o deseada.
 
 Actualmente gracias a la incorporación de una cámara fotográfica a casi cualquier aparato electrónico, podemos tomar fotografías en prácticamente cualquier instante de nuestra vida. Eso unido a que ya no es necesario un proceso de revelado, nos impulsa a tener almacenadas muchas fotografías. La mayoría de las veces, se encuentran mezcladas con fotografías que no salieron como se esperaba (movidas, mal enfocadas, sobreexpuestas...) e incluso en ocasiones, el orden no es el adecuado.
 
@@ -23,25 +23,26 @@ Disponer de las fotografías almacenadas de esta forma, no resulta cómodo para un
 
 Para resolver estos problemas y hacer la tarea mas llevadera, nace la idea de Apolo, un \emph{Clasificador de Imágenes Digitales inspirado en los Clasificadores de Diapositivas de la Fotografía Analógica.} Los clasificadores de fotografía analógicos se caracterizaban por la facilidad de clasificación y ordenación de las diapositivas o fotografías, y es precisamente esa facilidad la que deseamos tener en el software a desarrollar para hacer la tarea mas amigable. Por lo tanto Apolo tiene un funcionamiento muy similar, la cual se pasa a describir:
 
-%%************************
-%%    Mezclo diapositiva y fotografia.
-%%    Estaria bien definir un unico nombre.
-%%************************
+%%%%
+% Lo comentado queda para el refinamiento
+%%%%
 
 \begin{enumerate}
-\item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importada una carpeta o una serie de fotografías, estas aparecerán en la zona baja de la aplicación como si de unas diapositivas clásicas se trataran.
-\item El usuario puede a partir de ese momento empezar a seleccionar las fotografías que considere adecuadas y arrastrarlas hasta la parte central de la aplicación, en esta zona se encuentran una especie de estanterías, o baldas, donde depositar la diapositiva arrastrada.
-\item Cada fotografía tiene un menu asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo), descartarla u observar los detalles de la misma (metadatos).
+\item Dentro de la aplicación cada fotografía aparecerá mostrada como si de una diapositiva se tratara.
+\item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
+    estas aparecerán en la zona baja de la aplicación como unas diapositivas.
+\item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas hasta la parte central de la aplicación, en esta zona se encuentran una especie de estanterías, o baldas, donde depositar la diapositiva arrastrada.
+\item Cada diapositiva tiene un menu asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo) o descartarla.% u observar los detalles de la misma (metadatos).
 \item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desea.
-\item También puede cambiar la diapositiva de estantería de la misma forma. Simplemente arrastrando la fotografía seleccionada y depositándola en la estantería deseada.
-\item Una vez este una estantería a gusto del usuario, y por tanto una subsecuencia de fotografías, puede indicar a la aplicación que las lleve a la zona superior, donde se encuentran las subsecuencias de fotografías clasificadas y ordenadas.
-\item El usuario también puede descartar todas las fotos que se encuentren en una estantería. De esta forma dejarían de aparecer en la aplicación. El efecto es el mismo que si no hubieran sido importadas en un principio.
-\item En la zona superior se puede reordenar subsecuencias de fotografías, es decir, una subsecuencia recién añadida, y por lo tanto al final de todas las subsecuencias, puede ser recolocada entre estas.
-\item Cuando en la zona superior de la aplicación se encuentren todas las subsecuencias de fotografías deseadas por el usuario. Este podrá exportarlas a un directorio. La aplicación realizara una copia de cada la foto original en el directorio indicado y las renombrara de manera que conserven la ordenación indicada.
-\item En ningún caso se modifican, ni suprimen las fotografías originales (las que se importan). En cada exportación se duplican tantas fotos como fueron seleccionadas.
+\item También puede cambiar la diapositiva de estantería de la misma forma. Simplemente arrastrando la diapositiva seleccionada y depositándola en la estantería deseada.
+\item Una vez este una estantería a gusto del usuario, y por tanto una subsecuencia de diapositivas, puede indicar a la aplicación que las lleve a la zona superior, donde se encuentran las subsecuencias de diapositivas clasificadas y ordenadas.
+\item El usuario también puede descartar todas las diapositivas que se encuentren en una estantería. De esta forma dejarían de aparecer en la aplicación. El efecto es el mismo que si no hubieran sido importadas en un principio.
+\item En la zona superior se puede reordenar subsecuencias de diapositivas, es decir, una subsecuencia recién añadida, y por lo tanto al final de todas las subsecuencias, puede ser recolocada entre estas.
+\item Cuando en la zona superior de la aplicación se encuentren todas las subsecuencias de diapositivas deseadas por el usuario. Este podrá exportarlas a un directorio. La aplicación realizara una copia de cada la fotografía original en el directorio indicado y las renombrara de manera que conserven la ordenación indicada.
+\item En ningún caso se modifican, ni suprimen las fotografías originales (las que se importan). En cada exportación se duplican tantas fotografías como fueron seleccionadas.
 \item Se puede guardar el trabajo realizado en el programa en un fichero con un formato propio para la aplicación. De esta manera es posible realizar la ordenación y clasificación en distintos momentos, dando la posibilidad de dejar a medio hacer la tarea para finalizarla en otro momento.
-\item El usuario podrá por medio de los ficheros guardados crear albums de fotos de manera rápida. Solo deberá abrir el fichero que contiene la clasificación y orden de las fotografías y exportarlas a una carpeta.
-\end{enumerate} 
+\item El usuario podrá por medio de los ficheros guardados crear albums de fotos de manera rápida. Solo deberá abrir el fichero que contiene la clasificación y orden de las diapositivas y exportarlas a una carpeta.
+\end{enumerate}
 
 \section{Metodología de Desarrollo}
 \label{sec:planning:metodologia}
