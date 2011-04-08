@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  8 APR 2011 11:50
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  8 APR 2011 13:03
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -365,11 +365,10 @@ Cap\'{\i }tulo 1.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [3
 
 ] [4])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [5] [6
-
-]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [5] [6]
 Cap\'{\i }tulo 2.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [7
+
 
 ])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
@@ -390,4 +389,4 @@ Here is how much of TeX's memory you used:
  715 hyphenation exceptions out of 8191
  34i,11n,43p,656b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (20 pages, 27080 bytes).
+Output written on pfc.dvi (20 pages, 30108 bytes).
