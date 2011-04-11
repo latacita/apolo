@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  8 APR 2011 13:03
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  11 APR 2011 12:28
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -364,11 +364,30 @@ Overfull \hbox (308.89989pt too wide) in paragraph at lines 1--7
 Cap\'{\i }tulo 1.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [3
 
-] [4])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [5] [6]
-Cap\'{\i }tulo 2.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [7
+]
 
+LaTeX Warning: Reference `' on page 4 undefined on input line 24.
+
+
+LaTeX Warning: Reference `' on page 4 undefined on input line 39.
+
+[4] [5]
+File: images/CasoUsoIter1.eps Graphic file (type eps)
+ <images/CasoUsoIter1.eps>
+Overfull \hbox (17.0pt too wide) in paragraph at lines 94--95
+[][][] 
+ []
+
+[6]
+Overfull \hbox (374.06027pt too wide) in paragraph at lines 122--160
+[][][] 
+ []
+
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [7] [8
+
+]
+Cap\'{\i }tulo 2.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [9
 
 ])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
@@ -378,15 +397,19 @@ Package minitoc Info: I0009
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
- [8]
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux) ) 
+ [10]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3930 strings out of 494020
- 52809 string characters out of 3143906
+ 3935 strings out of 494020
+ 52881 string characters out of 3143906
  129468 words of memory out of 3000000
- 6903 multiletter control sequences out of 15000+200000
+ 6907 multiletter control sequences out of 15000+200000
  22379 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,11n,43p,656b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,11n,43p,860b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (20 pages, 30108 bytes).
+Output written on pfc.dvi (22 pages, 36372 bytes).
