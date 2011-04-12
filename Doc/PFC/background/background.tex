@@ -29,7 +29,7 @@ JavaBeans es la tecnología de componentes de Java, cada componente se le conoce 
 
 \begin{enumerate}
 	\item Es una clase publica que implementa la interfaz serializable
-	\item Expone una seria de propiedades que pueden ser leídas y modificadas por el entorno de desarrollo.
+	\item Expone una serie de propiedades que pueden ser leídas y modificadas por el entorno de desarrollo.
 	\item Los evento que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
 
@@ -37,4 +37,12 @@ JavaBeans es la tecnología de componentes de Java, cada componente se le conoce 
 
 Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método get para obtener el valor, y un set para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
 
-%%Continuar!!!
+Existen varios tipos de propiedades:
+\begin{itemize}
+    \item Simples: Representa un único valor
+    \item Indexadas: Representa un array de valores
+    \item Ligadas (Bound): Notifican un cambio de la propiedad a otros objetos (listeners).
+    \item Restringidas (Constrained): Similar a la Ligada salvo que los objetos notificados tienen la opción de vetar el cambio.
+\end{itemize}
+
+%%Extender mas si es posible

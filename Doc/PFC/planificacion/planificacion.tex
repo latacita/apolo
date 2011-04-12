@@ -21,7 +21,8 @@ Actualmente gracias a la incorporación de una cámara fotográfica a casi cualquie
 
 Mantener las fotografías almacenadas de este modo no resulta práctico. Si el usuario desea exhibir un subconjunto de una selección de fotografías, tendrá primero que seleccionar las fotografías que desea mostrar, copiarlas en un lugar aparte y luego ordenarlas de acuerdo al orden de exposición deseado. Dicho trabajo, si se ha de realizar con los gestores de ficheros actuales, puede resultar una tarea ardua y tediosa, sobre todo si se han de renombrar los archivos de forma manual para darles el orden deseado.
 
-Para resolver estos problemas y hacer esta tarea menos tediosa, nace la idea de Apolo, un \emph{Clasificador de Imágenes Digitales inspirado en los Clasificadores de Diapositivas de la Fotografía Analógica}. Los clasificadores de fotografía analógicos, tal como el que aparece en la Figura~\ref{}, constan de ..
+Para resolver estos problemas y hacer esta tarea menos tediosa, nace la idea de Apolo, un \emph{Clasificador de Imágenes Digitales inspirado en los Clasificadores de Diapositivas de la Fotografía Analógica}. Los clasificadores de fotografía analógicos, tal como el que aparece en la Figura~\ref{}, no es mas que una superficie retroiluminada, e inclinada generalmente, con unas filas, al estilo de baldas, donde es posible depositar las diapositivas. De esta manera gracias a la luz que emite es posible visualizar la imagen de la diapositiva mientras esta permanece posada en la balda.
+Las persona que usa este aparato es capaz de organizar y clasificar las diapositivas de una manera rápida y simple. Solo debe ir posicionandolas en las filas según el orden que desee e ir descartando las que no le satisfagan. Al finalizar la tarea tendrá las diapositivas situadas encima del clasificador y le sera muy fácil recogerlas de manera que queden ordenadas según el criterio que uso.
 
 \todo{Poner una imagen aquí del clasificador de diapositivas analógico y explicar su funcionamiento brevemente}
 %La imagen es ClasificardorAnalogico.jpg
@@ -62,15 +63,12 @@ Tras describir a grandes rasgos el funcionamiento de la aplicación, la siguiente
 %% NOTA(Pablo): Frase de introducción.
 %%==========================================================================================
 
-%****
-% Incluir imagen mod-iterativo.jpg no se insertar jpg :S
-%****
-
-La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental Iterativo}. Se traba de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo de manera incremental, otorgando en cada iteración mas funcionalidades al sistema.
+La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental Iterativo}. Se traba de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo de manera incremental, otorgando en cada iteración mas funcionalidades al sistema. 
+%Buscar una cita de algún personaje famoso 
 
 Esta metodología requiere, inicialmente, una buena descripción del sistema o aplicación a desarrollar. Es esencial que sea clara y lo mas completa posible, pues a partir de ella se sustentará todo el proceso de desarrollo.
 
-%*********** Insertar aqui imagen
+%*********** Insertar aquí imagen mod-iterativo.jpg
 
 Basándose en la descripción se definen una serie de incrementos en donde cada uno añade mas funcionalidades a la aplicación, y por tanto cumple con una serie de requisitos. Debe comenzarse con la funcionalidad mas básica de la aplicación, de manera que pueda ir construyéndose incrementalmente, es decir que cada version incorpore a la anterior una funcionalidad nueva, la cual hará que se cumpla un requisito o varios.
 
@@ -82,7 +80,7 @@ La ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo,
 
 Además gracias a que es un modelo evolutivo, se permiten (y es mas, se esperan) cambios en los requisitos en tiempo de desarrollo. Lo cual permite cierto margen de cambio en el funcionamiento de la aplicación.
 
-%Si entendi bien, aqui debo decir que hare en cada iteracion.
+%Si entendí bien, aquí debo decir que hare en cada iteración.
 
 %======================================
 % INICIO Retocar muuuucho
@@ -91,20 +89,34 @@ Además gracias a que es un modelo evolutivo, se permiten (y es mas, se esperan) 
 En la primera iteración se abordara el siguiente caso de uso
 
 %La imagen hay q recortarla y demás florituras.
-\includegraphics[width=1\columnwidth]{images/CasoUsoIter1.eps}
+\includegraphics[trim=1.2cm 7cm 4cm 0.5cm,clip]{images/CasoUsoIter1.eps}
 
 En el, como puede observarse, se trata de poder importar una fotografía a la aplicación y que esta sea representada como una diapositiva. A continuación deberá poder arrastrarse por la aplicación. Para terminar podrá ser descartada o visualizada.
 
-%Refinamiento de requisitos :S Ninguno?¿?¿ O comento ya lo de mostrar informacion?¿
+%Refinamiento de requisitos :S Ninguno?¿?¿ O comento ya lo de mostrar información?¿
 
-\todo{La implementación? Q digo como lo voya implementa?¿ Que clases vy a extender¿?}
+\todo{La implementación? Q digo como lo voy a implementa?¿ Que clases voy a extender¿?}
 
-%%%Continuar**************************************************************************
+Pruebas, para comprobar el cumplimiento de los requisitos abordados en esta iteración.... ¿?¿?
+
 
 %%% Por cada iteración (hacer las iteraciones pequeñas)
-% - Casos de uso
-% - Refinamiento de requisitos
-% - Implementación
+%- Casos de uso
+%- Refinamiento de requisitos
+%- Diagrama si fuese necesario
+%- Implementación
+%- Pruebas
+
+%  1º Iteración -> Importar 1 fotografía, moverla (Drag&drop), visualizar y descartarla.
+%  2º Iteración -> Importar varias fotografías, dejarlas todas en el pool, realizar las estanterías.
+%  3º Iteración -> Mover las diapositivas a la parte central y que se queden fijadas.
+%  4º Iteración -> Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías
+%  5º Iteración -> Poder añadir fila a la zona superior, poder descartar fila
+%  6º Iteración -> Reordenar subsecuencias arrastrándolas entre la zona superior.
+%  7º Iteración -> Exportar subsecuencias en el orden fijado
+%  8º Iteración -> Guardar el estado de la aplicación
+%  9º Iteración -> Cargar la aplicación al estado
+% 10º Iteración -> Retoques, Efectos visuales.
 
 %======================================
 % FIN Retocar muuuucho
@@ -132,7 +144,7 @@ En el, como puede observarse, se trata de poder importar una fotografía a la apl
   \hline
   R04 & Tras la importación aparecerán todas ellas en la zona baja de la aplicación \\
   \hline
-  R05 & Las diapositivas deben poderse arrastrar hasta la zona media de la aplicación donde habra unas zonas donde depositarlas (estanterías) \\
+  R05 & Las diapositivas deben poderse arrastrar hasta la zona media de la aplicación donde habrá unas zonas donde depositarlas (estanterías) \\
   \hline
   R06 & Una vez soltada la diapositiva en la zona central, debe permanecer allí anclada \\
   \hline
@@ -140,9 +152,9 @@ En el, como puede observarse, se trata de poder importar una fotografía a la apl
   \hline
   R08 & Se pueden cambiar diapositivas entre estanterías arrastrandolas\\
   \hline
-  R09 & Una estanteria, o subsecuencia de diapositivas, ya ordenada y clasificada, puede ser almacenada en la zona superior de la aplicación  \\
+  R09 & Una estantería, o subsecuencia de diapositivas, ya ordenada y clasificada, puede ser almacenada en la zona superior de la aplicación  \\
   \hline
-  R10 & Una estanteria, o subsecuencia de diapositivas, puede ser descartada \\
+  R10 & Una estantería, o subsecuencia de diapositivas, puede ser descartada \\
   \hline
   R11 & En la zona superior, se pueden reordenar subsecuencias de diapositivas \\
   \hline
