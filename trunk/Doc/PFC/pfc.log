@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  11 APR 2011 12:28
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  12 APR 2011 12:11
 entering extended mode
-**C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
-(C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
+**C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
+(C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\itsas_pfc.cls
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\itsas_pfc.cls
 Document Class: itsas_pfc 2007/03/06 Itsas document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -110,15 +110,15 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\arial\uarial.sty
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\arial\uarial.sty
 Package: uarial 2006/03/21 1.0 (WaS)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks20
 ))
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/pfc_options.tex
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/pfc_options.tex
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
 \f@ncyO@erh=\skip51
@@ -143,7 +143,7 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -172,10 +172,10 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box30
 \rot@mess@toks=\toks21
 )
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
 Package: minitoc 2008/07/16 v60 Package minitoc (JPFD)
 
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -195,7 +195,7 @@ Package minitoc Info: I0003
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
 
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc0)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -210,13 +210,13 @@ Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
 
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
 File: english.mld 2006/01/13
 )
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
 File: english.mld 2006/01/13
 ))
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\epsf\epsf.sty
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\epsf\epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read1
 \epsfframemargin=\dimen109
@@ -227,11 +227,11 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 \pspoints=\dimen116
-) (C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\textpos\textpos.sty
+) (C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\textpos\textpos.sty
 Package: textpos 2010/09/30 v1.7g
 
 Package: `textpos' 1.7g <2010 September 30>
-(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box33
@@ -248,8 +248,8 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TP@tbargs=\toks23
 \TP@prevdepth=\dimen124
 TextBlockOrigin set to 0pt x 0pt
-)) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/rename.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
+)) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/rename.tex)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
@@ -267,10 +267,9 @@ Package minitoc(hints) Info: I0049
 (minitoc(hints))             Some hints are eventually given below.
 
 ABD: EveryShipout initializing macros
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/cover.tex
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/cover.tex
 File: images/ingInformatica.eps Graphic file (type eps)
-
-<images/ingInformatica.eps>
+ <images/ingInformatica.eps>
 LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -289,7 +288,7 @@ Overfull \hbox (66.94128pt too wide) in paragraph at lines 38--38
 
 ] [2
 
-]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/firstPage.tex
+]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/firstPage.tex
 File: images/uc.eps Graphic file (type eps)
 
 <images/uc.eps>
@@ -318,11 +317,11 @@ Overfull \hbox (17.83658pt too wide) in paragraph at lines 46--65
  [][] 
  []
 
-) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/begin.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1
+) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/begin.tex)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1
 
 ] [2])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/toc.tex
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/toc.tex
 Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM pfc.toc on input line 2.
 Package minitoc Info: I0033
@@ -335,24 +334,24 @@ Package minitoc Info: I0033
 ] [4
 
 ]
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.toc)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.toc)
 \tf@toc=\write4
  [5] [6
 
 ]
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lof)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.lof)
 \tf@lof=\write5
  [7] [8
 
 ]
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lot)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.lot)
 \tf@lot=\write6
  [9] [10
 
 ])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\Config/headers.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/chapters.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\Config/headers.tex)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/chapters.tex)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex
 Overfull \hbox (308.89989pt too wide) in paragraph at lines 1--7
 [][]\T1/cmr/m/n/10.95 =========================================================
 ==================== 
@@ -362,35 +361,35 @@ Overfull \hbox (308.89989pt too wide) in paragraph at lines 1--7
 
 ]
 Cap\'{\i }tulo 1.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [3
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc1) [3
 
 ]
 
 LaTeX Warning: Reference `' on page 4 undefined on input line 24.
 
 
-LaTeX Warning: Reference `' on page 4 undefined on input line 39.
+LaTeX Warning: Reference `' on page 4 undefined on input line 40.
 
 [4] [5]
 File: images/CasoUsoIter1.eps Graphic file (type eps)
  <images/CasoUsoIter1.eps>
-Overfull \hbox (17.0pt too wide) in paragraph at lines 94--95
+Overfull \hbox (66.1274pt too wide) in paragraph at lines 92--93
 [][][] 
  []
 
 [6]
-Overfull \hbox (374.06027pt too wide) in paragraph at lines 122--160
+Overfull \hbox (374.06027pt too wide) in paragraph at lines 134--172
 [][][] 
  []
 
-) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [7] [8
+) (C:\Users\PC\Desktop\Apolo\Doc\PFC\background/background.tex [7] [8
 
 ]
 Cap\'{\i }tulo 2.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [9
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc2) [9
 
 ])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/appendix.tex)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the pfc.maf file.
@@ -398,18 +397,18 @@ Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
  [10]
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3935 strings out of 494020
- 52881 string characters out of 3143906
- 129468 words of memory out of 3000000
+ 3935 strings out of 494054
+ 52650 string characters out of 3146218
+ 130468 words of memory out of 3000000
  6907 multiletter control sequences out of 15000+200000
  22379 words of font info for 56 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 34i,11n,43p,860b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 716 hyphenation exceptions out of 8191
+ 34i,12n,43p,857b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (22 pages, 36372 bytes).
+Output written on pfc.dvi (22 pages, 38048 bytes).
