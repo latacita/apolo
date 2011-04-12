@@ -26,12 +26,11 @@ Para resolver estos problemas y hacer esta tarea menos tediosa, nace la idea de 
 \begin{figure}[!tb]
   \begin{center}
   % Requires \usepackage{graphicx}
-  \includegraphics[width=0.5\linewidth]{background/images/clasificadorAnalogico.eps} \\
+  \includegraphics[width=0.5\linewidth]{planificacion/images/clasificadorAnalogico.eps} \\
   \caption{Ejemplo de clasificador de diapositivas analógicas}
-  \label{fig:back:clasificador}
+  \label{fig:plan:clasificador}
   \end{center}
 \end{figure}
-
 
 El objetivo del clasificador analógico es que la persona sea capaz de organizar y clasificar las diapositivas de una manera rápida y simple. La persona sólo debe ir posicionándolas en las filas según el orden que desee e ir descartando las que no le satisfagan. Al finalizar la tarea tendrá las diapositivas estarán situadas encima del clasificador en el orden deseado y se se tratará simplemente de recogerlas y guardarlas en el mismo orden.
 
@@ -42,7 +41,7 @@ El objetivo de Apolo es imitar en la medida de los posible el funcionamiento de 
 \item Cada diapositiva tiene un menú asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo) o descartarla, así como otros datos de interés que se consideren relevantes.% u observar los detalles de la misma (metadatos).
 \item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
 	estas aparecerán en una de la aplicación como un conjunto de diapositivas esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{mesa}.
-\item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación}. En esta zona se simularán una especie de estanterías o baldas, similares a los de la Figura~\ref{fig:back:clasificador}, donde se puedan depositar las diapositivas arrastradas.
+\item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación}. En esta zona se simularán una especie de estanterías o baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
 \item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desee.
 \item También puede cambiar la diapositiva de estantería de la misma forma, arrastrándola y soltándola en la estantería deseada.
 \item Cada vez que el usuario haya conseguido ordenar de forma satisfactoria una secuencia de diapositivas, puede marcarla como subsecuencia ordenada y darle un nombre. A continuación, todas las diapositivas se agruparán en una sola, que sirve de portada a la subsecuencia; y se moverán a una zona diferenciada que denominaremos de
@@ -73,7 +72,12 @@ La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental
 
 Esta metodología requiere, inicialmente, una buena descripción del sistema o aplicación a desarrollar. Es esencial que sea clara y lo mas completa posible, pues a partir de ella se sustentará todo el proceso de desarrollo.
 
-%*********** Insertar aquí imagen mod-iterativo.jpg
+\begin{figure}[!b]
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=\linewidth]{planificacion/images/mod-iterativo.eps}\\
+  \caption{Modelo Incremental Iterativo}
+  \label{fig:plan:modeloItera}
+\end{figure}
 
 Basándose en la descripción se definen una serie de incrementos en donde cada uno añade mas funcionalidades a la aplicación, y por tanto cumple con una serie de requisitos. Debe comenzarse con la funcionalidad mas básica de la aplicación, de manera que pueda ir construyéndose incrementalmente, es decir que cada version incorpore a la anterior una funcionalidad nueva, la cual hará que se cumpla un requisito o varios.
 
@@ -81,36 +85,27 @@ Dentro de cada iteración hay un proceso interno,
 %que puede considerarse un ciclo de vida en Cascada
 en el que se analizan los requisitos de esa iteración, se diseña, se implementa y finalmente se prueba el correcto funcionamiento. La primera iteración dará como resultado la version inicial de la aplicación con una funcionalidad muy básica, y solo cumpliendo los requisitos mas básicos. A medida que vayan sucediendo iteraciones la aplicación ira cobrando funcionalidad. En la ultima iteración se obtendrá el producto final, el cual debe cumplir todos y cada uno de los requisitos.
 
-La ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo, es que al ser la interfaz gráfica una parte imprescindible al igual que la usabilidad, se puede en cada incremento ver si la solución tomada es la adecuada con las expectativas esperadas, y en caso contrario corregirla antes de seguir avanzando en el desarrollo de la misma.
+La ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo, es que al ser la interfaz gráfica una parte imprescindible al igual que la usabilidad, se puede en cada incremento ver si la solución tomada es la adecuada para las expectativas esperadas, y en caso contrario corregirla antes de seguir avanzando en el desarrollo de la misma.
 
 Además gracias a que es un modelo evolutivo, se permiten (y es mas, se esperan) cambios en los requisitos en tiempo de desarrollo. Lo cual permite cierto margen de cambio en el funcionamiento de la aplicación.
 
-%Si entendí bien, aquí debo decir que hare en cada iteración.
+%%%%=====
+%%  No me gusta nada como queda esta lista :S
+%%%%=====
 
-%======================================
-% INICIO Retocar muuuucho
-%======================================
-
-En la primera iteración se abordara el siguiente caso de uso
-
-\begin{figure}
-  % Requires \usepackage{graphicx}
-  \begin{center}
-  \includegraphics[width=.45\linewidth]{planificacion/images/importarFotografia(it1).eps}\\
-  \caption{\todo{Ponle título}}
-  \label{fig:plan:casoUso}
-  \end{center}
-\end{figure}
-
-
-En el, como puede observarse, se trata de poder importar una fotografía a la aplicación y que esta sea representada como una diapositiva. A continuación deberá poder arrastrarse por la aplicación. Para terminar podrá ser descartada o visualizada.
-
-%Refinamiento de requisitos :S Ninguno?¿?¿ O comento ya lo de mostrar información?¿
-
-\todo{La implementación? Q digo como lo voy a implementa?¿ Que clases voy a extender¿?}
-
-Pruebas, para comprobar el cumplimiento de los requisitos abordados en esta iteración.... ¿?¿?
-
+Las iteraciones planificadas son las siguientes:
+\begin{enumerate}
+    \item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
+    \item Importar varias fotografías, llenar pool, realizar estanterías. (Ver R03 y R04)
+    \item Mover las diapositivas a la parte central y que se queden fijadas. (Ver R05 y R06)
+    \item Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías. (Ver R07 y R08)
+    \item Poder añadir fila a la zona superior, poder descartar fila. (Ver R09 y R10)
+    \item Reordenar subsecuencias arrastrándolas entre la zona superior. (Ver R11)
+    \item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
+    \item Guardar el estado de la aplicación. (Ver R15)
+    \item Cargar la aplicación al estado. (Ver R16)
+    \item Retoques, Efectos visuales.
+\end{enumerate}
 
 %%% Por cada iteración (hacer las iteraciones pequeñas)
 %- Casos de uso
@@ -119,68 +114,45 @@ Pruebas, para comprobar el cumplimiento de los requisitos abordados en esta iter
 %- Implementación
 %- Pruebas
 
-%  1º Iteración -> 
-Importar 1 fotografía, moverla (Drag&drop), visualizar y descartarla.
-%  2º Iteración -> Importar varias fotografías, dejarlas todas en el pool, realizar las estanterías.
-%  3º Iteración -> Mover las diapositivas a la parte central y que se queden fijadas.
-%  4º Iteración -> Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías
-%  5º Iteración -> Poder añadir fila a la zona superior, poder descartar fila
-%  6º Iteración -> Reordenar subsecuencias arrastrándolas entre la zona superior.
-%  7º Iteración -> Exportar subsecuencias en el orden fijado
-%  8º Iteración -> Guardar el estado de la aplicación
-%  9º Iteración -> Cargar la aplicación al estado
-% 10º Iteración -> Retoques, Efectos visuales.
-
-%======================================
-% FIN Retocar muuuucho
-%======================================
-
 \section{Requisitos de Alto Nivel de la Aplicación}
 \label{sec:planning:requisitos}
-
-%************************************************************************
-% Lo escribo en futuro o en presente¿? Puede o podrá¿?
-%% NOTA(Pablo): En futuro
-% No se mejorar la tabla, no hace salto de linea en la frase.
-% Queda cortada
-%************************************************************************
 
 \begin{tabular}{|c|p{9cm}|}
   \hline
   % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
   Referencia & Requisito \\
   \hline  \hline
-  R01 & Una fotografía debe ser representada como una diapositiva \\
+  R01 & Una fotografía deberá ser representada como una diapositiva \\
   \hline
-  R02 & La diapositiva puede visualizarse o descartarse\\
+  R02 & La diapositiva podrá visualizarse o descartarse\\
   \hline
-  R03 & La aplicación importa las fotografías para trabajar con ellas \\
+  R03 & La aplicación importará las fotografías para trabajar con ellas \\
   \hline
   R04 & Tras la importación aparecerán todas ellas en la zona baja de la aplicación \\
   \hline
-  R05 & Las diapositivas deben poderse arrastrar hasta la zona media de la aplicación donde habrá unas zonas donde depositarlas (estanterías) \\
+  R05 & Las diapositivas deberán poderse arrastrar hasta la zona media de la aplicación donde habrá unas zonas donde depositarlas (estanterías) \\
   \hline
-  R06 & Una vez soltada la diapositiva en la zona central, debe permanecer allí anclada \\
+  R06 & Una vez soltada la diapositiva en la zona central, deberá permanecer allí anclada \\
   \hline
-  R07 & Se pueden recolocar las diapositivas dentro de cada estantería arrastrandolas\\
+  R07 & Se podrán recolocar las diapositivas dentro de cada estantería arrastrandolas\\
   \hline
-  R08 & Se pueden cambiar diapositivas entre estanterías arrastrandolas\\
+  R08 & Se podrá cambiar diapositivas entre estanterías arrastrandolas\\
   \hline
-  R09 & Una estantería, o subsecuencia de diapositivas, ya ordenada y clasificada, puede ser almacenada en la zona superior de la aplicación  \\
+  R09 & Una estantería, o subsecuencia de diapositivas, ya ordenada y clasificada, podrá ser almacenada en la zona superior de la aplicación  \\
   \hline
-  R10 & Una estantería, o subsecuencia de diapositivas, puede ser descartada \\
+  R10 & Una estantería, o subsecuencia de diapositivas, podrá ser descartada \\
   \hline
-  R11 & En la zona superior, se pueden reordenar subsecuencias de diapositivas \\
+  R11 & En la zona superior, se podrá reordenar subsecuencias de diapositivas \\
   \hline
-  R12 & Se puede exportar la clasificación y ordenación a un directorio \\
+  R12 & Se podrá exportar la clasificación y ordenación a un directorio \\
   \hline
-  R13 & La exportación debe conservar el orden fijado durante el uso de la aplicación \\
+  R13 & La exportación deberá conservar el orden fijado durante el uso de la aplicación \\
   \hline
-  R14 & No se modifican las fotografías originales, se copian  \\
+  R14 & No se modificarán las fotografías originales, se copiarán  \\
   \hline
-  R15 & Se puede guardar el estado de la aplicación en un fichero \\
+  R15 & Se podrá guardar el estado de la aplicación en un fichero \\
   \hline
-  R16 & Se puede cargar la aplicación a un estado previo por medio de un fichero \\
+  R16 & Se podrá cargar la aplicación a un estado previo por medio de un fichero \\
   \hline
 \end{tabular}
 
