@@ -40,7 +40,7 @@ El objetivo de Apolo es imitar en la medida de los posible el funcionamiento de 
 \item Dentro de la aplicación cada fotografía aparecerá mostrada como si de una diapositiva \emph{clásica} se tratara.
 \item Cada diapositiva tiene un menú asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo) o descartarla, así como otros datos de interés que se consideren relevantes.% u observar los detalles de la misma (metadatos).
 \item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
-	estas aparecerán en una de la aplicación como un conjunto de diapositivas esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{mesa}.
+	estas aparecerán en aplicación como un conjunto de diapositivas esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{mesa}.
 \item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación}. En esta zona se simularán una especie de estanterías o baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
 \item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desee.
 \item También puede cambiar la diapositiva de estantería de la misma forma, arrastrándola y soltándola en la estantería deseada.
@@ -161,6 +161,57 @@ Las iteraciones planificadas son las siguientes:
 %%% Los artefactos comunes son:
 %%  - La interfaz gráfica
 %%  - Haces un diagrama de clases con las estructuras de datos
+
+Los artefactos básicos del proyecto Apolo son la interfaz gráfica y la representación de la fotografía como diapositiva dentro de la aplicación. Son los elementos mas básicos para el funcionamiento de la aplicación.
+
+La representación de la fotografía como Diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentara evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
+
+\begin{figure}[!tb]
+ \begin{center}
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.5\linewidth]{planificacion/images/MarcoDiapositiva.eps}\\
+  \caption{Esquema del Diseño del Marco de la diapositiva.}
+  \label{fig:plan:esquemaMarcoDiapositiva}
+ \end{center}
+\end{figure}
+
+La interfaz gráfica es un componente muy importante en el proyecto, pues se hace hincapié en en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas: 
+
+%******
+% Esta lista queda FATAL!!! :S
+%******
+\begin{description}
+    \item{Mesa} Se encuentra en la zona inferior de la aplicación. En ella aparecerán todas las diapositivas de las correspondientes fotografías nada mas importarlas.
+    \item{Zona de Clasificación} Esta en la zona central de la aplicación, es allí donde se van ordenando y clasificando las fotografías en subsecuencial.
+    \item{Zona de subsecuencias ordenadas} Se ubica en la parte superior de la aplicación, allí se colocan las subsecuencial que formaran la secuencia final.
+\end{description}
+
+Para ilustrar todo esto se realizo el boceto que aparece en la imagen \ref{fig:plan:esquemaDiseñoInterfaz}
+
+%***
+% Abierta sale en gris, en el documento se ve muy mal :S Modificarla
+%***
+\begin{figure}[!tb]
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=\linewidth]{planificacion/images/MontajeInterfazGrafica.eps}\\
+  \caption{Esquema del Diseño Inicial de la Interfaz Gráfica.}
+  \label{fig:plan:esquemaDiseñoInterfaz}
+\end{figure}
+
+%*=============
+% Igual explicarlo un poco mejor
+%*=============
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}
+Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las diapositivas, como sus agrupaciones en subsecuencias y secuencias se almacenan en listas enlazadas. Se eligió este tipo de listas debido a su bajo coste computacional de insertar elementos en mitad de la lista, asi como extraerlo, operaciones muy comunes en el uso de la aplicacion.
+
+\begin{figure}[!tb]
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=\linewidth]{planificacion/images/EstructuraDeDatos.eps}\\
+  \caption{Esquema del Diseño de la estructura de datos.}
+  \label{fig:plan:esquemaDiseñoEstrucDatos}
+\end{figure}
+
+
 
 \section{Construcción de Prototipos}
 
