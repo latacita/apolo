@@ -1,4 +1,4 @@
-=============================================================================%
+%============================================================================%
 % Author : Angel Tezanos Ibañez                                              %
 % Author : Pablo Sánchez Barreiro                                            %
 % Version: 2.0, 07/04/2011                                                   %
@@ -95,16 +95,16 @@ Además gracias a que es un modelo evolutivo, se permiten (y es mas, se esperan) 
 
 Las iteraciones planificadas son las siguientes:
 \begin{enumerate}
-    \item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
-    \item Importar varias fotografías, llenar pool, realizar estanterías. (Ver R03 y R04)
-    \item Mover las diapositivas a la parte central y que se queden fijadas. (Ver R05 y R06)
-    \item Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías. (Ver R07 y R08)
-    \item Poder añadir fila a la zona superior, poder descartar fila. (Ver R09 y R10)
-    \item Reordenar subsecuencias arrastrándolas entre la zona superior. (Ver R11)
-    \item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
-    \item Guardar el estado de la aplicación. (Ver R15)
-    \item Cargar la aplicación al estado. (Ver R16)
-    \item Retoques, Efectos visuales.
+	\item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
+	\item Importar varias fotografías, llenar pool, realizar estanterías. (Ver R03 y R04)
+	\item Mover las diapositivas a la parte central y que se queden fijadas. (Ver R05 y R06)
+	\item Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías. (Ver R07 y R08)
+	\item Poder añadir fila a la zona superior, poder descartar fila. (Ver R09 y R10)
+	\item Reordenar subsecuencias arrastrándolas entre la zona superior. (Ver R11)
+	\item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
+	\item Guardar el estado de la aplicación. (Ver R15)
+	\item Cargar la aplicación al estado. (Ver R16)
+	\item Retoques, Efectos visuales.
 \end{enumerate}
 
 %%% Por cada iteración (hacer las iteraciones pequeñas)
@@ -175,18 +175,18 @@ La representación de la fotografía como Diapositiva conlleva un diseño de un com
  \end{center}
 \end{figure}
 
-La interfaz gráfica es un componente muy importante en el proyecto, pues se hace hincapié en en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas: 
+La interfaz gráfica es un componente muy importante en el proyecto, pues se hace hincapié en en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas:
 
 %******
 % Esta lista queda FATAL!!! :S
 %******
 \begin{description}
-    \item{Mesa} Se encuentra en la zona inferior de la aplicación. En ella aparecerán todas las diapositivas de las correspondientes fotografías nada mas importarlas.
-    \item{Zona de Clasificación} Esta en la zona central de la aplicación, es allí donde se van ordenando y clasificando las fotografías en subsecuencial.
-    \item{Zona de subsecuencias ordenadas} Se ubica en la parte superior de la aplicación, allí se colocan las subsecuencial que formaran la secuencia final.
+	\item[Mesa] Se encuentra en la zona inferior de la aplicación. En ella aparecerán todas las diapositivas de las correspondientes fotografías nada mas importarlas.
+	\item[Zona de Clasificación] Esta en la zona central de la aplicación, es allí donde se van ordenando y clasificando las fotografías en subsecuencial.
+	\item[Zona de Subsecuencias Ordenadas] Se ubica en la parte superior de la aplicación, allí se colocan las subsecuencial que formaran la secuencia final.
 \end{description}
 
-Para ilustrar todo esto se realizo el boceto que aparece en la imagen \ref{fig:plan:esquemaDiseñoInterfaz}
+La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer boceto de la interfaz gráfica de la aplicación, donde se pueden ver las diferentes zonas mencionadas en el listado anterior.
 
 %***
 % Abierta sale en gris, en el documento se ve muy mal :S Modificarla
@@ -201,8 +201,6 @@ Para ilustrar todo esto se realizo el boceto que aparece en la imagen \ref{fig:p
 %*=============
 % Igual explicarlo un poco mejor
 %*=============
-Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}
-Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las diapositivas, como sus agrupaciones en subsecuencias y secuencias se almacenan en listas enlazadas. Se eligió este tipo de listas debido a su bajo coste computacional de insertar elementos en mitad de la lista, asi como extraerlo, operaciones muy comunes en el uso de la aplicacion.
 
 \begin{figure}[!tb]
   % Requires \usepackage{graphicx}
@@ -210,6 +208,10 @@ Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las d
   \caption{Esquema del Diseño de la estructura de datos.}
   \label{fig:plan:esquemaDiseñoEstrucDatos}
 \end{figure}
+
+
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las diapositivas, como sus agrupaciones en subsecuencias y secuencias se almacenan en listas enlazadas. Se eligió este tipo de listas debido a su bajo coste computacional de insertar elementos en mitad de la lista, asi como extraerlo, operaciones muy comunes en el uso de la aplicacion.
+
 
 
 
