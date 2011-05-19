@@ -210,7 +210,7 @@ La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer bo
 \end{figure}
 
 
-Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las diapositivas, como sus agrupaciones en subsecuencias y secuencias se almacenan en listas enlazadas. Se eligió este tipo de listas debido a su bajo coste computacional de insertar elementos en mitad de la lista, asi como extraerlo, operaciones muy comunes en el uso de la aplicacion.
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las diapositivas, como sus agrupaciones en subsecuencias y secuencias se almacenan en listas enlazadas. Se eligió este tipo de listas debido a su bajo coste computacional de insertar elementos en mitad de la lista, así como extraerlo, operaciones muy comunes en el uso de la aplicación.
 
 
 
@@ -218,3 +218,12 @@ Para completar el diseño de los artefactos que componen la aplicación, se realiz
 \section{Construcción de Prototipos}
 
 %%  Hacer una bean diapositiva, cargar una diapositiva y moverla
+El prototipo construido es una aplicación sencilla en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del  componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva. Esto puede verse en la figura \ref{fig:plan:DnD} 
+
+\begin{figure}
+    %\includegraphics[width=0.4\linewidth]{planificacion/images/EstructuraDeDatos.eps}\\
+    %%%%** FOTOS
+    %\includegraphics[width=0.4\linewidth]{planificacion/images/EstructuraDeDatos.eps}\\
+    \caption{Efecto de Drag and Drop}
+    \label{fig:plan:Dnd}
+\end{figure}

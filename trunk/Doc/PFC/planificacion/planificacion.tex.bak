@@ -1,4 +1,4 @@
-=============================================================================%
+%============================================================================%
 % Author : Angel Tezanos Ibañez                                              %
 % Author : Pablo Sánchez Barreiro                                            %
 % Version: 2.0, 07/04/2011                                                   %
@@ -40,7 +40,7 @@ El objetivo de Apolo es imitar en la medida de los posible el funcionamiento de 
 \item Dentro de la aplicación cada fotografía aparecerá mostrada como si de una diapositiva \emph{clásica} se tratara.
 \item Cada diapositiva tiene un menú asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo) o descartarla, así como otros datos de interés que se consideren relevantes.% u observar los detalles de la misma (metadatos).
 \item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
-	estas aparecerán en una de la aplicación como un conjunto de diapositivas esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{mesa}.
+	estas aparecerán en aplicación como un conjunto de diapositivas esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{mesa}.
 \item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación}. En esta zona se simularán una especie de estanterías o baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
 \item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desee.
 \item También puede cambiar la diapositiva de estantería de la misma forma, arrastrándola y soltándola en la estantería deseada.
@@ -95,16 +95,16 @@ Además gracias a que es un modelo evolutivo, se permiten (y es mas, se esperan) 
 
 Las iteraciones planificadas son las siguientes:
 \begin{enumerate}
-    \item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
-    \item Importar varias fotografías, llenar pool, realizar estanterías. (Ver R03 y R04)
-    \item Mover las diapositivas a la parte central y que se queden fijadas. (Ver R05 y R06)
-    \item Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías. (Ver R07 y R08)
-    \item Poder añadir fila a la zona superior, poder descartar fila. (Ver R09 y R10)
-    \item Reordenar subsecuencias arrastrándolas entre la zona superior. (Ver R11)
-    \item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
-    \item Guardar el estado de la aplicación. (Ver R15)
-    \item Cargar la aplicación al estado. (Ver R16)
-    \item Retoques, Efectos visuales.
+	\item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
+	\item Importar varias fotografías, llenar pool, realizar estanterías. (Ver R03 y R04)
+	\item Mover las diapositivas a la parte central y que se queden fijadas. (Ver R05 y R06)
+	\item Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías. (Ver R07 y R08)
+	\item Poder añadir fila a la zona superior, poder descartar fila. (Ver R09 y R10)
+	\item Reordenar subsecuencias arrastrándolas entre la zona superior. (Ver R11)
+	\item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
+	\item Guardar el estado de la aplicación. (Ver R15)
+	\item Cargar la aplicación al estado. (Ver R16)
+	\item Retoques, Efectos visuales.
 \end{enumerate}
 
 %%% Por cada iteración (hacer las iteraciones pequeñas)
@@ -162,12 +162,45 @@ Las iteraciones planificadas son las siguientes:
 %%  - La interfaz gráfica
 %%  - Haces un diagrama de clases con las estructuras de datos
 
+Los artefactos básicos del proyecto Apolo son la interfaz gráfica y la representación de la fotografía como diapositiva dentro de la aplicación. Son los elementos mas básicos para el funcionamiento de la aplicación.
+
+La representación de la fotografía como Diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentara evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
+
+\begin{figure}[!tb]
+ \begin{center}
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.5\linewidth]{planificacion/images/MarcoDiapositiva.eps}\\
+  \caption{Esquema del Diseño del Marco de la diapositiva.}
+  \label{fig:plan:esquemaMarcoDiapositiva}
+ \end{center}
+\end{figure}
+
+La interfaz gráfica es un componente muy importante en el proyecto, pues se hace hincapié en en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas:
+
+%******
+% Esta lista queda FATAL!!! :S
+%******
+\begin{description}
+	\item[Mesa] Se encuentra en la zona inferior de la aplicación. En ella aparecerán todas las diapositivas de las correspondientes fotografías nada mas importarlas.
+	\item[Zona de Clasificación] Esta en la zona central de la aplicación, es allí donde se van ordenando y clasificando las fotografías en subsecuencial.
+	\item[Zona de Subsecuencias Ordenadas] Se ubica en la parte superior de la aplicación, allí se colocan las subsecuencial que formaran la secuencia final.
+\end{description}
+
+La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer boceto de la interfaz gráfica de la aplicación, donde se pueden ver las diferentes zonas mencionadas en el listado anterior.
+
+%***
+% Abierta sale en gris, en el documento se ve muy mal :S Modificarla
+%***
 \begin{figure}[!tb]
   % Requires \usepackage{graphicx}
   \includegraphics[width=\linewidth]{planificacion/images/MontajeInterfazGrafica.eps}\\
   \caption{Esquema del Diseño Inicial de la Interfaz Gráfica.}
   \label{fig:plan:esquemaDiseñoInterfaz}
 \end{figure}
+
+%*=============
+% Igual explicarlo un poco mejor
+%*=============
 
 \begin{figure}[!tb]
   % Requires \usepackage{graphicx}
@@ -177,7 +210,12 @@ Las iteraciones planificadas son las siguientes:
 \end{figure}
 
 
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} que tanto las diapositivas, como sus agrupaciones en subsecuencias y secuencias se almacenan en listas enlazadas. Se eligió este tipo de listas debido a su bajo coste computacional de insertar elementos en mitad de la lista, asi como extraerlo, operaciones muy comunes en el uso de la aplicacion.
+
+
+
 
 \section{Construcción de Prototipos}
 
 %%  Hacer una bean diapositiva, cargar una diapositiva y moverla
+El prototipo construido es una aplicación sencilla en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del  componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva.
