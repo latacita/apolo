@@ -9,6 +9,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JPopupMenu;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JMenuItem;
 
 /**
@@ -25,6 +26,8 @@ import javax.swing.JMenuItem;
 
     Image marco=null;
     JLabel foto;
+    JLabel numeroFoto;
+    JLabel pesoFoto;
     
     public Diapositiva(File file){
         super();
@@ -50,15 +53,23 @@ import javax.swing.JMenuItem;
 		foto.setBounds(15, 35, 120, 90);
 		add(foto);
 		
-		JLabel numeroFoto = new JLabel("Numero");
+		numeroFoto = new JLabel("");
 		numeroFoto.setHorizontalAlignment(SwingConstants.CENTER);
 		numeroFoto.setBounds(87, 11, 53, 19);
 		add(numeroFoto);
 		
-		JLabel pesoFoto = new JLabel("Nombre");
+		pesoFoto = new JLabel("");
 		pesoFoto.setHorizontalAlignment(SwingConstants.CENTER);
 		pesoFoto.setBounds(6, 121, 141, 16);
 		add(pesoFoto);
+    }
+    
+    public void setNumeroFoto(String n){
+    	numeroFoto.setText(n);
+    }
+    
+    public void setNombreFoto(String s){
+    	pesoFoto.setText(s);
     }
     
     public void setFoto(File file) throws IOException{

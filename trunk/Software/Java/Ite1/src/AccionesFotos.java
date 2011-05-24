@@ -12,6 +12,8 @@ public class AccionesFotos {
 	
 	/**
 	 * Muestra un dialogo que ofrece la opcion de seleccionar una o varias fotos
+	 * 
+	 * Posibles mejoras, mostrar miniatura de cada foto
 	 * @param componente
 	 */
 	public void Importar(Component componente){
