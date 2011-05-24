@@ -50,7 +50,6 @@ public class AccionesFotos {
 	 * @param listaFotos
 	 */
 	public void anadirDiapositivas(Component mesa, List<File> listaFotos){
-		Diapositiva diapo = new Diapositiva(listaFotos.get(0));
 		
 	}
 }

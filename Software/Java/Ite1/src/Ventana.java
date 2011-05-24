@@ -1,12 +1,9 @@
-import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JFileChooser;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -14,14 +11,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
-
 import javax.swing.JScrollPane;
 import javax.swing.border.BevelBorder;
-import javax.swing.JLabel;
+import javax.swing.ScrollPaneConstants;
 
 
 public class Ventana extends JFrame {
 
+	private static final long serialVersionUID = 1L;
 	private JPanel PanelPrincipal;
 	private JPanel PanelMesa;
 	
@@ -49,6 +46,7 @@ public class Ventana extends JFrame {
 	 * Create the frame.
 	 */
 	public Ventana() {
+		setTitle("Apolo");
 		//Creacion de la ventana
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -69,11 +67,13 @@ public class Ventana extends JFrame {
 		mnArchivo.add(mntmSalir);
 		PanelPrincipal = new JPanel();
 		PanelPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
-		PanelPrincipal.setLayout(new BorderLayout(0, 0));
 		setContentPane(PanelPrincipal);
+		PanelPrincipal.setLayout(null);
 		
 		JScrollPane Scroll = new JScrollPane();
-		PanelPrincipal.add(Scroll, BorderLayout.CENTER);
+		Scroll.setBounds(0, 205, 1274, 770);
+		Scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		PanelPrincipal.add(Scroll);
 		
 		PanelMesa = new JPanel();
 		PanelMesa.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
@@ -90,25 +90,27 @@ public class Ventana extends JFrame {
 				
 				/*#*********************************************************
 				?¿?¿?¿?¿Por que no puedo hacer esto desde un metodo?¿?¿???¿?
-				Posibles mejoras, recentrar el espacio para que quede bonito
+				Posibles mejoras, recentrar el espacio para que quede bonito (HECHO)
+				Detectar si la fotografia esta en horizontal o vertical
 				*********************************************************#*/
+				//Calcular la separacion optima entra fotografias
+				System.out.println("Anchura Restante: " + (PanelMesa.getWidth() % dimensionDiapo));
+				System.out.println("Numero de diapo: " + (PanelMesa.getWidth() / dimensionDiapo));
+				separacionEntreDiapo = (PanelMesa.getWidth() % dimensionDiapo) / (PanelMesa.getWidth() / dimensionDiapo);
 				//Colocar fotografias 
 				int posicionX=separacionEntreDiapo;
 				int posicionY=separacionEntreDiapo;
 				for (File f: af.getListaFotos()){
 					//Cargamos Marco
-					Diapositiva diapo = new Diapositiva(new File ("C:/Users/Angel/workspace/Proyecto/src/images/HDiapositiva.png"));
+					Diapositiva diapo = new Diapositiva(new File ("HDiapositiva.png"));
 					try {
 						diapo.setFoto(f);
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}					
+						} catch (IOException e) {e.printStackTrace();}					
 					diapo.setBounds(posicionX, posicionY, dimensionDiapo, dimensionDiapo);
 					PanelMesa.add(diapo);
 					posicionX+=separacionEntreDiapo + dimensionDiapo;
-					if (posicionX + dimensionDiapo > Toolkit.getDefaultToolkit().getScreenSize().width){
-						posicionX=12;
+					if (posicionX + dimensionDiapo > PanelMesa.getWidth()){
+						posicionX=separacionEntreDiapo;
 						posicionY+=separacionEntreDiapo + dimensionDiapo;
 					}
 				}
