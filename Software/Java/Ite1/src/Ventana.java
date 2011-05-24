@@ -100,12 +100,17 @@ public class Ventana extends JFrame {
 				//Colocar fotografias 
 				int posicionX=separacionEntreDiapo;
 				int posicionY=separacionEntreDiapo;
+				int numero = 0;
 				for (File f: af.getListaFotos()){
 					//Cargamos Marco
 					Diapositiva diapo = new Diapositiva(new File ("HDiapositiva.png"));
 					try {
 						diapo.setFoto(f);
-						} catch (IOException e) {e.printStackTrace();}					
+						} catch (IOException e) {e.printStackTrace();}
+					//Colocar nombre y Numero
+					diapo.setNumeroFoto(new Integer(numero).toString());
+					diapo.setNombreFoto(f.getName());
+					//Posicion y tamano
 					diapo.setBounds(posicionX, posicionY, dimensionDiapo, dimensionDiapo);
 					PanelMesa.add(diapo);
 					posicionX+=separacionEntreDiapo + dimensionDiapo;
