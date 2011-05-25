@@ -10,7 +10,6 @@ import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
-import java.io.IOException;
 import javax.swing.JScrollPane;
 import javax.swing.border.BevelBorder;
 import javax.swing.ScrollPaneConstants;
@@ -33,6 +32,7 @@ public class Ventana extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
+					new MensajeInformacion("<html>Bienvenido a Apolo, estamos siendo implementado. <br><center> Modo Beta</center></html>");
 					Ventana frame = new Ventana();
 					frame.setVisible(true);
 				} catch (Exception e) {
@@ -64,29 +64,42 @@ public class Ventana extends JFrame {
 		mnArchivo.add(mntmImportar);
 		
 		JMenuItem mntmSalir = new JMenuItem("Salir");
+		mntmSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
 		mnArchivo.add(mntmSalir);
+		
 		PanelPrincipal = new JPanel();
 		PanelPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(PanelPrincipal);
 		PanelPrincipal.setLayout(null);
+		setContentPane(PanelPrincipal);
 		
-		JScrollPane Scroll = new JScrollPane();
-		Scroll.setBounds(0, 205, 1274, 770);
+		//Panel Mesa
+		PanelMesa = new JPanel();
+		PanelMesa.setLayout(null);
+		PanelMesa.setPreferredSize(new Dimension(screenSize.width-30, screenSize.height/2-62)); //-30 por scroll
+
+		JScrollPane Scroll = new JScrollPane(PanelMesa);
+		Scroll.setViewportBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
+		//Scroll solo vertical
+		Scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		Scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		//Posicionamiento del PanelScroll
+		//0 separacion de la derecha, mitad de altura que la ventana, achura del scroll, -55 tamano cabeza ventana
+		Scroll.setBounds(0, screenSize.height/2, screenSize.width-5, screenSize.height/2-55);
+		//Anadimos el Scroll a la ventana
 		PanelPrincipal.add(Scroll);
 		
-		PanelMesa = new JPanel();
-		PanelMesa.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		Scroll.setViewportView(PanelMesa);
-		PanelMesa.setLayout(null);
 		
 		
 		//Controlador Importar
 		mntmImportar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//Seleccion de directorios o fotos
-				AccionesFotos af = new AccionesFotos();
-				af.Importar(Ventana.this);
+				Mesa af = new Mesa();
+				af.importar(Ventana.this);
 				
 				/*#*********************************************************
 				?¿?¿?¿?¿Por que no puedo hacer esto desde un metodo?¿?¿???¿?
@@ -103,10 +116,7 @@ public class Ventana extends JFrame {
 				int numero = 0;
 				for (File f: af.getListaFotos()){
 					//Cargamos Marco
-					Diapositiva diapo = new Diapositiva(new File ("HDiapositiva.png"));
-					try {
-						diapo.setFoto(f);
-						} catch (IOException e) {e.printStackTrace();}
+					Diapositiva diapo = new Diapositiva(f);
 					//Colocar nombre y Numero
 					diapo.setNumeroFoto(new Integer(numero).toString());
 					diapo.setNombreFoto(f.getName());
@@ -117,6 +127,10 @@ public class Ventana extends JFrame {
 					if (posicionX + dimensionDiapo > PanelMesa.getWidth()){
 						posicionX=separacionEntreDiapo;
 						posicionY+=separacionEntreDiapo + dimensionDiapo;
+						/*if(posicionY > PanelMesa.getHeight()){
+							PanelMesa.setPreferredSize(new Dimension(PanelMesa.getWidth(), PanelMesa.getHeight()+dimensionDiapo));
+							System.out.println(PanelMesa.getSize());
+						}*/
 					}
 				}
 				//Importante, hacer el repaint...

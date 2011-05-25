@@ -11,6 +11,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.JMenuItem;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**
  * Clase Diapositiva.
@@ -29,25 +31,17 @@ import javax.swing.JMenuItem;
     JLabel numeroFoto;
     JLabel pesoFoto;
     
-    public Diapositiva(File file){
+    public Diapositiva(final File file){
         super();
+        File marco = new File ("HDiapositiva.png");
         setLayout(null);
         
         //Cargamos el marco
         try {
-			setBackground(file);
+			setBackground(marco);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		JPopupMenu popupMenu = new JPopupMenu();
-		addPopup(this, popupMenu);
-		
-		JMenuItem mntmVisualizar = new JMenuItem("Visualizar");
-		popupMenu.add(mntmVisualizar);
-		
-		JMenuItem mntmDescartar = new JMenuItem("Descartar");
-		popupMenu.add(mntmDescartar);
 		//Cargamos el Jlabel
 		foto = new JLabel("");
 		foto.setBounds(15, 35, 120, 90);
@@ -56,12 +50,31 @@ import javax.swing.JMenuItem;
 		numeroFoto = new JLabel("");
 		numeroFoto.setHorizontalAlignment(SwingConstants.CENTER);
 		numeroFoto.setBounds(87, 11, 53, 19);
+		try {
+			setFoto(file);
+		} catch (IOException e) {e.printStackTrace();
+		}
 		add(numeroFoto);
 		
 		pesoFoto = new JLabel("");
 		pesoFoto.setHorizontalAlignment(SwingConstants.CENTER);
 		pesoFoto.setBounds(6, 121, 141, 16);
 		add(pesoFoto);
+		
+
+		JPopupMenu popupMenu = new JPopupMenu();
+		addPopup(this, popupMenu);
+		
+		JMenuItem mntmVisualizar = new JMenuItem("Visualizar");
+		mntmVisualizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new VisualizadorImagen(file);
+			}
+		});
+		popupMenu.add(mntmVisualizar);
+		
+		JMenuItem mntmDescartar = new JMenuItem("Descartar");
+		popupMenu.add(mntmDescartar);
     }
     
     public void setNumeroFoto(String n){
