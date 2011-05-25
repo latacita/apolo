@@ -6,7 +6,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 
-public class AccionesFotos {
+public class Mesa {
 	
 	private LinkedList<File> listaFotos = new LinkedList<File>();
 	
@@ -16,7 +16,7 @@ public class AccionesFotos {
 	 * Posibles mejoras, mostrar miniatura de cada foto
 	 * @param componente
 	 */
-	public void Importar(Component componente){
+	public void importar(Component componente){
 		//Seleccion de directorios o fotos
 		JFileChooser seleccionador = new JFileChooser();
 				//**Permite seleccionar directorios.
