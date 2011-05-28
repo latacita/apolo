@@ -1,57 +1,116 @@
-import java.awt.Component;
 import java.io.File;
 import java.util.LinkedList;
-import java.util.List;
-import javax.swing.JFileChooser;
-import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.JPanel;
+import java.awt.GridLayout;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.BorderLayout;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
 
 
-public class Mesa {
+/**
+ * Panel que representa la Mesa de la aplicacion
+ * Donde se depositaran las diapositivas para su seleccion y ordenacion
+ * @author Angel
+ *
+ */
+public class Mesa extends JPanel implements ComponentListener{
 	
-	private LinkedList<File> listaFotos = new LinkedList<File>();
+	/** Autogenerado*/
+	private static final long serialVersionUID = 1L;
+	
+	/** Atributos */
+	private LinkedList<Diapositiva> diapositivasEnLaMesa;
+	private JScrollPane scrollPane;
+	private JPanel panel;
 	
 	/**
-	 * Muestra un dialogo que ofrece la opcion de seleccionar una o varias fotos
+	 * Mesa es un panel, que dentro contiene un scrollpane y dentro 
+	 * de ese un panel donde van apareciendo las diapositivas.
+	 */
+	public Mesa() {
+		//Tamaño inicial
+		setSize(800, 600);
+		setLayout(new BorderLayout(0, 0));
+		
+		//Scroll
+		scrollPane = new JScrollPane();
+		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		add(scrollPane, BorderLayout.CENTER);
+		scrollPane.addComponentListener(this);
+		
+		//Panel interno
+		panel = new JPanel();
+		panel.setSize(800, 600);
+		scrollPane.setViewportView(panel);
+		panel.setLayout(new GridLayout(0, panel.getWidth() / Diapositiva.tamDiapo, 5, 5));
+		
+		//Inicializacion de lista.
+		diapositivasEnLaMesa = new LinkedList<Diapositiva>();
+	}
+	
+	/**
+	 * Anade la diapositiva al panel
 	 * 
-	 * Posibles mejoras, mostrar miniatura de cada foto
-	 * @param componente
+	 * Posibles mejoras, recentrar el espacio para que quede bonito
+	 * Detectar si la fotografia esta en horizontal o vertical
+	 *
+	 * @param foto
 	 */
-	public void importar(Component componente){
-		//Seleccion de directorios o fotos
-		JFileChooser seleccionador = new JFileChooser();
-				//**Permite seleccionar directorios.
-				//**seleccionador.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-		//Seleccionar varios ficheros
-		seleccionador.setMultiSelectionEnabled(true);
-		//Filtro de archivos
-		FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG Y PNG", "jpg", "png");
-		seleccionador.setFileFilter(filter);
-		//Abrimos dialogo
-		int estado = seleccionador.showOpenDialog(componente);
+	public void addDiapositiva(File foto){ 
 		
-		
-		//Opcion aceptada
-		if (estado == JFileChooser.APPROVE_OPTION){
-			for (File archivo : seleccionador.getSelectedFiles()){
-				listaFotos.add(archivo);
+		//Creamos la diapositiva y anadir a lista
+		Diapositiva diapo = new Diapositiva(foto);
+		diapositivasEnLaMesa.add(diapo);
+		//Colocar nombre y Numero
+		diapo.setNumeroFoto(String.valueOf(diapositivasEnLaMesa.size()));
+		diapo.setNombreFoto(foto.getName());
+		//Anadir
+		panel.add(diapo);
+		//Actualizar visualizacion.
+		panel.updateUI();
+	}
+	
+	/** Anade una serie de diapositivas paradas como array de Files*/
+	public boolean addDiapositiva(File[] files){
+		if (files != null){
+			for(File f: files){
+				addDiapositiva(f);
 			}
+		}else{
+			return false;
 		}
+		return true;
 	}
 	
-	/**
-	 * Retorna la lista de archivos seleccionados
-	 * @return
-	 */
-	public LinkedList<File> getListaFotos(){
-		return listaFotos;
+	/* METODOS QUE OBLIGA A IMPLEMENTAR ComponentListener*/
+
+	@Override
+	public void componentHidden(ComponentEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void componentMoved(ComponentEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 	
-	/**
-	 * Añade a componente una diapositiva por cada foto que 
-	 * haya en la lista.
-	 * @param listaFotos
-	 */
-	public void anadirDiapositivas(Component mesa, List<File> listaFotos){
+	/** Al redimensionar, calcula el nuevo numero de columnas */ //Hay que depurar un poco esto.
+	@Override
+	public void componentResized(ComponentEvent e) {
+		if (e.getComponent().getWidth() > Diapositiva.tamDiapo)
+            ((java.awt.GridLayout)panel.getLayout()).setColumns(
+                    e.getComponent().getWidth() / (Diapositiva.tamDiapo + 10));
+        panel.doLayout();
+	}
+
+	@Override
+	public void componentShown(ComponentEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 }

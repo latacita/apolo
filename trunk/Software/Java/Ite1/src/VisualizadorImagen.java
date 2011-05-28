@@ -15,15 +15,22 @@ import javax.swing.JSeparator;
 
 public class VisualizadorImagen extends JDialog {
 
+	/** Autogenerado */
+	private static final long serialVersionUID = 1L;
+	
+	/** Atributos */
 	private final JPanel contentPanel = new JPanel();
 
 	/**
 	 * Create the dialog.
 	 */
-	public VisualizadorImagen(){
-		this(new File ("C:/Users/Angel/Documents/Downloads/actividadpublicacionarchivosvideo.png"));
+	public VisualizadorImagen(String str){
+		this(new File (str));
 	}
 	
+	/**
+	 * @wbp.parser.constructor
+	 */
 	public VisualizadorImagen(File foto) {
 		JLabel lblFoto;
 		setTitle("Visualizador de Imagenes");

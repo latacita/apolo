@@ -1,6 +1,5 @@
 import java.awt.*;
 import java.io.*;
-import java.net.URL;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -9,7 +8,6 @@ import javax.swing.SwingConstants;
 import javax.swing.JPopupMenu;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
 import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -24,43 +22,39 @@ import java.awt.event.ActionEvent;
  *
  */
  public class Diapositiva extends JPanel {
- private static final long serialVersionUID = -3488034684833395929L;
+	 
+	 /**
+	  * Atributos de la clase
+	  */
+	 private static final long serialVersionUID = -3488034684833395929L;
+	 public static final int tamDiapo = 150;
+	 private final String stringMarco = "HDiapositiva.png";
+	 private final File foto;
+	 
 
-    Image marco=null;
-    JLabel foto;
-    JLabel numeroFoto;
-    JLabel pesoFoto;
+	 Image marco=null;
+	 JLabel lFoto;
+	 JLabel lNumeroDiapo;
+	 JLabel lNombreFoto;
     
-    public Diapositiva(final File file){
+    public Diapositiva(File file){
         super();
-        File marco = new File ("HDiapositiva.png");
+        setPreferredSize(new Dimension(tamDiapo,tamDiapo));
         setLayout(null);
+        foto = file;
         
-        //Cargamos el marco
-        try {
-			setBackground(marco);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		//Cargamos el Jlabel
-		foto = new JLabel("");
-		foto.setBounds(15, 35, 120, 90);
-		add(foto);
+        //cargar marco
+        cargaMarco(new File(stringMarco));
+
+		//Cargamos la imagen
+        cargaImagen(file);
+        
+		//Cargamos label que indica numero
+        cargaNumeroDiapo();
 		
-		numeroFoto = new JLabel("");
-		numeroFoto.setHorizontalAlignment(SwingConstants.CENTER);
-		numeroFoto.setBounds(87, 11, 53, 19);
-		try {
-			setFoto(file);
-		} catch (IOException e) {e.printStackTrace();
-		}
-		add(numeroFoto);
-		
-		pesoFoto = new JLabel("");
-		pesoFoto.setHorizontalAlignment(SwingConstants.CENTER);
-		pesoFoto.setBounds(6, 121, 141, 16);
-		add(pesoFoto);
-		
+		//Cargar label nombre foto
+        cargarNombreFoto(file);
+				
 
 		JPopupMenu popupMenu = new JPopupMenu();
 		addPopup(this, popupMenu);
@@ -68,7 +62,7 @@ import java.awt.event.ActionEvent;
 		JMenuItem mntmVisualizar = new JMenuItem("Visualizar");
 		mntmVisualizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new VisualizadorImagen(file);
+				new VisualizadorImagen(foto);
 			}
 		});
 		popupMenu.add(mntmVisualizar);
@@ -77,20 +71,49 @@ import java.awt.event.ActionEvent;
 		popupMenu.add(mntmDescartar);
     }
     
+    private void cargarNombreFoto(File file){
+		lNombreFoto = new JLabel("");
+		lNombreFoto.setHorizontalAlignment(SwingConstants.CENTER);
+		lNombreFoto.setBounds(6, 121, 141, 16);
+		setNombreFoto(file.getName());
+		add(lNombreFoto);
+    }
+    
+    private void cargaNumeroDiapo(){
+    	lNumeroDiapo = new JLabel("");
+    	lNumeroDiapo.setHorizontalAlignment(SwingConstants.CENTER);
+    	lNumeroDiapo.setBounds(87, 11, 53, 19);
+		add(lNumeroDiapo);
+    }
+    
+    private void cargaImagen(File file){
+    	lFoto = new JLabel();
+		lFoto.setBounds(15, 35, 120, 90);
+		try {
+			setFoto(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		add(lFoto);
+    }
+    private void cargaMarco(File marco){
+    	try {
+			setBackground(marco);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    
     public void setNumeroFoto(String n){
-    	numeroFoto.setText(n);
+    	lNumeroDiapo.setText(n);
     }
     
     public void setNombreFoto(String s){
-    	pesoFoto.setText(s);
+    	lNombreFoto.setText(s);
     }
     
     public void setFoto(File file) throws IOException{
-    	foto.setIcon(new ImageIcon((new ImageIcon(file.toString()).getImage().getScaledInstance(120, 90, Image.SCALE_SMOOTH))));
-    }
-    
-    public void setFoto(URL url) throws IOException{
-    	foto.setIcon(new ImageIcon((new ImageIcon(url.toString()).getImage().getScaledInstance(120, 90, Image.SCALE_SMOOTH))));
+    	lFoto.setIcon(new ImageIcon((new ImageIcon(file.toString()).getImage().getScaledInstance(120, 90, Image.SCALE_FAST))));
     }
 
     public void setBackground(File file) throws IOException{
@@ -98,20 +121,6 @@ import java.awt.event.ActionEvent;
             marco=null;
         else
             marco=ImageIO.read(file);
-    }
-
-    public void setBackground(URL url) throws IOException{
-        if (url==null)
-            marco=null;
-        else
-            marco=ImageIO.read(url);
-    }
-    
-    public void setBackground(Image img) throws IOException{
-        if (img==null)
-            marco=null;
-        else
-            marco=img;
     }
 
     @Override
