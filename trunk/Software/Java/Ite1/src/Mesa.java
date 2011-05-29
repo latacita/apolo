@@ -20,7 +20,7 @@ public class Mesa extends JPanel implements ComponentListener{
 	private static final long serialVersionUID = 1L;
 	
 	/** Atributos */
-	private LinkedList<Diapositiva> diapositivasEnLaMesa;
+	private LinkedList<Diapositiva> listaDiapositivas;
 	private JScrollPane scrollPane;
 	private JPanel panel;
 	
@@ -47,7 +47,7 @@ public class Mesa extends JPanel implements ComponentListener{
 		panel.setLayout(new GridLayout(0, panel.getWidth() / Diapositiva.tamDiapo, 5, 5));
 		
 		//Inicializacion de lista.
-		diapositivasEnLaMesa = new LinkedList<Diapositiva>();
+		listaDiapositivas = new LinkedList<Diapositiva>();
 	}
 	
 	/**
@@ -60,29 +60,30 @@ public class Mesa extends JPanel implements ComponentListener{
 	 * @param foto
 	 */
 	public void addDiapositiva(File foto){ 
-		
 		//Creamos la diapositiva y anadir a lista
 		Diapositiva diapo = new Diapositiva(foto);
-		diapositivasEnLaMesa.add(diapo);
+		listaDiapositivas.add(diapo);
 		//Colocar nombre y Numero
-		diapo.setNumeroFoto(String.valueOf(diapositivasEnLaMesa.size()));
+		diapo.setNumeroFoto(String.valueOf(listaDiapositivas.size()));
 		diapo.setNombreFoto(foto.getName());
 		//Anadir
 		panel.add(diapo);
-		//Actualizar visualizacion.
-		panel.updateUI();
 	}
 	
 	/** Anade una serie de diapositivas paradas como array de Files*/
 	public boolean addDiapositiva(File[] files){
-		if (files != null){
-			for(File f: files){
-				addDiapositiva(f);
-			}
-		}else{
-			return false;
-		}
+		VentanaDeEspera espera = new VentanaDeEspera(this);
+		espera.setVisible(true);
+		ThreadAddDiapositiva hilo = new ThreadAddDiapositiva(this, files, espera);
+		hilo.execute();
 		return true;
+	}
+	
+	public LinkedList<Diapositiva> getListaDiapositivas(){
+		return listaDiapositivas;
+	}
+	public JPanel getPanelDiapositivas(){
+		return panel;
 	}
 	
 	/* METODOS QUE OBLIGA A IMPLEMENTAR ComponentListener*/
