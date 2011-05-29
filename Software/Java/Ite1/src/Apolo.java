@@ -22,7 +22,6 @@ public class Apolo {
 			public void run() {
 				try {
 					Apolo window = new Apolo();
-					new VentanaDeEspera().setVisible(true);
 					new MensajeInformacion("<html>Bienvenido a Apolo, estamos siendo implementado. <br><center> Modo Beta</center></html>");
 					window.frmApolo.setVisible(true);
 				} catch (Exception e) {
@@ -45,7 +44,7 @@ public class Apolo {
 	private void initialize() {
 		frmApolo = new JFrame();
 		frmApolo.setTitle("Apolo");
-		frmApolo.setSize(800, 600);
+		frmApolo.setSize(825, 600);
 		//Maximizar
 		//frmApolo.setExtendedState(frmApolo.MAXIMIZED_BOTH);
 		//Centrar

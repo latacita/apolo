@@ -5,14 +5,15 @@ import javax.swing.SwingConstants;
 import javax.swing.JProgressBar;
 import java.awt.Color;
 import javax.swing.JPanel;
-
-import transparentWindows.AWTUtilitiesWrapper;
+import javax.swing.UIManager;
 
 public class VentanaDeEspera extends JDialog{
 
 	/** AUTOGENERADO */
 	private static final long serialVersionUID = 1L;
 
+	JProgressBar progressBar;
+	
 	/**
 	 * Create the dialog.
 	 */
@@ -20,13 +21,12 @@ public class VentanaDeEspera extends JDialog{
 		this(null);
 	}
 	public VentanaDeEspera(Component padre) {
-        // le asignamos la opacidad de 0.9f 
-        AWTUtilitiesWrapper.setWindowOpacity(this, 0.9f);
-		getContentPane().setBackground(Color.GRAY);
+		
+		getContentPane().setBackground(UIManager.getColor("Button.darkShadow"));
 		setBackground(Color.GRAY);
 		setUndecorated(true); 
 		setResizable(false);
-		setModal(true);
+		setAlwaysOnTop(true);
 		setSize(529, 131);
 		setLocationRelativeTo(padre);
 		getContentPane().setLayout(null);
@@ -42,10 +42,14 @@ public class VentanaDeEspera extends JDialog{
 			lblPorFavorEspere.setHorizontalAlignment(SwingConstants.CENTER);
 		}
 		{
-			JProgressBar progressBar = new JProgressBar();
+			progressBar = new JProgressBar();
 			progressBar.setBounds(12, 65, 495, 20);
 			panel.add(progressBar);
-			progressBar.setIndeterminate(true);
+			//progressBar.setIndeterminate(true);
 		}
+	}
+	
+	public JProgressBar getJProgressBar(){
+		return progressBar;
 	}
 }
