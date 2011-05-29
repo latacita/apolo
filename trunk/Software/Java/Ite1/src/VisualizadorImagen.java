@@ -45,7 +45,7 @@ public class VisualizadorImagen extends JDialog {
 		setResizable(false);
 		//Centrar y dar tamaño a la ventana
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		setBounds(screenSize.width/2-dimensioFoto.width/2, screenSize.height/2-dimensioFoto.height/2, dimensioFoto.width+5, dimensioFoto.height+60);
+		setBounds(screenSize.width/2-dimensioFoto.width/2, screenSize.height/2-dimensioFoto.height/2-100, dimensioFoto.width+5, dimensioFoto.height+60);
 		
 		{
 			lblFoto = new JLabel("");
@@ -84,7 +84,7 @@ public class VisualizadorImagen extends JDialog {
 	 * En otras palabras, si no entra se reescala para que entre.
 	 */
 	public Dimension calcularDimensionesFoto(ImageIcon imagen){
-		int margen = 100; //margen que dejamos para que la ventana no ocupe todo
+		int margen = 300; //margen que dejamos para que la ventana no ocupe todo
 		Dimension dimensionFinal = new Dimension();
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		Dimension dimensionFoto = new Dimension(imagen.getIconWidth(),imagen.getIconHeight());

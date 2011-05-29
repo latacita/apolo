@@ -80,6 +80,11 @@ public class Apolo {
 		menuBar.add(mnAcercaDe);
 		
 		JMenuItem mntmAcercaDe = new JMenuItem("Acerca de Apolo");
+		mntmAcercaDe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new VentanaAcercaDe();
+			}
+		});
 		mnAcercaDe.add(mntmAcercaDe);
 	}
 }

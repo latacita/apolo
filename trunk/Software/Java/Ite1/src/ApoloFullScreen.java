@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 
-public class VentanaMaximizada {
+public class ApoloFullScreen {
 
 	private JFrame frmVentana;
 	private Mesa mesa;
@@ -22,7 +22,7 @@ public class VentanaMaximizada {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					VentanaMaximizada window = new VentanaMaximizada();
+					ApoloFullScreen window = new ApoloFullScreen();
 					new MensajeInformacion("<html>Bienvenido a Apolo, estamos siendo implementado. <br><center> Modo Beta</center></html>");
 					window.frmVentana.setVisible(true);
 				} catch (Exception e) {
@@ -35,7 +35,7 @@ public class VentanaMaximizada {
 	/**
 	 * Create the application.
 	 */
-	public VentanaMaximizada() {
+	public ApoloFullScreen() {
 		initialize();
 	}
 
@@ -86,6 +86,11 @@ public class VentanaMaximizada {
 		menuBar.add(mnAcercaDe);
 		
 		JMenuItem mntmAcercaDe = new JMenuItem("Acerca de Apolo");
+		mntmAcercaDe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new VentanaAcercaDe();
+			}
+		});
 		mnAcercaDe.add(mntmAcercaDe);
 	}
 }
