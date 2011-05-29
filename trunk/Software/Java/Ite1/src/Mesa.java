@@ -8,7 +8,6 @@ import java.awt.BorderLayout;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 
-
 /**
  * Panel que representa la Mesa de la aplicacion
  * Donde se depositaran las diapositivas para su seleccion y ordenacion
@@ -56,6 +55,7 @@ public class Mesa extends JPanel implements ComponentListener{
 	 * 
 	 * Posibles mejoras, recentrar el espacio para que quede bonito
 	 * Detectar si la fotografia esta en horizontal o vertical
+	 * Utilizar un worker! Mirar web apuntada. SwingWorker
 	 *
 	 * @param foto
 	 */
