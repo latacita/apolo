@@ -22,6 +22,7 @@ public class Apolo {
 			public void run() {
 				try {
 					Apolo window = new Apolo();
+					new MensajeInformacion("<html>Bienvenido a Apolo, estamos siendo implementado. <br><center> Modo Beta</center></html>");
 					window.frmApolo.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -48,7 +49,7 @@ public class Apolo {
 		//frmApolo.setExtendedState(frmApolo.MAXIMIZED_BOTH);
 		//Centrar
 		frmApolo.setLocationRelativeTo(null);
-		frmApolo.setMinimumSize(new Dimension(Diapositiva.tamDiapo +50 , Diapositiva.tamDiapo+55));
+		frmApolo.setMinimumSize(new Dimension(Diapositiva.tamDiapo + 40 , Diapositiva.tamDiapo+70));
 		frmApolo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmApolo.getContentPane().setLayout(new BorderLayout(0, 0));
 		

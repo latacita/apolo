@@ -22,13 +22,12 @@ import java.awt.event.ActionEvent;
  *
  */
  public class Diapositiva extends JPanel {
-	 
-	 /**
-	  * Atributos de la clase
-	  */
+
+	 /** Atributos de la clase */
 	 private static final long serialVersionUID = -3488034684833395929L;
 	 public static final int tamDiapo = 150;
 	 private final String stringMarco = "HDiapositiva.png";
+	 private int numero;
 	 private final File foto;
 	 
 
@@ -105,7 +104,12 @@ import java.awt.event.ActionEvent;
     }
     
     public void setNumeroFoto(String n){
+    	numero = Integer.parseInt(n);
     	lNumeroDiapo.setText(n);
+    }
+    
+    public int getNumero(){
+    	return numero;
     }
     
     public void setNombreFoto(String s){

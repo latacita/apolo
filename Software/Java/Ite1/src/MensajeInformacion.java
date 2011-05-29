@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JButton;
@@ -17,7 +18,7 @@ import javax.swing.SwingConstants;
  * Se le debe pasar el texto que debe mostrar
  * @author Angel
  */
-public class MensajeInformacion extends JDialog {
+public class MensajeInformacion extends JDialog{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -27,13 +28,16 @@ public class MensajeInformacion extends JDialog {
 	 * Create the dialog.
 	 */
 	public MensajeInformacion(String msj) {
-		this("Apolo Informa", msj);
+		this(null, "Apolo Informa", msj);
 	}
-
-	public MensajeInformacion(String msjTitulo, String msj) {
+	public MensajeInformacion(Component padre, String msj) {
+		this(padre, "Apolo Informa", msj);
+	}
+	public MensajeInformacion(Component padre, String msjTitulo, String msj) {
 		setResizable(false);
 		setModal(true);
 		setTitle(msjTitulo);
+		setLocationRelativeTo(padre);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); 
 		setBounds(screenSize.width/2-644/2, screenSize.height/2-500/2, 644, 201); //Centrar el mensaje Un poco mas arriba del centro
 		getContentPane().setLayout(new BorderLayout());

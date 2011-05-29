@@ -23,6 +23,7 @@ public class VentanaMaximizada {
 			public void run() {
 				try {
 					VentanaMaximizada window = new VentanaMaximizada();
+					new MensajeInformacion("<html>Bienvenido a Apolo, estamos siendo implementado. <br><center> Modo Beta</center></html>");
 					window.frmVentana.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,6 +47,7 @@ public class VentanaMaximizada {
 		frmVentana.setResizable(false);
 		frmVentana.setTitle("Apolo");
 		frmVentana.setSize(800, 600);
+		frmVentana.setUndecorated(true);
 		//Maximizar
 		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
 		frmVentana.setSize(screen);
@@ -55,7 +57,7 @@ public class VentanaMaximizada {
 		frmVentana.getContentPane().setLayout(null);
 		
 		mesa = new Mesa();
-		mesa.setBounds(12, (int) screen.getHeight() / 2, (int) screen.getWidth()-24, (int) (screen.getHeight()/2) - 65);
+		mesa.setBounds(12, (int) screen.getHeight() / 2, (int) screen.getWidth()-24, (int) (screen.getHeight()/2) - 35);
 		frmVentana.getContentPane().add(mesa, BorderLayout.CENTER);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -73,6 +75,11 @@ public class VentanaMaximizada {
 		mnAbrir.add(mntmImportar);
 		
 		JMenuItem mntmCerrar = new JMenuItem("Cerrar");
+		mntmCerrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
 		mnAbrir.add(mntmCerrar);
 		
 		JMenu mnAcercaDe = new JMenu("Ayuda");
