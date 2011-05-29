@@ -22,6 +22,7 @@ public class Apolo {
 			public void run() {
 				try {
 					Apolo window = new Apolo();
+					new VentanaDeEspera().setVisible(true);
 					new MensajeInformacion("<html>Bienvenido a Apolo, estamos siendo implementado. <br><center> Modo Beta</center></html>");
 					window.frmApolo.setVisible(true);
 				} catch (Exception e) {
@@ -51,9 +52,12 @@ public class Apolo {
 		frmApolo.setLocationRelativeTo(null);
 		frmApolo.setMinimumSize(new Dimension(Diapositiva.tamDiapo + 40 , Diapositiva.tamDiapo+70));
 		frmApolo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmApolo.getContentPane().setLayout(new BorderLayout(0, 0));
+		frmApolo.getContentPane().setLayout(new BorderLayout(5, 5));
 		
 		mesa = new Mesa();
+		BorderLayout borderLayout = (BorderLayout) mesa.getLayout();
+		borderLayout.setVgap(5);
+		borderLayout.setHgap(5);
 		frmApolo.getContentPane().add(mesa, BorderLayout.CENTER);
 		
 		JMenuBar menuBar = new JMenuBar();
