@@ -33,6 +33,9 @@ public class MensajeInformacion extends JDialog{
 	public MensajeInformacion(Component padre, String msj) {
 		this(padre, "Apolo Informa", msj);
 	}
+	/**
+	 * @wbp.parser.constructor
+	 */
 	public MensajeInformacion(Component padre, String msjTitulo, String msj) {
 		setResizable(false);
 		setModal(true);
