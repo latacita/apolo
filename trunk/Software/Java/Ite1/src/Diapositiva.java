@@ -29,18 +29,23 @@ import java.awt.event.ActionEvent;
 	 private final String stringMarco = "HDiapositiva.png";
 	 private int numero;
 	 private final File foto;
+	 private Diapositiva diapositiva;
 	 
-
+	 private final Mesa mesa;
 	 Image marco=null;
 	 JLabel lFoto;
 	 JLabel lNumeroDiapo;
 	 JLabel lNombreFoto;
     
-    public Diapositiva(File file){
+    public Diapositiva(Mesa m, File file){
         super();
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
         setPreferredSize(new Dimension(tamDiapo,tamDiapo));
         setLayout(null);
         foto = file;
+        this.mesa = m;
+        diapositiva = this;
+        
         
         //cargar marco
         cargaMarco(new File(stringMarco));
@@ -54,20 +59,43 @@ import java.awt.event.ActionEvent;
 		//Cargar label nombre foto
         cargarNombreFoto(file);
 				
-
-		JPopupMenu popupMenu = new JPopupMenu();
+        cargarPopups();
+        
+        cargarControlesRaton(this);
+    }
+    
+    /** Carga los Popups que tendran las diapositivas */
+    private void cargarPopups(){
+    	JPopupMenu popupMenu = new JPopupMenu();
 		addPopup(this, popupMenu);
 		
 		JMenuItem mntmVisualizar = new JMenuItem("Visualizar");
 		mntmVisualizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new VisualizadorImagen(foto);
+				new VisorDeImagenes(mesa.getListaDiapositivas(),Integer.parseInt(lNumeroDiapo.getText())-1);
 			}
 		});
 		popupMenu.add(mntmVisualizar);
 		
 		JMenuItem mntmDescartar = new JMenuItem("Descartar");
+		mntmDescartar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				mesa.removeDiapositiva(diapositiva);
+			}
+		});
 		popupMenu.add(mntmDescartar);
+    }
+    
+    private void cargarControlesRaton(JPanel p){
+        p.addMouseListener(new MouseAdapter() {
+        	@Override
+        	public void mouseClicked(MouseEvent e) {
+        		if (e.getClickCount() == 2 && e.getButton() == MouseEvent.BUTTON1) {
+        			//se ha hecho dos click con el boton primero (izquierdo)
+        				new VisorDeImagenes(mesa.getListaDiapositivas(),Integer.parseInt(lNumeroDiapo.getText())-1);
+        			}
+        	}
+        });
     }
     
     private void cargarNombreFoto(File file){
@@ -103,9 +131,17 @@ import java.awt.event.ActionEvent;
 		}
     }
     
+    public File getFile(){
+    	return foto;
+    }
+    
     public void setNumeroFoto(String n){
     	numero = Integer.parseInt(n);
     	lNumeroDiapo.setText(n);
+    }
+    public void setNumeroFoto(int n){
+    	numero = n;;
+    	lNumeroDiapo.setText(Integer.toString(numero));
     }
     
     public int getNumero(){

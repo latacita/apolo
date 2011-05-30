@@ -39,6 +39,7 @@ public class MensajeInformacion extends JDialog{
 	public MensajeInformacion(Component padre, String msjTitulo, String msj) {
 		setResizable(false);
 		setModal(true);
+		setAlwaysOnTop(true);
 		setTitle(msjTitulo);
 		setLocationRelativeTo(padre);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); 

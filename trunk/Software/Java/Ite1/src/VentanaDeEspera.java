@@ -7,11 +7,17 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 
+/**
+ * Clase que dibuja una ventana que se utiliza cuando se
+ * realizan procesos que requieran un cierto tiempo.
+ * Indica al usuario el progreso de la tarea.
+ * @author Angel
+ *
+ */
 public class VentanaDeEspera extends JDialog{
 
 	/** AUTOGENERADO */
 	private static final long serialVersionUID = 1L;
-
 	JProgressBar progressBar;
 	
 	/**

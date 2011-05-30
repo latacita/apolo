@@ -7,7 +7,8 @@ import javax.swing.SwingWorker;
  * Thread que añade fotos a la mesa
  * Incrementa un progress bar
  * @author Angel
- *
+ * Void -> Por que no devuelve la tarea ningun resultado
+ * Integer -> Es lo que publica de vez en cuando el hilo en background
  */
 public class ThreadAddDiapositiva extends SwingWorker<Void, Integer>{
 
@@ -18,6 +19,7 @@ public class ThreadAddDiapositiva extends SwingWorker<Void, Integer>{
 	 
 	/**
 	 * Constructor
+	 * @wbp.parser.entryPoint
 	 */
 	public ThreadAddDiapositiva(Mesa m, File[] f, VentanaDeEspera v){
 		mesa = m;
@@ -26,6 +28,9 @@ public class ThreadAddDiapositiva extends SwingWorker<Void, Integer>{
 		lista = mesa.getListaDiapositivas();
 	}
 	
+	/**
+	 * Ejecuta este metodo en otro hilo.
+	 */
 	@Override
 	protected Void doInBackground() throws Exception {
 		//Calculo del paso del progressbar
@@ -33,7 +38,7 @@ public class ThreadAddDiapositiva extends SwingWorker<Void, Integer>{
 		float total=0;
 		for (int i = 0; i< files.length; i++){
 			//Creamos la diapositiva y anadir a lista
-			Diapositiva diapo = new Diapositiva(files[i]);
+			Diapositiva diapo = new Diapositiva(mesa, files[i]);
 			lista.add(diapo);
 			//Colocar nombre y Numero
 			diapo.setNumeroFoto(String.valueOf(lista.size()));
@@ -50,11 +55,17 @@ public class ThreadAddDiapositiva extends SwingWorker<Void, Integer>{
 		return null;
 	}
 	
+	/**
+	 * Ejecuta esto al finalizar el hilo de trabajo
+	 */
 	@Override
 	protected void done() {
 		ventana.setVisible(false);
 	}
 	
+	/**
+	 * Modifica este valor el hilo padre.
+	 */
 	@Override
     protected void process(List<Integer> chunks) {
 		ventana.getJProgressBar().setValue(chunks.get(0));

@@ -53,15 +53,13 @@ public class Mesa extends JPanel implements ComponentListener{
 	/**
 	 * Anade la diapositiva al panel
 	 * 
-	 * Posibles mejoras, recentrar el espacio para que quede bonito
 	 * Detectar si la fotografia esta en horizontal o vertical
-	 * Utilizar un worker! Mirar web apuntada. SwingWorker
 	 *
 	 * @param foto
 	 */
 	public void addDiapositiva(File foto){ 
 		//Creamos la diapositiva y anadir a lista
-		Diapositiva diapo = new Diapositiva(foto);
+		Diapositiva diapo = new Diapositiva(this, foto);
 		listaDiapositivas.add(diapo);
 		//Colocar nombre y Numero
 		diapo.setNumeroFoto(String.valueOf(listaDiapositivas.size()));
@@ -70,18 +68,58 @@ public class Mesa extends JPanel implements ComponentListener{
 		panel.add(diapo);
 	}
 	
-	/** Anade una serie de diapositivas paradas como array de Files*/
-	public boolean addDiapositiva(File[] files){
-		VentanaDeEspera espera = new VentanaDeEspera(this);
-		espera.setVisible(true);
-		ThreadAddDiapositiva hilo = new ThreadAddDiapositiva(this, files, espera);
+	/**
+	 * Añade una serie de imagenes a la mesa
+	 * Utiliza un swingworker (Hilo) para no paralizar la aplicacion
+	 * @param files Array de ficheros imagen a añadir
+	 */
+	public void addDiapositiva(File[] files){
+		VentanaDeEspera VentanaEspera = new VentanaDeEspera(this);
+		VentanaEspera.setVisible(true);
+		ThreadAddDiapositiva hilo = new ThreadAddDiapositiva(this, files, VentanaEspera);
 		hilo.execute();
-		return true;
+		repaint();
 	}
 	
+	/** Elimina una diapositiva*/
+	public void removeDiapositiva(Diapositiva diapo){
+		panel.remove(diapo);
+		listaDiapositivas.remove(diapo);
+		renumerar();
+		panel.repaint();
+		panel.doLayout();
+	}
+	
+	/**
+	 * Renumera las diapositivas de la mesa
+	 */
+	private void renumerar(){
+		for (Diapositiva diapo : listaDiapositivas){
+			diapo.setNumeroFoto(this.getNumDiapositiva(diapo)+1); //Mas 1 para q no comience en 0
+		}
+	}
+	
+	/**
+	 * Retorna el numero de la diapositiva en la lista
+	 * @param diapo Diapositiva a localizar en la lista
+	 * @return Posicion que ocupa la diapositiva en la lista
+	 */
+	public int getNumDiapositiva(Diapositiva diapo){
+		return listaDiapositivas.indexOf(diapo);
+	}
+	
+	/**
+	 * Devuelve la lista de diapositivas que hay en la mesa
+	 * @return
+	 */
 	public LinkedList<Diapositiva> getListaDiapositivas(){
 		return listaDiapositivas;
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public JPanel getPanelDiapositivas(){
 		return panel;
 	}
