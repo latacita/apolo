@@ -7,13 +7,17 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 
-
+/**
+ * Clase que Dibuja una ventana mostrando informacion acerca de la aplicacion
+ * y su autor.
+ * @author Angel
+ */
 public class VentanaAcercaDe extends JDialog {
 
-	/**
-	 * 
-	 */
+	/** Autogenerado */
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -22,6 +26,7 @@ public class VentanaAcercaDe extends JDialog {
 	public VentanaAcercaDe() {
 		setResizable(false);
 		setModal(true);
+		setAlwaysOnTop(true);
 		setTitle("Acerca de Apolo");
 		setBounds(100, 100, 600, 251);
 		setLocationRelativeTo(null);
@@ -49,11 +54,6 @@ public class VentanaAcercaDe extends JDialog {
 		getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		JLabel label = new JLabel("New label");
-		label.setHorizontalAlignment(SwingConstants.CENTER);
-		label.setBounds(12, 13, 131, 157);
-		panel.add(label);
-		
 		JLabel lblProyectoFinDe = new JLabel("Proyecto Fin de Carrera de Angel Tezanos Iba\u00F1ez");
 		lblProyectoFinDe.setHorizontalAlignment(SwingConstants.CENTER);
 		lblProyectoFinDe.setBounds(167, 13, 415, 27);
@@ -62,11 +62,23 @@ public class VentanaAcercaDe extends JDialog {
 		JLabel label_2 = new JLabel("<html>Apolo surgio como Proyecto Fin de Carrera de Angel Tezanos Iba\u00F1ez. <br>" +
 				"El software se dise\u00F1o con el fin de disponer de una herramienta " +
 				"capaz de organizar y clasificar fotografias como si estas se trataran de diapositivas. " +
-				"Para ello se diseño la aplicacion para que trabajase y como un organizador " +
-				"clasico de diapositivas. De esta manera se intenta lograr ese aire nostalgico " +
-				"de las antiguas diapositivas</html>");
+				"Para ello se diseño una interfaz grafica de usuario que recordase a  " +
+				"clasico clasificador de diapositivas. De esta manera se intenta lograr ese aire nostalgico " +
+				"de las antiguas diapositivas.</html>");
 		label_2.setBounds(167, 53, 415, 117);
 		panel.add(label_2);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(12, 13, 133, 159);
+		panel.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel lblFoto = new JLabel("");
+		lblFoto.setBounds(1, 1, 131, 157);
+		panel_1.add(lblFoto);
+		lblFoto.setIcon(new ImageIcon("Yo.jpg"));
+		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		setVisible(true);
 	}
