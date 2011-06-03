@@ -45,6 +45,7 @@ public class VentanaVisorImagenes extends JDialog {
 	 * @wbp.parser.constructor
 	 */
 	public VentanaVisorImagenes(Mesa mesa, int num) {
+		setResizable(false);
 		//Carga de parametros
 		this.mesa = mesa;
 		numfoto = num;

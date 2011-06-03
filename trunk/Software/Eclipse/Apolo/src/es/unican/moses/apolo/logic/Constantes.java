@@ -8,6 +8,8 @@ import java.io.File;
  *
  */
 public class Constantes {
+	/** DEBUG */
+	public static boolean DEBUG = true;
 	/** Tamaño de las diapositivas (Son Cuadradas) */
 	public static int TAM_DIAPOSITIVA = 150;
 	/** Fichero que contiene el Marco */
