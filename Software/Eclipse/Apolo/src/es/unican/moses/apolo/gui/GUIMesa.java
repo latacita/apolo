@@ -11,6 +11,8 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 
 //Paquetes Propios
+import es.unican.moses.apolo.ghost.GhostComponentAdapter;
+import es.unican.moses.apolo.ghost.GhostMotionAdapter;
 import es.unican.moses.apolo.logic.Constantes;
 import es.unican.moses.apolo.logic.Mesa;
 import es.unican.moses.apolo.logic.ThreadAddDiapositiva;
@@ -33,6 +35,8 @@ public class GUIMesa extends JPanel implements ComponentListener{
 	/** Atributos*/
 	private Mesa mesa;
 	private static final long serialVersionUID = 1L;
+	private GhostComponentAdapter componentAdapter;
+	private GhostMotionAdapter motionAdapter;
 	
 	/** Componentes internos */
 	private JScrollPane scrollPane;
@@ -41,12 +45,16 @@ public class GUIMesa extends JPanel implements ComponentListener{
 	/**
 	 * Constructor
 	 */
-	public GUIMesa(Mesa mesa) {
+	public GUIMesa(Mesa mesa, GhostComponentAdapter componentAdapter, GhostMotionAdapter motionAdapter) {
 		this.mesa = mesa;
+		this.componentAdapter = componentAdapter;
+		this.motionAdapter = motionAdapter;
 		inicializacionGUIMesa();
 	}
-	public GUIMesa(){
+	public GUIMesa(GhostComponentAdapter componentAdapter, GhostMotionAdapter motionAdapter){
 		this.mesa = new Mesa();
+		this.componentAdapter = componentAdapter;
+		this.motionAdapter = motionAdapter;
 		inicializacionGUIMesa();
 	}
 	
@@ -89,6 +97,10 @@ public class GUIMesa extends JPanel implements ComponentListener{
 	 * @param gui_diapositiva
 	 */
 	public void addDiapositivia(GUIDiapositiva gui_diapositiva){
+		//Añado a las diapositiva los eventos del raton
+        gui_diapositiva.addMouseListener(componentAdapter);
+        gui_diapositiva.addMouseMotionListener(motionAdapter);
+		
 		//Añadir a la logica y el componente
 		mesa.addDiapositiva(gui_diapositiva.getDiapositiva());
 		panel_diapositivas.add(gui_diapositiva);
