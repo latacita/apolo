@@ -80,18 +80,13 @@
 %\input{introduction/introduction.tex} % Chapter 1
 
 % Capítulo 2: Definición y Planificación del Proyecto
-\input{planificacion/planificacion.tex}
+%\input{planificacion/planificacion.tex}
 
 % Capítulo 3: Antecedentes
-\input{background/background.tex}
+%\input{background/background.tex}
 
-% Capítulo 5: Ingeniería de Requisitos
-
-% Capítulo 6: Definición Arquitectónica y Diseño Software
-
-% Capítulo 7: Construcción e Implementación
-
-% Capítulo 8: Pruebas
+% Cápitulo 4: Iteración 1
+\input{iteracion1/iteracion1.tex}
 
 % Capítulo 9: Despliegue y Aceptación
 
