@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  31 MAY 2011 12:49
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.4.6)  4 JUN 2011 12:24
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -270,7 +270,7 @@ ABD: EveryShipout initializing macros
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/begin.tex)
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\Config/headers.tex)
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/chapters.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 11.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -281,53 +281,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [1
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1)
+File: iteracion1/images/casoDeUso.eps Graphic file (type eps)
+
+<iteracion1/images/casoDeUso.eps> [1
 
 
 
 ]
+Overfull \vbox (43.19841pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:back:clasificador' on page 2 undefined on input l
-ine 24.
 
-File: planificacion/images/clasificadorAnalogico.eps Graphic file (type eps)
-<planificacion/images/clasificadorAnalogico.eps> [2] [3]
-File: planificacion/images/mod-iterativo.eps Graphic file (type eps)
-
-<planificacion/images/mod-iterativo.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-[4] [5] [6]
-File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
- <planificacion/images/MarcoDiapositiva.eps>
-File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
-
-<planificacion/images/MontajeInterfazGrafica.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-File: planificacion/images/EstructuraDeDatos.eps Graphic file (type eps)
-<planificacion/images/EstructuraDeDatos.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-[7]
-
-LaTeX Warning: Reference `fig:plan:DnD' on page 8 undefined on input line 221.
-
-) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [8] [9]
-[10
-
-]
-Cap\'{\i }tulo 2.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [11
-
-])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
+[2] [3]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the pfc.maf file.
@@ -348,18 +313,14 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the pfc.log file.
 
-[12] (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[4] (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux) ) 
 Here is how much of TeX's memory you used:
- 3916 strings out of 494020
- 52425 string characters out of 3143906
- 133468 words of memory out of 3000000
- 6912 multiletter control sequences out of 15000+200000
+ 3892 strings out of 494020
+ 51734 string characters out of 3143906
+ 130468 words of memory out of 3000000
+ 6902 multiletter control sequences out of 15000+200000
  19939 words of font info for 53 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,11n,43p,3901b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,11n,43p,601b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (12 pages, 37828 bytes).
+Output written on pfc.dvi (4 pages, 11924 bytes).
