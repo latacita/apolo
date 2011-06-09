@@ -10,6 +10,8 @@ import java.awt.Insets;
 import javax.swing.ImageIcon;
 import javax.swing.border.TitledBorder;
 import java.awt.GridLayout;
+
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.UIManager;
@@ -20,11 +22,15 @@ import java.awt.FlowLayout;
 //Paquetes propios
 import es.unican.moses.apolo.ghost.GhostComponentAdapter;
 import es.unican.moses.apolo.ghost.GhostDropListener;
-import es.unican.moses.apolo.ghost.GhostDropManagerDemo;
+import es.unican.moses.apolo.ghost.GhostDropManagerEstanteria;
+import es.unican.moses.apolo.logic.Constantes;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 
-public class GUIEstanteria extends JPanel {
+public class GUIBalda extends JPanel {
 
 	/** AUTOGENERADO */
 	private static final long serialVersionUID = 1L;
@@ -32,15 +38,18 @@ public class GUIEstanteria extends JPanel {
 	private LinkedList<GUIDiapositiva> listaGUIDiapositivas;
 	private JPanel visor;
 	private GhostComponentAdapter componentAdapter;
+	private GhostDropListener listener;
 	private JScrollPane scrollPane;
+	private GUIEstanteria padre;
 
 	/**
 	 * Create the panel.
 	 */
-	public GUIEstanteria() {
+	public GUIBalda() {
 		inicializacion();
 	}
-	public GUIEstanteria(GhostComponentAdapter componentAdapter) {
+	public GUIBalda(GUIEstanteria padre, GhostComponentAdapter componentAdapter) {
+		this.padre = padre;
 		this.componentAdapter = componentAdapter;
 		inicializacion();
 	}
@@ -83,20 +92,25 @@ public class GUIEstanteria extends JPanel {
 		Controles.setLayout(new GridLayout(0, 1, 0, 0));
 		
 		JButton bt_anadir = new JButton("");
-		bt_anadir.setIcon(new ImageIcon("C:\\Users\\Angel\\workspace\\pruebas\\img\\anadir.png"));
+		bt_anadir.setIcon(new ImageIcon(Constantes.RUTA_ICON_ADDALBUM));
 		Controles.add(bt_anadir);
 		
 		JButton bt_descartar = new JButton("");
-		bt_descartar.setIcon(new ImageIcon("C:\\Users\\Angel\\workspace\\pruebas\\img\\descartar.png"));
+		bt_descartar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				preguntaEliminarEstanteria();
+			}
+		});
+		bt_descartar.setIcon(new ImageIcon(Constantes.RUTA_ICON_REMOVEALBUM));
 		Controles.add(bt_descartar);
 		
 		JButton bt_acciones = new JButton("");
-		bt_acciones.setIcon(new ImageIcon("C:\\Users\\Angel\\workspace\\pruebas\\img\\masacciones.png"));
+		bt_acciones.setIcon(new ImageIcon(Constantes.RUTA_ICON_MOREACTIONS));
 		Controles.add(bt_acciones);
 		
 		if(componentAdapter!=null){
 		//Añadir controladores de evento de arrastre
-		GhostDropListener listener = new GhostDropManagerDemo(visor, this);
+		listener = new GhostDropManagerEstanteria(visor, this);
 		componentAdapter.addGhostDropListener(listener);
 		}
 
@@ -109,5 +123,18 @@ public class GUIEstanteria extends JPanel {
 	public void addGUIDiapositiva(GUIDiapositiva diapo){
 		listaGUIDiapositivas.add(diapo);
 		visor.add(diapo);
+	}
+	
+	private void preguntaEliminarEstanteria(){
+		int respuesta;
+		respuesta=JOptionPane.showConfirmDialog(this,"¿Desea Eliminar la Estanteria? ","Confirmacion Eliminacion",JOptionPane.YES_NO_OPTION);
+		if(respuesta==JOptionPane.YES_OPTION){
+			removeEstanteria();
+		}
+	}
+	
+	private void removeEstanteria(){
+		componentAdapter.removeGhostDropListener(listener);
+		padre.removeEstanteria(this);
 	}
 }

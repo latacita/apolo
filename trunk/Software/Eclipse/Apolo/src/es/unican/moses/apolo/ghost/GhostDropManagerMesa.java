@@ -6,7 +6,7 @@ import javax.swing.JComponent;
 
 //Paquetes propios
 import es.unican.moses.apolo.gui.GUIDiapositiva;
-import es.unican.moses.apolo.gui.GUIEstanteria;
+import es.unican.moses.apolo.gui.GUIMesa;
 
 
 /**
@@ -15,21 +15,21 @@ import es.unican.moses.apolo.gui.GUIEstanteria;
  * encima un componente.
  *
  */
-public class GhostDropManagerDemo extends AbstractGhostDropManager {
+public class GhostDropManagerMesa extends AbstractGhostDropManager {
     
 	/**
 	 * Componente a monitorizar
 	 */
 	//private JComponent target;
-	private GUIEstanteria gui_estanteria;
+	private GUIMesa gui_mesa;
 
 	/**
 	 * Constructor de la clase
 	 * @param target
 	 */
-    public GhostDropManagerDemo(JComponent target, GUIEstanteria gui_estanteria) {
+    public GhostDropManagerMesa(JComponent target, GUIMesa gui_mesa) {
         super(target);
-        this.gui_estanteria = gui_estanteria;
+        this.gui_mesa = gui_mesa;
     }
 
     /**
@@ -41,8 +41,8 @@ public class GhostDropManagerDemo extends AbstractGhostDropManager {
 	   Point p = getTranslatedPoint(e.getDropLocation());
 
 	   if (isInTarget(p)) {
-	       gui_estanteria.addGUIDiapositiva((GUIDiapositiva) componente);
-	       gui_estanteria.repaint();
+		   gui_mesa.addGUIDiapositivia((GUIDiapositiva) componente);
+		   gui_mesa.repaint();
 	   }
 	}
 }
