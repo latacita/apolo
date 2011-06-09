@@ -63,6 +63,8 @@ public class GUIEstanterias extends JPanel{
 		Estanterias.setLayout(gbl_Estanterias);
 		
 		addEstanteria();
+		addEstanteria();
+
 		
 		//Boton Nueva estanteria
 		JButton bt_nuevaEstanteria = new JButton("A\u00F1adir Nueva Estanteria");
