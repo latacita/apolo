@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * @author Angel
  *
  */
-public class Estanteria {
+public class Balda {
 	
 	/** Lista donde se van añadiendo las diapositivas */
 	LinkedList<Diapositiva> listaDiapositivasEstanteria;
@@ -17,7 +17,7 @@ public class Estanteria {
 	/**
 	 * Constructor de la estanteria
 	 */
-	public Estanteria(){
+	public Balda(){
 		listaDiapositivasEstanteria = new LinkedList<Diapositiva>();
 	}
 	
