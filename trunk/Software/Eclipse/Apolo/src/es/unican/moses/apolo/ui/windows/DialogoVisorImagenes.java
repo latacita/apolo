@@ -28,7 +28,7 @@ import es.unican.moses.apolo.ui.widgets.GUIDiapositiva;
  * @author Angel
  *
  */
-public class VentanaVisorImagenes extends JDialog {
+public class DialogoVisorImagenes extends JDialog {
 
 	/** Autogenerado */
 	private static final long serialVersionUID = 1L;
@@ -46,7 +46,7 @@ public class VentanaVisorImagenes extends JDialog {
 	/**
 	 * @wbp.parser.constructor
 	 */
-	public VentanaVisorImagenes(LinkedList<GUIDiapositiva> listafotos, int num) {
+	public DialogoVisorImagenes(LinkedList<GUIDiapositiva> listafotos, int num) {
 		setResizable(false);
 		//Carga de parametros
 		this.listafotos = listafotos;

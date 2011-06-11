@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -11,27 +12,36 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 import java.awt.Color;
+import java.awt.Font;
 
 /**
  * Clase que Dibuja una ventana mostrando informacion acerca de la aplicacion
  * y su autor.
  * @author Angel
  */
-public class VentanaAcercaDe extends JDialog {
+public class DialogoAcercaDe extends JDialog {
 
 	/** Autogenerado */
 	private static final long serialVersionUID = 1L;
+	private JFrame padre;
 
 	/**
 	 * Create the dialog.
 	 */
-	public VentanaAcercaDe() {
+	public DialogoAcercaDe() {
+		inicializacion();
+	}
+	public DialogoAcercaDe(JFrame padre) {
+		this.padre = padre;
+		inicializacion();
+	}
+		
+	private void inicializacion(){
 		setResizable(false);
 		setModal(true);
-		setAlwaysOnTop(true);
 		setTitle("Acerca de Apolo");
 		setBounds(100, 100, 600, 251);
-		setLocationRelativeTo(null);
+		setLocationRelativeTo(padre);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 
 		{
@@ -57,6 +67,7 @@ public class VentanaAcercaDe extends JDialog {
 		panel.setLayout(null);
 		
 		JLabel lblProyectoFinDe = new JLabel("Proyecto Fin de Carrera de Angel Tezanos Iba\u00F1ez");
+		lblProyectoFinDe.setFont(new Font("Arial Black", Font.PLAIN, 14));
 		lblProyectoFinDe.setHorizontalAlignment(SwingConstants.CENTER);
 		lblProyectoFinDe.setBounds(167, 13, 415, 27);
 		panel.add(lblProyectoFinDe);

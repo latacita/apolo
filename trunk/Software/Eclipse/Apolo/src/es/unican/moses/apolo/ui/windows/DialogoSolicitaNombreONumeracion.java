@@ -15,7 +15,7 @@ import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 
-public class VentanaSolicitaNombreONumeracion extends JDialog {
+public class DialogoSolicitaNombreONumeracion extends JDialog {
 
 	/** AUTOGENERADO */
 	private static final long serialVersionUID = -6742368992096779117L;
@@ -28,7 +28,7 @@ public class VentanaSolicitaNombreONumeracion extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public VentanaSolicitaNombreONumeracion(){
+	public DialogoSolicitaNombreONumeracion(){
 		this.nombre = "";
 		inicializacion();
 	}
