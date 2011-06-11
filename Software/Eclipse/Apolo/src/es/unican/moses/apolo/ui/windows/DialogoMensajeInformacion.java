@@ -19,7 +19,7 @@ import javax.swing.SwingConstants;
  * Se le debe pasar el texto que debe mostrar
  * @author Angel
  */
-public class VentanaMensajeInformacion extends JDialog{
+public class DialogoMensajeInformacion extends JDialog{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -28,16 +28,16 @@ public class VentanaMensajeInformacion extends JDialog{
 	/**
 	 * Create the dialog.
 	 */
-	public VentanaMensajeInformacion(String msj) {
+	public DialogoMensajeInformacion(String msj) {
 		this(null, "Apolo Informa", msj);
 	}
-	public VentanaMensajeInformacion(Component padre, String msj) {
+	public DialogoMensajeInformacion(Component padre, String msj) {
 		this(padre, "Apolo Informa", msj);
 	}
 	/**
 	 * @wbp.parser.constructor
 	 */
-	public VentanaMensajeInformacion(Component padre, String msjTitulo, String msj) {
+	public DialogoMensajeInformacion(Component padre, String msjTitulo, String msj) {
 		setResizable(false);
 		setModal(true);
 		setAlwaysOnTop(true);
