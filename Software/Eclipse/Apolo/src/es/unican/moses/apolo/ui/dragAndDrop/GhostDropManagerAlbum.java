@@ -9,8 +9,8 @@ import javax.swing.JComponent;
 
 //Paquetes propios
 import es.unican.moses.apolo.logic.Constantes;
-import es.unican.moses.apolo.ui.widgets.GUIBalda;
-import es.unican.moses.apolo.ui.widgets.GUIDiapositiva;
+import es.unican.moses.apolo.ui.widgets.GUIAlbum;
+import es.unican.moses.apolo.ui.widgets.GUIListaDiapositivas;
 
 
 /**
@@ -19,21 +19,20 @@ import es.unican.moses.apolo.ui.widgets.GUIDiapositiva;
  * encima un componente.
  *
  */
-public class GhostDropManagerEstanteria extends AbstractGhostDropManager {
-	
+public class GhostDropManagerAlbum extends AbstractGhostDropManager{
 	/**
 	 * Componente a monitorizar
 	 */
 	//private JComponent target;
-	private GUIBalda gui_balda;
+	private GUIAlbum gui_album;
 
 	/**
 	 * Constructor de la clase
 	 * @param target
 	 */
-    public GhostDropManagerEstanteria(JComponent target, GUIBalda gui_balda) {
+    public GhostDropManagerAlbum(JComponent target, GUIAlbum gui_album) {
         super(target);
-        this.gui_balda = gui_balda;
+        this.gui_album = gui_album;
     }
 
     /**
@@ -44,43 +43,39 @@ public class GhostDropManagerEstanteria extends AbstractGhostDropManager {
 	   Component componente = e.getComponente();
 	   Point p = getTranslatedPoint(e.getDropLocation());
 
-	   if (isInTarget(p)) {
+	   if (isInTarget(p) && componente instanceof GUIListaDiapositivas) {
 		   //Obtencion de diapositiva
-		   GUIDiapositiva gui_diapo = ((GUIDiapositiva)componente);
-		   gui_diapo.cambiaPadre(gui_balda);
-		   
+
 		   //Se solto en la balda, ahora a averiguar el lugar donde se solto. Lo indica la X
 		   int lugar = p.x;
 		   
-		   LinkedList<GUIDiapositiva> lista = new LinkedList<GUIDiapositiva>();
-		   for (Component c : gui_balda.getVisor().getComponents()){
-			   if (c instanceof GUIDiapositiva) lista.add((GUIDiapositiva)c);
+		   LinkedList<GUIListaDiapositivas> lista = new LinkedList<GUIListaDiapositivas>();
+		   for (Component c : gui_album.getVisor().getComponents()){
+			   if (c instanceof GUIListaDiapositivas) lista.add((GUIListaDiapositivas)c);
 		   }
-		   gui_balda.getVisor().removeAll();
-		   if (lista.size()==0){
-			   gui_balda.addGUIDiapositiva((GUIDiapositiva) componente);
-		   }else{ //Hay diapositivas
-			   Iterator<GUIDiapositiva> iterador = lista.iterator();
+		   gui_album.getVisor().removeAll();
+		   if (lista.size()!=0){
+			   Iterator<GUIListaDiapositivas> iterador = lista.iterator();
 			   int paso = Constantes.TAM_DIAPOSITIVA + 5;
 			   int total= 80;
 			   boolean insertado = false;
 			   do{
 				   if (lugar < total && !insertado){
-					   gui_balda.addGUIDiapositiva((GUIDiapositiva) componente);
+					   gui_album.addGUIListaDiapositivas((GUIListaDiapositivas) componente);
 					   insertado = true;
 				   }else{
-					   GUIDiapositiva diapo = iterador.next();
-					   if (diapo != (GUIDiapositiva) componente)
-						   gui_balda.addGUIDiapositiva(diapo);
+					   GUIListaDiapositivas listaDiapo = iterador.next();
+					   if (listaDiapo != (GUIListaDiapositivas) componente)
+						   gui_album.addGUIListaDiapositivas(listaDiapo);
 				   }
 				   total = total + paso;
 			   }while(iterador.hasNext());
 			   if (!insertado){
-				   gui_balda.addGUIDiapositiva((GUIDiapositiva) componente);
+				   gui_album.addGUIListaDiapositivas((GUIListaDiapositivas) componente);
 			   }
 		   }   
 		   
-		   gui_balda.validate();
+		   gui_album.validate();
 	   }
 	}
 }
