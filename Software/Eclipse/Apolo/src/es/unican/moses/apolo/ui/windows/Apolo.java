@@ -132,7 +132,7 @@ public class Apolo {
 		});
 		
 		
-		frmApolo.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Angel\\workspace\\pruebas\\img\\Apolo.png"));
+		frmApolo.setIconImage(Toolkit.getDefaultToolkit().getImage(Constantes.RUTA_ICONO_APOLO));
 		frmApolo.setTitle("Apolo");
 		frmApolo.setSize(1024, 768);
 		//Centrar
