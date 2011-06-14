@@ -1,5 +1,5 @@
 %============================================================================%
-% Author : Angel Tezanos Ibañez                                              %
+% Author : Angel Tezanos Ibáñez                                              %
 % Author : Pablo Sánchez Barreiro                                            %
 % Version: 2.0, 07/04/2011                                                   %
 % Master Thesis: Planificación del Proyecto                                  %
@@ -166,7 +166,7 @@ Los artefactos básicos del proyecto Apolo son la interfaz gráfica y la represent
 
 La representación de la fotografía como Diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentara evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
 
-\begin{figure}[!tb]
+\begin{figure}[!h]
  \begin{center}
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.5\linewidth]{planificacion/images/MarcoDiapositiva.eps}\\
@@ -218,7 +218,7 @@ Para completar el diseño de los artefactos que componen la aplicación, se realiz
 \section{Construcción de Prototipos}
 
 %%  Hacer una bean diapositiva, cargar una diapositiva y moverla
-El prototipo construido es una aplicación sencilla en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del  componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva. Esto puede verse en la figura \ref{fig:plan:DnD} 
+El prototipo construido es una aplicación sencilla en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del  componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva. Esto puede verse en la figura \ref{fig:plan:DnD}
 
 \begin{figure}
     %\includegraphics[width=0.4\linewidth]{planificacion/images/EstructuraDeDatos.eps}\\
@@ -226,4 +226,4 @@ El prototipo construido es una aplicación sencilla en la que aparece una diaposi
     %\includegraphics[width=0.4\linewidth]{planificacion/images/EstructuraDeDatos.eps}\\
     \caption{Efecto de Drag and Drop}
     \label{fig:plan:Dnd}
-\end{figure}
+\end{figure} 

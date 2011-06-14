@@ -1,0 +1,206 @@
+%
+%MANUAL DE USUARIO DE APOLO
+%
+%
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%Configuracion hyperref
+\hypersetup{bookmarksopen,bookmarksnumbered,bookmarksopenlevel=1,%
+	colorlinks,urlcolor=black,citecolor=black,%
+	linkcolor=black,filecolor=black,pdfnewwindow,%
+	pdftitle={Manual Apolo},%
+	pdfauthor={Angel Tezanos Ibañez estudiante de Ingeniería Informática, UNICAN},%
+	pdfsubject={Manual del PFC Apolo}}
+
+%%Separacion entre parrafos
+\parskip=2mm
+
+% Cabeceras y pies
+\pagestyle{myheadings}
+\markboth{\textnormal{Apolo - Clasificador de Fotografías - Angel Tezanos}}{}%{\textnormal{Angel Tezanos}}
+
+%COMIENZA EL DOCUMENTO
+\begin{document}
+
+%%Portada
+\begin{titlepage}
+    \begin{center}
+        \vspace{2cm}
+        \Huge
+        \textsc{Manual de Usuario Apolo} \\
+        %Para bajar un poco la imagen
+        \vspace{2cm}
+        %\setlength{\fboxrule}{0.5pt}%Ajuste de la anchura del marco
+        %\setlength{\fboxsep}{0pt} %Ajuste del marco a la imagen
+        %\fbox{
+        \includegraphics[scale= 1.5]{img/Apolo.eps} \\
+
+        %Para bajar un poco el nombre
+        \vspace{1cm}
+        \large
+
+        Angel Tezanos Ib\'a\~nez \\
+        14 de Junio del 2011 \\
+
+    \end{center}
+
+    %Para bajar el abstract
+    \vspace{11cm}
+    \begin{abstract}
+        Manual de usuario para el software Apolo.
+        En el se explica su uso, así como todas las funciones de las que dispone Apolo
+    \end{abstract}
+\end{titlepage}
+
+%Indice
+\newpage %Indice En una pagina aparte
+\tableofcontents
+
+%CONTENIDO
+%Inicio del manual en una nueva página
+\newpage
+
+\section{Description Apolo} \label{sec:des}
+    Apolo surge como proyecto fin de carrera de Angel Tezanos Ibáñez supervisado por Pablo Sánchez Barreiro, para poder acceder a la titulación de Ingeniero Superior en Informática.
+
+    La idea era desarrollar un programa que fuera capaz de organizar y clasificar fotografías de forma similar a como se hacia antiguamente con las diapositivas analógicas. Esto es, una vez seleccionadas e importadas las fotografías, estas deberán poder ser arrastradas por la aplicación hacia una zona de donde habrá unas baldas en las cuales se deberán depositar.
+    El usuario podrá mover las fotografías a cualquier balda o recolocarlas en cualquier posición de manera que se ajuste al orden deseado.
+
+    Una vez tenga una secuencia de fotografías ordenadas, el usuario, podrá marcarlas como una secuencia de fotografías ya ordenadas, o paquete. A partir de ese momento el grupo de fotografías ordenadas funcionará como un ente único, el cual podrá posicionarse antes o después de otro grupo de fotografías.
+
+    Una vez se tengan los grupos de fotografías deseados estos podrán exportarse a un directorio elegido por el usuario, y se guardará allí una copia de de las fotografías, con la característica de que aparecerán renombradas con una numeración la cual hará que aparezcan ordenadas según el orden que le dio el usuario.
+
+    \subsection{Objetivo de Apolo} \label{subsec:obj}
+        El principal objetivo de Apolo es lograr que el usuario pueda ordenar y clasificar sus fotografías de una manera cómoda y simple. De manera que no sea necesario el uso de complejos programas fotográficos que logran realizar la tarea, pero de una forma tediosa.
+
+\section{Requisitos Mínimos} \label{sec:req}
+    Como cualquier programa, para que pueda ser ejecutado requiere que se cumplan una serie de requisitos tanto en el hardware que lo ejecutara como el software en el que se apoya.
+    
+    \subsection{Hardware}
+        \begin{itemize}
+          \item PC, Mac o dispositivo compatible con Java
+          \item Procesador 1GHz o mas
+          \item Memoria ram 512MB o mas
+          \item Disco Duro al menos 5MB libres
+          \item Resolución de pantalla de al menos 1024 x 768
+        \end{itemize}
+     \subsection{Software}
+        \begin{itemize}
+          \item Sistema operativo compatible con Java
+          \item Apolo requiere obligatoriamente un Java Runtime Environment igual o superior a la version 1.6.0
+        \end{itemize}
+    
+
+
+\section{Instalación Apolo} \label{sec:ins}
+    Apolo esta desarrollado en el lenguaje de programación Java, lo cual hace posible que de una manera sencilla lograr que un programa sea multiplataforma.
+
+    Al estar desarrollado en Java es obligatorio para ejecutar Apolo, que su sistema cumpla los requisitos mínimos\footnote{Véase la Sección \ref{sec:req} Requisitos Mínimos}.
+
+    %%Imagen Apolo Funcionando
+
+    Apolo esta comprobado en los siguiente sistemas operativos. Para los cuales se %\emph{Setup_Apolo.exe}
+    distribuyen instaladores para facilitar la tarea. En el caso de que su sistema no se encuentre entre los abajo mencionados, siempre podrá compilar el código fuente en su sistema y de esta forma crear el ejecutable para su sistema.
+
+    \subsection{Microsoft Windows}
+        Para instalarlo en Microsoft Windows debe ejecutar el archivo el cual arrancara un asistente que le guié y facilite la instalación de Apolo en su sistema.
+
+        %Imagen setup
+
+        Lo primero que deberá hacer en este asistente sera seleccionar el idioma en el que usted desea que transcurra la aplicación.
+
+        %Imagen seleccion de idioma
+        \begin{center}
+           \includegraphics[scale=1]{img/seleccionIdioma.eps}
+        \end{center}
+
+        Posteriormente se le dará la bienvenida al asistente y le indicara que es recomendable que cierre el resto de aplicaciones antes de proceder a la instalación.
+
+        %Imagen Bienvenida
+        \begin{center}
+           \includegraphics[scale=0.7]{img/bienvenida.eps}
+        \end{center}
+
+        A continuación deberá leer y aceptar las condiciones de uso si desea proceder con la instalación
+
+        %Imagen condiciones de uso
+        \begin{center}
+            \includegraphics[scale=0.7]{img/condicionesDeUso.eps}
+        \end{center}
+
+        Posteriormente se le mostrara la ruta donde sera instalado por defecto. En el caso de que desee otra localización para los archivos del programa indíquela antes de proseguir con el instalador.
+
+        %Imagen ruta instalación
+        \begin{center}
+            \includegraphics[scale=0.7]{img/rutaInstalacion.eps}
+        \end{center}
+
+        En el siguiente paso se nos indica como como aparecerá en el menu de aplicaciones de nuestro sistema. Si se desea cambiar el nombre con el que aparecerá indíquelo ahí.
+
+        %Imagen nombre sistema
+        \begin{center}
+           \includegraphics[scale=0.7]{img/nombreMenu.eps}
+        \end{center}
+
+        Como ultima opción se nos preguntara si deseamos crear un acceso directo de nuestra aplicación en el escritorio. Por defecto viene desmarcada, si usted lo desea márquela.
+
+        %imagen acceso directo
+        \begin{center}
+           \includegraphics[scale=0.7]{img/accesoDirecto.eps}
+        \end{center}
+
+        El siguiente paso de la instalación nos muestra el resumen de acciones que realizara. Si todo esta correcto, pulsa Instalar para proceder a la instalación del software Apolo.
+
+        %Imagen resumen
+        \begin{center}
+            \includegraphics[scale=0.7]{img/resumen.eps}
+        \end{center}
+
+        A continuación se procederá a la instalación de la aplicación, espere mientras se realiza. No suele llevar mas de algunos segundos.
+
+        %Imagen instalado...
+        \begin{center}
+             %\includegraphics[scale=0.7]{img/instalando.eps}
+        \end{center}
+
+        Para finalizar el asistente nos ofrece la posibilidad de ejecutar tras salir de el la aplicación recién instalada. Por defecto viene marcada, si no lo desea desmarquela y pulsa finalizar.
+
+        %imagen final
+        \begin{center}
+              \includegraphics[scale=0.7]{img/finalInstalacion.eps}
+        \end{center}
+
+    \subsection{Linux}
+    \subsection{Mac}
+    \subsection{Código Fuente}
+
+\section{Desinstalación}
+    \subsection{Microsoft Windows}
+        Para desinstalar Apolo se su sistema Microsoft Windows debe ejecute el desinstalador....
+    \subsection{Linux}
+    \subsection{Mac}
+\section{Zonas de Apolo}
+    \subsection{Mesa}
+    \subsection{Estanterías}
+        \subsubsection{Baldas}
+    \subsection{Album}
+\section{Importar Fotografías Apolo}
+\section{Ordenas y Clasificar Fotografías}
+    \subsection{Mover a Estantería}
+    \subsection{Mover a Album}
+\section{Exportar Fotografías Apolo}
+\section{Guardar estado de la aplicación}
+\section{Cargar estado de la aplicación}
+
+\end{document}
+
+
+
+
