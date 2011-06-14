@@ -178,8 +178,7 @@
         \end{center}
 
     \subsection{Linux} \label{sec:ins:lin}
-    \subsection{Mac OS X } \label{sec:ins:mac}
-    \subsection{Código Fuente} \label{sec:ins:source}
+    \subsection{Resto de Plataformas} \label{sec:ins:source}
 
 \section{Desinstalación} \label{sec:desin}
     \subsection{Microsoft Windows} \label{sec:desin:win}
@@ -201,7 +200,6 @@
         \end{center}
 
     \subsection{Linux} \label{sec:desin:lin}
-    \subsection{Mac OS X } \label{sec:desin:mac}
 
 \section{Zonas de Apolo} \label{sec:zon}
     El software Apolo representa las fotografías como si de diapositivas se trataran, teniendo una representación de este tipo en la interfaz gráfica.
@@ -339,6 +337,7 @@
     Cabe destacar que mientras se va importando fotografías a la aplicación, el usuario puede empezar a ordenarlas y clasificarlas.
 
 \section{Ordenar y Clasificar Fotografías} \label{sec:ord}
+    La gran finalidad de Apolo es ordenar y clasificar diapositivas de una manera fácil e intuitiva.
     \subsection{Mover a Estantería} \label{sec:ord:move}
     \subsection{Mover a Album} \label{sec:ord:mova}
 
