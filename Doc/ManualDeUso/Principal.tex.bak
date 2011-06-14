@@ -23,8 +23,8 @@
 \parskip=2mm
 
 % Cabeceras y pies
-\pagestyle{myheadings}
-\markboth{\textnormal{Apolo - Clasificador de Fotografías - Angel Tezanos}}{}%{\textnormal{Angel Tezanos}}
+%\pagestyle{myheadings}
+%\markboth{\textnormal{Apolo - Clasificador de Fotografías }}{\textnormal{Angel Tezanos}}
 
 %COMIENZA EL DOCUMENTO
 \begin{document}
@@ -67,7 +67,7 @@
 %Inicio del manual en una nueva página
 \newpage
 
-\section{Description Apolo} \label{sec:des}
+\section{Description Apolo} \label{sec:descripcion}
     Apolo surge como proyecto fin de carrera de Angel Tezanos Ibáñez supervisado por Pablo Sánchez Barreiro, para poder acceder a la titulación de Ingeniero Superior en Informática.
 
     La idea era desarrollar un programa que fuera capaz de organizar y clasificar fotografías de forma similar a como se hacia antiguamente con las diapositivas analógicas. Esto es, una vez seleccionadas e importadas las fotografías, estas deberán poder ser arrastradas por la aplicación hacia una zona de donde habrá unas baldas en las cuales se deberán depositar.
@@ -77,13 +77,13 @@
 
     Una vez se tengan los grupos de fotografías deseados estos podrán exportarse a un directorio elegido por el usuario, y se guardará allí una copia de de las fotografías, con la característica de que aparecerán renombradas con una numeración la cual hará que aparezcan ordenadas según el orden que le dio el usuario.
 
-    \subsection{Objetivo de Apolo} \label{subsec:obj}
+    \subsection{Objetivo de Apolo} \label{sec:descripcion:obj}
         El principal objetivo de Apolo es lograr que el usuario pueda ordenar y clasificar sus fotografías de una manera cómoda y simple. De manera que no sea necesario el uso de complejos programas fotográficos que logran realizar la tarea, pero de una forma tediosa.
 
 \section{Requisitos Mínimos} \label{sec:req}
     Como cualquier programa, para que pueda ser ejecutado requiere que se cumplan una serie de requisitos tanto en el hardware que lo ejecutara como el software en el que se apoya.
-    
-    \subsection{Hardware}
+
+    \subsection{Hardware} \label{sec:req:hard}
         \begin{itemize}
           \item PC, Mac o dispositivo compatible con Java
           \item Procesador 1GHz o mas
@@ -91,12 +91,12 @@
           \item Disco Duro al menos 5MB libres
           \item Resolución de pantalla de al menos 1024 x 768
         \end{itemize}
-     \subsection{Software}
+     \subsection{Software} \label{sec:req:soft}
         \begin{itemize}
           \item Sistema operativo compatible con Java
           \item Apolo requiere obligatoriamente un Java Runtime Environment igual o superior a la version 1.6.0
         \end{itemize}
-    
+
 
 
 \section{Instalación Apolo} \label{sec:ins}
@@ -109,7 +109,7 @@
     Apolo esta comprobado en los siguiente sistemas operativos. Para los cuales se %\emph{Setup_Apolo.exe}
     distribuyen instaladores para facilitar la tarea. En el caso de que su sistema no se encuentre entre los abajo mencionados, siempre podrá compilar el código fuente en su sistema y de esta forma crear el ejecutable para su sistema.
 
-    \subsection{Microsoft Windows}
+    \subsection{Microsoft Windows} \label{sec:ins:win}
         Para instalarlo en Microsoft Windows debe ejecutar el archivo el cual arrancara un asistente que le guié y facilite la instalación de Apolo en su sistema.
 
         %Imagen setup
@@ -177,27 +177,245 @@
               \includegraphics[scale=0.7]{img/finalInstalacion.eps}
         \end{center}
 
-    \subsection{Linux}
-    \subsection{Mac}
-    \subsection{Código Fuente}
+    \subsection{Linux} \label{sec:ins:lin}
+    \subsection{Mac OS X } \label{sec:ins:mac}
+    \subsection{Código Fuente} \label{sec:ins:source}
 
-\section{Desinstalación}
-    \subsection{Microsoft Windows}
-        Para desinstalar Apolo se su sistema Microsoft Windows debe ejecute el desinstalador....
-    \subsection{Linux}
-    \subsection{Mac}
-\section{Zonas de Apolo}
-    \subsection{Mesa}
-    \subsection{Estanterías}
-        \subsubsection{Baldas}
-    \subsection{Album}
-\section{Importar Fotografías Apolo}
-\section{Ordenas y Clasificar Fotografías}
-    \subsection{Mover a Estantería}
-    \subsection{Mover a Album}
-\section{Exportar Fotografías Apolo}
-\section{Guardar estado de la aplicación}
-\section{Cargar estado de la aplicación}
+\section{Desinstalación} \label{sec:desin}
+    \subsection{Microsoft Windows} \label{sec:desin:win}
+        Para desinstalar Apolo se su sistema Microsoft Windows debe ejecute el desinstalador que se encuentra en el directorio de instalación de Apolo o ejecutar el acceso directo que se encuentra en el menu de aplicaciones.
+        \begin{center}
+              \includegraphics[scale=0.5]{img/desinstalar.eps}
+        \end{center}
+
+        Tras aceptar se procederá a la desisntalación del sistema.
+
+        \begin{center}
+              %\includegraphics[scale=0.5]{img/desinstalar1.eps}
+        \end{center}
+
+        Finalmente se nos informara de final del proceso
+
+        \begin{center}
+              \includegraphics[scale=0.5]{img/desinstalar2.eps}
+        \end{center}
+
+    \subsection{Linux} \label{sec:desin:lin}
+    \subsection{Mac OS X } \label{sec:desin:mac}
+
+\section{Zonas de Apolo} \label{sec:zon}
+    El software Apolo representa las fotografías como si de diapositivas se trataran, teniendo una representación de este tipo en la interfaz gráfica.
+
+    Estas diapositivas van pasando por las distintas zonas de la aplicación claramente diferenciadas \emph{Mesa, Estantería y Album} en cada una de ellas se realizan una serie de acciones diferenciadas y con fines diferentes. Procedemos a continuación a describirlas y explicar su uso y funcionamiento.
+
+    \subsection{Diapositiva}\label{sec:zon:dia}
+        La diapositiva es la parte de Apolo que representa a una fotografía, por cada fotografía importada hay un diapositiva en la aplicación que la representa.
+
+        La diapositiva es la parte con la que el usuario mas interactua, de manera que es esta la que resulta arrastrada a las distintas partes de la aplicación, y dependiendo de como queden ordenadas las diapositivas sera como queden ordenadas las fotografías una vez exportadas.
+
+        %Foto diapo
+        \begin{center}
+              \includegraphics[scale=0.7]{img/diapositiva.eps}
+        \end{center}
+
+        Toda diapositiva puede ser arrastrada hacia otras zonas. Para ello simplemente se debe pulsar con el botón izquierdo del ratón, sobre ella. A partir de entonces podrá se arrastrada a otra zona, hasta que se deje de presionar el botón. Sera depositada en el lugar correspondiente, siempre y cuando este lugar sea valido, en caso contrario volverá a su lugar de origen.
+
+        Cada diapositiva tiene asociado un menu contextual, el cual aparecerá al pulsar sobre ella con el botón derecho del ratón, ofreciendo las siguientes acciones:
+
+        %Imagen menu diapo
+        \begin{center}
+              \includegraphics[scale=0.7]{img/menuDiapo.eps}
+        \end{center}
+
+        \begin{itemize}
+            \item Editar: Elegida esta opción se abrirá el editor de diapositivas que este instalado para fotografías en el sistema.
+            \item Visualizar: Si se selecciona esta opción se abrirá el visor de imágenes que este instalado en el sistema por defecto.
+            \item Actualizar: Recarga la imagen, útil si se edito la fotografía.
+            \item Descartar: Elimina la diapositiva de la aplicación.
+            \item Propiedades: Muestra las propiedades de la imagen.
+        \end{itemize}
+
+    \subsection{Mesa} \label{sec:zon:mesa}
+        Es la parte inferior de la aplicación, su principal función es alojar todo el \emph{pool} de fotografías que se importen.
+        %Imagen Mesa
+        \begin{center}
+              \includegraphics[scale=0.4]{img/mesa.eps}
+        \end{center}
+        %
+        En esta zona aparecen las fotografías recién importadas. A partir de ella se puede empezar arrastrarse hacia la zona superior. Las fotografías que se deseen descartar simplemente, no deben ser movidas de esta zona.
+
+        Consta de un Scroll vertical para moverse por ellas, de manera que todas sean accesibles. También dispone de una barra de progreso, la cual indicará el progreso de importación cuando se este produciendo.
+
+    \subsection{Estanterías} \label{sec:zon:estan}
+        Es la parte central de la aplicación, su función es almacenar las fotografías que el usuario desee ir clasificando y ordenando.
+
+        %imagen estantería
+        \begin{center}
+              \includegraphics[scale=0.4]{img/estanteria.eps}
+        \end{center}
+
+        Esta zona esta compuesta por Baldas, que son las zonas donde pueden depositarse las fotografías. Pueden crearse tantas baldas como se desee pulsando el botón \emph{Añadir Nueva Balda} que hay en la zona inferior de esta zona.
+
+        \subsubsection{Baldas} \label{sec:zon:estan:baldas}
+            Cada balda sirve para depositar las fotografías, a medida que se van depositando, estas irán apareciendo en balda, posicionandolas en el lugar en el que se las soltó. Es decir, si una fotografía fue soltada entre dos, esta aparecerá entre las dos, de manera que el usuario defina el orden que desee en cualquier momento.
+
+            %Imagen Balda
+            \begin{center}
+              \includegraphics[scale=0.3]{img/balda.eps}
+            \end{center}
+
+            Cada balda dispone de una serie de botones a la derecha de ellas, que permiten realizar una serie de acciones sobre el conjunto de fotografías contenidas en la balda.
+
+            %Foto icono añadir???
+            El botón \emph{Añadir Secuencia} da por finalizado el ordenamiento y clasificación de un conjunto de fotografías, y añade ese paquete de fotos a la zona album.
+
+            %Foto icono eliminar???
+            El botón \emph{Eliminar Balda} elimina la balda de la aplicación, así como todas las fotografias\footnote{Recuerde: En ningún caso se modifican o eliminan las fotografías originales.}
+
+            %Foto icono descripción???
+            El botón \emph{Añadir Descripción} Da una descripción a la balda, puede servir para tener una referencia del conjunto de fotos al que pertenece esa balda.
+
+    \subsection{Album} \label{sec:zon:album}
+        Es la parte superior de la aplicación, en el se van almacenando las subsecuencias de fotografías ya ordenadas y clasificadas.
+
+        %Foto Album
+        \begin{center}
+              \includegraphics[scale=0.3]{img/album.eps}
+            \end{center}
+
+        A esta zona se llega después de haber pulsado el botón añadir secuencia de una balda. En ese momento todas las fotografías que estaban depositadas en la balda formaran un \emph{Paquete de Diapositivas} y este se mostrara en esta zona.
+
+        Esta zona tiene a la izquierda unos botones que facilitan el acceso a ciertas funciones del programa Apolo, estas son:
+
+        \begin{itemize}
+          \item Cargar Estado: Carga un archivo en el que haya un estado guardado (Ver sección \ref{sec:load})
+          \item Guardar Estado: Guarda en un fichero el estado actual de la aplicación (Ver sección \ref{sec:sav})
+          \item Importar Fotografías: Importa a la aplicación fotografías (Ver sección \ref{sec:imp})
+          \item Exportar Fotografías: Exporta las fotografías ya clasificadas y ordenadas a un directorio (Ver sección \ref{sec:exp})
+        \end{itemize}
+
+        \subsubsection{Paquete de Diapositivas}\label{sec:zon:album:paquete}
+            El paquete de diapositivas representa el conjunto de fotografías ordenadas y clasificadas de una balda, los paquetes pueden ser arrastrados y posicionales unos entre otros, de manera que se puedan reordenar subsecuencias.
+
+            %Imagen paquete
+            \begin{center}
+              \includegraphics[scale=0.3]{img/paquete.eps}
+            \end{center}
+
+            Cada paquete tiene un menu contextual que se activa al pulsar con el botón derecho sobre el paquete. Las opciones que ofrece son las siguiente: \emph{Cambiar Descripción, Desempaquetar}
+
+            %Imagen menu.
+            \begin{center}
+              \includegraphics[scale=0.3]{img/menuPaquete.eps}
+            \end{center}
+
+            \begin{itemize}
+              \item Cambiar Descripción: Ofrece la posibilidad de cambiar la descripción al paquete, que sera la misma que tenia la balda del que fue creado.
+              \item Desempaquetar: Elimina el paquete de diapositivas y crea una nueva balda con las fotografías contenidas en el paquete.
+            \end{itemize}
+
+\section{Importar Fotografías Apolo} \label{sec:imp}
+    Para importar fotografías en el software Apolo se debe pulsar o bien el botón \emph{Importar}, visible en la aplicación, a la derecha de la zona \emph{Album} o bien a través del menu superior de la aplicación \emph{Importar/Exportar -> Importar}
+
+    %Imagen Pasos
+    \begin{center}
+              \includegraphics[scale=0.3]{img/importar.eps}
+    \end{center}
+
+    En ese momento se nos mostrara una venta en la cual podemos navegar por nuestro directorio, en busca de las fotografías que deseemos importar. No es necesario ir una por una, pues es posible seleccionar varias desde esa misma ventana, simplemente pulsando la tecla \emph{shift} o \emph{Control}
+
+    %Imagen Varios seleccionados.
+    \begin{center}
+              \includegraphics[scale=0.3]{img/importar1.eps}
+    \end{center}
+
+    Tras pulsar \emph{Abrir}, se irán cargando progresivamente en la aplicación Apolo las fotografías seleccionadas. Estas aparecerán en la zona \emph{Mesa} y el Scroll inferior informara sobre el estado de la importación.
+
+    %Imagen Scroll
+    \begin{center}
+              \includegraphics[scale=0.3]{img/importar2.eps}
+    \end{center}
+
+    Cabe destacar que mientras se va importando fotografías a la aplicación, el usuario puede empezar a ordenarlas y clasificarlas.
+
+\section{Ordenar y Clasificar Fotografías} \label{sec:ord}
+    \subsection{Mover a Estantería} \label{sec:ord:move}
+    \subsection{Mover a Album} \label{sec:ord:mova}
+
+
+\section{Exportar Fotografías Apolo} \label{sec:exp}
+    Para exportar fotografías en el software Apolo se debe pulsar o bien el botón \emph{Exportar}, visible en la aplicación, a la derecha de la zona \emph{Album} o bien a través del menu superior de la aplicación \emph{Importar/Exportar -> Exportar}
+
+    %Imagen Pasos
+    \begin{center}
+              \includegraphics[scale=0.3]{img/exportar.eps}
+    \end{center}
+
+    En ese momento se nos mostrara una ventana que nos solicitara si deseamos un nombre para las fotografías que serán exportadas. Dependiendo de lo que deseemos, debemos seleccionar una opción en el desplegable.
+    \begin{itemize}
+      \item Solo numeración: Las fotografías estarán nombradas por un numero.
+      \item Nombre y Numeración: Las fotografías tendrán un nombre seguido de un numero.
+    \end{itemize}
+
+    %Imagen Dialogo exportar
+    \begin{center}
+              \includegraphics[scale=0.5]{img/exportar1.eps}
+    \end{center}
+
+    Al seleccionar nombre y numeración, se activa el cuadro de texto para que se indique el nombre que se desea.
+
+    A continuación se nos mostrara una ventana en la cual debemos indicar el directorio donde deseamos que sean exportadas las fotografías. En el caso que deseemos crear un nuevo directorio debemos crearlo desde esa ventana, seleccionarlo y pulsar exportar.
+
+    %Foto cuadro directorio
+    \begin{center}
+              \includegraphics[scale=0.5]{img/exportar2.eps}
+    \end{center}
+
+    La exportación es muy eficiente, por lo que se realizara de una manera rápida. Recordemos que se copian las fotos originales, nunca se trasladan las originales.
+
+\section{Guardar estado de la aplicación} \label{sec:sav}
+    Apolo ofrece la posibilidad de guardar el estado de la aplicación en un fichero, de manera que pueda cerrarse la aplicación y al abrirla mas adelante sea posible recuperar el estado en el que se encontraba.
+
+    Para guardar el estado del software Apolo se debe pulsar o bien el botón \emph{Guardar}, visible en la aplicación, a la derecha de la zona \emph{Album} o bien a través del menu superior de la aplicación \emph{Archivo -> Guardar}
+
+    %Imagen Pasos
+    \begin{center}
+              \includegraphics[scale=0.3]{img/guardar.eps}
+    \end{center}
+
+    En ese momento se mostrara una ventana en la cual podemos seleccionar los elementos de la aplicación deseamos guardar, dándonos la posibilidad de guardar cualquier combinación de zonas (Véase la sección \ref{sec:zon})
+    En ese mismo dialogo debemos seleccionar el nombre que deseamos que tenga el fichero, y el directorio donde deseamos que se guarde.
+
+    %Imagen dialogo guardar
+    \begin{center}
+              \includegraphics[scale=0.5]{img/guardar1.eps}
+    \end{center}
+
+    Una vez seleccionado el directorio se desbloqueara el botón \emph{Guardar} y al pulsarlo se procederá a crear el fichero que almacene el estado de la aplicación.
+
+\section{Cargar estado de la aplicación} \label{sec:load}
+    Apolo ofrece la posibilidad de cargar el estado de la aplicación de un fichero, de manera que pueda recuperarse el estado en el que se encontraba en otro momento.
+
+    Para cargar el estado del software Apolo se debe pulsar o bien el botón \emph{Cargar}, visible en la aplicación, a la derecha de la zona \emph{Album} o bien a través del menu superior de la aplicación \emph{Archivo -> Cargar}
+
+    %Imagen Pasos
+    \begin{center}
+              \includegraphics[scale=0.3]{img/cargar.eps}
+    \end{center}
+
+    En ese momento se mostrara una ventana en la cual debemos seleccionar el fichero que deseamos cargar. Tras seleccionarlo, se desbloqueará el botón \emph{Cargar}.
+
+    %Imagen dialogo cargar
+    \begin{center}
+              \includegraphics[scale=0.5]{img/cargar1.eps}
+    \end{center}
+
+    En cuanto se pulse el botón cargar, se activara el la barra de progreso la cual indicara que el sistema esta cargando fotos, y en la ventana se ira mostrando un contador de fotografías importadas. Tras finalizar la carga del estado, se devolverá el control de la aplicación al usuario.
+
+    %Imagen cargando
+    \begin{center}
+              \includegraphics[scale=0.5]{img/cargar2.eps}
+    \end{center}
 
 \end{document}
 
