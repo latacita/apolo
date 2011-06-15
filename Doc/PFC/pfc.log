@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  15 JUN 2011 12:58
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  15 JUN 2011 19:59
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -336,20 +336,24 @@ Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc3.
 Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc4.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc5.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc6.
  [3
 
 
 ] [4
 
 ]
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.toc)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.toc [5])
 \tf@toc=\write4
- [5] [6
-
-]
+ [6]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lof)
 \tf@lof=\write5
- [7] [8
+ [7
+
+] [8
 
 ]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lot)
@@ -460,18 +464,46 @@ File: iteracion1/images/casoDeUso.eps Graphic file (type eps)
 <iteracion1/images/casoDeUso.eps> [17
 
 
-]
-Overfull \vbox (43.19841pt too high) has occurred while \output is active []
+] [18] [19])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [20]
+Cap\'{\i }tulo 5.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5) [21
 
 
-[18] [19]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
+] [22]
+Overfull \hbox (0.72887pt too wide) in paragraph at lines 98--99
+[][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
+ []
+
+
+Overfull \hbox (0.71791pt too wide) in paragraph at lines 99--100
+[][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
+ []
+
+[23]
+Overfull \hbox (0.72887pt too wide) in paragraph at lines 116--117
+[][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
+ []
+
+
+Overfull \hbox (0.71791pt too wide) in paragraph at lines 117--118
+[][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
+ []
+
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [24]
+Cap\'{\i }tulo 6.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6))
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the pfc.maf file.
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
- [20]
+ [25
+
+
+]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
 
 LaTeX Warning: There were undefined references.
@@ -481,12 +513,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3990 strings out of 494020
- 54442 string characters out of 3143905
+ 4040 strings out of 494020
+ 55645 string characters out of 3143905
  133468 words of memory out of 3000000
- 6933 multiletter control sequences out of 15000+200000
- 23144 words of font info for 57 fonts, out of 3000000 for 9000
+ 6957 multiletter control sequences out of 15000+200000
+ 26219 words of font info for 65 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,11n,43p,131100b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,11n,43p,131100b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (32 pages, 74992 bytes).
+Output written on pfc.dvi (37 pages, 101928 bytes).

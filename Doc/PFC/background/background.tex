@@ -1,6 +1,6 @@
 %=============================================================================%
 % Author : Angel Tezanos Ibañez                                               %
-% Author : Pablo Sánchez Barreiro                                             %  
+% Author : Pablo Sánchez Barreiro                                             %
 % Version: 2.0, 23/02/2011                                                    %
 % Master Thesis: Introduction                                                 %
 %=============================================================================%
@@ -8,7 +8,7 @@
 \chapterheader{Antecedentes}{Antecedentes}
 \label{chap:introduction}
 
-El presente capítulo describe brevemente las tecnologías sobre las que se fundamenta el presente proyecto. Más concretamente, se explica el funcionamiento de ...
+El presente capítulo describe brevemente las tecnologías sobre las que se fundamenta el presente proyecto. Más concretamente, se explica el funcionamiento del software basado en componentes, en especial Java Beans.
 
 \chaptertoc
 
@@ -18,7 +18,7 @@ El proyecto se desarrollara bajo una programación orientada a componentes. Esta 
 
 El nivel de abstracción de de los componentes se considera mas alto que el de los objetos al agrupar unidades funcionales autonomamente. De esta manera se explota en gran medida las posibilidades de reutilización. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rápida y sencilla.
 
-Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de reusabilidad.
+Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de \textbf{reusabilidad}.
 
 Los componentes deben poder ser serializados para garantizar el envió del estado del objeto a través de flujos de datos.
 
@@ -31,7 +31,7 @@ JavaBeans es la tecnología de componentes de Java, cada componente se le conoce 
 \begin{enumerate}
 	\item Es una clase publica que implementa la interfaz serializable
 	\item Expone una serie de propiedades que pueden ser leídas y modificadas por el entorno de desarrollo.
-	\item Los evento que posea pueden ser capturados y asociados a una serie de acciones.
+	\item Los eventos que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
 
 % Sin número \begin{itemize}
@@ -47,3 +47,4 @@ Existen varios tipos de propiedades:
 \end{itemize}
 
 %%Extender mas si es posible 
+Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este este implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. 
