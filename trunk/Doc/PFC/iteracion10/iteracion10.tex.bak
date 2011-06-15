@@ -1,0 +1,32 @@
+%============================================================================%
+% Author : Angel Tezanos Ibañez                                              %
+% Author : Pablo Sánchez Barreiro                                            %
+% Version: 2.0, 07/04/2011                                                   %
+% Master Thesis: Iteración 10                                                %
+%============================================================================%
+
+\chapterheader{Décima Iteración}{Décima Iteración}
+\label{chap:iteracion1}
+
+\todo{Párrafo introductorio}
+
+\chaptertoc
+
+\section{Por que esta Iteración}
+\label{sec:iteracion1:porQueEstaIteracion}
+
+\section{Casos de uso}
+\label{sec:iteracion1:casosDeUso}
+
+\section{Refinamiento de requisitos}
+\label{sec:iteracion1:refinamientoRequisitos}
+
+\section{Diagrama de clases}
+\label{sec:iteracion1:diagramaDeClases}
+
+\section{Implementación}
+\label{sec:iteracion1:implementacion}
+
+\section{Pruebas}
+\label{sec:iteracion1:pruebas}
+

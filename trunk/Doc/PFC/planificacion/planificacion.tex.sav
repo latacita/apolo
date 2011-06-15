@@ -1,6 +1,6 @@
-=============================================================================%
-% Author : Angel Tezanos Ibañez                                              %
-% Author : Pablo Sánchez Barreiro                                            %  
+%============================================================================%
+% Author : Angel Tezanos Ibáñez                                              %
+% Author : Pablo Sánchez Barreiro                                            %
 % Version: 2.0, 07/04/2011                                                   %
 % Master Thesis: Planificación del Proyecto                                  %
 %============================================================================%
@@ -15,44 +15,147 @@
 \section{Ámbito Funcional del Proyecto}
 \label{sec:plannning:ambito}
 
-posibilidad de ordenar cómodamente sus fotografías, así como descartar las que no satisfagan la calidad esperada o deseada.
+El objetivo general de la aplicación \emph{Apolo} es ofrecer al usuario la posibilidad de ordenar cómodamente sus fotografías digitales, de acuerdo al criterio que este elija, y descartar las que no satisfagan la calidad esperada o deseada.
 
-Actualmente gracias a la incorporación de una cámara fotográfica a casi cualquier aparato electrónico, podemos tomar fotografías en prácticamente cualquier instante de nuestra vida. Eso unido a que ya no es necesario un proceso de revelado, nos impulsa a tener almacenadas muchas fotografías. La mayoría de las veces, se encuentran mezcladas con fotografías que no salieron como se esperaba (movidas, mal enfocadas, sobreexpuestas...) e incluso en ocasiones, el orden no es el adecuado.
+Actualmente gracias a la incorporación de una cámara fotográfica a casi cualquier aparato electrónico, podemos tomar fotografías en prácticamente cualquier instante de nuestra vida. Eso unido a que ya no es necesario un proceso de revelado, nos impulsa a almacenar bastantes fotografías, muchas de ellas totalmente innecesarias. La mayoría de las veces, las fotografías de interés se encuentran mezcladas con fotografías que no salieron como se esperaba (movidas, mal enfocadas o sobreexpuestas). Otras veces, el orden en el que se almacenan no es el deseado para su exposición, o nos gustaría filtrar algunas de ellas. Por ejemplo, tras un viaje de negocios puede que no sea el mismo conjunto de fotos el que deseemos enseñar a nuestro jefe que a nuestros amigos.
 
-Disponer de las fotografías almacenadas de esta forma, no resulta cómodo para una visualización de las mismas, pues como es evidente, habrá fotografías que no interesa que sean vistas y serán pasadas de forma rápida en su exposición. Si tratamos de seleccionar y ordenarlas manualmente resultara un trabajo tedioso a la vez que poco cómodo.
+Mantener las fotografías almacenadas de este modo no resulta práctico. Si el usuario desea exhibir un subconjunto de una selección de fotografías, tendrá primero que seleccionar las fotografías que desea mostrar, copiarlas en un lugar aparte y luego ordenarlas de acuerdo al orden de exposición deseado. Dicho trabajo, si se ha de realizar con los gestores de ficheros actuales, puede resultar una tarea ardua y tediosa, sobre todo si se han de renombrar los archivos de forma manual para darles el orden deseado.
 
-Para resolver estos problemas y hacer la tarea mas llevadera, nace la idea de Apolo, un \emph{Clasificador de Imágenes Digitales inspirado en los Clasificadores de Diapositivas de la Fotografía Analógica.} Los clasificadores de fotografía analógicos se caracterizaban por la facilidad de clasificación y ordenación de las diapositivas o fotografías, y es precisamente esa facilidad la que deseamos tener en el software a desarrollar para hacer la tarea mas amigable. Por lo tanto Apolo tiene un funcionamiento muy similar, la cual se pasa a describir:
+Para resolver estos problemas y hacer esta tarea menos tediosa, nace la idea de Apolo, un \emph{Clasificador de Imágenes Digitales inspirado en los Clasificadores de Diapositivas de la Fotografía Analógica}. Los clasificadores de fotografía analógicos, tal como el que aparece en la Figura~\ref{fig:back:clasificador}, no es mas que una superficie retroiluminada, e inclinada generalmente, con unas filas al estilo de baldas, donde es posible depositar las diapositivas. De esta manera gracias a la luz que emite es posible visualizar la imagen de la diapositiva mientras esta permanece posada en la balda.
 
-%%************************
-%%    Mezclo diapositiva y fotografia.
-%%    Estaria bien definir un unico nombre.
-%%************************
+\begin{figure}[!tb]
+  \begin{center}
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.5\linewidth]{planificacion/images/clasificadorAnalogico.eps} \\
+  \caption{Ejemplo de clasificador de diapositivas analógicas}
+  \label{fig:plan:clasificador}
+  \end{center}
+\end{figure}
+
+El objetivo del clasificador analógico es que la persona sea capaz de organizar y clasificar las diapositivas de una manera rápida y simple. La persona sólo debe ir posicionándolas en las filas según el orden que desee e ir descartando las que no le satisfagan. Al finalizar la tarea tendrá las diapositivas situadas encima del clasificador en el orden deseado y se se tratará simplemente de recogerlas y guardarlas en el mismo orden.
+
+El objetivo de Apolo es imitar en la medida de lo posible el funcionamiento de estos clasificadores de diapositivas analógicos. Para ello Apolo ofrece las siguientes funciones:
 
 \begin{enumerate}
-\item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importada una carpeta o una serie de fotografías, estas aparecerán en la zona baja de la aplicación como si de unas diapositivas clásicas se trataran.
-\item El usuario puede a partir de ese momento empezar a seleccionar las fotografías que considere adecuadas y arrastrarlas hasta la parte central de la aplicación, en esta zona se encuentran una especie de estanterías, o baldas, donde depositar la diapositiva arrastrada.
-\item Cada fotografía tiene un menu asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo), descartarla u observar los detalles de la misma (metadatos).
-\item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desea.
-\item También puede cambiar la diapositiva de estantería de la misma forma. Simplemente arrastrando la fotografía seleccionada y depositándola en la estantería deseada.
-\item Una vez este una estantería a gusto del usuario, y por tanto una subsecuencia de fotografías, puede indicar a la aplicación que las lleve a la zona superior, donde se encuentran las subsecuencias de fotografías clasificadas y ordenadas.
-\item El usuario también puede descartar todas las fotos que se encuentren en una estantería. De esta forma dejarían de aparecer en la aplicación. El efecto es el mismo que si no hubieran sido importadas en un principio.
-\item En la zona superior se puede reordenar subsecuencias de fotografías, es decir, una subsecuencia recién añadida, y por lo tanto al final de todas las subsecuencias, puede ser recolocada entre estas.
-\item Cuando en la zona superior de la aplicación se encuentren todas las subsecuencias de fotografías deseadas por el usuario. Este podrá exportarlas a un directorio. La aplicación realizara una copia de cada la foto original en el directorio indicado y las renombrara de manera que conserven la ordenación indicada.
-\item En ningún caso se modifican, ni suprimen las fotografías originales (las que se importan). En cada exportación se duplican tantas fotos como fueron seleccionadas.
-\item Se puede guardar el trabajo realizado en el programa en un fichero con un formato propio para la aplicación. De esta manera es posible realizar la ordenación y clasificación en distintos momentos, dando la posibilidad de dejar a medio hacer la tarea para finalizarla en otro momento.
-\item El usuario podrá por medio de los ficheros guardados crear albums de fotos de manera rápida. Solo deberá abrir el fichero que contiene la clasificación y orden de las fotografías y exportarlas a una carpeta.
-\end{enumerate} 
+\item Dentro de la aplicación cada fotografía aparecerá mostrada como si de una diapositiva \emph{clásica} se tratara.
+\item Cada diapositiva tiene un menú asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo) o descartarla, así como otros datos de interés que se consideren relevantes.% u observar los detalles de la misma (metadatos).
+\item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
+	estas aparecerán en aplicación como un conjunto de diapositivas esparcidas
+    sobre una mesa. A esta zona la denominaremos precisamente \emph{Mesa}.
+\item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación o baldas}. En esta zona se simularán una especie de estanterías o baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
+\item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desee.
+\item También puede cambiar la diapositiva de estantería de la misma forma, arrastrándola y soltándola en la estantería deseada.
+\item Cada vez que el usuario haya conseguido ordenar de forma satisfactoria una secuencia de diapositivas, puede marcarla como subsecuencia ordenada y darle un nombre. A continuación, todas las diapositivas se agruparán en una sola, que sirve de portada a la subsecuencia; y se moverán a una zona diferenciada que denominaremos de
+	\emph{subsecuencias ordenadas o album}. El aspecto de esta zona será como el
+    de una estantería diferenciada, donde se disponen las subsecuencias horizontalmente.
+\item El usuario también puede descartar todas las diapositivas que se encuentren en una estantería, dejando éstas de aparecer en la aplicación.
+\item En la zona de \emph{subsecuencias ordenadas o album} se puede alterar el orden de las subsecuencias. Es decir, una subsecuencia recién añadida, y que inicialmente se situaría al final de la lista de subsecuencias, puede ser desplazada para colocarse entre dos subsecuencias ya existentes o al principio de la lista de subsecuencias.
+\item Cuando en la zona superior de la aplicación se encuentren todas las subsecuencias de diapositivas ordenadas de acuerdo a los deseos del usuario, éste podrá exportarlas a un directorio o carpeta a su elección. La aplicación entonces creará una copia de cada una de las fotografías seleccionadas en tal carpeta y las renombrará de manera que preserven el orden deseado.
+\item En ningún caso se modificarán o suprimirán las fotografías originales (las que se importan). En cada exportación se duplican tantas fotografías como sean necesarias.
+\item Debe ser posible guardar el estado actual de la aplicación en caso de que se tenga que interrumpir el proceso de clasificación y se desee continuarlo más tarde.
+\item El usuario, basándose en estos estados parciales de la aplicación, podrá crear albums de fotos de manera rápida. Solo deberá abrir el fichero que contiene la clasificación y orden de las diapositivas deseados y exportarlas a una determinada carpeta para obtener un conjunto de fotografías digitales en el orden deseado.
+\end{enumerate}
+
+%%==========================================================================================
+%% NOTA(Pablo): Párrafo de enlace.
+%%==========================================================================================
+Tras describir a grandes rasgos el funcionamiento de la aplicación, la siguiente sección proporciona una visión de la metodología que utilizaremos para su desarrollo, así como las justificaciones para la elección de la misma.
 
 \section{Metodología de Desarrollo}
 \label{sec:planning:metodologia}
 
+%%==========================================================================================
+%% NOTA(Pablo): Frase de introducción.
+%%==========================================================================================
+
+La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental Iterativo}. Se traba de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo de manera incremental, otorgando en cada iteración mas funcionalidades al sistema.
+%Buscar una cita de algún personaje famoso
+
+Esta metodología requiere, inicialmente, una buena descripción del sistema o aplicación a desarrollar. Es esencial que sea clara y lo mas completa posible, pues a partir de ella se sustentará todo el proceso de desarrollo.
+
+\begin{figure}[!b]
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=\linewidth]{planificacion/images/mod-iterativo.eps}\\
+  \caption{Modelo Incremental Iterativo}
+  \label{fig:plan:modeloItera}
+\end{figure}
+
+Basándose en la descripción se definen una serie de incrementos en donde cada uno añade mas funcionalidades a la aplicación, y por tanto cumple con una serie de requisitos. Debe comenzarse con la funcionalidad mas básica de la aplicación, de manera que pueda ir construyéndose incrementalmente, es decir que cada version incorpore a la anterior una funcionalidad nueva, la cual hará que se cumpla un requisito o varios.
+
+Dentro de cada iteración hay un proceso interno,
+%que puede considerarse un ciclo de vida en Cascada
+en el que se analizan los requisitos de esa iteración, se diseña, se implementa y finalmente se prueba el correcto funcionamiento. La primera iteración dará como resultado la version inicial de la aplicación con una funcionalidad muy básica, y solo cumpliendo los requisitos mas básicos. A medida que vayan sucediendo iteraciones la aplicación ira cobrando funcionalidad. En la ultima iteración se obtendrá el producto final, el cual debe cumplir todos y cada uno de los requisitos.
+
+La ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo, es que al ser la interfaz gráfica una parte imprescindible al igual que la usabilidad, se puede en cada incremento ver si la solución tomada es la adecuada para las expectativas esperadas, y en caso contrario corregirla antes de seguir avanzando en el desarrollo de la misma.
+
+Además gracias a que es un modelo evolutivo, se permiten (y es mas, se esperan) cambios en los requisitos en tiempo de desarrollo. Lo cual permite cierto margen de cambio en el funcionamiento de la aplicación.
+
+%%%%=====
+%%  No me gusta nada como queda esta lista :S
+%%%%=====
+
+Las iteraciones planificadas son las siguientes:
+\begin{enumerate}
+	\item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
+	\item Importar varias fotografías, llenar pool, realizar estanterías. (Ver R03 y R04)
+	\item Mover las diapositivas a la parte central y que se queden fijadas. (Ver R05 y R06)
+	\item Recolocación de diapositivas entre la misma estantería, cambio de diapositivas entre estanterías. (Ver R07 y R08)
+	\item Poder añadir fila a la zona superior, poder descartar fila. (Ver R09 y R10)
+	\item Reordenar subsecuencias arrastrándolas entre la zona superior. (Ver R11)
+	\item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
+	\item Guardar el estado de la aplicación. (Ver R15)
+	\item Cargar la aplicación al estado. (Ver R16)
+	\item Retoques, Efectos visuales, corrección de bugs.
+\end{enumerate}
+
 %%% Por cada iteración (hacer las iteraciones pequeñas)
-% - Casos de uso
-% - Refinamiento de requisitos
-% - Implementación
+%- Casos de uso
+%- Refinamiento de requisitos
+%- Diagrama si fuese necesario
+%- Implementación
+%- Pruebas
 
 \section{Requisitos de Alto Nivel de la Aplicación}
 \label{sec:planning:requisitos}
+
+\begin{tabular}{|c|p{9cm}|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Referencia & Requisito \\
+  \hline  \hline
+  R01 & Una fotografía deberá ser representada como una diapositiva \\
+  \hline
+  R02 & La diapositiva podrá visualizarse o descartarse\\
+  \hline
+  R03 & La aplicación importará las fotografías para trabajar con ellas \\
+  \hline
+  R04 & Tras la importación aparecerán todas ellas en la zona baja de la aplicación \\
+  \hline
+  R05 & Las diapositivas deberán poderse arrastrar hasta la zona media de la aplicación donde habrá unas zonas donde depositarlas (estanterías) \\
+  \hline
+  R06 & Una vez soltada la diapositiva en la zona central, deberá permanecer allí anclada \\
+  \hline
+  R07 & Se podrán recolocar las diapositivas dentro de cada estantería arrastrandolas\\
+  \hline
+  R08 & Se podrá cambiar diapositivas entre estanterías arrastrandolas\\
+  \hline
+  R09 & Una estantería, o subsecuencia de diapositivas, ya ordenada y clasificada, podrá ser almacenada en la zona superior de la aplicación  \\
+  \hline
+  R10 & Una estantería, o subsecuencia de diapositivas, podrá ser descartada \\
+  \hline
+  R11 & En la zona superior, se podrá reordenar subsecuencias de diapositivas \\
+  \hline
+  R12 & Se podrá exportar la clasificación y ordenación a un directorio \\
+  \hline
+  R13 & La exportación deberá conservar el orden fijado durante el uso de la aplicación \\
+  \hline
+  R14 & No se modificarán las fotografías originales, se copiarán  \\
+  \hline
+  R15 & Se podrá guardar el estado de la aplicación en un fichero \\
+  \hline
+  R16 & Se podrá cargar la aplicación a un estado previo por medio de un fichero \\
+  \hline
+\end{tabular}
 
 \section{Diseño de los Artefactos Base del Proyecto}
 
@@ -60,6 +163,67 @@ Para resolver estos problemas y hacer la tarea mas llevadera, nace la idea de Ap
 %%  - La interfaz gráfica
 %%  - Haces un diagrama de clases con las estructuras de datos
 
+Los artefactos básicos del proyecto Apolo son la interfaz gráfica y la representación de la fotografía como diapositiva dentro de la aplicación. Son los elementos mas básicos para el funcionamiento de la aplicación.
+
+La representación de la fotografía como Diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentara evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
+
+\begin{figure}[!tb]
+ \begin{center}
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=0.5\linewidth]{planificacion/images/MarcoDiapositiva.eps}\\
+  \caption{Esquema del Diseño del Marco de la diapositiva.}
+  \label{fig:plan:esquemaMarcoDiapositiva}
+ \end{center}
+\end{figure}
+
+La interfaz gráfica es un componente muy importante en el proyecto, pues se hace hincapié en en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas:
+
+%******
+% Esta lista queda FATAL!!! :S
+%******
+\begin{description}
+	\item[Mesa] Se encuentra en la zona inferior de la aplicación. En ella todas las fotografías importadas a la aplicación y con las que se desea trabajar. Aparecerán una a continuación de otra, de manera que el usuario sea capad de seleccionar la que desee.
+	\item[Zona de Clasificación o Estantería] Esta en la zona central de la aplicación, esta compuesta por baldas donde el usuario podrá ir \emph{posando} las diapositivas que vaya arrastrando, de manera que vaya ordenando y clasificando según su gusto y criterio.
+	\item[Zona de Subsecuencias Ordenadas o Album] Se ubica en la parte superior de la aplicación, allí el usuario almacenará las subsecuencias que considere ya ordenadas, de manera que cuando desee exportar, serán estas, según el orden en el que se encuentren las que serán exportadas se colocan las subsecuencial que formaran la secuencia final.
+\end{description}
+
+La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer boceto de la interfaz gráfica de la aplicación, donde se pueden ver las diferentes zonas mencionadas en el listado anterior.
+
+%***
+% OK
+%***
+\begin{figure}[!tb]
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=\linewidth]{planificacion/images/MontajeInterfazGrafica.eps}\\
+  \caption{Esquema del Diseño Inicial de la Interfaz Gráfica.}
+  \label{fig:plan:esquemaDiseñoInterfaz}
+\end{figure}
+
+%*=============
+% Igual explicarlo un poco mejor
+%*=============
+
+\begin{figure}[!htb]
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=\linewidth]{planificacion/images/EstructuraDeDatos.eps}
+  \caption{Esquema del Diseño de la estructura de datos.}
+  \label{fig:plan:esquemaDiseñoEstrucDatos}
+\end{figure}
+
+
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} como se relacionan los componentes de la aplicación.
+
+
+
 \section{Construcción de Prototipos}
 
 %%  Hacer una bean diapositiva, cargar una diapositiva y moverla
+El prototipo construido es una aplicación simple en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del  componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva y cual de todas esta arrastrando. Esto puede verse en la figura \ref{fig:plan:DnD}, este prototipo servirá para la investigar y conocer la técnica del \emph{Drag and Drop} algo fundamental en el uso de la aplicación si queremos que su uso resulte fácil y atractivo.
+
+\begin{center}
+    \begin{figure}
+        \includegraphics[width=\linewidth]{planificacion/images/prototipo.eps}
+        \caption{Efecto de Drag and Drop}
+        \label{fig:plan:DnD}
+    \end{figure}
+\end{center} 

@@ -1,0 +1,137 @@
+%============================================================================%
+% Author : Angel Tezanos Ibañez                                              %
+% Author : Pablo Sánchez Barreiro                                            %
+% Version: 2.0, 07/04/2011                                                   %
+% Master Thesis: Iteración 5                                                 %
+%============================================================================%
+
+\chapterheader{Quinta Iteración}{Quinta Iteración}
+\label{chap:iteracion5}
+
+\todo{Párrafo introductorio}
+
+\chaptertoc
+
+\section{Por que esta Iteración}
+\label{sec:iteracion5:porQueEstaIteracion}
+Se eligió esta iteración por mostrar la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Album} el ultimo que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
+
+Al final de esta iteración será posible hacer gran parte de la clasificación, pues ya estarán operativas las estanterías, y el alojamiento de subsecuencias en la zona superior, por lo que la funcionalidad principal de la aplicación estará prácticamente finalizada, recordemos que es clasificar y organizar fotografías.
+
+\section{Casos de uso}
+\label{sec:iteracion5:casosDeUso}
+Los casos de uso de la quinta iteración corresponden a las acciones de añadir una balda a la zona superior, \emph{Album} y de esta forma validar un subconjunto de diapositivas. El otro caso de uso sera deshacerse de la balda y de esta manera suprimir las diapositivas que se encuentren en la balda. Ver Figura \ref{fig:ite5:casoDeUso}
+
+\begin{figure}[!tb]
+    \begin{center}
+        %\includegraphics[width=0.8\linewidth]{iteracion5/images/casoDeUso.eps}
+        \caption{Casos de uso de la iteración 5}
+        \label{fig:ite5:casoDeUso}
+    \end{center}
+\end{figure}
+
+El usuario al finalizar esta iteración debe ser capaz de poder añadir o validar una subsecuencia de fotos a la zona superior o \emph{Album} de manera que queden bloqueadas y ordenadas para su posterior exportación.
+También deberá ser posible eliminar una balda de la estantería de la aplicación, y que todas las diapositivas desaparezcan con ella.
+
+\section{Refinamiento de requisitos}
+\label{sec:iteracion5:refinamientoRequisitos}
+A consecuencia del análisis de requisitos de esta iteración surgieron una serio de refinamiento en los requisitos iniciales, así como nuevos requisitos.
+
+\begin{figure}[!htb]
+  \begin{center}
+    \begin{tabular}{|c|p{9cm}|}
+      \hline
+      % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+      Numero & Nuevo Requisito \\
+      \hline \hline
+       R09.1 & Para indicar al sistema que se desea validar una balda o subsecuencia de diapositivas, se deberá pulsar un botón \\
+      \hline
+       R09.2 & No será posible añadir una balda si no hay sobre ella ninguna diapositiva. \\
+       \hline
+       R09.3 & A cada balda de la estantería, se la podrá dar un nombre o descripción, de manera que al usuario le resulte mas sencillo identificar que tipos de diapositivas van en ella \\
+      \hline
+       R09.3.1 & La descripción que posea la balda, la tendrá el subconjunto de diapositivas, de manera que pueda seguir siendo identificadas como tal \\
+      \hline
+       R09.4 & Debe ser posible que un usuario pueda volver a modificar la subsecuencia de diapositivas. Es decir, la subsecuencia debe poder volverse a la estantería como balda \\
+      \hline
+       R09.4.1 & Antes de proceder a convertir la estantería en balda, se debe mostrar un mensaje advirtiendo al usuario de la acción que va a realizar. \\
+      \hline
+       R09.4.2 & Cuando una subsecuencia se convierta en balda, esta debe contener todas las diapositivas que contenía la subsecuencia, y deben poder ser arrastradas de nuevo \\
+      \hline
+       R09.4.3 & La balda que aparecerá como resultado de un subconjunto de diapositivas, tendrá la misma descripción del subconjunto. \\
+      \hline
+       R10.1 & Antes de ser descartada se le debe preguntar al usuario si es esto lo que realmente desea. \\
+      \hline
+    \end{tabular}
+    \caption{Refinamiento de Requisitos Iteración 5}
+    \label{fig:ite5:refinamiento}
+  \end{center}
+\end{figure}
+
+\section{Diagrama de clases}
+\label{sec:iteracion5:diagramaDeClases}
+
+\section{Implementación}
+\label{sec:iteracion5:implementacion}
+    Llegados a esta iteración ya disponemos de la aplicación con su mitad de funcionalidades implementadas, y su principal funcionalidad esta prácticamente acabada\footnote{Clasificar y organizar fotografías}.
+
+    Para proceder con la implementación de esta iteración, lo primero que se hizo diseñar y posteriormente crear el ultimo componente de la aplicación. La zona \emph{Album o de subsecuencias ordenadas}. una vez creada se añadió al resto de la aplicación y se comprobó su correcta integración en el sistema.
+
+    Una vez integrada se comenzó a enlazar el nuevo componente con los ya presentes de manera que respondiera a los eventos necesarios para la correcta inclusion en el sistema. De esta forma, se programó que al pulsar el botón de alguna balda, las diapositivas depositadas en ella, fueran enviadas al nuevo componente, para que este las incluyera en si, de manera que mostrara dicha subsecuencia habida en la balda.
+
+    Se dotó de la posibilidad de añadir una descripción a las baldas, por lo que hubo que modificar el componente \emph{Balda} para que esto fuera posible. Gracias al diseño por componentes, fue un cambio relativamente sencillo, pero que dota de un detalle bastante útil a la aplicación.
+
+%%%%%%%%%%%%*****************
+%% Hablar del bean paquetedediapositivas?¿?
+%%%%%%%%%%%%*****************
+
+
+\section{Pruebas}
+\label{sec:iteracion5:pruebas}
+
+    Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que los requisitos que se marcaron en la primera iteración están cumplidos.
+
+    Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
+    \begin{enumerate}
+        \item Añadir balda como subsecuencia ordenada:
+            \begin{description}
+            \item[Resultado Esperado] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación.
+            \item[Resultado Obtenido] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación. (Correcto)
+        \end{description}
+
+        \item Intentar añadir una subsecuencia vacía:
+            \begin{description}
+                \item[Resultado Esperado] Mensaje de error, informando de lo ocurrido.
+                \item[Resultado Obtenido] Mensaje de error, informando de lo ocurrido. (Correcto)
+            \end{description}
+
+        \item Añadir nombre o descripción a la balda:
+            \begin{description}
+                \item[Resultado Esperado] Renombre de la balda.
+                \item[Resultado Obtenido] Renombre de la balda. (Correcto)
+            \end{description}
+
+        \item Añadir balda con descripción como subsecuencia ordenada:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
+                \item[Resultado Obtenido] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
+        \end{description}
+
+        \item Convertir subsecuencia ordenada en balda:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
+                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas. (Correcto)
+        \end{description}
+
+        \item Convertir subsecuencia ordenada con descripción en balda:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
+                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas. (Correcto)
+        \end{description}
+        
+        \item Eliminar una balda:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
+                \item[Resultado Obtenido] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas. (Correcto)
+        \end{description}
+    \end{enumerate}
