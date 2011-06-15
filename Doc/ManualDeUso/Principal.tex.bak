@@ -67,7 +67,7 @@
 %Inicio del manual en una nueva página
 \newpage
 
-\section{Description Apolo} \label{sec:descripcion}
+\chapter{Description Apolo} \label{sec:descripcion}
     Apolo surge como proyecto fin de carrera de Angel Tezanos Ibáñez supervisado por Pablo Sánchez Barreiro, para poder acceder a la titulación de Ingeniero Superior en Informática.
 
     La idea era desarrollar un programa que fuera capaz de organizar y clasificar fotografías de forma similar a como se hacia antiguamente con las diapositivas analógicas. Esto es, una vez seleccionadas e importadas las fotografías, estas deberán poder ser arrastradas por la aplicación hacia una zona de donde habrá unas baldas en las cuales se deberán depositar.
@@ -167,7 +167,7 @@
 
         %Imagen instalado...
         \begin{center}
-             %\includegraphics[scale=0.7]{img/instalando.eps}
+             %\includegraphics[scale=0.5]{img/instalando.eps}
         \end{center}
 
         Para finalizar el asistente nos ofrece la posibilidad de ejecutar tras salir de el la aplicación recién instalada. Por defecto viene marcada, si no lo desea desmarquela y pulsa finalizar.
@@ -178,9 +178,13 @@
         \end{center}
 
     \subsection{Linux} \label{sec:ins:lin}
-    \subsection{Resto de Plataformas} \label{sec:ins:source}
+
+    \subsection{Otras Plataformas} \label{sec:ins:source}
+        Para la instalación de Apolo en otras plataformas deberá compilar el código usted mismo. Lo cual le dará un ejecutable totalmente funcional de Apolo.
 
 \section{Desinstalación} \label{sec:desin}
+    La desisntalación de Apolo resulta sencilla. Si se usaron los asistentes de instalación para los sistemas \emph{Microsoft Windows} \emph{Linux} la desisntalación será guiada igual que la instalación.
+
     \subsection{Microsoft Windows} \label{sec:desin:win}
         Para desinstalar Apolo se su sistema Microsoft Windows debe ejecute el desinstalador que se encuentra en el directorio de instalación de Apolo o ejecutar el acceso directo que se encuentra en el menu de aplicaciones.
         \begin{center}
@@ -200,6 +204,10 @@
         \end{center}
 
     \subsection{Linux} \label{sec:desin:lin}
+
+    \subsection{Otras Plataformas} \label{sec:desin:lin}
+        Elimine todos los archivos de la carpeta donde fue compilado el código fuente. Apolo no genera archivos en ninguna parte del sistema.
+
 
 \section{Zonas de Apolo} \label{sec:zon}
     El software Apolo representa las fotografías como si de diapositivas se trataran, teniendo una representación de este tipo en la interfaz gráfica.
@@ -337,9 +345,32 @@
     Cabe destacar que mientras se va importando fotografías a la aplicación, el usuario puede empezar a ordenarlas y clasificarlas.
 
 \section{Ordenar y Clasificar Fotografías} \label{sec:ord}
-    La gran finalidad de Apolo es ordenar y clasificar diapositivas de una manera fácil e intuitiva.
+    La gran finalidad de Apolo es ordenar y clasificar diapositivas de una manera fácil e intuitiva. Para ello se vale del sistema \emph{Drag and Drop}. Es decir una vez pulsado el botón izquierdo del ratón sobre una diapositiva\footnote{Recordemos que una diapositiva representa a una fotografía} esta podrá ser arrastrada por la aplicación.
+
+    %Imagen fantasma
+    \begin{center}
+              \includegraphics[scale=0.3]{img/mover.eps}
+    \end{center}
+
     \subsection{Mover a Estantería} \label{sec:ord:move}
+        Si la diapositiva se mueve hacia la estantería y se deposita en alguna balda contenida en ella, esta sera depositada en la balda. Si en la balda se encuentran otras diapositivas, la soltada se situara entre las dos diapositivas donde se haya soltado, y en caso de que se suelte al principio o al final esta sera ubicada al principio o final del resto de diapositivas, según corresponda.
+
+        Las diapositivas pueden intercambiarse de baldas, de manera que si en un principio se ubico una diapositiva en una balda, esta podrá ser reubicada en otra en cualquier momento.
+
+        %Imagen moviendo entre estanterias
+        \begin{center}
+              \includegraphics[scale=0.3]{img/mover1.eps}
+        \end{center}
+
     \subsection{Mover a Album} \label{sec:ord:mova}
+        Para pasar un paquete de diapositivas hacia la parte superior de la aplicación esto debe realizarse a través de del botón \emph{Añadir subsecuencia} De esta manera desaparecerá la balda y aparecerá un paquete de diapositivas en la zona superior, a continuación de los que ya hubiera, con la descripción de la balda.
+
+        En el caso de que el usuario desee intercambiar el orden del los conjuntos de diapositivas tan solo deberá realizar la operación de \emph{Drag and Drop} con los paquetes de diapositivas\footnote{Hay que recordar que según el orden de los paquetes de diapositivas las fotografías serán exportadas en un orden u otro}.
+
+        %Imagen moviendo paquetes de fotos
+        \begin{center}
+              \includegraphics[scale=0.3]{img/mover2.eps}
+        \end{center}
 
 
 \section{Exportar Fotografías Apolo} \label{sec:exp}

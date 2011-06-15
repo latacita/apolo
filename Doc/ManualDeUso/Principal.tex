@@ -3,18 +3,19 @@
 %
 %
 
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{lmodern}
+\usepackage[textheight=23cm,headsep=1cm]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 
 %Configuracion hyperref
 \hypersetup{bookmarksopen,bookmarksnumbered,bookmarksopenlevel=1,%
 	colorlinks,urlcolor=black,citecolor=black,%
-	linkcolor=black,filecolor=black,pdfnewwindow,%
+	 linkcolor=black,filecolor=black,pdfnewwindow,%
 	pdftitle={Manual Apolo},%
 	pdfauthor={Angel Tezanos Ibañez estudiante de Ingeniería Informática, UNICAN},%
 	pdfsubject={Manual del PFC Apolo}}
@@ -52,7 +53,7 @@
     \end{center}
 
     %Para bajar el abstract
-    \vspace{11cm}
+    \vspace{12cm}
     \begin{abstract}
         Manual de usuario para el software Apolo.
         En el se explica su uso, así como todas las funciones de las que dispone Apolo
@@ -80,6 +81,7 @@
     \subsection{Objetivo de Apolo} \label{sec:descripcion:obj}
         El principal objetivo de Apolo es lograr que el usuario pueda ordenar y clasificar sus fotografías de una manera cómoda y simple. De manera que no sea necesario el uso de complejos programas fotográficos que logran realizar la tarea, pero de una forma tediosa.
 
+\newpage
 \section{Requisitos Mínimos} \label{sec:req}
     Como cualquier programa, para que pueda ser ejecutado requiere que se cumplan una serie de requisitos tanto en el hardware que lo ejecutara como el software en el que se apoya.
 
@@ -98,7 +100,7 @@
         \end{itemize}
 
 
-
+\newpage
 \section{Instalación Apolo} \label{sec:ins}
     Apolo esta desarrollado en el lenguaje de programación Java, lo cual hace posible que de una manera sencilla lograr que un programa sea multiplataforma.
 
@@ -117,9 +119,13 @@
         Lo primero que deberá hacer en este asistente sera seleccionar el idioma en el que usted desea que transcurra la aplicación.
 
         %Imagen seleccion de idioma
-        \begin{center}
-           \includegraphics[scale=1]{img/seleccionIdioma.eps}
-        \end{center}
+        %\begin{figure}[!htb]
+            \begin{center}
+               \includegraphics[scale=1]{img/seleccionIdioma.eps}
+            \end{center}
+        %    \caption{Seleccion de idioma}
+        %    \label{fig:1}
+        %\end{figure}
 
         Posteriormente se le dará la bienvenida al asistente y le indicara que es recomendable que cierre el resto de aplicaciones antes de proceder a la instalación.
 
@@ -178,10 +184,11 @@
         \end{center}
 
     \subsection{Linux} \label{sec:ins:lin}
-    
+
     \subsection{Otras Plataformas} \label{sec:ins:source}
         Para la instalación de Apolo en otras plataformas deberá compilar el código usted mismo. Lo cual le dará un ejecutable totalmente funcional de Apolo.
 
+\newpage
 \section{Desinstalación} \label{sec:desin}
     La desisntalación de Apolo resulta sencilla. Si se usaron los asistentes de instalación para los sistemas \emph{Microsoft Windows} \emph{Linux} la desisntalación será guiada igual que la instalación.
 
@@ -204,11 +211,11 @@
         \end{center}
 
     \subsection{Linux} \label{sec:desin:lin}
-    
+
     \subsection{Otras Plataformas} \label{sec:desin:lin}
         Elimine todos los archivos de la carpeta donde fue compilado el código fuente. Apolo no genera archivos en ninguna parte del sistema.
-        
 
+\newpage
 \section{Zonas de Apolo} \label{sec:zon}
     El software Apolo representa las fotografías como si de diapositivas se trataran, teniendo una representación de este tipo en la interfaz gráfica.
 
@@ -320,6 +327,7 @@
               \item Desempaquetar: Elimina el paquete de diapositivas y crea una nueva balda con las fotografías contenidas en el paquete.
             \end{itemize}
 
+\newpage
 \section{Importar Fotografías Apolo} \label{sec:imp}
     Para importar fotografías en el software Apolo se debe pulsar o bien el botón \emph{Importar}, visible en la aplicación, a la derecha de la zona \emph{Album} o bien a través del menu superior de la aplicación \emph{Importar/Exportar -> Importar}
 
@@ -344,6 +352,7 @@
 
     Cabe destacar que mientras se va importando fotografías a la aplicación, el usuario puede empezar a ordenarlas y clasificarlas.
 
+\newpage
 \section{Ordenar y Clasificar Fotografías} \label{sec:ord}
     La gran finalidad de Apolo es ordenar y clasificar diapositivas de una manera fácil e intuitiva. Para ello se vale del sistema \emph{Drag and Drop}. Es decir una vez pulsado el botón izquierdo del ratón sobre una diapositiva\footnote{Recordemos que una diapositiva representa a una fotografía} esta podrá ser arrastrada por la aplicación.
 
@@ -372,7 +381,7 @@
               \includegraphics[scale=0.3]{img/mover2.eps}
         \end{center}
 
-
+\newpage
 \section{Exportar Fotografías Apolo} \label{sec:exp}
     Para exportar fotografías en el software Apolo se debe pulsar o bien el botón \emph{Exportar}, visible en la aplicación, a la derecha de la zona \emph{Album} o bien a través del menu superior de la aplicación \emph{Importar/Exportar -> Exportar}
 
@@ -403,6 +412,7 @@
 
     La exportación es muy eficiente, por lo que se realizara de una manera rápida. Recordemos que se copian las fotos originales, nunca se trasladan las originales.
 
+\newpage
 \section{Guardar estado de la aplicación} \label{sec:sav}
     Apolo ofrece la posibilidad de guardar el estado de la aplicación en un fichero, de manera que pueda cerrarse la aplicación y al abrirla mas adelante sea posible recuperar el estado en el que se encontraba.
 
@@ -423,6 +433,7 @@
 
     Una vez seleccionado el directorio se desbloqueara el botón \emph{Guardar} y al pulsarlo se procederá a crear el fichero que almacene el estado de la aplicación.
 
+\newpage
 \section{Cargar estado de la aplicación} \label{sec:load}
     Apolo ofrece la posibilidad de cargar el estado de la aplicación de un fichero, de manera que pueda recuperarse el estado en el que se encontraba en otro momento.
 
