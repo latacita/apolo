@@ -32,9 +32,9 @@ Para resolver estos problemas y hacer esta tarea menos tediosa, nace la idea de 
   \end{center}
 \end{figure}
 
-El objetivo del clasificador analógico es que la persona sea capaz de organizar y clasificar las diapositivas de una manera rápida y simple. La persona sólo debe ir posicionándolas en las filas según el orden que desee e ir descartando las que no le satisfagan. Al finalizar la tarea tendrá las diapositivas estarán situadas encima del clasificador en el orden deseado y se se tratará simplemente de recogerlas y guardarlas en el mismo orden.
+El objetivo del clasificador analógico es que la persona sea capaz de organizar y clasificar las diapositivas de una manera rápida y simple. La persona sólo debe ir posicionándolas en las filas según el orden que desee e ir descartando las que no le satisfagan. Al finalizar la tarea tendrá las diapositivas situadas encima del clasificador en el orden deseado y se se tratará simplemente de recogerlas y guardarlas en el mismo orden.
 
-El objetivo de Apolo es imitar en la medida de los posible el funcionamiento de estos clasificadores de diapositivas analógicos. Para ello Apolo ofrece las siguientes funciones:
+El objetivo de Apolo es imitar en la medida de lo posible el funcionamiento de estos clasificadores de diapositivas analógicos. Para ello Apolo ofrece las siguientes funciones:
 
 \begin{enumerate}
 \item Dentro de la aplicación cada fotografía aparecerá mostrada como si de una diapositiva \emph{clásica} se tratara.
@@ -166,7 +166,7 @@ Los artefactos básicos del proyecto Apolo son la interfaz gráfica y la represent
 
 La representación de la fotografía como Diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentara evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
 
-\begin{figure}[!h]
+\begin{figure}[!tb]
  \begin{center}
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.5\linewidth]{planificacion/images/MarcoDiapositiva.eps}\\
