@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  14 JUN 2011 12:10
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  15 JUN 2011 12:58
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -426,7 +426,7 @@ File: planificacion/images/clasificadorAnalogico.eps Graphic file (type eps)
 File: planificacion/images/mod-iterativo.eps Graphic file (type eps)
 
 <planificacion/images/mod-iterativo.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
@@ -436,27 +436,20 @@ File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
 File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
 
 <planificacion/images/MontajeInterfazGrafica.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 File: planificacion/images/EstructuraDeDatos.eps Graphic file (type eps)
-<planificacion/images/EstructuraDeDatos.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+<planificacion/images/EstructuraDeDatos.eps> [11]
+File: planificacion/images/prototipo.eps Graphic file (type eps)
 
- []
-
-[11]
-
-LaTeX Warning: Reference `fig:plan:DnD' on page 12 undefined on input line 221.
-
-
-) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [12] [13]
-[14
-
-]
+<planificacion/images/prototipo.eps>)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [12] [13]
+[14]
 Cap\'{\i }tulo 3.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc3) [15
+
 
 ])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex [16]
@@ -488,12 +481,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3989 strings out of 494020
- 54409 string characters out of 3143905
+ 3990 strings out of 494020
+ 54442 string characters out of 3143905
  133468 words of memory out of 3000000
  6933 multiletter control sequences out of 15000+200000
  23144 words of font info for 57 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,11n,43p,3901b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,11n,43p,131100b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (32 pages, 74204 bytes).
+Output written on pfc.dvi (32 pages, 74992 bytes).
