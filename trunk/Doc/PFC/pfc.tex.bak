@@ -20,8 +20,8 @@
 
 % Esto se añade porque a algún gracioso le apetecía que la fuente
 % de la portada fuese Arial
-\usepackage[T1]{fontenc}
-\usepackage[scaled]{uarial}
+%\usepackage[T1]{fontenc}
+%\usepackage[scaled]{uarial}
 
 
 % File with main configuration
@@ -98,6 +98,7 @@
 \input{despliegueAceptacion/despliegueAceptacion.tex}
 
 % Capítulo 10: Discusión, Conclusiones y Trabajos Futuros
+\input{discusion/discusion.tex}
 
 % CONTENT: Appendices, if desired
 \input{config/appendix.tex}
@@ -105,7 +106,7 @@
 % Appendix A:
 %\input{populo/populo.tex} % Appendix I
 
-%Apendice manual de usuario
+%Apéndice manual de usuario
 
 % CONFIG: Bibliography style
 % \input{config/bibliography.tex}

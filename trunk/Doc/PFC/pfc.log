@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  16 JUN 2011 11:16
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  16 JUN 2011 19:01
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -251,6 +251,9 @@ TextBlockOrigin set to 0pt x 0pt
 )) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/rename.tex)
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux
 
+LaTeX Warning: Label `sec:planning:metodologia' multiply defined.
+
+
 LaTeX Warning: Label `chap:introduction' multiply defined.
 
 )
@@ -444,7 +447,7 @@ File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
 File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
 
 <planificacion/images/MontajeInterfazGrafica.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
@@ -475,22 +478,22 @@ Cap\'{\i }tulo 5.
 
 
 ] [22]
-Overfull \hbox (0.72887pt too wide) in paragraph at lines 98--99
+Overfull \hbox (0.72887pt too wide) in paragraph at lines 100--101
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
 
-Overfull \hbox (0.71791pt too wide) in paragraph at lines 99--100
+Overfull \hbox (0.71791pt too wide) in paragraph at lines 101--102
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
 [23]
-Overfull \hbox (0.72887pt too wide) in paragraph at lines 116--117
+Overfull \hbox (0.72887pt too wide) in paragraph at lines 118--119
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
 
-Overfull \hbox (0.71791pt too wide) in paragraph at lines 117--118
+Overfull \hbox (0.71791pt too wide) in paragraph at lines 119--120
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
@@ -505,10 +508,20 @@ Cap\'{\i }tulo 6.
 
 ]
 Cap\'{\i }tulo 7.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7))
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\discusion/discusion.tex [29
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
 
-] [30
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+ [29
+
+] [30])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\discusion/discusion.tex [31] [32
 
 ]
 Cap\'{\i }tulo 8.
@@ -520,7 +533,7 @@ Package minitoc Info: I0009
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
- [31
+ [33
 
 ]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
@@ -532,12 +545,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4067 strings out of 494020
- 56505 string characters out of 3143905
+ 4085 strings out of 494020
+ 56818 string characters out of 3143905
  133468 words of memory out of 3000000
- 6964 multiletter control sequences out of 15000+200000
+ 6979 multiletter control sequences out of 15000+200000
  26219 words of font info for 65 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,11n,43p,131100b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,12n,43p,131100b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (43 pages, 116076 bytes).
+Output written on pfc.dvi (45 pages, 124380 bytes).
