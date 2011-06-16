@@ -92,9 +92,10 @@
 \input{iteracion5/iteracion5.tex}
 
 % Capítulo 6: Iteración 10
-%\input{iteracion10/iteracion10.tex}
+\input{iteracion10/iteracion10.tex}
 
 % Capítulo 9: Despliegue y Aceptación
+\input{despliegueAceptacion/despliegueAceptacion.tex}
 
 % Capítulo 10: Discusión, Conclusiones y Trabajos Futuros
 
