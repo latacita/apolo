@@ -105,7 +105,7 @@ Las iteraciones planificadas son las siguientes:
 	\item Exportar subsecuencias en el orden fijado. (Ver R12 y R13)
 	\item Guardar el estado de la aplicación. (Ver R15)
 	\item Cargar la aplicación al estado. (Ver R16)
-	\item Retoques, Efectos visuales.
+	\item Retoques, Efectos visuales, corrección de bugs.
 \end{enumerate}
 
 %%% Por cada iteración (hacer las iteraciones pequeñas)
@@ -211,7 +211,7 @@ La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer bo
 \end{figure}
 
 
-Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} como se relacionan los componentes de la aplicación. 
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} como se relacionan los componentes de la aplicación.
 
 
 
@@ -225,5 +225,5 @@ El prototipo construido es una aplicación simple en la que aparece una diapositi
         \includegraphics[width=\linewidth]{planificacion/images/prototipo.eps}
         \caption{Efecto de Drag and Drop}
         \label{fig:plan:DnD}
-    \end{figure} 
-\end{center}
+    \end{figure}
+\end{center} 

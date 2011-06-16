@@ -12,88 +12,88 @@
 
 \chaptertoc
 
-\section{Por que esta Iteración}
+\section{Objetivos}
 \label{sec:iteracion1:porQueEstaIteracion}
-Se eligió esta iteración por ser la primera y por tanto base del proyecto. En ella se crearán los principales componentes de la aplicación. Esto es la interfaz visual de la diapositiva, así como la mesa donde aparecerán una vez importadas. De la misma forma se desarrollará el comportamiento de la diapositiva, su movimiento de \emph{Drag\&Drop} y sus opciones de visualización y descarte (o eliminación de la aplicación)
+    Se eligió esta iteración por ser la primera y por tanto base del proyecto. En ella se crearán los principales componentes de la aplicación. Esto es la interfaz visual de la diapositiva, así como la mesa donde aparecerán una vez importadas. De la misma forma se desarrollará el comportamiento de la diapositiva, su movimiento de \emph{Drag\&Drop} y sus opciones de visualización y descarte (o eliminación de la aplicación)
 
-\section{Casos de uso}
-\label{sec:iteracion1:casosDeUso}
-Los casos de uso de la primera iteración corresponden a las acciones de importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. Como puede observarse en la figura \ref{fig:ite1:casoDeUso}
+\section{Ingeniería de Requisitos}
 
-\begin{figure}[!tb]
-    \begin{center}
-        \includegraphics[width=0.8\linewidth]{iteracion1/images/casoDeUso.eps}
-        \caption{Casos de uso de la iteración 1}
-        \label{fig:ite1:casoDeUso}
-    \end{center}
-\end{figure}
+    \subsection{Casos de uso}
+    \label{sec:iteracion1:casosDeUso}
+        Los casos de uso de la primera iteración corresponden a las acciones de importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. Como puede observarse en la figura \ref{fig:ite1:casoDeUso}
 
-Un usuario debe poder importar ua fotografía a la aplicación, y que una vez seleccionada esta aparezca en la mesa. Este es el primer caso de uso detectado.
-El segundo es que el usuario sea capaz de moverla, y con ello activar los eventos de drag and drop. Como tercer caso de uno esta, la posibilidad de visualizar la diapositiva, esto es ver la imagen que representa, y no la miniatura que se hizo de ella. Como ultimo caso de uso detectado en esta iteración esta la necesidad de poder descartar diapositivas que no queramos que se encuentren en nuestra aplicación.
+        \begin{figure}[!tb]
+            \begin{center}
+                \includegraphics[width=0.8\linewidth]{iteracion1/images/casoDeUso.eps}
+                \caption{Casos de uso de la iteración 1}
+                \label{fig:ite1:casoDeUso}
+            \end{center}
+        \end{figure}
 
-\section{Refinamiento de requisitos}
-\label{sec:iteracion1:refinamientoRequisitos}
-Como consecuencia del análisis y diseño de esta iteración surgieron una serie de refinamientos de los requisitos. Vease la figura \ref{fig:ite1:refinamiento}
-\begin{figure}[!htb]
-  \begin{center}
-    \begin{tabular}{|c|p{9cm}|}
-      \hline
-      % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-      Numero & Nuevo Requisito \\
-      \hline \hline
-       R01.1 & La importación de Diapositivas debe hacerse desde un hilo a parte, para que no se congele la interfaz de usuario, y este pueda realizar otras operaciones durante el proceso. \\
-      \hline
-       R03.1 & Durante la importación se hace necesario ofrecer al usuario un progreso sobre la operación, de manera que sepa en todo momento en que estado va la importación así como cerciorarse de posibles cuelgues (NO TENDRÁ!!!) \\
-      \hline
-       R05.1 & Para la realización del Drag \& Drop debe aplicarse algún tipo de sistema para que usuario sea consciente y vea por donde arrastra la diapositiva. \\
-      \hline
-    \end{tabular}
-    \caption{Refinamiento de Requisitos Iteración 1}
-    \label{fig:ite1:refinamiento}
-  \end{center}
-\end{figure}
+        Un usuario debe poder importar ua fotografía a la aplicación, y que una vez seleccionada esta aparezca en la mesa. Este es el primer caso de uso detectado.
+        El segundo es que el usuario sea capaz de moverla, y con ello activar los eventos de drag and drop. Como tercer caso de uno esta, la posibilidad de visualizar la diapositiva, esto es ver la imagen que representa, y no la miniatura que se hizo de ella. Como ultimo caso de uso detectado en esta iteración esta la necesidad de poder descartar diapositivas que no queramos que se encuentren en nuestra aplicación.
 
-\section{Diagrama de clases}
+    \subsection{Refinamiento de requisitos}
+    \label{sec:iteracion1:refinamientoRequisitos}
+        Como consecuencia del análisis y diseño de esta iteración surgieron una serie de refinamientos de los requisitos. Vease la figura \ref{fig:ite1:refinamiento}
+        \begin{figure}[!htb]
+            \begin{center}
+                \begin{tabular}{|c|p{9cm}|}
+                \hline
+                % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+                Numero & Nuevo Requisito \\
+                \hline \hline
+                R01.1 & La importación de Diapositivas debe hacerse desde un hilo a parte, para que no se congele la interfaz de usuario, y este pueda realizar otras operaciones durante el proceso. \\
+                \hline
+                R03.1 & Durante la importación se hace necesario ofrecer al usuario un progreso sobre la operación, de manera que sepa en todo momento en que estado va la importación así como cerciorarse de posibles cuelgues (NO TENDRÁ!!!) \\
+                \hline
+                R05.1 & Para la realización del Drag \& Drop debe aplicarse algún tipo de sistema para que usuario sea consciente y vea por donde arrastra la diapositiva. \\
+                \hline
+                \end{tabular}
+                \caption{Refinamiento de Requisitos Iteración 1}
+                \label{fig:ite1:refinamiento}
+            \end{center}
+        \end{figure}
+
+\section{Diseño}
 \label{sec:iteracion1:diagramaDeClases}
 
 \section{Implementación}
 \label{sec:iteracion1:implementacion}
 
-La implementación se realizo empezando por el componente mas básico, esto es la lógica de la diapositiva, a esta clase las denominamos \emph{Diapositiva.java}. Posteriormente se creo la interfaz visual de la diapositiva, y su comportamiento interno. A continuación se creo la interfaz visual de la mesa y finalmente el comportamiento de la misma. Cada una de las interfaces visuales se llamas \emph{GUIDiapositiva} y \emph{GUIMesa} respectivamente. Y con ello tenemos ya dos componentes de nuestra aplicación.
+    La implementación se realizo empezando por el componente mas básico, esto es la lógica de la diapositiva, a esta clase las denominamos \emph{Diapositiva.java}. Posteriormente se creo la interfaz visual de la diapositiva, y su comportamiento interno. A continuación se creo la interfaz visual de la mesa y finalmente el comportamiento de la misma. Cada una de las interfaces visuales se llamas \emph{GUIDiapositiva} y \emph{GUIMesa} respectivamente. Y con ello tenemos ya dos componentes de nuestra aplicación.
 
-Una vez finalizada \emph{GUIMesa.java} se procedió a integrarla en la ventana principal. Al utilizar la técnica de desarrollo por componentes resulta sumamente sencillo añadir este tipo de widgets o clases visuales a la ventana principal.
+    Una vez finalizada \emph{GUIMesa.java} se procedió a integrarla en la ventana principal. Al utilizar la técnica de desarrollo por componentes resulta sumamente sencillo añadir este tipo de widgets o clases visuales a la ventana principal.
 
-Posteriormente se implemento el resto de componentes necesarios para la realización de la primera iteración, esto es: un menu desde el que se ofrezca la opción de importar fotografía, un menu en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se opto por ejecutar el programa que tenga el sistema operativo por defecto a esa tarea.
+    Posteriormente se implemento el resto de componentes necesarios para la realización de la primera iteración, esto es: un menu desde el que se ofrezca la opción de importar fotografía, un menu en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se opto por ejecutar el programa que tenga el sistema operativo por defecto a esa tarea.
 
 \section{Pruebas}
 \label{sec:iteracion1:pruebas}
+    Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que los requisitos que se marcaron en la primera iteración están cumplidos.
 
-Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que los requisitos que se marcaron en la primera iteración están cumplidos.
+    Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
+    \begin{enumerate}
+        \item Importar Fotografía:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa.
+                \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa. (Correcto)
+            \end{description}
 
-Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
-\begin{enumerate}
-  \item Importar Fotografía:
-    \begin{description}
-      \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa.
-      \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa. (Correcto)
-    \end{description}
+        \item Mover Fotografía:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada.
+                \item[Resultado Obtenido] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada. (Correcto)
+            \end{description}
 
-  \item Mover Fotografía:
-    \begin{description}
-      \item[Resultado Esperado] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada.
-      \item[Resultado Obtenido] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada. (Correcto)
-    \end{description}
+        \item Visualizar Fotografía:
+            \begin{description}
+                \item[Resultado Esperado] Visualización de la diapositiva en programa por defecto del sistema operativo.
+                \item[Resultado Obtenido] Visualización de la diapositiva en programa por defecto del sistema operativo. (Correcto)
+            \end{description}
 
-  \item Visualizar Fotografía:
-    \begin{description}
-      \item[Resultado Esperado] Visualización de la diapositiva en programa por defecto del sistema operativo.
-      \item[Resultado Obtenido] Visualización de la diapositiva en programa por defecto del sistema operativo. (Correcto)
-    \end{description}
-
-  \item Descartar Fotografía:
-    \begin{description}
-      \item[Resultado Esperado] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz.
-      \item[Resultado Obtenido] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz. (Correcto)
-    \end{description}
-
-\end{enumerate}
+        \item Descartar Fotografía:
+            \begin{description}
+                \item[Resultado Esperado] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz.
+                \item[Resultado Obtenido] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz. (Correcto)
+            \end{description}
+    \end{enumerate}
