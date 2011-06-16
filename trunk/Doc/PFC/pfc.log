@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  15 JUN 2011 19:59
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  16 JUN 2011 11:16
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -340,6 +340,10 @@ Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc5.
 Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc6.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc7.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc8.
  [3
 
 
@@ -492,7 +496,23 @@ Overfull \hbox (0.71791pt too wide) in paragraph at lines 117--118
 
 ) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [24]
 Cap\'{\i }tulo 6.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6))
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [25
+
+
+] [26])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion
+.tex [27] [28
+
+]
+Cap\'{\i }tulo 7.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7))
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\discusion/discusion.tex [29
+
+] [30
+
+]
+Cap\'{\i }tulo 8.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8))
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -500,8 +520,7 @@ Package minitoc Info: I0009
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
- [25
-
+ [31
 
 ]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
@@ -513,12 +532,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4040 strings out of 494020
- 55645 string characters out of 3143905
+ 4067 strings out of 494020
+ 56505 string characters out of 3143905
  133468 words of memory out of 3000000
- 6957 multiletter control sequences out of 15000+200000
+ 6964 multiletter control sequences out of 15000+200000
  26219 words of font info for 65 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  35i,11n,43p,131100b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (37 pages, 101928 bytes).
+Output written on pfc.dvi (43 pages, 116076 bytes).

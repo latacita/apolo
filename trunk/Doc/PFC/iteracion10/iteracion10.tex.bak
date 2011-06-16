@@ -6,27 +6,34 @@
 %============================================================================%
 
 \chapterheader{Décima Iteración}{Décima Iteración}
-\label{chap:iteracion1}
+\label{chap:iteracion10}
 
 \todo{Párrafo introductorio}
 
 \chaptertoc
 
 \section{Por que esta Iteración}
-\label{sec:iteracion1:porQueEstaIteracion}
+\label{sec:iteracion10:porQueEstaIteracion}
+    La décima iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
+    
+    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón o opciones de menu. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
+    
+    También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, por supuesto, nada de su funcionalidad cambio. 
+    
+    En esta ultima iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino 
 
 \section{Casos de uso}
-\label{sec:iteracion1:casosDeUso}
+\label{sec:iteracion10:casosDeUso}
 
 \section{Refinamiento de requisitos}
-\label{sec:iteracion1:refinamientoRequisitos}
+\label{sec:iteracion10:refinamientoRequisitos}
 
 \section{Diagrama de clases}
-\label{sec:iteracion1:diagramaDeClases}
+\label{sec:iteracion10:diagramaDeClases}
 
 \section{Implementación}
-\label{sec:iteracion1:implementacion}
+\label{sec:iteracion10:implementacion}
 
 \section{Pruebas}
-\label{sec:iteracion1:pruebas}
+\label{sec:iteracion10:pruebas}
 

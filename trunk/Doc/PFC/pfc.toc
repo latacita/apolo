@@ -38,8 +38,22 @@
 \contentsline {section}{\numberline {5.6}Pruebas}{23}
 \contentsline {chapter}{\numberline {6}D\'ecima Iteraci\'on}{25}
 \contentsline {section}{\numberline {6.1}Por que esta Iteraci\'on}{25}
-\contentsline {section}{\numberline {6.2}Casos de uso}{25}
-\contentsline {section}{\numberline {6.3}Refinamiento de requisitos}{25}
-\contentsline {section}{\numberline {6.4}Diagrama de clases}{25}
-\contentsline {section}{\numberline {6.5}Implementaci\'on}{25}
-\contentsline {section}{\numberline {6.6}Pruebas}{25}
+\contentsline {section}{\numberline {6.2}Casos de uso}{26}
+\contentsline {section}{\numberline {6.3}Refinamiento de requisitos}{26}
+\contentsline {section}{\numberline {6.4}Diagrama de clases}{26}
+\contentsline {section}{\numberline {6.5}Implementaci\'on}{26}
+\contentsline {section}{\numberline {6.6}Pruebas}{27}
+\contentsline {chapter}{\numberline {7}Despliegue y Aceptaci\'on}{29}
+\contentsline {section}{\numberline {7.1}Despliegue de la Aplicaci\'on}{29}
+\contentsline {subsection}{\numberline {7.1.1}Creaci\'on de Instaladores}{29}
+\contentsline {subsubsection}{Sistemas Microsoft Windows}{29}
+\contentsline {subsubsection}{Sistemas Linux}{29}
+\contentsline {subsubsection}{Otros sistemas}{29}
+\contentsline {subsection}{\numberline {7.1.2}Creaci\'on de la web}{29}
+\contentsline {section}{\numberline {7.2}Aceptaci\'on de la Aplicaci\'on}{29}
+\contentsline {subsection}{\numberline {7.2.1}Instalaci\'on en distintos equipos}{29}
+\contentsline {subsection}{\numberline {7.2.2}Uso por personas no participantes en el desarrollo}{29}
+\contentsline {chapter}{\numberline {8}Discusi\'on, Conclusiones y Trabajos Futuros}{31}
+\contentsline {section}{\numberline {8.1}Discusi\'on}{31}
+\contentsline {section}{\numberline {8.2}Conclusiones}{31}
+\contentsline {section}{\numberline {8.3}Trabajos Futuros}{31}
