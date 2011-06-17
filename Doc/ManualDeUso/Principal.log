@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  16 JUN 2011 16:48
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  17 JUN 2011 10:43
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/ManualDeUso/Principal.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/ManualDeUso/Principal.tex
@@ -406,82 +406,95 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
-)
+ [1])
 \tf@toc=\write4
- [1] [2] [3]
+ [2] [3]
+[4]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 107.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 107.
 File: img/seleccionIdioma.eps Graphic file (type eps)
-
-<img/seleccionIdioma.eps>
+ <img/seleccionIdioma.eps>
 File: img/bienvenida.eps Graphic file (type eps)
- <img/bienvenida.eps> [4]
+ <img/bienvenida.eps> [5]
 File: img/condicionesDeUso.eps Graphic file (type eps)
- <img/condicionesDeUso.eps>
-File: img/rutaInstalacion.eps Graphic file (type eps)
 
-<img/rutaInstalacion.eps> [5]
+<img/condicionesDeUso.eps>
+File: img/rutaInstalacion.eps Graphic file (type eps)
+ <img/rutaInstalacion.eps> [6]
 File: img/nombreMenu.eps Graphic file (type eps)
  <img/nombreMenu.eps>
 File: img/accesoDirecto.eps Graphic file (type eps)
- <img/accesoDirecto.eps>
-[6]
+
+<img/accesoDirecto.eps> [7]
 File: img/resumen.eps Graphic file (type eps)
- <img/resumen.eps> [7] [8
+ <img/resumen.eps>
+File: img/finalInstalacion.eps Graphic file (type eps)
+ <img/finalInstalacion.eps>
+[8]
+File: img/menuUbuntu.eps Graphic file (type eps)
+ <img/menuUbuntu.eps>
+File: img/paqueteDeb.eps Graphic file (type eps)
+ <img/paqueteDeb.eps> [9]
+File: img/instalarUbuntuG.eps Graphic file (type eps)
+ <img/instalarUbuntuG.eps>
+File: img/instalarUbuntuC.eps Graphic file (type eps)
 
-] [9
-
-]
+<img/instalarUbuntuC.eps> [10] [11]
 File: img/desinstalar.eps Graphic file (type eps)
  <img/desinstalar.eps>
 File: img/desinstalar2.eps Graphic file (type eps)
- <img/desinstalar2.eps>
-[10]
+
+<img/desinstalar2.eps>
+File: img/unistallG.eps Graphic file (type eps)
+ <img/unistallG.eps> [12]
+File: img/unistallC.eps Graphic file (type eps)
+ <img/unistallC.eps> [13]
+[14]
 File: img/diapositiva.eps Graphic file (type eps)
  <img/diapositiva.eps>
 File: img/menuDiapo.eps Graphic file (type eps)
- <img/menuDiapo.eps> [11]
+ <img/menuDiapo.eps> [15]
 File: img/mesa.eps Graphic file (type eps)
  <img/mesa.eps>
 File: img/estanteria.eps Graphic file (type eps)
 
-<img/estanteria.eps> [12]
+<img/estanteria.eps> [16]
 File: img/balda.eps Graphic file (type eps)
- <img/balda.eps> [13]
+ <img/balda.eps> [17]
 File: img/album.eps Graphic file (type eps)
  <img/album.eps>
 File: img/paquete.eps Graphic file (type eps)
 
 <img/paquete.eps>
 File: img/menuPaquete.eps Graphic file (type eps)
- <img/menuPaquete.eps> [14] [15]
+ <img/menuPaquete.eps> [18] [19]
 File: img/importar.eps Graphic file (type eps)
  <img/importar.eps>
 File: img/importar1.eps Graphic file (type eps)
 
 <img/importar1.eps>
 File: img/importar2.eps Graphic file (type eps)
- <img/importar2.eps> [16]
+ <img/importar2.eps> [20]
 File: img/mover.eps Graphic file (type eps)
  <img/mover.eps>
 File: img/mover1.eps Graphic file (type eps)
  <img/mover1.eps>
-[17]
+[21]
 File: img/mover2.eps Graphic file (type eps)
- <img/mover2.eps> [18]
+ <img/mover2.eps> [22]
 File: img/exportar.eps Graphic file (type eps)
  <img/exportar.eps>
 File: img/exportar1.eps Graphic file (type eps)
  <img/exportar1.eps>
 File: img/exportar2.eps Graphic file (type eps)
 
-<img/exportar2.eps> [19] [20]
+<img/exportar2.eps> [23] [24]
 File: img/guardar.eps Graphic file (type eps)
  <img/guardar.eps>
 File: img/guardar1.eps Graphic file (type eps)
- <img/guardar1.eps> [21]
+ <img/guardar1.eps> [25]
 File: img/cargar.eps Graphic file (type eps)
 
 <img/cargar.eps>
@@ -489,26 +502,26 @@ File: img/cargar1.eps Graphic file (type eps)
  <img/cargar1.eps>
 File: img/cargar2.eps Graphic file (type eps)
  <img/cargar2.eps>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 518.
+ [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 518.
 
 (C:\Users\Angel\Desktop\Apolo\Doc\ManualDeUso\Principal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 518.
 Package rerunfilecheck Info: File `Principal.out' has not changed.
-(rerunfilecheck)             Checksum: CCAF82BC7EEA55E9F18BFBDA4AAE9296;1769.
+(rerunfilecheck)             Checksum: F8C04FD19434CA290154CB57165ABA7A;2163.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5969 strings out of 494020
- 89216 string characters out of 3143905
- 171729 words of memory out of 3000000
- 9115 multiletter control sequences out of 15000+200000
+ 5987 strings out of 494020
+ 89552 string characters out of 3143905
+ 172236 words of memory out of 3000000
+ 9126 multiletter control sequences out of 15000+200000
  65931 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 33i,8n,28p,162196b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,8n,28p,162196b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Principal.dvi (23 pages, 75588 bytes).
+Output written on Principal.dvi (27 pages, 85464 bytes).

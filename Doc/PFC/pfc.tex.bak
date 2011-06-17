@@ -20,8 +20,8 @@
 
 % Esto se añade porque a algún gracioso le apetecía que la fuente
 % de la portada fuese Arial
-%\usepackage[T1]{fontenc}
-%\usepackage[scaled]{uarial}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{uarial}
 
 
 % File with main configuration
