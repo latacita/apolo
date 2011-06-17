@@ -56,7 +56,10 @@
 \contentsline {subsection}{\numberline {7.1.2}Creaci\'on de la web}{30}
 \contentsline {section}{\numberline {7.2}Aceptaci\'on de la Aplicaci\'on}{31}
 \contentsline {subsection}{\numberline {7.2.1}Instalaci\'on en distintos equipos}{31}
-\contentsline {subsection}{\numberline {7.2.2}Uso por usuarios finales}{31}
+\contentsline {subsubsection}{Problemas encontrados}{31}
+\contentsline {subsubsection}{Soluci\'on de los problemas encontrados}{31}
+\contentsline {subsection}{\numberline {7.2.2}Uso por usuarios finales}{32}
+\contentsline {subsubsection}{Petici\'on de los usuarios}{32}
 \contentsline {chapter}{\numberline {8}Conclusiones y Trabajos Futuros}{33}
 \contentsline {section}{\numberline {8.1}Conclusiones}{33}
-\contentsline {section}{\numberline {8.2}Trabajos Futuros}{33}
+\contentsline {section}{\numberline {8.2}Trabajos Futuros}{34}

@@ -5,7 +5,7 @@
 % Master Thesis: Iteración 10                                                %
 %============================================================================%
 
-\chapterheader{Décima Iteración}{Décima Iteración}
+\chapterheader{Mejora de la interfaz visual}{Mejora de la interfaz visual}
 \label{chap:iteracion10}
 
 \todo{Párrafo introductorio}
@@ -14,7 +14,7 @@
 
 \section{Objetivos}
 \label{sec:iteracion10:porQueEstaIteracion}
-    La décima iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
+    Esta iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
 
     Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón o opciones de menu. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
 
@@ -60,4 +60,51 @@
 
 \section{Pruebas}
 \label{sec:iteracion10:pruebas}
+
+    Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que todo funciona correctamente.
+
+    Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
+    \begin{enumerate}
+        \item Cargar la interfaz:
+            \begin{description}
+            \item[Resultado Esperado] Interfaz mejorada visualmente.
+            \item[Resultado Obtenido] Interfaz mejorada visualmente. (Correcto)
+        \end{description}
+
+        \item Funcionamiento de las opciones del menu superior:
+            \begin{description}
+                \item[Resultado Esperado] Todas las opciones funcionan correctamente.
+                \item[Resultado Obtenido] Todas las opciones funcionan correctamente. (Correcto)
+            \end{description}
+
+        \item Añadir nombre o descripción a la balda:
+            \begin{description}
+                \item[Resultado Esperado] Renombre de la balda.
+                \item[Resultado Obtenido] Renombre de la balda. (Correcto)
+            \end{description}
+
+        \item Añadir balda con descripción como subsecuencia ordenada:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
+                \item[Resultado Obtenido] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
+        \end{description}
+
+        \item Convertir subsecuencia ordenada en balda:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
+                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas. (Correcto)
+        \end{description}
+
+        \item Convertir subsecuencia ordenada con descripción en balda:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
+                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas. (Correcto)
+        \end{description}
+
+        \item Eliminar una balda:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
+                \item[Resultado Obtenido] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas. (Correcto)
+        \end{description}
+    \end{enumerate}
 

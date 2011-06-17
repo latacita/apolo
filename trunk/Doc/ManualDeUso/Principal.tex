@@ -169,10 +169,6 @@
             \includegraphics[scale=0.7]{img/resumen.eps}
         \end{center}
 
-        \clearpage
-
-        \pagebreak
-
         A continuación se procederá a la instalación de la aplicación, espere mientras se realiza. No suele llevar mas de algunos segundos.
 
         %Imagen instalado...
@@ -180,17 +176,47 @@
              %\includegraphics[scale=0.1]{img/instalando.eps}
         \end{center}
 
-        \clearpage
-        \pagebreak
-
         Para finalizar el asistente nos ofrece la posibilidad de ejecutar tras salir de el la aplicación recién instalada. Por defecto viene marcada, si no lo desea desmarquela y pulsa finalizar.
 
         %imagen final
         \begin{center}
-        %     \includegraphics[scale=0.7]{img/finalInstalacion.eps}
+             \includegraphics[scale=0.7]{img/finalInstalacion.eps}
         \end{center}
 
-    \subsection{Linux} \label{sec:ins:lin}
+    \subsection{Linux basados en Debian} \label{sec:ins:lin}
+        En los sistemas basados en Debian, puede usarse para instalar los paquetes \emph{deb} creados para tal fin. Estos paquetes requieren ser instalados por el administrador del sistema o usuarios privilegiados. Una vez instalado, podrá encontrarse el programa en el menu de Aplicaciones, categoría Gráficos.
+        
+        \begin{center}
+              \includegraphics[scale=0.5]{img/menuUbuntu.eps}
+        \end{center}
+
+        \subsubsection{Instalación gráfica}
+            Haga doble click sobre el fichero \emph{deb} descargado de la web de la aplicación.
+            
+            \begin{center}
+              \includegraphics[scale=0.4]{img/paqueteDeb.eps}
+            \end{center}
+            
+            A continuación se le abrirá el \emph{centro de software} del sistema. Pulse el botón instalar.
+            
+            \begin{center}
+              \includegraphics[scale=0.4]{img/instalarUbuntuG.eps}
+            \end{center}
+            
+            A partir de ahora dispondrá de la aplicación instalada.
+            
+        \subsubsection{Instalación por consola}
+            Para instalarlo a través de la consola debe ejecutar el siguiente comando situándose en la ruta donde se encuentra el fichero \emph{deb} descargado.
+            \begin{itemize}
+              \item \emph{sudo dpkg -i apolo.deb}
+            \end{itemize}
+            
+            \begin{center}
+              \includegraphics[scale=0.4]{img/instalarUbuntuC.eps}
+            \end{center}
+
+            A partir de ahora dispondrá de la aplicación instalada.
+            
 
     \subsection{Otras Plataformas} \label{sec:ins:source}
         Para la instalación de Apolo en otras plataformas deberá compilar el código usted mismo. Lo cual le dará un ejecutable totalmente funcional de Apolo.
@@ -217,7 +243,31 @@
               \includegraphics[scale=0.5]{img/desinstalar2.eps}
         \end{center}
 
-    \subsection{Linux} \label{sec:desin:lin}
+    \subsection{Linux basados en Debian} \label{sec:desin:lin}
+        En los sistemas basados en Debian, la desinstalacion requiere privilegios de administrador.
+
+        \subsubsection{Desinstalación gráfica}
+            Vaya al centro de software y con ayuda del buscador localice la aplicacion Apolo.
+
+            \begin{center}
+              \includegraphics[scale=0.4]{img/unistallG.eps}
+            \end{center}
+
+            Una vez localizada pulse en el botón de desinstalar.
+
+            A partir de ahora la aplicación habrá sido desinstalada.
+
+        \subsubsection{Desinstalación por consola}
+            Para desinstalarlo a través de la consola debe ejecutar el siguiente comando situándose en la ruta donde se encuentra el fichero \emph{deb} descargado.
+            \begin{itemize}
+              \item \emph{sudo dpkg -r apolo-clasificador}
+            \end{itemize}
+            
+            \begin{center}
+              \includegraphics[scale=0.4]{img/unistallC.eps}
+            \end{center}
+
+            A partir de ahora la aplicación habrá sido desinstalada.
 
     \subsection{Otras Plataformas} \label{sec:desin:lin}
         Elimine todos los archivos de la carpeta donde fue compilado el código fuente. Apolo no genera archivos en ninguna parte del sistema.
