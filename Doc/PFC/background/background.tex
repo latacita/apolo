@@ -14,11 +14,11 @@ El presente capítulo describe brevemente las tecnologías sobre las que se fundam
 
 \section{Desarrollo de Software basado en Componentes}
 
-El proyecto se desarrollara bajo una programación orientada a componentes. Esta rama de la ingeniería software trata de construir sistemas a base de componentes funcionales, como si de un lego se tratase. Para ello cada componente debe tener una interfaz bien definida.
+El proyecto se desarrollara bajo una programación orientada a componentes. Esta rama de la ingeniería software trata de construir sistemas a base de componentes funcionales, como si de un juego de piezas se tratase. Para ello cada componente debe tener una interfaz bien definida.
 
 El nivel de abstracción de de los componentes se considera mas alto que el de los objetos al agrupar unidades funcionales autonomamente. De esta manera se explota en gran medida las posibilidades de reutilización. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rápida y sencilla.
 
-Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de \textbf{reusabilidad}.
+Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. Básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de \textbf{reusabilidad}.
 
 Los componentes deben poder ser serializados para garantizar el envió del estado del objeto a través de flujos de datos.
 
@@ -26,7 +26,7 @@ Para que un componente este bien diseñado requiere un esfuerzo en la fase de dis
 
 \section{Java beans como modelo de componentes}
 
-JavaBeans es la tecnología de componentes de Java, cada componente se le conoce como bean, como se dijo anteriormente, un bean no es mas que una clase de objetos con unas características especiales:
+JavaBeans es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es mas que una clase de objetos con unas características especiales:
 
 \begin{enumerate}
 	\item Es una clase publica que implementa la interfaz serializable
@@ -34,9 +34,7 @@ JavaBeans es la tecnología de componentes de Java, cada componente se le conoce 
 	\item Los eventos que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
 
-% Sin número \begin{itemize}
-
-Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método get para obtener el valor, y un set para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
+Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método \emph{get} para obtener el valor, y un \emph{set} para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
 
 Existen varios tipos de propiedades:
 \begin{itemize}
@@ -46,5 +44,4 @@ Existen varios tipos de propiedades:
     \item Restringidas (Constrained): Similar a la Ligada salvo que los objetos notificados tienen la opción de vetar el cambio.
 \end{itemize}
 
-%%Extender mas si es posible
-Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este este implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. 
+Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este este implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. Posteriormente, se realizara la conexión entre componentes, para que puedan realizar las acciones que se consideren oportunas. 
