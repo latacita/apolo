@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  20 JUN 2011 16:17
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  21 JUN 2011 11:32
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -251,24 +251,21 @@ TextBlockOrigin set to 0pt x 0pt
 )) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/rename.tex)
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux
 
-LaTeX Warning: Label `sec:planning:metodologia' multiply defined.
-
-
 LaTeX Warning: Label `chap:introduction' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -428,16 +425,13 @@ Cap\'{\i }tulo 2.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [5
 
 ]
-
-LaTeX Warning: Reference `fig:back:clasificador' on page 6 undefined on input l
-ine 24.
-
 File: planificacion/images/clasificadorAnalogico.eps Graphic file (type eps)
+
 <planificacion/images/clasificadorAnalogico.eps> [6] [7]
 File: planificacion/images/mod-iterativo.eps Graphic file (type eps)
 
 <planificacion/images/mod-iterativo.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -447,7 +441,7 @@ File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
 File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
 
 <planificacion/images/MontajeInterfazGrafica.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
@@ -471,76 +465,97 @@ File: iteracion1/images/casoDeUso.eps Graphic file (type eps)
 <iteracion1/images/casoDeUso.eps> [17
 
 
-] [18] [19])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [20]
+] [18]
+File: iteracion1/images/finIteracion.eps Graphic file (type eps)
+
+<iteracion1/images/finIteracion.eps> [19] [20])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [21] [22
+
+]
 Cap\'{\i }tulo 5.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5) [21
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5)
+File: iteracion5/images/casosDeUso.eps Graphic file (type eps)
 
+<iteracion5/images/casosDeUso.eps> [23
 
-] [22]
-Overfull \hbox (0.72887pt too wide) in paragraph at lines 100--101
+] [24]
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+ [25]
+File: iteracion5/images/finIteracion.eps Graphic file (type eps)
+
+<iteracion5/images/finIteracion.eps>
+Overfull \hbox (0.72887pt too wide) in paragraph at lines 110--111
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
 
-Overfull \hbox (0.71791pt too wide) in paragraph at lines 101--102
+Overfull \hbox (0.71791pt too wide) in paragraph at lines 111--112
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
-[23]
-Overfull \hbox (0.72887pt too wide) in paragraph at lines 118--119
+[26]
+Overfull \hbox (0.72887pt too wide) in paragraph at lines 128--129
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
 
-Overfull \hbox (0.71791pt too wide) in paragraph at lines 119--120
+Overfull \hbox (0.71791pt too wide) in paragraph at lines 129--130
 [][]\T1/cmr/m/n/10.95 Aparición de la re-pre-sen-ta-ción de la sub-se-cuen-
  []
 
-) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [24]
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [27]
+[28
+
+]
 Cap\'{\i }tulo 6.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [25
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [29
 
+]
+File: iteracion10/images/antes.eps Graphic file (type eps)
 
-] [26] [27])
+<iteracion10/images/antes.eps> [30]
+File: iteracion10/images/despues.eps Graphic file (type eps)
+ <iteracion10/images/despues.eps> [31]
+[32])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion
-.tex [28]
+.tex [33] [34
+
+]
 Cap\'{\i }tulo 7.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7) [29
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7) [35
 
+]
+File: despliegueAceptacion/images/web.eps Graphic file (type eps)
 
-] [30] [31])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [32]
+<despliegueAceptacion/images/web.eps> [36] [37] [38])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [39] [40
+
+]
 Cap\'{\i }tulo 8.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8) [33
-
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8) [41
 
 ])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/bibliography.tex [34])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.bbl)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the pfc.maf file.
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
-
+ [42]
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4071 strings out of 494020
- 56699 string characters out of 3143905
+ 4085 strings out of 494020
+ 56939 string characters out of 3143905
  133468 words of memory out of 3000000
- 6963 multiletter control sequences out of 15000+200000
+ 6974 multiletter control sequences out of 15000+200000
  26219 words of font info for 65 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,12n,43p,131100b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,11n,43p,197062b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (46 pages, 138520 bytes).
+Output written on pfc.dvi (54 pages, 148280 bytes).

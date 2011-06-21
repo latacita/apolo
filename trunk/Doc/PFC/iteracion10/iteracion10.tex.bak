@@ -16,7 +16,7 @@
 \label{sec:iteracion10:porQueEstaIteracion}
     Esta iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
 
-    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón o opciones de menu. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
+    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menu. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
 
     También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
@@ -35,17 +35,17 @@
 
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
-    Al comenzar esta iteración ya se dispone de una aplicación completamente funcional. Por lo que en esta iteración solo se limitara a mejorar el apartado visual de la aplicación.
+    Al comenzar esta iteración ya se dispone de una aplicación completamente funcional. Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
 
-    Comenzamos por añadir opciones al menu superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menu extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la asignatura, y por ultimo, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y fin de Apolo.
+    Comenzamos por añadir opciones al menu superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menu extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la aplicación, y por ultimo, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y el fin de Apolo.
 
     A continuación se cambio el \emph{Look And Feel} de la aplicación, y se eligió una denominada \emph{Nimbus} de manera que todos los componentes visuales utilizados adquieran otra interfaz visual. Y en su conjunto dotar de un gran atractivo a la Aplicación.
 
-    Posteriormente se añadió, y en algunos casos, sustituyo el texto de botones y menus por iconos, de manera que quedara mucho mas agradable visualmente. Además se añadió a todos los componentes que son susceptibles de ser manipulados una descripción que aparezca al mantener el cursor del ratón un rato sobre el mismo.
+    Posteriormente se añadió, y en algunos casos sustituyo, iconos en el texto de botones y menus. De manera que quedara mucho mas agradable visualmente. Además se añadió a todos los componentes que son susceptibles de ser manipulados una descripción que aparezca al mantener el cursor del ratón un rato sobre el mismo.
 
-    Se cambio el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible.
+    Se cambio el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible. De la misma forma, al ser arrastrado, la manopla cambia ligeramente, dando la sensación de agarrar la diapositiva.
 
-    Se modifico la apariencia del Bean subconjunto de diapositiva, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
+    Se modifico la apariencia del Bean \emph{paquete de diapositiva}, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella e informacion sobre el numero de secuencia y descripción. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
 
     Se añadió al Bean Diapositiva mas opciones a su menu contextual: Editar, actualizar y propiedades. Editar abre el programa que este definido por defecto en sistema operativo para tal caso. Actualizar refresca la imagen contenida en la diapositiva, por si se modifico. Y propiedades muestra una ventana con información sobre el fichero representado por la diapositiva.
 
@@ -77,34 +77,28 @@
                 \item[Resultado Obtenido] Todas las opciones funcionan correctamente. (Correcto)
             \end{description}
 
-        \item Añadir nombre o descripción a la balda:
+        \item Visualización de iconos:
             \begin{description}
-                \item[Resultado Esperado] Renombre de la balda.
-                \item[Resultado Obtenido] Renombre de la balda. (Correcto)
+                \item[Resultado Esperado] Todos los iconos cargan correctamente.
+                \item[Resultado Obtenido] Todos los iconos cargan correctamente. (Correcto)
             \end{description}
 
-        \item Añadir balda con descripción como subsecuencia ordenada:
+        \item Mensajes de error visuales, eliminación de la interacción con la consola:
             \begin{description}
-                \item[Resultado Esperado] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
-                \item[Resultado Obtenido] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
+                \item[Resultado Esperado] Los mensajes de error aparecen en una ventana.
+                \item[Resultado Obtenido] Los mensajes de error aparecen en una ventana. (Correcto)
         \end{description}
 
-        \item Convertir subsecuencia ordenada en balda:
+        \item Modificación visual de Beans:
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
-                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas. (Correcto)
+                \item[Resultado Esperado] Nueva interfaz gráfica de beans.
+                \item[Resultado Obtenido] Nueva interfaz gráfica de beans. (Correcto)
         \end{description}
 
-        \item Convertir subsecuencia ordenada con descripción en balda:
+        \item Control de comportamientos no esperados:
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
-                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas. (Correcto)
-        \end{description}
-
-        \item Eliminar una balda:
-            \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
-                \item[Resultado Obtenido] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas. (Correcto)
+                \item[Resultado Esperado] Los comportamientos no esperados son controlados.
+                \item[Resultado Obtenido] Los comportamientos no esperados son controlados. (Correcto)
         \end{description}
     \end{enumerate}
 
