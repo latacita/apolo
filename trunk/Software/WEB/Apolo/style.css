@@ -67,7 +67,7 @@ h1 small {
 .menu {
 	padding:0;
 	margin:0;
-	width:450px;
+	width:600px;
 	float:right;
 }
 .menu ul {
@@ -194,13 +194,13 @@ h1 small {
 }
 .left {
 	float:left;
-	width:630px;
+	width:650px;
 	margin:0;
 	padding:0;
 }
 .right {
 	float:right;
-	width:210px;
+	width:220px;
 	margin:0;
 	padding:0;
 }
