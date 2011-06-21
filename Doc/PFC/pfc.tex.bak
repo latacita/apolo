@@ -23,6 +23,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[scaled]{uarial}
 
+%%Separacion entre parrafos
+\parskip=2mm
 
 % File with main configuration
 \input{config/pfc_options.tex}
@@ -109,7 +111,7 @@
 %Apéndice manual de usuario
 
 % CONFIG: Bibliography style
- \input{config/bibliography.tex}
- \bibliography{references/references}
+% \input{config/bibliography.tex}
+% \bibliography{references/references}
 
 \end{document}

@@ -16,7 +16,7 @@
 \label{sec:iteracion10:porQueEstaIteracion}
     Esta iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
 
-    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón o opciones de menu. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
+    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menu. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
 
     También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
@@ -35,17 +35,25 @@
 
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
-    Al comenzar esta iteración ya se dispone de una aplicación completamente funcional. Por lo que en esta iteración solo se limitara a mejorar el apartado visual de la aplicación.
+    Al comenzar esta iteración ya se dispone de una aplicación completamente funcional pero con una interfaz pobre visualmente (ver figura \ref{fig:iteracion10:antes}). Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
+    
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion10/images/antes.eps}
+               \caption{Interfaz Gráfica antes de la iteración 10}
+               \label{fig:iteracion10:antes}
+            \end{center}
+    \end{figure}
 
-    Comenzamos por añadir opciones al menu superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menu extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la asignatura, y por ultimo, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y fin de Apolo.
+    Comenzamos por añadir opciones al menu superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menu extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la aplicación, y por ultimo, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y el fin de Apolo.
 
     A continuación se cambio el \emph{Look And Feel} de la aplicación, y se eligió una denominada \emph{Nimbus} de manera que todos los componentes visuales utilizados adquieran otra interfaz visual. Y en su conjunto dotar de un gran atractivo a la Aplicación.
 
-    Posteriormente se añadió, y en algunos casos, sustituyo el texto de botones y menus por iconos, de manera que quedara mucho mas agradable visualmente. Además se añadió a todos los componentes que son susceptibles de ser manipulados una descripción que aparezca al mantener el cursor del ratón un rato sobre el mismo.
+    Posteriormente se añadió, y en algunos casos sustituyo, iconos en el texto de botones y menus. De manera que quedara mucho mas agradable visualmente. Además se añadió a todos los componentes que son susceptibles de ser manipulados una descripción que aparezca al mantener el cursor del ratón un rato sobre el mismo.
 
-    Se cambio el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible.
+    Se cambio el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible. De la misma forma, al ser arrastrado, la manopla cambia ligeramente, dando la sensación de agarrar la diapositiva.
 
-    Se modifico la apariencia del Bean subconjunto de diapositiva, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
+    Se modifico la apariencia del Bean \emph{paquete de diapositiva}, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella e información sobre el numero de secuencia y descripción. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
 
     Se añadió al Bean Diapositiva mas opciones a su menu contextual: Editar, actualizar y propiedades. Editar abre el programa que este definido por defecto en sistema operativo para tal caso. Actualizar refresca la imagen contenida en la diapositiva, por si se modifico. Y propiedades muestra una ventana con información sobre el fichero representado por la diapositiva.
 
@@ -57,6 +65,16 @@
       \item Imposibilitar guardar un estado y no seleccionar al menos una zona
       \item Mostrar mensaje de error si el sistema no tiene visualizador o editor por defecto asignado.
     \end{itemize}
+    
+    La interfaz resultante puede verse en la figura \ref{fig:iteracion10:despues}
+    
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion10/images/despues.eps}
+               \caption{Interfaz Gráfica despues de la iteración 10}
+               \label{fig:iteracion10:despues}
+            \end{center}
+    \end{figure}
 
 \section{Pruebas}
 \label{sec:iteracion10:pruebas}

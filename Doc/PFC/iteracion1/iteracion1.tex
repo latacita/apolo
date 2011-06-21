@@ -45,6 +45,8 @@
                 \hline \hline
                 R01.1 & La importación de Diapositivas debe hacerse desde un hilo a parte, para que no se congele la interfaz de usuario, y este pueda realizar otras operaciones durante el proceso. \\
                 \hline
+                R01.2 & Debe poderse importar mas de una fotografía a la vez. De manera que el usuario no deba importar una por una. \\
+                \hline
                 R03.1 & Durante la importación se hace necesario ofrecer al usuario un progreso sobre la operación, de manera que sepa en todo momento en que estado va la importación así como cerciorarse de posibles cuelgues (NO TENDRÁ!!!) \\
                 \hline
                 R05.1 & Para la realización del Drag \& Drop debe aplicarse algún tipo de sistema para que usuario sea consciente y vea por donde arrastra la diapositiva. \\
@@ -66,6 +68,17 @@
     Una vez finalizada \emph{GUIMesa.java} se procedió a integrarla en la ventana principal. Al utilizar la técnica de desarrollo por componentes resulta sumamente sencillo añadir este tipo de widgets o componentes visuales a la ventana principal.
 
     Posteriormente se implementó el resto de componentes necesarios para la realización de la primera iteración, esto es: un menu desde el que se ofrezca la opción de importar fotografía, un menu en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se opto por delegar la acción al programa que tenga el sistema operativo asignado por defecto para esa tarea.
+    
+    Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion1:finaliteracion}
+
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion1/images/finIteracion.eps}
+               \caption{Interfaz Gráfica despues de la iteración 1}
+               \label{fig:iteracion1:finaliteracion}
+            \end{center}
+    \end{figure}
+    
 
 \section{Pruebas}
 \label{sec:iteracion1:pruebas}
@@ -77,6 +90,12 @@
             \begin{description}
                 \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa.
                 \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa. (Correcto)
+            \end{description}
+            
+        \item Importar varias Fotografías:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa.
+                \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa. (Correcto)
             \end{description}
 
         \item Mover Fotografía:

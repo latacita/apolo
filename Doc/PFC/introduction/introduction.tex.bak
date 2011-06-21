@@ -1,6 +1,6 @@
 %=============================================================================%
-% Author : Angel Tezanos Ibaï¿½ez                                               %
-% Author : Pablo Sï¿½nchez Barreiro                                             %  % Version: 2.0, 23/02/2011                                                    %
+% Author : Angel Tezanos Ibáñez                                               %
+% Author : Pablo Sánchez Barreiro                                             %  % Version: 2.0, 23/02/2011                                                    %
 % Master Thesis: Introduction                                                 %
 %=============================================================================
 
@@ -30,7 +30,7 @@
 \label{chap:introduction}
 
 % Introducción al capítulo
-
+\parskip=2mm
 %Texto del anteproyecto
 Actualmente la fotografía digital ha ocupado el lugar de la fotografía analógica, quedando esta última reducida al ámbito artístico o profesional de altas prestaciones. No obstante, las aplicaciones software dedicadas actualmente a la clasificación o gestión de colecciones de imágenes digitales, adolecen de varios inconvenientes para el usuario medio; entre ellos:
 

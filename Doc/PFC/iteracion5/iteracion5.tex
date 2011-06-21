@@ -14,19 +14,19 @@
 
 \section{Objetivos}
     \label{sec:iteracion5:porQueEstaIteracion}
-    Se eligió la iteración quinta por mostrar la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Album} el ultimo que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
+    En la quinta iteración se encuentra la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Album}, el ultimo que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
 
-    Al final de esta iteración será posible hacer gran parte de la clasificación, pues ya estarán operativas las estanterías, y el alojamiento de subsecuencias en la zona superior, por lo que la funcionalidad principal de la aplicación estará prácticamente finalizada, recordemos que es clasificar y organizar fotografías.
+    Al final de esta iteración será posible hacer gran parte de la clasificación, pues ya estarán operativas las baldas, y el alojamiento de subsecuencias en la zona superior, por lo que la funcionalidad principal de la aplicación estará prácticamente finalizada, recordemos que es clasificar y organizar fotografías.
 
 \section{Ingeniería de Requisitos}
 
     \subsection{Casos de uso}
     \label{sec:iteracion5:casosDeUso}
-    Los casos de uso de la quinta iteración corresponden a las acciones de añadir una balda a la zona superior, \emph{Album} y de esta forma validar un subconjunto de diapositivas. El otro caso de uso sera deshacerse de la balda y de esta manera suprimir las diapositivas que se encuentren en la balda. Ver Figura \ref{fig:ite5:casoDeUso}
+    Los casos de uso de la quinta iteración corresponden a las acciones de añadir el conjunto de diapositivas de una balda a la zona superior, \emph{Album}, manteniendo el orden, y de esta forma validar un subconjunto de diapositivas. El otro caso de uso será deshacerse de la balda y de esta manera suprimir las diapositivas que se encuentren en la balda. Ver Figura \ref{fig:ite5:casoDeUso}
 
     \begin{figure}[!tb]
         \begin{center}
-            %\includegraphics[width=0.8\linewidth]{iteracion5/images/casoDeUso.eps}
+            \includegraphics[width=0.8\linewidth]{iteracion5/images/casosDeUso.eps}
             \caption{Casos de uso de la iteración 5}
             \label{fig:ite5:casoDeUso}
         \end{center}
@@ -37,7 +37,7 @@
 
     \subsection{Refinamiento de requisitos}
     \label{sec:iteracion5:refinamientoRequisitos}
-    A consecuencia del análisis de requisitos de esta iteración surgieron una serio de refinamiento en los requisitos iniciales, así como nuevos requisitos.
+    A consecuencia del análisis de requisitos de esta iteración surgieron una serie de refinamientos en los requisitos iniciales, así como nuevos requisitos. Ver la figura \ref{sec:iteracion5:refinamientoRequisitos}.
 
     \begin{figure}[!htb]
         \begin{center}
@@ -77,15 +77,25 @@
 \label{sec:iteracion5:implementacion}
     Llegados a esta iteración ya disponemos de la aplicación con su mitad de funcionalidades implementadas, y su principal funcionalidad esta prácticamente acabada\footnote{Clasificar y organizar fotografías}.
 
-    Para proceder con la implementación de esta iteración, lo primero que se hizo diseñar y posteriormente crear el ultimo componente de la aplicación. La zona \emph{Album o de subsecuencias ordenadas}. una vez creada se añadió al resto de la aplicación y se comprobó su correcta integración en el sistema.
+    Para proceder con la implementación de esta iteración, lo primero que se hizo fue diseñar y posteriormente crear los últimos componentes de la aplicación.
 
-    Una vez integrada se comenzó a enlazar el nuevo componente con los ya presentes de manera que respondiera a los eventos necesarios para la correcta inclusion en el sistema. De esta forma, se programó que al pulsar el botón de alguna balda, las diapositivas depositadas en ella, fueran enviadas al nuevo componente, para que este las incluyera en si, de manera que mostrara dicha subsecuencia habida en la balda.
+    La zona \emph{Album o de subsecuencias ordenadas}, una vez creada se añadió al resto de la aplicación y se comprobó su correcta integración en la aplicación.
+
+    Una vez integrada se comenzó a enlazar el nuevo componente con los ya presentes de manera que respondiera a los eventos necesarios para la correcta inclusion en la aplicación. De esta forma, se programó que al pulsar el botón de alguna balda, las diapositivas depositadas en ella, fueran enviadas al nuevo componente, para que este las incluyera en si, de manera que mostrara dicha subsecuencia habida en la balda. Para ello se creo un nuevo componente que representa al conjunto de diapositivas de una balda, y este solo aparece en la zona superior.
+
+    El componente que representa a un conjunto de diapositivas ordenadas en una balda se denomina \emph{Paquete de diapositivas}. Muestra el numero de secuencia que tiene, usado para su exportación final, así como la descripción si la tuviera.
 
     Se dotó de la posibilidad de añadir una descripción a las baldas, por lo que hubo que modificar el componente \emph{Balda} para que esto fuera posible. Gracias al diseño por componentes, fue un cambio relativamente sencillo, pero que dota de un detalle bastante útil a la aplicación.
-
-%%%%%%%%%%%%*****************
-%% Hablar del bean paquetedediapositivas?¿?
-%%%%%%%%%%%%*****************
+    
+    Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion5:finaliteracion}
+   
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion5/images/finIteracion.eps}
+               \caption{Interfaz Gráfica despues de la iteración 5}
+               \label{fig:iteracion5:finaliteracion}
+            \end{center}
+    \end{figure}
 
 
 \section{Pruebas}
