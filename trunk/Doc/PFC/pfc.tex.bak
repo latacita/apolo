@@ -23,8 +23,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[scaled]{uarial}
 
-%%Separacion entre parrafos
-\parskip=2mm
+
+%\usepackage{hyperref}
 
 % File with main configuration
 \input{config/pfc_options.tex}
@@ -77,6 +77,9 @@
 \input{Config/headers.tex}
 
 \input{config/chapters.tex}
+
+%%Separacion entre parrafos
+%\parskip=2mm
 
 % Capítulo 1: Introducción
 \input{introduction/introduction.tex} % Chapter 1
