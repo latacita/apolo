@@ -44,10 +44,19 @@
             Para el resto de sistemas se dejará a disposición un archivo \emph{tar} en el que se encontrara el archivo ejecutable \emph{jar} Apolo junto con la carpeta \emph{recursos} para que una vez descomprimido y si el sistema dispone de maquina virtual de Java version 1.6.0 o superior sea ejecutable.
 
     \subsection{Creación de la web}
-        Para una mayor difusión de la aplicación se creo una página web dentro del dominio \emph{www.angeltezanos.com} en la cual se puede encontrar toda la información y descargas de Apolo.
+        Para una mayor difusión de la aplicación se creo una página %\href{http://www.angeltezanos.com/Apolo}{web} 
+        dentro del dominio \emph{www.angeltezanos.com} en la cual se puede encontrar toda la información y descargas de Apolo.
         
+        \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{despliegueAceptacion/images/web.eps}
+               \caption{Web de Apolo (http://www.angeltezanos.com/Apolo)}
+               \label{fig:despliegue:web}
+            \end{center}
+        \end{figure}
+
         Se trato de crear una web que fuera sencilla y a la vez muy practica, mostrando una imagen llamativa y agradable de Apolo en todas las secciones.
-        
+
         Se aprovecho el servicio de \emph{Google Analytics} para conocer los visitantes de la web y su procedencia, así como el numero de descargas realizadas.
 
 \section{Aceptación de la Aplicación}
@@ -64,24 +73,24 @@
     \subsubsection{Problemas encontrados}
         Analizando la aplicación y haciendo uso de depuradores, se descubrió que la aplicación buscaba la carpeta de recursos en una localización errónea. Sin embargo la localización de los recursos en windows resultaba correcta.
 
-        Investigando la causa, se descubrió que el problema se trataba de la distinta forma de trabajar con rutas relativas de \emph{Microsoft Windows y Linux} pues mientras que en \emph{Microsoft Windows} la path relativa que devuelve la maquina virtual es el directorio donde se encuentra el ejecutable \emph{jar} en \emph{Linux} la path relativa que devuelve la maquina virtual de java es el directorio de usuario, normalmente \emph{/home/user}.
+        Investigando la causa, se descubrió que el problema se trataba de la distinta forma de trabajar con rutas relativas de \emph{Microsoft Windows y Linux} pues mientras que en \emph{Microsoft Windows} la path relativa que devuelve la maquina virtual es el directorio donde se encuentra el ejecutable \emph{jar}, en \emph{Linux} la path relativa que devuelve la maquina virtual de java es el directorio de usuario, normalmente \emph{/home/user}.
 
     \subsubsection{Solución de los problemas encontrados}
-        Una vez localizada la causa del mal funcionamiento, se decidió abandonar el uso de rutas relativas, y cambiarlas por absolutas, de manera que nos saltásemos de la falta de convención de las distintas implementaciones de la maquina virtual de java para los distintos sistemas.
+        Una vez localizada la causa del mal funcionamiento, se decidió abandonar el uso de rutas relativas, y cambiarlas por absolutas, de manera que nos saltásemos la falta de convención de las distintas implementaciones de la maquina virtual de java para los distintos sistemas.
 
-        El problema de trabajar con rutas absolutas es que los programas no pueden moverse del directorio donde se definió su uso, ya que las rutas absolutas  dejarían de ser correctas. Por lo que teníamos otro problema.
+        El problema de trabajar con rutas absolutas es que los programas no pueden ubicarse en otro directorio de donde se definió su uso, ya que las rutas absolutas dejarían de ser correctas. Por lo que teníamos otro problema.
 
         Finalmente se decidió trabajar con una solución mixta, pues se trabaja con rutas absolutas, pero se definen en la inicialización del sistema. Es decir, se creo una rutina que devuelve el directorio donde se encuentra el fichero ejecutable \emph{jar} y a partir de esta ruta se construye el path donde se encuentra el resto de recursos.
 
         Una vez implementados los cambios, se comprobó que efectivamente tanto en sistemas Linux como Windows, la ejecución del programa era correcta, así como la carga de todos los recursos.
 
     \subsection{Uso por usuarios finales}
-        Apolo fue probado por usuarios externos al equipo de desarrollo. Rápidamente se adaptaron al uso de la aplicación, sin resultarles complejo su utilización. La aplicación respondió como se esperaba, y ofreció una interfaz gráfica agradable y amistosa para el usuario, sin resultarle de ninguna manera complejo su uso.
+        Apolo fue probado por usuarios externos al equipo de desarrollo. Rápidamente se adaptaron al uso de la aplicación, sin resultarles complejo su utilización. La aplicación respondió como se esperaba, y ofreció una interfaz gráfica agradable y amistosa para el usuario, sin resultarle, de ninguna manera, complejo su uso.
 
         Los usuarios se mostraron contentos, por disponer finalmente de una herramienta liviana, destinada al único fin de organizar y clasificar fotos, y que renombrase todas las fotografías como ellos desearan.
 
         \subsubsection{Petición de los usuarios}
             Algunos usuarios, nos indicaron que les gustaría que apolo recordase la carpeta ultima desde donde se importo. Es decir que una vez importadas fotografías, si deseasen volver a importar, directamente les mostrara el directorio de la anterior importación, y no el de por defecto.
 
-            Atendiendo a sus peticiones, se realizo los cambios en apolo pertinentes para añadirle esta funcionalidad, la cual aporta mayor comodidad y usabilidad de la aplicación para los usuarios finales.
+            Atendiendo a sus peticiones, se realizo los cambios en apolo pertinentes para añadirle esta funcionalidad, la cual aporta mayor comodidad y usabilidad a la aplicación para los usuarios finales.
 

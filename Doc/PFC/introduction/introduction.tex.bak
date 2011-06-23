@@ -30,7 +30,7 @@
 \label{chap:introduction}
 
 % Introducción al capítulo
-\parskip=2mm
+
 %Texto del anteproyecto
 Actualmente la fotografía digital ha ocupado el lugar de la fotografía analógica, quedando esta última reducida al ámbito artístico o profesional de altas prestaciones. No obstante, las aplicaciones software dedicadas actualmente a la clasificación o gestión de colecciones de imágenes digitales, adolecen de varios inconvenientes para el usuario medio; entre ellos:
 
@@ -64,23 +64,40 @@ TODO: Esto está bien dejarlo, pero también es suprimible
 
 Esto es una especie de índice ampliado y se deja, suele ser bastante útil para que el que esté vago se lea esto y se acabe el problema.
 
-\paragraph{Capítulo 2: Resumen del Estado del Arte} \ \\
+%\paragraph{Capítulo 2: Resumen del Estado del Arte} \ \\
 
-\paragraph{Capítulo 3: Descripción General del Proceso} \ \\
+%\paragraph{Capítulo 3: Descripción General del Proceso} \ \\
 
-\paragraph{Capítulo 4: Definición y Planificación del Proyecto} \ \\
+%\paragraph{Capítulo 4: Definición y Planificación del Proyecto} \ \\
 
-\paragraph{Capítulo 5: Ingeniería de Requisitos} \ \\
+%\paragraph{Capítulo 5: Ingeniería de Requisitos} \ \\
 
-\paragraph{Capítulo 6: Definición Arquitectónica y Diseño Software} \ \\
+%\paragraph{Capítulo 6: Definición Arquitectónica y Diseño Software} \ \\
 
-\paragraph{Capítulo 7: Construcción e Implementación} \ \\
+%\paragraph{Capítulo 7: Construcción e Implementación} \ \\
 
-\paragraph{Capítulo 8: Pruebas} \ \\
+%\paragraph{Capítulo 8: Pruebas} \ \\
 
-\paragraph{Capítulo 9: Despliegue y Aceptación} \ \\
+%\paragraph{Capítulo 9: Despliegue y Aceptación} \ \\
+
+%\paragraph{Capítulo 8: Discusión, Conclusiones y Trabajos Futuros} \ \\
+
+\paragraph{Capítulo 1: Introducción} \ \\
+
+\paragraph{Capítulo 2: Definición y Planificación del Proyecto} \ \\
+
+\paragraph{Capítulo 3: Antecedentes} \ \\
+
+\paragraph{Capítulo 4: Iteración 1} \ \\
+
+\paragraph{Capítulo 5: Iteración 5} \ \\
+
+\paragraph{Capítulo 6: Iteración 10} \ \\
+
+\paragraph{Capítulo 7: Despliegue y Aceptación} \ \\
 
 \paragraph{Capítulo 8: Discusión, Conclusiones y Trabajos Futuros} \ \\
+
 
 
 
