@@ -43,13 +43,13 @@ El objetivo de Apolo es imitar en la medida de lo posible el funcionamiento de e
 \item Cada diapositiva tiene un menú asociado, el cual ofrece la posibilidad de ver la imagen (a tamaño completo) o descartarla, así como otros datos de interés que se consideren relevantes.% u observar los detalles de la misma (metadatos).
 \item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
 	estas aparecerán en la aplicación como un conjunto de diapositivas
-    esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{Mesa}.
+	esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{Mesa}.
 \item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación o estanteria}. En esta zona se simularán una especie de baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
 \item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desee.
 \item También puede cambiar la diapositiva de estantería de la misma forma, arrastrándola y soltándola en la estantería deseada.
 \item Cada vez que el usuario haya conseguido ordenar de forma satisfactoria una secuencia de diapositivas, puede marcarla como subsecuencia ordenada y darle un nombre. A continuación, todas las diapositivas se agruparán en un paquete, el cual tendrá una portada representativa de la subsecuencia; y se moverán a una zona diferenciada que denominaremos de
 	\emph{subsecuencias ordenadas o album}. El aspecto de esta zona será como el
-    de una estantería diferenciada, donde se disponen las subsecuencias horizontalmente.
+	de una estantería diferenciada, donde se disponen las subsecuencias horizontalmente.
 \item El usuario también puede descartar todas las diapositivas que se encuentren en una estantería, dejando éstas de aparecer en la aplicación.
 \item En la zona de \emph{subsecuencias ordenadas o album} se puede alterar el orden de las subsecuencias. Es decir, una subsecuencia recién añadida, y que inicialmente se situaría al final de la lista de subsecuencias, puede ser desplazada para colocarse entre dos subsecuencias ya existentes o al principio de la lista de subsecuencias.
 \item Cuando en la zona superior de la aplicación se encuentren todas las subsecuencias de diapositivas ordenadas de acuerdo a los deseos del usuario, éste podrá exportarlas a un directorio o carpeta a su elección. La aplicación entonces creará una copia de cada una de las fotografías seleccionadas en tal carpeta y las renombrará de manera que preserven el orden deseado.
@@ -112,6 +112,24 @@ Las iteraciones planificadas son las siguientes:
 	\item Cargar la aplicación al estado. (Ver R16)
 	\item Retoques, Efectos visuales, corrección de bugs.
 \end{enumerate}
+
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+
+
+\pagebreak
 
 %%% Por cada iteración (hacer las iteraciones pequeñas)
 %- Casos de uso
@@ -192,7 +210,7 @@ La interfaz gráfica es un componente muy importante en el proyecto, pues se hace
 	\item[Zona de Subsecuencias Ordenadas o Album] Se ubica en la parte superior de la aplicación, allí el usuario almacenará las subsecuencias que considere ya ordenadas, de manera que cuando desee exportar, serán estas, según el orden en el que se encuentren, las que serán exportadas.
 \end{description}
 
-La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer boceto de la interfaz gráfica de la aplicación, donde se pueden ver las diferentes zonas mencionadas en el listado anterior.
+La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer boceto de la interfaz gráfica de la aplicación, donde se pueden ver las diferentes zonas mencionadas en el listado anterior.
 
 %***
 % OK
@@ -200,8 +218,8 @@ La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer bo
 \begin{figure}[!tb]
   % Requires \usepackage{graphicx}
   \includegraphics[width=\linewidth]{planificacion/images/MontajeInterfazGrafica.eps}\\
-  \caption{Esquema del Diseño Inicial de la Interfaz Gráfica.}
-  \label{fig:plan:esquemaDiseñoInterfaz}
+  \caption{Esquema del Disenho Inicial de la Interfaz Gráfica.}
+  \label{fig:plan:esquemaDisenhoInterfaz}
 \end{figure}
 
 %*=============
@@ -212,11 +230,11 @@ La imagen de la Figura~\ref{fig:plan:esquemaDiseñoInterfaz} muestra un primer bo
   % Requires \usepackage{graphicx}
   \includegraphics[width=\linewidth]{planificacion/images/EstructuraDeDatos.eps}
   \caption{Esquema del Diseño de la estructura de datos.}
-  \label{fig:plan:esquemaDiseñoEstrucDatos}
+  \label{fig:plan:esquemaDisenhoEstrucDatos}
 \end{figure}
 
 
-Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDiseñoEstrucDatos} como se relacionan los componentes de la aplicación.
+Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDisenhoEstrucDatos} como se relacionan los componentes de la aplicación.
 
 
 
@@ -226,9 +244,9 @@ Para completar el diseño de los artefactos que componen la aplicación, se realiz
 El prototipo construido es una aplicación simple en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva y cual de todas esta arrastrando. Esto puede verse en la figura \ref{fig:plan:DnD}, este prototipo servirá para la investigar y conocer la técnica del \emph{Drag and Drop} algo fundamental en el uso de la aplicación si queremos que su uso resulte fácil y atractivo.
 
 \begin{center}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{planificacion/images/prototipo.eps}
-        \caption{Efecto de Drag and Drop}
-        \label{fig:plan:DnD}
-    \end{figure}
+	\begin{figure}
+		\includegraphics[width=\linewidth]{planificacion/images/prototipo.eps}
+		\caption{Efecto de Drag and Drop}
+		\label{fig:plan:DnD}
+	\end{figure}
 \end{center} 
