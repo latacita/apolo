@@ -1,15 +1,21 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2011.5.20)  23 JUN 2011 11:07
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  23 JUN 2011 19:50
 entering extended mode
-**C:/Documents*and*Settings/Pablo/Mis*documentos/Alumnos/Angel/PFC/pfc.tex
-("C:/Documents and Settings/Pablo/Mis documentos/Alumnos/Angel/PFC/pfc.tex"
+**C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
+(C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, sp
-anish, loaded.
-
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\itsas_pfc.cl
-s"
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\itsas_pfc.cls
 Document Class: itsas_pfc 2007/03/06 Itsas document class
-(C:\Escritura\Miktex\tex\latex\base\bk11.clo
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,15 +31,15 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Escritura\Miktex\tex\latex\base\inputenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(C:\Escritura\Miktex\tex\latex\base\latin1.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
-(C:\Escritura\Miktex\tex\latex\tools\longtable.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip43
 \LTright=\skip44
@@ -51,7 +57,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count92
 \LT@p@ftn=\toks16
 )
-(C:\Escritura\Miktex\tex\latex\tools\array.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen104
 \extrarowheight=\dimen105
@@ -59,11 +65,11 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip47
 \backup@length=\skip48
 )
-(C:\Escritura\Miktex\tex\latex\ltxmisc\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(C:\Escritura\Miktex\tex\latex\amsfonts\amsfonts.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -71,19 +77,19 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-(C:\Escritura\Miktex\tex\generic\babel\babel.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/06 v3.8l The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Escritura\Miktex\tex\latex\00miktex\bblopts.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-(C:\Escritura\Miktex\tex\generic\babel\spanish.ldf
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
 Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 
-(C:\Escritura\Miktex\tex\generic\babel\babel.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count93
 \U@D=\dimen106
@@ -97,8 +103,8 @@ Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
 Package babel Info: Making ' an active character on input line 657.
 ))
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\config/pfc_o
-ptions.tex" (C:\Escritura\Miktex\tex\latex\fancyhdr\fancyhdr.sty
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/pfc_options.tex
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
 \f@ncyO@erh=\skip51
@@ -109,37 +115,37 @@ ptions.tex" (C:\Escritura\Miktex\tex\latex\fancyhdr\fancyhdr.sty
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
 )
-(C:\Escritura\Miktex\tex\latex\graphics\color.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(C:\Escritura\Miktex\tex\latex\00miktex\color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: dvips.def on input line 130.
 
-(C:\Escritura\Miktex\tex\latex\graphics\dvips.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 )
-(C:\Escritura\Miktex\tex\latex\graphics\dvipsnam.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(C:\Escritura\Miktex\tex\latex\rotating\rotating.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(C:\Escritura\Miktex\tex\latex\graphics\graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Escritura\Miktex\tex\latex\graphics\keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-(C:\Escritura\Miktex\tex\latex\graphics\graphics.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Escritura\Miktex\tex\latex\graphics\trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(C:\Escritura\Miktex\tex\latex\00miktex\graphics.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
@@ -147,7 +153,7 @@ Package graphics Info: Driver file: dvips.def on input line 91.
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
-(C:\Escritura\Miktex\tex\latex\base\ifthen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count96
@@ -156,10 +162,10 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box30
 \rot@mess@toks=\toks21
 )
-(C:\Escritura\Miktex\tex\latex\minitoc\minitoc.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
 Package: minitoc 2008/07/16 v60 Package minitoc (JPFD)
 
-(C:\Escritura\Miktex\tex\latex\minitoc\mtcmess.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -179,7 +185,7 @@ Package minitoc Info: I0003
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
 
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\pfc.mtc0")
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -194,21 +200,21 @@ Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
 
-(C:\Escritura\Miktex\tex\latex\minitoc\english.mld
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
 File: english.mld 2006/01/13
 )
-(C:\Escritura\Miktex\tex\latex\minitoc\english.mld
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
 File: english.mld 2006/01/13
 )
 Package minitoc Info: I0010
 (minitoc)             The spanish language is selected.
 (minitoc)              on input line 4911.
 
-(C:\Escritura\Miktex\tex\latex\minitoc\spanish.mld
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\spanish.mld
 File: spanish.mld 2008/04/03
 ))
-(C:\Escritura\Miktex\tex\latex\epsf\epsf.sty
-This is `epsf.tex' v2.7.3 <23 July 2005>
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\epsf\epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read1
 \epsfframemargin=\dimen109
 \epsfframethickness=\dimen110
@@ -218,11 +224,11 @@ This is `epsf.tex' v2.7.3 <23 July 2005>
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 \pspoints=\dimen116
-) (C:\Escritura\Miktex\tex\latex\textpos\textpos.sty
+) (C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\textpos\textpos.sty
 Package: textpos 2010/09/30 v1.7g
 
 Package: `textpos' 1.7g <2010 September 30>
-(C:\Escritura\Miktex\tex\latex\ms\everyshi.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box33
@@ -239,10 +245,8 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TP@tbargs=\toks23
 \TP@prevdepth=\dimen124
 TextBlockOrigin set to 0pt x 0pt
-))
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\config/renam
-e.tex")
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\pfc.aux"
+)) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/rename.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux
 
 LaTeX Warning: Label `chap:introduction' multiply defined.
 
@@ -263,147 +267,366 @@ Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
  ABD: EveryShipout initializing macros
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\cover/superv
-isorApproval.tex"
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
- (C:\Escritura\Miktex\tex\latex\amsfonts\umsa.fd
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/cover.tex
+File: images/ingInformatica.eps Graphic file (type eps)
+
+<images/ingInformatica.eps>
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
-(C:\Escritura\Miktex\tex\latex\amsfonts\umsb.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-File: images/ingInformatica.eps Graphic file (type eps)
- <images/ingInformatica.eps>
-File: images/uc.eps Graphic file (type eps)
-
-<images/uc.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
+Overfull \hbox (71.94475pt too wide) in paragraph at lines 38--38
+ [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-)
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\config/begin
-.tex")
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\Config/heade
-rs.tex")
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\config/chapt
-ers.tex")
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\introduction
-/introduction.tex" [1
+[1
 
 ] [2
 
-]
-Cap\'{\i }tulo 1.
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\pfc.mtc1")
+]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/supervisorApproval.tex
+File: images/ingInformatica.eps Graphic file (type eps)
+
+<images/ingInformatica.eps>
+File: images/uc.eps Graphic file (type eps)
+ <images/uc.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/firstPage.tex
+File: images/uc.eps Graphic file (type eps)
+ <images/uc.eps>
 [3
 
-] [4])
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\background/b
-ackground.tex" [5] [6
+]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]|\OT1/cmr/m/n/10.95 the Clas-si-cal Sli-de
+ []
+
+
+Overfull \hbox (41.0pt too wide) in paragraph at lines 16--22
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/begin.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1] [2])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/toc.tex
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM pfc.toc on input line 2.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc1.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc2.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc3.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc4.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc5.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc6.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc7.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc8.
+Package minitoc Info: I0033
+(minitoc)             Writing pfc.mtc9.
+ [3
+
+
+] [4
+
+]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.toc [5])
+\tf@toc=\write4
+ [6]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lof)
+\tf@lof=\write5
+ [7
+
+] [8
+
+]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lot)
+\tf@lot=\write6
+ [9] [10
+
+])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\Config/headers.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/chapters.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\introduction/introduction.tex
+Cap\'{\i }tulo 1.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [1
+
+
+] [2])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex [3]
+[4
 
 ]
 Cap\'{\i }tulo 2.
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\pfc.mtc2")
-[7
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [5
+
+]
+File: planificacion/images/clasificadorAnalogico.eps Graphic file (type eps)
+
+<planificacion/images/clasificadorAnalogico.eps> [6] [7]
+File: planificacion/images/mod-iterativo.eps Graphic file (type eps)
+
+<planificacion/images/mod-iterativo.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--130
+
+ []
+
+[9] [10]
+File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
+ <planificacion/images/MarcoDiapositiva.eps>
+File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
+
+<planificacion/images/MontajeInterfazGrafica.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+File: planificacion/images/EstructuraDeDatos.eps Graphic file (type eps)
+<planificacion/images/EstructuraDeDatos.eps> [11]
+File: planificacion/images/prototipo.eps Graphic file (type eps)
+
+<planificacion/images/prototipo.eps>)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [12] [13]
+[14]
+Cap\'{\i }tulo 3.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc3) [15
+
 
 ])
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\config/appen
-dix.tex")
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\config/bibli
-ography.tex" [8])
-("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\pfc.bbl"
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex [16]
+Cap\'{\i }tulo 4.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc4)
+File: iteracion1/images/casoDeUso.eps Graphic file (type eps)
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+<iteracion1/images/casoDeUso.eps> [17
 
-)
+
+] [18]
+File: iteracion1/images/finIteracion.eps Graphic file (type eps)
+
+<iteracion1/images/finIteracion.eps> [19] [20])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [21] [22
+
+]
+Cap\'{\i }tulo 5.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5)
+File: iteracion5/images/casosDeUso.eps Graphic file (type eps)
+
+<iteracion5/images/casosDeUso.eps> [23
+
+] [24]
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+ [25]
+File: iteracion5/images/finIteracion.eps Graphic file (type eps)
+
+<iteracion5/images/finIteracion.eps> [26])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [27] [28
+
+]
+Cap\'{\i }tulo 6.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [29
+
+]
+File: iteracion10/images/antes.eps Graphic file (type eps)
+
+<iteracion10/images/antes.eps> [30]
+File: iteracion10/images/despues.eps Graphic file (type eps)
+ <iteracion10/images/despues.eps> [31]
+[32])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion
+.tex [33] [34
+
+]
+Cap\'{\i }tulo 7.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7)
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
+ [35
+
+]
+Overfull \hbox (59.60126pt too wide) in paragraph at lines 47--49
+[][]\OT1/cmr/m/n/10.95 Para una ma-yor di-fu-sion de la apli-ca-cion se creo 
+una pagi-na den-tro del do-mi-nio \OT1/cmr/m/it/10.95 www.angeltezanos.com
+ []
+
+File: despliegueAceptacion/images/web.eps Graphic file (type eps)
+<despliegueAceptacion/images/web.eps> [36] [37] [38])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [39] [40
+
+]
+Cap\'{\i }tulo 8.
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8) [41
+
+])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/bibliography.tex [42])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.bbl)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the pfc.maf file.
+Package minitoc(hints) Info: I0019
+(minitoc(hints))             No hints have been written 
+(minitoc(hints))             in the pfc.log file..
+ [43
 
 
-Package minitoc(hints) Warning: W0059
-(minitoc(hints))                You have used \minitoc, 
-(minitoc(hints))                but not \dominitoc.
-
-
-Package minitoc(hints) Warning: W0068
-(minitoc(hints))                You have used \minitoc but not 
-(minitoc(hints))                \tableofcontents
-(minitoc(hints))                nor \faketableofcontents.
-
-
-Package minitoc(hints) Warning: W0024
-(minitoc(hints))                Some hints have been written 
-(minitoc(hints))                in the pfc.log file.
-
-[9
-
-
-] ("C:\Documents and Settings\Pablo\Mis documentos\Alumnos\Angel\PFC\pfc.aux")
+]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3690 strings out of 495306
- 50416 string characters out of 3182336
- 127872 words of memory out of 3000000
- 6613 multiletter control sequences out of 15000+200000
- 13371 words of font info for 51 fonts, out of 3000000 for 9000
- 15 hyphenation exceptions out of 8191
- 34i,12n,43p,751b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 3873 strings out of 494020
+ 55505 string characters out of 3143905
+ 131526 words of memory out of 3000000
+ 6772 multiletter control sequences out of 15000+200000
+ 15927 words of font info for 60 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 35i,13n,43p,197063b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (9 pages, 25304 bytes).
+Output written on pfc.dvi (56 pages, 164440 bytes).

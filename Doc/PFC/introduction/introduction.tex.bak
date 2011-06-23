@@ -26,12 +26,15 @@
 	% How will achievement or contribution of the research be demonstrated or validated ?
 		%
 
-\chapterheader{Introduction}{Introduction}
+\chapterheader{Introducción}{Introducción}
 \label{chap:introduction}
 
-% Introducción al capítulo
 
-%Texto del anteproyecto
+\chaptertoc
+
+\section{Introducción}
+\label{sec:intr:introduction}
+
 Actualmente la fotografía digital ha ocupado el lugar de la fotografía analógica, quedando esta última reducida al ámbito artístico o profesional de altas prestaciones. No obstante, las aplicaciones software dedicadas actualmente a la clasificación o gestión de colecciones de imágenes digitales, adolecen de varios inconvenientes para el usuario medio; entre ellos:
 
 \begin{enumerate}
@@ -44,61 +47,38 @@ El objetivo del presente proyecto fin de carrera es crear una aplicación softwar
 
 El proyecto se realizará en Java, con objeto de hacer la aplicación multiplataforma. Para la interfaz gráfica se desarrollarán una serie de componentes visuales (o widgets), usando para ello las facilidades proporcionadas por las Graphical Beans de Java para la creación de nuevos componentes software para interfaces gráficas.
 
-\chaptertoc
-
-\section{Introducción}
-\label{sec:intr:introduction}
-
-\section{Motivación and Contribuciones}
-\label{sec:intr:motivation}
-
-TODO: Esta sección es más para tesis doctorales que para proyectos fin de carrera. La dejamos de momento pero se podría eliminar
-
-\section{Visión General del Proyecto}
-\label{sec:intr:overview}
-
-TODO: Esto está bien dejarlo, pero también es suprimible
-
 \section{Estructura del Documento}
 \label{sec:intr:organization}
 
-Esto es una especie de índice ampliado y se deja, suele ser bastante útil para que el que esté vago se lea esto y se acabe el problema.
+Tras este capítulo introductorio, el resto de la presente memoria se estrucutura tal como se describe a continuación:
 
-%\paragraph{Capítulo 2: Resumen del Estado del Arte} \ \\
+\begin{description}
+	\item[Capítulo 2: Planificación del Proyecto] Describe el ámbito funcional del proyecto y en que casos resulta apropiado su uso. El tipo de metodología usada, así como la planificación del proyecto. Definiendo las iteraciones que habrá, así como los requisitos que existen.
 
-%\paragraph{Capítulo 3: Descripción General del Proceso} \ \\
+		También se hablará de los componentes básicos de los que constará la aplicación, y de la construcción de prototipos.
 
-%\paragraph{Capítulo 4: Definición y Planificación del Proyecto} \ \\
+	\item[Capítulo 3: Antecedentes]
+		Como antecedentes se hace una breve introducción a la programación por componentes, explicando en que consiste y las ventajas que conlleva.
 
-%\paragraph{Capítulo 5: Ingeniería de Requisitos} \ \\
+		A continuación se habla sobre la tecnología de componentes usada en Java, denominada \emph{Java Beans} y las características que debe cumplir para definirse como componente.
 
-%\paragraph{Capítulo 6: Definición Arquitectónica y Diseño Software} \ \\
+	\item[Capítulo 4: Iteración 1]
+	En la primera iteración se muestra la construcción del primer prototipo, cumpliendo las finalidades que se marcaron para esa iteración. De esta manera vemos la creación de la mesa y la diapositiva. Así como el comportamiento de \emph{Drag And Drop}.
 
-%\paragraph{Capítulo 7: Construcción e Implementación} \ \\
+	Se observa la los casos de uso detectados, así como el refinamiento de requisitos, para posteriormente diseñar los componentes y finalmente implementarlos y probarlos.
 
-%\paragraph{Capítulo 8: Pruebas} \ \\
+	\item[Capítulo 5: Iteración 5] En la quinta iteración se muestra la construcción de los últimos componentes de la aplicación, y de esta manera finalizar los requisitos de esta iteración, en la cual ya sera posible ordenar y clasificar fotografías, aun que de momento no se podrán exportar hasta algunas iteraciones después.
 
-%\paragraph{Capítulo 9: Despliegue y Aceptación} \ \\
+	Se observa la los casos de uso detectados, así como el refinamiento de requisitos, para posteriormente diseñar los componentes y finalmente implementarlos y probarlos.
 
-%\paragraph{Capítulo 8: Discusión, Conclusiones y Trabajos Futuros} \ \\
+	\item[Capítulo 6: Iteración 10] En la décima iteración se muestra el cambio visual de toda la aplicación con el fin de hacerla mas atractiva para el usuario final.
 
-\paragraph{Capítulo 1: Introducción} \ \\
+	\item[Capítulo 7: Despliegue y Aceptación] Muestra las decisiones tomadas para el despliegue de la aplicación en los distintos sistemas operativos en los que funciona. De la misma forma se informa de la creación de una página web para dar difusión a la aplicación.
 
-\paragraph{Capítulo 2: Definición y Planificación del Proyecto} \ \\
+		También se hablará de la aceptación y de los problemas encontrados en esta fase, así como de las peticiones de los usuarios, y los cambios realizados para satisfacerlas.
 
-\paragraph{Capítulo 3: Antecedentes} \ \\
-
-\paragraph{Capítulo 4: Iteración 1} \ \\
-
-\paragraph{Capítulo 5: Iteración 5} \ \\
-
-\paragraph{Capítulo 6: Iteración 10} \ \\
-
-\paragraph{Capítulo 7: Despliegue y Aceptación} \ \\
-
-\paragraph{Capítulo 8: Discusión, Conclusiones y Trabajos Futuros} \ \\
-
-
+	\item[Capítulo 8: Conclusiones y Trabajos Futuros]  Concluye la presente memoria y comenta posibles trabajos futuros.
+\end{description}
 
 
 
