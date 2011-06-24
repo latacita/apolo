@@ -57,18 +57,15 @@
             \end{center}
         \end{figure}
 
-\section{Diseño}
-\label{sec:iteracion1:diagramaDeClases}
-
 \section{Implementación}
 \label{sec:iteracion1:implementacion}
 
     La implementación se realizó empezando por el componente mas básico, esto es la lógica de la diapositiva, a esta clase las denominamos \emph{Diapositiva.java}. Posteriormente se creo la interfaz visual de la diapositiva, y su comportamiento interno. A continuación se creo la interfaz visual de la mesa y finalmente el comportamiento de la misma. Cada una de las interfaces visuales se llamas \emph{GUIDiapositiva} y \emph{GUIMesa} respectivamente. Y con ello tenemos ya dos componentes de nuestra aplicación.
 
-    Una vez finalizada \emph{GUIMesa.java} se procedió a integrarla en la ventana principal. Al utilizar la técnica de desarrollo por componentes resulta sumamente sencillo añadir este tipo de widgets o componentes visuales a la ventana principal.
+    Una vez finalizada \emph{GUIMesa.java} se procedió desarrollar el metodo que importa una fotografía e integrar esta a la ventana principal. Al utilizar la técnica de desarrollo por componentes resulta sumamente sencillo añadir este tipo de widgets o componentes visuales a la ventana principal. Todo este proceso se creo en un nuevo thread\cite{javat}
 
     Posteriormente se implementó el resto de componentes necesarios para la realización de la primera iteración, esto es: un menu desde el que se ofrezca la opción de importar fotografía, un menu en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se opto por delegar la acción al programa que tenga el sistema operativo asignado por defecto para esa tarea.
-    
+
     Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion1:finaliteracion}
 
     \begin{figure}[!tb]
@@ -78,7 +75,7 @@
                \label{fig:iteracion1:finaliteracion}
             \end{center}
     \end{figure}
-    
+
 
 \section{Pruebas}
 \label{sec:iteracion1:pruebas}
@@ -86,33 +83,39 @@
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item Importar Fotografía:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa.
-                \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa. (Correcto)
-            \end{description}
-            
-        \item Importar varias Fotografías:
-            \begin{description}
-                \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa.
-                \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa. (Correcto)
+                \item[Acción:] Pulsar en el menu la opción importar y seleccionar una fotografía.
+                \item[Resultado Esperado:] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa.
             \end{description}
 
-        \item Mover Fotografía:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada.
-                \item[Resultado Obtenido] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada. (Correcto)
+                \item[Acción:] Pulsar en el menu la opción importar y seleccionar varias fotografías.
+                \item[Resultado Esperado:] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa.
             \end{description}
 
-        \item Visualizar Fotografía:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Visualización de la diapositiva en el programa asignado por defecto del sistema operativo.
-                \item[Resultado Obtenido] Visualización de la diapositiva en el programa asignado por defecto del sistema operativo. (Correcto)
+                \item[Acción:] Pulsar con el botón izquierdo del ratón sobre una diapositiva y sin soltarlo desplazar el cursor.
+                \item[Resultado Esperado:] Aparición de un efecto que represente el arrastre de la diapositiva seleccionada.
             \end{description}
 
-        \item Descartar Fotografía:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz.
-                \item[Resultado Obtenido] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz. (Correcto)
+                \item[Acción:] Pulsar con el botón derecho del ratón sobre una diapositiva y seleccionar la opción visualizar.
+                \item[Resultado Esperado:] Visualización de la diapositiva en el programa asignado por defecto del sistema operativo.
+            \end{description}
+
+        \item
+            \begin{description}
+                \item[Acción:] Pulsar con el botón derecho del ratón sobre una diapositiva y seleccionar la opción descartar.
+                \item[Resultado Esperado:] Supresión de la diapositiva en cuestión de la mesa. Eliminación de visual de la interfaz.
+            \end{description}
+
+        \item
+            \begin{description}
+                \item[Acción:] Intentar importar una fotografía ficticia, para ello se introduce un nombre ficticio en el cuadro de dialogo y se pulsa aceptar.
+                \item[Resultado Esperado:] No aparece ninguna fotografía importada.
             \end{description}
     \end{enumerate}

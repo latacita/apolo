@@ -34,7 +34,7 @@ JavaBeans es la tecnología de componentes de Java, cada componente se le conoce 
 	\item Los eventos que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
 
-Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método get para obtener el valor, y un set para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
+Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método \emph{get} para obtener el valor, y un \emph{set} para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
 
 Existen varios tipos de propiedades:
 \begin{itemize}
@@ -44,5 +44,8 @@ Existen varios tipos de propiedades:
     \item Restringidas (Constrained): Similar a la Ligada salvo que los objetos notificados tienen la opción de vetar el cambio.
 \end{itemize}
 
-%%Extender mas si es posible
-Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este este implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. 
+Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este este implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. Posteriormente, se realizara la conexión entre componentes, para que puedan realizar las acciones que se consideren oportunas.
+
+\section{Drag and Drop} 
+
+Un campo importante en el desarrollo de la aplicación será la decision de adoptar una forma que guié al usuario a la hora de mover diapositivas por la aplicación.  

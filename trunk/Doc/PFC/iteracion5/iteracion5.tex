@@ -70,9 +70,6 @@
         \end{center}
     \end{figure}
 
-\section{Diseño}
-\label{sec:iteracion5:diagramaDeClases}
-
 \section{Implementación}
 \label{sec:iteracion5:implementacion}
     Llegados a esta iteración ya disponemos de la aplicación con su mitad de funcionalidades implementadas, y su principal funcionalidad esta prácticamente acabada\footnote{Clasificar y organizar fotografías}.
@@ -86,9 +83,9 @@
     El componente que representa a un conjunto de diapositivas ordenadas en una balda se denomina \emph{Paquete de diapositivas}. Muestra el numero de secuencia que tiene, usado para su exportación final, así como la descripción si la tuviera.
 
     Se dotó de la posibilidad de añadir una descripción a las baldas, por lo que hubo que modificar el componente \emph{Balda} para que esto fuera posible. Gracias al diseño por componentes, fue un cambio relativamente sencillo, pero que dota de un detalle bastante útil a la aplicación.
-    
+
     Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion5:finaliteracion}
-   
+
     \begin{figure}[!tb]
             \begin{center}
                \includegraphics[width=0.9\linewidth]{iteracion5/images/finIteracion.eps}
@@ -105,45 +102,45 @@
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item Añadir balda como subsecuencia ordenada:
+        \item 
             \begin{description}
-            \item[Resultado Esperado] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación.
-            \item[Resultado Obtenido] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación. (Correcto)
+            \item[Acción:] Pulsar el botón de la balda que añade una subsecuencia a la zona superior, conteniendo la balda diapositivas.
+            \item[Resultado Esperado:] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación y desaparición de la balda.
         \end{description}
 
-        \item Intentar añadir una subsecuencia vacía:
+        \item 
             \begin{description}
-                \item[Resultado Esperado] Mensaje de error, informando de lo ocurrido.
-                \item[Resultado Obtenido] Mensaje de error, informando de lo ocurrido. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que añade una subsecuencia a la zona superior sin que la balda contenga diapositivas.
+                \item[Resultado Esperado:] Mensaje de error, informando de lo ocurrido.
             \end{description}
 
-        \item Añadir nombre o descripción a la balda:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Renombre de la balda.
-                \item[Resultado Obtenido] Renombre de la balda. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que añade una descripción a la balda.
+                \item[Resultado Esperado:] Renombre de la balda.
             \end{description}
 
-        \item Añadir balda con descripción como subsecuencia ordenada:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
-                \item[Resultado Obtenido] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que añade una subsecuencia a la zona superior, conteniendo la balda diapositivas y una descripción.
+                \item[Resultado Esperado:] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
         \end{description}
 
-        \item Convertir subsecuencia ordenada en balda:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
-                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas. (Correcto)
+                \item[Acción:] Pulsar con el botón derecho sobre una subsecuencia y seleccionar en el menu la opción desempaquetar, sin que esta contenga una descripción.
+                \item[Resultado Esperado:] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
         \end{description}
 
         \item Convertir subsecuencia ordenada con descripción en balda:
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
-                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas. (Correcto)
+                \item[Acción:] Pulsar con el botón derecho sobre una subsecuencia y seleccionar en el menu la opción desempaquetar, teniendo la subsecuencia una descripción.
+                \item[Resultado Esperado:] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
         \end{description}
 
-        \item Eliminar una balda:
+        \item 
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
-                \item[Resultado Obtenido] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que la elimina.
+                \item[Resultado Esperado:] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
         \end{description}
     \end{enumerate}
