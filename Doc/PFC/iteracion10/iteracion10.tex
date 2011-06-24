@@ -20,23 +20,20 @@
 
     También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
-    En esta ultima iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino controles extras para garantizar un buen uso de la aplicación. %Me refiero a añadir que no pueda usarse un nombre en blanco para guardar un archivo, por ejemplo.
+    En esta ultima iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino controles extras para garantizar un buen uso de la aplicación.
+
+    Por ultimo se implemento un control de resolución. Apolo ha sido diseñado pensando en pantallas con resoluciones altas, por lo que si la pantalla tiene una resolución menor que 1024x768, Apolo mostrara un aviso informando al usuario que con esa resolución es posible que no trabaje cómodamente con Apolo. Dándole la posibilidad de cancelar la ejecución de Apolo, o continuar de todos modos.
 
 \section{Ingeniería de Requisitos}
+\label{sec:iteracion10:requisitos}
 
-    \section{Casos de uso}
-    \label{sec:iteracion10:casosDeUso}
-
-    \section{Refinamiento de requisitos}
+    \subsection{Refinamiento de requisitos}
     \label{sec:iteracion10:refinamientoRequisitos}
-
-\section{Diseño}
-\label{sec:iteracion10:diagramaDeClases}
 
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
     Al comenzar esta iteración ya se dispone de una aplicación completamente funcional pero con una interfaz pobre visualmente (ver figura \ref{fig:iteracion10:antes}). Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
-    
+
     \begin{figure}[!tb]
             \begin{center}
                \includegraphics[width=0.9\linewidth]{iteracion10/images/antes.eps}
@@ -59,15 +56,17 @@
 
     A continuación se cambio la salida de mensajes de error por consola a mensajes de error visuales a través de una ventana, de manera que se dejara de usar la consola de Java para tales fines.
 
+    Para implementar el control de resolución, antes de la carga del programa, se pregunta al sistema operativo que resolución tiene la pantalla del sistema, si la resolución no es adecuada, se mostrará una ventana informando al usuario y ofreciéndole la oportunidad detener la ejecución de Apolo, o por el contrario continuar con la carga a pesar del aviso.
+
     Finalmente se solución los pequeños bugs que aparecieron según se iba probando la aplicación en distintas manos:
     \begin{itemize}
       \item Imposibilitar un nombre en blanco en el dialogo guardar estado
       \item Imposibilitar guardar un estado y no seleccionar al menos una zona
       \item Mostrar mensaje de error si el sistema no tiene visualizador o editor por defecto asignado.
     \end{itemize}
-    
+
     La interfaz resultante puede verse en la figura \ref{fig:iteracion10:despues}
-    
+
     \begin{figure}[!tb]
             \begin{center}
                \includegraphics[width=0.9\linewidth]{iteracion10/images/despues.eps}
@@ -83,40 +82,46 @@
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item Cargar la interfaz:
+        \item
             \begin{description}
-            \item[Resultado Esperado] Interfaz mejorada visualmente.
-            \item[Resultado Obtenido] Interfaz mejorada visualmente. (Correcto)
+            \item[Acción:] Ejecutar Apolo.
+            \item[Resultado Esperado:] Interfaz mejorada visualmente.
         \end{description}
 
-        \item Funcionamiento de las opciones del menu superior:
+        \item 
             \begin{description}
-                \item[Resultado Esperado] Todas las opciones funcionan correctamente.
-                \item[Resultado Obtenido] Todas las opciones funcionan correctamente. (Correcto)
+                \item[Acción:] Ejecución de los menus superiores
+                \item[Resultado Esperado:] Todas las opciones funcionan correctamente.
             \end{description}
 
-        \item Visualización de iconos:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Todos los iconos cargan correctamente.
-                \item[Resultado Obtenido] Todos los iconos cargan correctamente. (Correcto)
+                \item[Acción:] Desplegar todos los menus y comprobar la correcta carga de los iconos.
+                \item[Resultado Esperado:] Todos los iconos cargan correctamente.
             \end{description}
 
-        \item Mensajes de error visuales, eliminación de la interacción con la consola:
+        \item 
             \begin{description}
-                \item[Resultado Esperado] Los mensajes de error aparecen en una ventana.
-                \item[Resultado Obtenido] Los mensajes de error aparecen en una ventana. (Correcto)
+                \item[Acción:] Provocar mensajes de error o aviso
+                \item[Resultado Esperado:] Los mensajes de error aparecen en una ventana.
         \end{description}
 
-        \item Modificación visual de Beans:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Nueva interfaz gráfica de beans.
-                \item[Resultado Obtenido] Nueva interfaz gráfica de beans. (Correcto)
+                \item[Acción:] Carga de los componentes modificados.
+                \item[Resultado Esperado:] Nueva interfaz gráfica de componentes.
         \end{description}
-
-        \item Control de comportamientos no esperados:
+        
+        \item 
             \begin{description}
-                \item[Resultado Esperado] Los comportamientos no esperados son controlados.
-                \item[Resultado Obtenido] Los comportamientos no esperados son controlados. (Correcto)
+                \item[Acción:] Ejecución de Apolo en pantallas de baja resolución.
+                \item[Resultado Esperado:] Mensaje de aviso con la posibilidad de seguir ejecutando o detener el programa.
+            \end{description}
+
+        \item
+            \begin{description}
+                \item[Acción:] Provocar comportamientos no esperados
+                \item[Resultado Esperado:] Los comportamientos no esperados son controlados.
         \end{description}
     \end{enumerate}
 

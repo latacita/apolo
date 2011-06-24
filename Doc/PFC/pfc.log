@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  23 JUN 2011 19:50
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  24 JUN 2011 14:50
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -514,7 +514,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--130
 
  []
 
-[9] [10]
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11]
 File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
  <planificacion/images/MarcoDiapositiva.eps>
 File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
@@ -525,67 +529,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--221
  []
 
 File: planificacion/images/EstructuraDeDatos.eps Graphic file (type eps)
-<planificacion/images/EstructuraDeDatos.eps> [11]
+<planificacion/images/EstructuraDeDatos.eps> [12]
 File: planificacion/images/prototipo.eps Graphic file (type eps)
 
 <planificacion/images/prototipo.eps>)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [12] [13]
-[14]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [13] [14]
+[15] [16
+
+]
 Cap\'{\i }tulo 3.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc3) [15
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc3) [17
 
+] [18])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex [19] [20
 
-])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex [16]
+]
 Cap\'{\i }tulo 4.
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc4)
 File: iteracion1/images/casoDeUso.eps Graphic file (type eps)
 
-<iteracion1/images/casoDeUso.eps> [17
+<iteracion1/images/casoDeUso.eps> [21
 
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [18]
+ [22]
 File: iteracion1/images/finIteracion.eps Graphic file (type eps)
 
-<iteracion1/images/finIteracion.eps> [19] [20])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [21] [22
+<iteracion1/images/finIteracion.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+[24]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [25]
+[26
 
 ]
 Cap\'{\i }tulo 5.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5) [27
+
+]
 File: iteracion5/images/casosDeUso.eps Graphic file (type eps)
 
-<iteracion5/images/casosDeUso.eps> [23
+<iteracion5/images/casosDeUso.eps> [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [24]
-Underfull \vbox (badness 1655) has occurred while \output is active []
-
- [25]
+ [29]
 File: iteracion5/images/finIteracion.eps Graphic file (type eps)
 
-<iteracion5/images/finIteracion.eps> [26])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [27] [28
+<iteracion5/images/finIteracion.eps> [30])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [31] [32
 
 ]
 Cap\'{\i }tulo 6.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [29
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [33
 
 ]
 File: iteracion10/images/antes.eps Graphic file (type eps)
 
-<iteracion10/images/antes.eps> [30]
+<iteracion10/images/antes.eps> [34]
 File: iteracion10/images/despues.eps Graphic file (type eps)
- <iteracion10/images/despues.eps> [31]
-[32])
+ <iteracion10/images/despues.eps> [35]
+[36])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion
-.tex [33] [34
+.tex [37] [38
 
 ]
 Cap\'{\i }tulo 7.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7)
-Underfull \vbox (badness 1259) has occurred while \output is active []
-
- [35
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7) [39
 
 ]
 Overfull \hbox (59.60126pt too wide) in paragraph at lines 47--49
@@ -594,16 +604,20 @@ una pagi-na den-tro del do-mi-nio \OT1/cmr/m/it/10.95 www.angeltezanos.com
  []
 
 File: despliegueAceptacion/images/web.eps Graphic file (type eps)
-<despliegueAceptacion/images/web.eps> [36] [37] [38])
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [39] [40
+<despliegueAceptacion/images/web.eps> [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+[42]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [43]
+[44
 
 ]
 Cap\'{\i }tulo 8.
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8) [41
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8) [45
 
 ])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
-(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/bibliography.tex [42])
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/bibliography.tex [46])
 (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.bbl)
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -611,7 +625,7 @@ Package minitoc Info: I0009
 Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
- [43
+ [47
 
 
 ]
@@ -621,12 +635,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3873 strings out of 494020
- 55505 string characters out of 3143905
- 131526 words of memory out of 3000000
- 6772 multiletter control sequences out of 15000+200000
+ 3887 strings out of 494020
+ 55622 string characters out of 3143905
+ 130526 words of memory out of 3000000
+ 6786 multiletter control sequences out of 15000+200000
  15927 words of font info for 60 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 35i,13n,43p,197063b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,13n,43p,197063b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (56 pages, 164440 bytes).
+Output written on pfc.dvi (60 pages, 167192 bytes).

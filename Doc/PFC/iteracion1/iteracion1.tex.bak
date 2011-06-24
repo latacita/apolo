@@ -69,16 +69,33 @@
 
     Posteriormente se implementó el resto de componentes necesarios para la realización de la primera iteración, esto es: un menu desde el que se ofrezca la opción de importar fotografía, un menu en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se opto por delegar la acción al programa que tenga el sistema operativo asignado por defecto para esa tarea.
 
+    Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion1:finaliteracion}
+
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion1/images/finIteracion.eps}
+               \caption{Interfaz Gráfica despues de la iteración 1}
+               \label{fig:iteracion1:finaliteracion}
+            \end{center}
+    \end{figure}
+
+
 \section{Pruebas}
 \label{sec:iteracion1:pruebas}
     Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que los requisitos que se marcaron en la primera iteración están cumplidos.
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item Importar Fotografía:
+        \item 
             \begin{description}
-                \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa.
+                \item[Acción:] Acción: Seleccionar del menu una o varias fotografías.
                 \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva en la interfaz visual de la mesa. (Correcto)
+            \end{description}
+
+        \item Importar varias Fotografías:
+            \begin{description}
+                \item[Resultado Esperado] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa.
+                \item[Resultado Obtenido] Aparición de la interfaz visual de la diapositiva por cada una de las fotografías importadas, en la interfaz visual de la mesa. (Correcto)
             \end{description}
 
         \item Mover Fotografía:

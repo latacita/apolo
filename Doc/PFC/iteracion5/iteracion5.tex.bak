@@ -70,22 +70,29 @@
         \end{center}
     \end{figure}
 
-\section{Diseño}
-\label{sec:iteracion5:diagramaDeClases}
-
 \section{Implementación}
 \label{sec:iteracion5:implementacion}
     Llegados a esta iteración ya disponemos de la aplicación con su mitad de funcionalidades implementadas, y su principal funcionalidad esta prácticamente acabada\footnote{Clasificar y organizar fotografías}.
 
-    Para proceder con la implementación de esta iteración, lo primero que se hizo fue diseñar y posteriormente crear los últimos componentes de la aplicación. 
-    
+    Para proceder con la implementación de esta iteración, lo primero que se hizo fue diseñar y posteriormente crear los últimos componentes de la aplicación.
+
     La zona \emph{Album o de subsecuencias ordenadas}, una vez creada se añadió al resto de la aplicación y se comprobó su correcta integración en la aplicación.
 
     Una vez integrada se comenzó a enlazar el nuevo componente con los ya presentes de manera que respondiera a los eventos necesarios para la correcta inclusion en la aplicación. De esta forma, se programó que al pulsar el botón de alguna balda, las diapositivas depositadas en ella, fueran enviadas al nuevo componente, para que este las incluyera en si, de manera que mostrara dicha subsecuencia habida en la balda. Para ello se creo un nuevo componente que representa al conjunto de diapositivas de una balda, y este solo aparece en la zona superior.
-    
+
     El componente que representa a un conjunto de diapositivas ordenadas en una balda se denomina \emph{Paquete de diapositivas}. Muestra el numero de secuencia que tiene, usado para su exportación final, así como la descripción si la tuviera.
 
     Se dotó de la posibilidad de añadir una descripción a las baldas, por lo que hubo que modificar el componente \emph{Balda} para que esto fuera posible. Gracias al diseño por componentes, fue un cambio relativamente sencillo, pero que dota de un detalle bastante útil a la aplicación.
+
+    Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion5:finaliteracion}
+
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion5/images/finIteracion.eps}
+               \caption{Interfaz Gráfica despues de la iteración 5}
+               \label{fig:iteracion5:finaliteracion}
+            \end{center}
+    \end{figure}
 
 
 \section{Pruebas}
@@ -95,28 +102,28 @@
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item Añadir balda como subsecuencia ordenada:
+        \item 
             \begin{description}
-            \item[Resultado Esperado] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación.
-            \item[Resultado Obtenido] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación. (Correcto)
+            \item[Acción:] Seleccionar el botón de la balda que añade una subsecuencia ala zona superior.
+            \item[Resultado Esperado:] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación y desaparición de la balda.
         \end{description}
 
         \item Intentar añadir una subsecuencia vacía:
             \begin{description}
-                \item[Resultado Esperado] Mensaje de error, informando de lo ocurrido.
-                \item[Resultado Obtenido] Mensaje de error, informando de lo ocurrido. (Correcto)
+                \item[Acción:] Mensaje de error, informando de lo ocurrido.
+                \item[Resultado Esperado:] Mensaje de error, informando de lo ocurrido. (Correcto)
             \end{description}
 
         \item Añadir nombre o descripción a la balda:
             \begin{description}
-                \item[Resultado Esperado] Renombre de la balda.
-                \item[Resultado Obtenido] Renombre de la balda. (Correcto)
+                \item[Acción:] Renombre de la balda.
+                \item[Resultado Esperado:] Renombre de la balda. (Correcto)
             \end{description}
 
         \item Añadir balda con descripción como subsecuencia ordenada:
             \begin{description}
-                \item[Resultado Esperado] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
-                \item[Resultado Obtenido] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
+                \item[Acción:] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
+                \item[Resultado Esperado:] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
         \end{description}
 
         \item Convertir subsecuencia ordenada en balda:

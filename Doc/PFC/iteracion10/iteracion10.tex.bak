@@ -20,7 +20,9 @@
 
     También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
-    En esta ultima iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino controles extras para garantizar un buen uso de la aplicación. %Me refiero a añadir que no pueda usarse un nombre en blanco para guardar un archivo, por ejemplo.
+    En esta ultima iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino controles extras para garantizar un buen uso de la aplicación.
+
+    Por ultimo se implemento un control de resolución. Apolo ha sido diseñado pensando en pantallas con resoluciones altas, por lo que si la pantalla tiene una resolución menor que 1024x768, Apolo mostrara un aviso informando al usuario que con esa resolución es posible que no trabaje cómodamente con Apolo. Dándole la posibilidad de cancelar la ejecución de Apolo, o continuar de todos modos.
 
 \section{Ingeniería de Requisitos}
 
@@ -35,7 +37,15 @@
 
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
-    Al comenzar esta iteración ya se dispone de una aplicación completamente funcional. Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
+    Al comenzar esta iteración ya se dispone de una aplicación completamente funcional pero con una interfaz pobre visualmente (ver figura \ref{fig:iteracion10:antes}). Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
+
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion10/images/antes.eps}
+               \caption{Interfaz Gráfica antes de la iteración 10}
+               \label{fig:iteracion10:antes}
+            \end{center}
+    \end{figure}
 
     Comenzamos por añadir opciones al menu superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menu extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la aplicación, y por ultimo, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y el fin de Apolo.
 
@@ -45,11 +55,13 @@
 
     Se cambio el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible. De la misma forma, al ser arrastrado, la manopla cambia ligeramente, dando la sensación de agarrar la diapositiva.
 
-    Se modifico la apariencia del Bean \emph{paquete de diapositiva}, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella e informacion sobre el numero de secuencia y descripción. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
+    Se modifico la apariencia del Bean \emph{paquete de diapositiva}, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella e información sobre el numero de secuencia y descripción. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
 
     Se añadió al Bean Diapositiva mas opciones a su menu contextual: Editar, actualizar y propiedades. Editar abre el programa que este definido por defecto en sistema operativo para tal caso. Actualizar refresca la imagen contenida en la diapositiva, por si se modifico. Y propiedades muestra una ventana con información sobre el fichero representado por la diapositiva.
 
     A continuación se cambio la salida de mensajes de error por consola a mensajes de error visuales a través de una ventana, de manera que se dejara de usar la consola de Java para tales fines.
+
+    Para implementar el control de resolución, antes de la carga del programa, se pregunta al sistema operativo que resolución tiene la pantalla del sistema, si la resolución no es adecuada, se mostrará una ventana informando al usuario y ofreciéndole la oportunidad detener la ejecución de Apolo, o por el contrario continuar con la carga a pesar del aviso.
 
     Finalmente se solución los pequeños bugs que aparecieron según se iba probando la aplicación en distintas manos:
     \begin{itemize}
@@ -57,6 +69,16 @@
       \item Imposibilitar guardar un estado y no seleccionar al menos una zona
       \item Mostrar mensaje de error si el sistema no tiene visualizador o editor por defecto asignado.
     \end{itemize}
+
+    La interfaz resultante puede verse en la figura \ref{fig:iteracion10:despues}
+
+    \begin{figure}[!tb]
+            \begin{center}
+               \includegraphics[width=0.9\linewidth]{iteracion10/images/despues.eps}
+               \caption{Interfaz Gráfica despues de la iteración 10}
+               \label{fig:iteracion10:despues}
+            \end{center}
+    \end{figure}
 
 \section{Pruebas}
 \label{sec:iteracion10:pruebas}
