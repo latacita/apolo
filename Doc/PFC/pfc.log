@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  27 JUN 2011 17:59
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  27 JUN 2011 21:04
 entering extended mode
 **C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -354,12 +354,7 @@ File: images/uc.eps Graphic file (type eps)
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-[]|\OT1/cmr/m/n/10.95 the Clas-si-cal Sli-de
- []
-
-
-Overfull \hbox (41.0pt too wide) in paragraph at lines 16--22
+Overfull \hbox (40.99998pt too wide) in paragraph at lines 16--22
 [][][] 
  []
 
@@ -374,18 +369,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
  []
 
 ) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/begin.tex)
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1] [2
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
-
- []
-
-) (C:\Users\PC\Desktop\Apolo\Doc\PFC\introduction/preface-lff.tex [3
-
+])
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\introduction/preface-lff.tex [3
 
 ] [4
 
@@ -497,23 +484,29 @@ File: planificacion/images/clasificadorAnalogico.eps Graphic file (type eps)
 File: planificacion/images/mod-iterativo.eps Graphic file (type eps)
 
 <planificacion/images/mod-iterativo.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-[8] [9] [10]
+[8]
+Underfull \hbox (badness 3449) in paragraph at lines 128--129
+[]|[]\OT1/cmr/m/n/10.95 Se podra cam-biar dia-po-si-ti-vas en-tre es-tan-ter
+as
+ []
+
+[9] [10]
 File: planificacion/images/MarcoDiapositiva.eps Graphic file (type eps)
  <planificacion/images/MarcoDiapositiva.eps> [11]
 File: planificacion/images/MontajeInterfazGrafica.eps Graphic file (type eps)
 
 <planificacion/images/MontajeInterfazGrafica.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 File: planificacion/images/EstructuraDeDatos.eps Graphic file (type eps)
 <planificacion/images/EstructuraDeDatos.eps>
-Underfull \vbox (badness 1048) has occurred while \output is active []
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [12]
 File: planificacion/images/prototipo.eps Graphic file (type eps)
@@ -562,39 +555,30 @@ Cap\'{\i }tulo 6.
 ] [34]
 File: iteracion10/images/antes.eps Graphic file (type eps)
 
-<iteracion10/images/antes.eps>
-Underfull \vbox (badness 4872) has occurred while \output is active []
-
- [35]
+<iteracion10/images/antes.eps> [35]
 File: iteracion10/images/despues.eps Graphic file (type eps)
-
-<iteracion10/images/despues.eps> [36] [37])
+ <iteracion10/images/despues.eps> [36]
+[37])
 (C:\Users\PC\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion.te
 x [38]
 Cap\'{\i }tulo 7.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc7)
-Underfull \vbox (badness 3568) has occurred while \output is active []
-
- [39
+(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc7) [39
 
 
 ]
-Overfull \hbox (59.60126pt too wide) in paragraph at lines 47--49
-[][]\OT1/cmr/m/n/10.95 Para una ma-yor di-fu-sion de la apli-ca-cion se creo 
-una pagi-na den-tro del do-mi-nio \OT1/cmr/m/it/10.95 www.angeltezanos.com
- []
+Underfull \vbox (badness 2065) has occurred while \output is active []
 
+ [40]
 File: despliegueAceptacion/images/web.eps Graphic file (type eps)
-<despliegueAceptacion/images/web.eps> [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-[42]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [43]
-[44
+<despliegueAceptacion/images/web.eps> [41]
+Underfull \vbox (badness 3690) has occurred while \output is active []
 
-]
+ [42]
+[43]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [44]
 Cap\'{\i }tulo 8.
 (C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc8) [45
+
 
 ])
 (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/appendix.tex)
@@ -626,12 +610,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3897 strings out of 494054
- 55607 string characters out of 3146218
+ 3903 strings out of 494054
+ 55689 string characters out of 3146218
  131526 words of memory out of 3000000
- 6785 multiletter control sequences out of 15000+200000
- 15927 words of font info for 60 fonts, out of 3000000 for 9000
+ 6790 multiletter control sequences out of 15000+200000
+ 16286 words of font info for 61 fonts, out of 3000000 for 9000
  716 hyphenation exceptions out of 8191
  34i,13n,43p,197060b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (66 pages, 201596 bytes).
+Output written on pfc.dvi (66 pages, 206700 bytes).

@@ -8,28 +8,35 @@
 \chapterheader{Mejora de la interfaz visual}{Mejora de la interfaz visual}
 \label{chap:iteracion10}
 
-\todo{Párrafo introductorio}
+Este capítulo trata sobre la décima y última iteración del proyecto. En ella se realiza un cambio en todo el apartado gráfico de la aplicación, de manera que será mucho más atractiva virtualmente para el usuario. En esta capitulo se muestran los nuevos requisitos, tabla \ref{fig:ite5:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
 
 \chaptertoc
 
 \section{Objetivos}
 \label{sec:iteracion10:porQueEstaIteracion}
-    Esta iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
+    Esta iteración corresponde a la última planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho más agradable a la vista.
 
-    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menu. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
+    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una más atractiva. Añadir opciones al menú superior. Inclusión de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menú. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales, evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
 
-    También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
+    También se cambió la apariencia de algunos Beans de manera que resultaran más atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
-    En esta ultima iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino controles extras para garantizar un buen uso de la aplicación.
+    En esta última iteración, se corrigieron algunos comportamientos no deseados que se detectaron mientras se ejecutaba y probaba las versiones intermedias. Estos errores no corresponden a fallos en algún requisito, sino controles extras para garantizar un buen uso de la aplicación.
 
-    Por ultimo se implemento un control de resolución. Apolo ha sido diseñado pensando en pantallas con resoluciones altas, por lo que si la pantalla tiene una resolución menor que 1024x768, Apolo mostrara un aviso informando al usuario que con esa resolución es posible que no trabaje cómodamente con Apolo. Dándole la posibilidad de cancelar la ejecución de Apolo, o continuar de todos modos.
+    Por último se implementó un control de resolución. Apolo ha sido diseñado pensando en pantallas con resoluciones altas, por lo que si la pantalla tiene una resolución menor que 1024x768, Apolo mostrara un aviso informando al usuario que con esa resolución es posible que no trabaje cómodamente con Apolo. Dándole la posibilidad de cancelar la ejecución de Apolo, o continuar de todos modos.
+
 
 \section{Ingeniería de Requisitos}
 \label{sec:iteracion10:requisitos}
 
+    En esta sección se muestran el refinamiento de requisitos, así como la aportación de nuevos.
+
+     En esta iteración no se añade ninguna nueva funcionalidad, por lo que no se precisa de un diagrama de casos de uso. En cambio se añaden algunos requisitos y se refinan otros para lograr que la interfaz visual sea visualmente atractiva y con ello lograr el objetivo de esta iteración.
+
     \subsection{Refinamiento de requisitos}
     \label{sec:iteracion10:refinamientoRequisitos}
-    
+
+    Para lograr cumplir con los objetivos de esta iteración se definieron una serie de nuevos requisitos, los cuales están reflejados en el cuadro \ref{fig:ite10:refinamiento}.
+
     \begin{table}[!htb]
         \begin{center}
             \begin{tabular}{|c|p{9cm}|}
@@ -37,23 +44,17 @@
               % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
               Numero & Nuevo Requisito \\
               \hline \hline
-              R09.1 & Para indicar al sistema que se desea validar una balda o subsecuencia de diapositivas, se deberá pulsar un botón \\
+              R17 & Creación de un menú superior desde el que manejar la aplicación. \\
               \hline
-              R09.2 & No será posible añadir una balda si no hay sobre ella ninguna diapositiva. \\
+              R18 & Inclusión de iconos de manera que faciliten el reconocimiento de las acciones. \\
               \hline
-              R09.3 & A cada balda de la estantería, se la podrá dar un nombre o descripción, de manera que al usuario le resulte mas sencillo identificar que tipos de diapositivas van en ella \\
+              R19 & Creación de mensajes de ayuda en cada control \\
               \hline
-              R09.3.1 & La descripción que posea la balda, la tendrá el subconjunto de diapositivas, de manera que pueda seguir siendo identificadas como tal \\
+              R20 & Sustitución de salida de mensajes por consola a mensajes en ventana gráfica \\
               \hline
-              R09.4 & Debe ser posible que un usuario pueda volver a modificar la subsecuencia de diapositivas. Es decir, la subsecuencia debe poder volverse a la estantería como balda \\
+              R21 & Cambio en el aspecto visual del bean balda y paquete diapositiva. \\
               \hline
-              R09.4.1 & Antes de proceder a convertir la estantería en balda, se debe mostrar un mensaje advirtiendo al usuario de la acción que va a realizar. \\
-              \hline
-              R09.4.2 & Cuando una subsecuencia se convierta en balda, esta debe contener todas las diapositivas que contenía la subsecuencia, y deben poder ser arrastradas de nuevo \\
-              \hline
-              R09.4.3 & La balda que aparecerá como resultado de un subconjunto de diapositivas, tendrá la misma descripción del subconjunto. \\
-              \hline
-              R10.1 & Antes de ser descartada se le debe preguntar al usuario si es esto lo que realmente desea. \\
+              R22 & Control de resoluciones. \\
               \hline
             \end{tabular}
             \caption{Refinamiento de Requisitos Iteración 10}
@@ -61,8 +62,12 @@
         \end{center}
     \end{table}
 
+
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
+
+    En esta sección se describe el proceso de implementación de la décima iteración así como las decisiones tomadas durante esta etapa, de manera que se satisfagan los requisitos descritos en la sección anterior.
+
     Al comenzar esta iteración ya se dispone de una aplicación completamente funcional pero con una interfaz pobre visualmente (ver figura \ref{fig:iteracion10:antes}). Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
 
     \begin{figure}[!tb]
@@ -73,19 +78,19 @@
             \end{center}
     \end{figure}
 
-    Comenzamos por añadir opciones al menu superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menu extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la aplicación, y por ultimo, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y el fin de Apolo.
+    Comenzamos por añadir opciones al menú superior, de manera que desde el, pueda controlarse la aplicación, esto es: Cargar un estado, guardar un estado, salir de la aplicación, importar fotografías y exportarlas. Como menú extra se añadió, un acceso al manual de usuario de la aplicación, un acceso a la web de la aplicación, y por último, un \emph{Acerca de} de manera que se muestre una ventana con la autoría y el fin de Apolo.
 
-    A continuación se cambio el \emph{Look And Feel} de la aplicación, y se eligió una denominada \emph{Nimbus} de manera que todos los componentes visuales utilizados adquieran otra interfaz visual. Y en su conjunto dotar de un gran atractivo a la Aplicación.
+    A continuación se cambió el \emph{Look And Feel} de la aplicación, y se eligió una denominada \emph{Nimbus} de manera que todos los componentes visuales utilizados adquieran otra interfaz visual. Y en su conjunto dotar de un gran atractivo a la Aplicación.
 
-    Posteriormente se añadió, y en algunos casos sustituyo, iconos en el texto de botones y menus. De manera que quedara mucho mas agradable visualmente. Además se añadió a todos los componentes que son susceptibles de ser manipulados una descripción que aparezca al mantener el cursor del ratón un rato sobre el mismo.
+    Posteriormente se añadió, y en algunos casos sustituyo, iconos en el texto de botones y menús. De manera que quedara mucho más agradable visualmente. Además se añadió a todos los componentes que son susceptibles de ser manipulados una descripción que aparezca al mantener el cursor del ratón un rato sobre el mismo.
 
-    Se cambio el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible. De la misma forma, al ser arrastrado, la manopla cambia ligeramente, dando la sensación de agarrar la diapositiva.
+    Se cambió el icono por defecto del cursor cuando se encuentre encima de una diapositiva o subconjunto ordenado, de manera que aparezca una manopla como cursor y oriente al usuario que se trata de un componente movible. De la misma forma, al ser arrastrado, la manopla cambia ligeramente, dando la sensación de agarrar la diapositiva.
 
-    Se modifico la apariencia del Bean \emph{paquete de diapositiva}, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella e información sobre el numero de secuencia y descripción. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
+    Se modificó la apariencia del Bean \emph{paquete de diapositiva}, de manera que apareciese visualmente una carpeta con una serie de imágenes sobre ella e información sobre el número de secuencia y descripción. De esta manera se logra que visualmente se relacione el componente con una subsecuencia o paquete de diapositivas.
 
-    Se añadió al Bean Diapositiva mas opciones a su menu contextual: Editar, actualizar y propiedades. Editar abre el programa que este definido por defecto en sistema operativo para tal caso. Actualizar refresca la imagen contenida en la diapositiva, por si se modifico. Y propiedades muestra una ventana con información sobre el fichero representado por la diapositiva.
+    Se añadió al Bean Diapositiva más opciones a su menu contextual: Editar, actualizar y propiedades. Editar abre el programa que esté definido por defecto en sistema operativo para tal caso. Actualizar refresca la imagen contenida en la diapositiva, por si se modificó. Y propiedades muestra una ventana con información sobre el fichero representado por la diapositiva.
 
-    A continuación se cambio la salida de mensajes de error por consola a mensajes de error visuales a través de una ventana, de manera que se dejara de usar la consola de Java para tales fines.
+    A continuación se cambió la salida de mensajes de error por consola a mensajes de error visuales a través de una ventana, de manera que se dejara de usar la consola de Java para tales fines.
 
     Para implementar el control de resolución, antes de la carga del programa, se pregunta al sistema operativo que resolución tiene la pantalla del sistema, si la resolución no es adecuada, se mostrará una ventana informando al usuario y ofreciéndole la oportunidad detener la ejecución de Apolo, o por el contrario continuar con la carga a pesar del aviso.
 
@@ -101,13 +106,16 @@
     \begin{figure}[!tb]
             \begin{center}
                \includegraphics[width=0.9\linewidth]{iteracion10/images/despues.eps}
-               \caption{Interfaz Gráfica despues de la iteración 10}
+               \caption{Interfaz Gráfica después de la iteración 10}
                \label{fig:iteracion10:despues}
             \end{center}
     \end{figure}
 
+
 \section{Pruebas}
 \label{sec:iteracion10:pruebas}
+
+    En esta sección se relatan las pruebas realizadas para la comprobación del cumplimiento de los requisitos descritos en la tabla \ref{fig:ite10:refinamiento}.
 
     Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que todo funciona correctamente.
 
@@ -121,13 +129,13 @@
 
         \item
             \begin{description}
-                \item[Acción:] Ejecución de los menus superiores
+                \item[Acción:] Ejecución de los menús superiores
                 \item[Resultado Esperado:] Todas las opciones funcionan correctamente.
             \end{description}
 
         \item
             \begin{description}
-                \item[Acción:] Desplegar todos los menus y comprobar la correcta carga de los iconos.
+                \item[Acción:] Desplegar todos los menús y comprobar la correcta carga de los iconos.
                 \item[Resultado Esperado:] Todos los iconos cargan correctamente.
             \end{description}
 
@@ -156,3 +164,9 @@
         \end{description}
     \end{enumerate}
 
+
+\section{Sumario}
+
+    Durante este capítulo se trató las acciones realizadas en la décima y última iteración del proyecto. En ella se cambia el aspecto visual te todos los componentes y se modifica algunos. Puede verse el aspecto anterior a esta iteración en la figura \ref{fig:iteracion10:antes} y posterior a la iteración en la figura \ref{fig:iteracion10:despues}.
+
+    Para ello se mostraron los nuevos requisitos encontrados, las decisiones que se tomaron durante la fase de implementación y finalmente las pruebas que se llevaron a cabo para comprobar el correcto cambio visual de la aplicación.

@@ -45,14 +45,15 @@
 \contentsline {subsection}{\numberline {7.1.1}Creaci\'on de Instaladores}{40}
 \contentsline {subsubsection}{Sistemas Microsoft Windows}{40}
 \contentsline {subsubsection}{Sistemas Linux basados en Debian}{40}
-\contentsline {subsubsection}{Otros sistemas}{40}
+\contentsline {subsubsection}{Otros sistemas}{41}
 \contentsline {subsection}{\numberline {7.1.2}Creaci\'on de la web}{41}
 \contentsline {section}{\numberline {7.2}Aceptaci\'on de la Aplicaci\'on}{42}
 \contentsline {subsection}{\numberline {7.2.1}Instalaci\'on en distintos equipos}{42}
 \contentsline {subsubsection}{Problemas encontrados}{42}
-\contentsline {subsubsection}{Soluci\'on de los problemas encontrados}{42}
+\contentsline {subsubsection}{Soluci\'on de los problemas encontrados}{43}
 \contentsline {subsection}{\numberline {7.2.2}Uso por usuarios finales}{43}
 \contentsline {subsubsection}{Petici\'on de los usuarios}{43}
+\contentsline {section}{\numberline {7.3}Sumario}{43}
 \contentsline {chapter}{\numberline {8}Conclusiones y Trabajos Futuros}{45}
 \contentsline {section}{\numberline {8.1}Conclusiones}{45}
 \contentsline {section}{\numberline {8.2}Trabajos Futuros}{46}

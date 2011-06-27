@@ -8,89 +8,105 @@
 \chapterheader{Despliegue y Aceptación}{Despliegue y Aceptación}
 \label{chap:despliegueAceptacion}
 
-\todo{Párrafo introductorio}
+Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación desarrollada. Para ello se describe el proceso utilizado para la creación de instaladores para los distintos sistemas operativos, así como los problemas encontrados durante el proceso.
 
 \chaptertoc
 
 \section{Despliegue de la Aplicación}
 \label{sec:despliegueAceptacion:despliegue}
-    El despliegue de la Aplicación consistirá en crear un archivo \emph{jar} ejecutable, el cual podrá ser ejecutado, en un sistema con una maquina virtual de Java instalada de una version igual o superior a la \emph{1.6.0}, por el usuario de manera que en ese mismo instante se arranque la aplicación Apolo.
 
-    Para que apolo funcione correctamente deberá ejecutarse teniendo, en el mismo directorio donde se localice, la carpeta \emph{recursos}. En la cual se encuentran todos los ficheros que requiere Apolo para su correcta ejecución. Sin estos ficheros, Apolo será funcional, pero a un nivel mínimo, pues parte de su interfaz visual no sera cargada.
+   En esta sección se muestra como se realizará el despliegue de la aplicación en los distintos sistemas operativos, así como la creación de una web para la difusión de la aplicación por internet.
+
+    El despliegue de la Aplicación consistirá en crear un archivo \emph{jar} ejecutable, el cual podrá ser ejecutado, en un sistema con una máquina virtual de Java instalada de una versión igual o superior a la \emph{1.6.0}, por el usuario de manera que en ese mismo instante se arranque la aplicación Apolo.
+
+    Para que apolo funcione correctamente deberá ejecutarse teniendo, en el mismo directorio donde se localice, la carpeta \emph{recursos}. En la cual se encuentran todos los ficheros que requiere Apolo para su correcta ejecución. Sin estos ficheros, Apolo será funcional, pero a un nivel mínimo, pues parte de su interfaz visual no será cargada.
 
     Como licencia de uso se opta por la GPL v3, de esta manera se permite la libre distribución del software así como su estudio y libre modificación.
 
 
     \subsection{Creación de Instaladores}
-        Para facilitar la instalación en equipos \emph{Microsoft Windows y Linux} se crearan instaladores que facilitarán el proceso a los futuros usuarios. De esta manera dejarán de preocuparse de donde se instalan y donde se encuentran a la hora de ejecutarlos, pues el propio instalador se encargará de añadir los accesos directos que se consideren oportunos, ya sea en el menu de programas o en el escritorio.
+        Para facilitar la instalación en equipos \emph{Microsoft Windows y Linux} se crearan instaladores que facilitarán el proceso a los futuros usuarios. De esta manera dejarán de preocuparse de donde se instalan y donde se encuentran a la hora de ejecutarlos, pues el propio instalador se encargará de añadir los accesos directos que se consideren oportunos, ya sea en el menú de programas o en el escritorio.
 
         \subsubsection{Sistemas Microsoft Windows}
-            Para los sistemas \emph{Microsoft Windows} se ha utilizado la herramienta \emph{Launch4j} que no es mas que un wrapper que envuelve el ejecutable \emph{jar} en un ejecutable \emph{exe} para facilitar la ejecución del mismo en entornos \emph{Microsoft Windows}, de manera que si en el sistema operativo no esta asociada la extension \emph{jar} con la maquina virtual de Java, el ejecutable \emph{exe} le indique que debe lanzar la maquina virtual con el ejecutable embebido \emph{jar}.
+            Para los sistemas \emph{Microsoft Windows} se ha utilizado la herramienta \emph{Launch4j} que no es más que un wrapper que envuelve el ejecutable \emph{jar} en un ejecutable \emph{exe} para facilitar la ejecución del mismo en entornos \emph{Microsoft Windows}, de manera que si en el sistema operativo no esta asociada la extensión \emph{jar} con la maquina virtual de Java, el ejecutable \emph{exe} le indique que debe lanzar la máquina virtual con el ejecutable embebido \emph{jar}.
 
-            A continuación se creo un instalador con la herramienta gratuita \emph{Inno Setup} la cual crea un archivo ejecutable con el programa a instalar así como sus archivos dependientes, todo empaquetado y comprimido en un único archivo.
+            A continuación se creó un instalador con la herramienta gratuita \emph{Inno Setup} la cual crea un archivo ejecutable con el programa a instalar así como sus archivos dependientes, todo empaquetado y comprimido en un único archivo.
 
-            Para crearlo se realizo un script en el cual se escriben las directivas que debe seguir el programa para la generación del instalador.
+            Para crearlo se realizó un script en el cual se escriben las directivas que debe seguir el programa para la generación del instalador.
 
-            Además se indico que durante esta instalación el sistema informe de la licencia de uso y hasta que el usuario no la acepte, no podrá proseguir con la instalación
+            Además se indicó que durante esta instalación el sistema informe de la licencia de uso y hasta que el usuario no la acepte, no podrá proseguir con la instalación
 
         \subsubsection{Sistemas Linux basados en Debian}
             Para los sistemas Linux basados en \emph{Debian} se creará un paquete \emph{deb} que facilite la instalación del mismo.
 
-            Para crear el paquete se utilizo la herramienta \emph{dpkg} la cual permite crear paquetes e instalarlos en el sistema. El comando utilizado es el siguiente: \emph{sudo dkpg -b deb/ apolo.deb} estando en deb todo el sistema de fichero que se desea crear, así como la configuración de la post-instalación y la post-eliminación.
+            Para crear el paquete se utilizó la herramienta \emph{dpkg} la cual permite crear paquetes e instalarlos en el sistema. El comando utilizado es el siguiente: \emph{sudo dkpg -b deb/ apolo.deb} estando en deb todo el sistema de fichero que se desea crear, así como la configuración de la post-instalación y la post-eliminación.
 
             Además, en los últimos sistemas operativos basados en \emph{Debian} es posible instalar el paquete sin utilizar comandos de consola, directamente en el centro de software o haciendo doble click en el paquete, depende de la configuración del sistema.
 
         \subsubsection{Otros sistemas}
-            Para el resto de sistemas se dejará a disposición un archivo \emph{tar} en el que se encontrara el archivo ejecutable \emph{jar} Apolo junto con la carpeta \emph{recursos} para que una vez descomprimido y si el sistema dispone de maquina virtual de Java version 1.6.0 o superior sea ejecutable.
+            Para el resto de sistemas se dejará a disposición un archivo \emph{tar} en el que se encontrara el archivo ejecutable \emph{jar} Apolo junto con la carpeta \emph{recursos} para que una vez descomprimido y si el sistema dispone de máquina virtual de Java versión 1.6.0 o superior sea ejecutable.
 
     \subsection{Creación de la web}
-        Para una mayor difusión de la aplicación se creo una página %\href{http://www.angeltezanos.com/Apolo}{web} 
+        Para una mayor difusión de la aplicación se creó una página \textbf{\emph{http://www.angeltezanos.com/Apolo}}
         dentro del dominio \emph{www.angeltezanos.com} en la cual se puede encontrar toda la información y descargas de Apolo.
-        
+
         \begin{figure}[!tb]
             \begin{center}
                \includegraphics[width=0.9\linewidth]{despliegueAceptacion/images/web.eps}
-               \caption{Web de Apolo (http://www.angeltezanos.com/Apolo)}
+               \caption{Web de Apolo}
                \label{fig:despliegue:web}
             \end{center}
         \end{figure}
 
-        Se trato de crear una web que fuera sencilla y a la vez muy practica, mostrando una imagen llamativa y agradable de Apolo en todas las secciones.
+        Se trató de crear una web que fuera sencilla y a la vez muy práctica, mostrando una imagen llamativa y agradable de Apolo en todas las secciones.
 
-        Se aprovecho el servicio de \emph{Google Analytics} para conocer los visitantes de la web y su procedencia, así como el numero de descargas realizadas.
+        Se aprovechó el servicio de \emph{Google Analytics} para conocer los visitantes de la web y su procedencia, así como el número de descargas realizadas.
+
+        Con el fin de facilitar el aprendizaje del software se crearon una seria de videotutoriales, los cuales muestran como realizar la mayoría de las tareas. De esta manera un usuario, puede conocer cómo realizar una acción sin tener que leerse el manual, o incluso conocer el funcionamiento de la aplicación sin tener que instalarla.
 
 \section{Aceptación de la Aplicación}
 \label{sec:despliegueAceptacion:aceptacion}
-    La aplicación fue ejecutada en varios sistemas, cada uno de los cuales con configuraciones distintas, de manera que pudiera probarse en los mas variados equipos que fuera posible. Se probo tanto en equipos con sistemas Microsoft Windows 7 y XP, como equipos con sistemas Linux. Cada uno de los sistemas operativos en arquitectura de 32 bits, como equipos de 64 bits.
+
+    Esta sección trata sobre la implantación del software desarrollado en los equipos finales del usuario, de manera que se descubrieron nuevos problemas que hicieron modificar la aplicación.
+
+    La aplicación fue ejecutada en varios sistemas, cada uno de los cuales con configuraciones distintas, de manera que pudiera probarse en los más variados equipos que fuera posible. Se probó tanto en equipos con sistemas Microsoft Windows 7 y XP, como equipos con sistemas Linux. Cada uno de los sistemas operativos en arquitectura de 32 bits, como equipos de 64 bits.
 
     \subsection{Instalación en distintos equipos}
-        La instalación en los distintos equipos se produjo con normalidad haciendo uso de los instaladores creados con anterioridad. De manera que la tarea se realizo de una manera rápida y sencilla.
+        La instalación en los distintos equipos se produjo con normalidad haciendo uso de los instaladores creados con anterioridad. De manera que la tarea se realizó de una manera rápida y sencilla.
 
-        Tanto en equipos Microsoft Windows como equipos Linux, la instalación del software como la desisntalación fue correcta, y en todos los casos se encontró un acceso a la aplicación en el menu de programas.
+        Tanto en equipos Microsoft Windows como equipos Linux, la instalación del software como la desinstalación fue correcta, y en todos los casos se encontró un acceso a la aplicación en el menú de programas.
 
         Al ejecutar el programa instalado se descubrió un nuevo problema, pues en equipos Linux no cargaba la carpeta de recursos. Así que se pospuso las siguientes fases y comenzó a analizar la situación de la aplicación, y el motivo por el cual la aplicación no se ejecutaba como se esperaba.
 
     \subsubsection{Problemas encontrados}
         Analizando la aplicación y haciendo uso de depuradores, se descubrió que la aplicación buscaba la carpeta de recursos en una localización errónea. Sin embargo la localización de los recursos en windows resultaba correcta.
 
-        Investigando la causa, se descubrió que el problema se trataba de la distinta forma de trabajar con rutas relativas de \emph{Microsoft Windows y Linux} pues mientras que en \emph{Microsoft Windows} la path relativa que devuelve la maquina virtual es el directorio donde se encuentra el ejecutable \emph{jar}, en \emph{Linux} la path relativa que devuelve la maquina virtual de java es el directorio de usuario, normalmente \emph{/home/user}.
+        Investigando la causa, se descubrió que el problema se trataba de la distinta forma de trabajar con rutas relativas de \emph{Microsoft Windows y Linux} pues mientras que en \emph{Microsoft Windows} la path relativa que devuelve la máquina virtual es el directorio donde se encuentra el ejecutable \emph{jar}, en \emph{Linux} la path relativa que devuelve la maquina virtual de java es el directorio de usuario, normalmente \emph{/home/user}.
 
     \subsubsection{Solución de los problemas encontrados}
-        Una vez localizada la causa del mal funcionamiento, se decidió abandonar el uso de rutas relativas, y cambiarlas por absolutas, de manera que nos saltásemos la falta de convención de las distintas implementaciones de la maquina virtual de java para los distintos sistemas.
+        Una vez localizada la causa del mal funcionamiento, se decidió abandonar el uso de rutas relativas, y cambiarlas por absolutas, de manera que nos saltásemos la falta de convención de las distintas implementaciones de la máquina virtual de java para los distintos sistemas.
 
         El problema de trabajar con rutas absolutas es que los programas no pueden ubicarse en otro directorio de donde se definió su uso, ya que las rutas absolutas dejarían de ser correctas. Por lo que teníamos otro problema.
 
-        Finalmente se decidió trabajar con una solución mixta, pues se trabaja con rutas absolutas, pero se definen en la inicialización del sistema. Es decir, se creo una rutina que devuelve el directorio donde se encuentra el fichero ejecutable \emph{jar} y a partir de esta ruta se construye el path donde se encuentra el resto de recursos.
+        Finalmente se decidió trabajar con una solución mixta, pues se trabaja con rutas absolutas, pero se definen en la inicialización del sistema. Es decir, se creó una rutina que devuelve el directorio donde se encuentra el fichero ejecutable \emph{jar} y a partir de esta ruta se construye el path donde se encuentra el resto de recursos.
 
         Una vez implementados los cambios, se comprobó que efectivamente tanto en sistemas Linux como Windows, la ejecución del programa era correcta, así como la carga de todos los recursos.
 
     \subsection{Uso por usuarios finales}
-        Apolo fue probado por usuarios externos al equipo de desarrollo. Rápidamente se adaptaron al uso de la aplicación, sin resultarles complejo su utilización. La aplicación respondió como se esperaba, y ofreció una interfaz gráfica agradable y amistosa para el usuario, sin resultarle, de ninguna manera, complejo su uso.
+        Apolo fue probado por usuarios externos al equipo de desarrollo. Rápidamente se adaptaron al uso de la aplicación, sin resultarles compleja su utilización. La aplicación respondió como se esperaba, y ofreció una interfaz gráfica agradable y amistosa para el usuario, sin resultarle, de ninguna manera, complejo su uso.
 
         Los usuarios se mostraron contentos, por disponer finalmente de una herramienta liviana, destinada al único fin de organizar y clasificar fotos, y que renombrase todas las fotografías como ellos desearan.
 
         \subsubsection{Petición de los usuarios}
-            Algunos usuarios, nos indicaron que les gustaría que apolo recordase la carpeta ultima desde donde se importo. Es decir que una vez importadas fotografías, si deseasen volver a importar, directamente les mostrara el directorio de la anterior importación, y no el de por defecto.
+            Algunos usuarios, nos indicaron que les gustaría que apolo recordase la carpeta última desde donde se importó. Es decir que una vez importadas fotografías, si deseasen volver a importar, directamente les mostrara el directorio de la anterior importación, y no el de por defecto.
 
-            Atendiendo a sus peticiones, se realizo los cambios en apolo pertinentes para añadirle esta funcionalidad, la cual aporta mayor comodidad y usabilidad a la aplicación para los usuarios finales.
+            Atendiendo a sus peticiones, se realizó los cambios en apolo pertinentes para añadirle esta funcionalidad, la cual aporta mayor comodidad y usabilidad a la aplicación para los usuarios finales.
+
+
+\section{Sumario}
+
+    Durante este capítulo se describieron los procesos de creación de los distintos instaladores necesarios para los sistemas operativos donde se ejecute. A continuación se explica la creación de la página web \emph{www.angeltezanos.com/Apolo} para ayudar a la difusión de la aplicación.
+
+    Finalmente se trata la implantación en los sistemas finales y los problemas encontrados durante la misma, que obligaron a la modificación de ciertas partes de la aplicación.
+
 
