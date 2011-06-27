@@ -8,7 +8,7 @@
 \chapterheader{Creación de subsecuencias}{Creación de subsecuencias}
 \label{chap:iteracion5}
 
-\todo{Párrafo introductorio}
+Este capitulo trata sobre la quinta iteración del proyecto. Con ella se termina prácticamente el proceso de clasificar y ordenar fotografías
 
 \chaptertoc
 
@@ -102,45 +102,45 @@
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item 
+        \item
             \begin{description}
-            \item[Acción:] Seleccionar el botón de la balda que añade una subsecuencia ala zona superior.
+            \item[Acción:] Pulsar el botón de la balda que añade una subsecuencia a la zona superior, conteniendo la balda diapositivas.
             \item[Resultado Esperado:] Aparición de la representación de la subsecuencia ordenada en la parte alta de la aplicación y desaparición de la balda.
         \end{description}
 
-        \item Intentar añadir una subsecuencia vacía:
+        \item
             \begin{description}
-                \item[Acción:] Mensaje de error, informando de lo ocurrido.
-                \item[Resultado Esperado:] Mensaje de error, informando de lo ocurrido. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que añade una subsecuencia a la zona superior sin que la balda contenga diapositivas.
+                \item[Resultado Esperado:] Mensaje de error, informando de lo ocurrido.
             \end{description}
 
-        \item Añadir nombre o descripción a la balda:
+        \item
             \begin{description}
-                \item[Acción:] Renombre de la balda.
-                \item[Resultado Esperado:] Renombre de la balda. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que añade una descripción a la balda.
+                \item[Resultado Esperado:] Renombre de la balda.
             \end{description}
 
-        \item Añadir balda con descripción como subsecuencia ordenada:
+        \item
             \begin{description}
-                \item[Acción:] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
-                \item[Resultado Esperado:] Aparición de la representación de la subsecuencia en la zona superior con la descripción. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que añade una subsecuencia a la zona superior, conteniendo la balda diapositivas y una descripción.
+                \item[Resultado Esperado:] Aparición de la representación de la subsecuencia en la zona superior con la descripción.
         \end{description}
 
-        \item Convertir subsecuencia ordenada en balda:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
-                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas. (Correcto)
+                \item[Acción:] Pulsar con el botón derecho sobre una subsecuencia y seleccionar en el menu la opción desempaquetar, sin que esta contenga una descripción.
+                \item[Resultado Esperado:] Aparición de un mensaje y tras su confirmación, creación de una balda conteniendo todas las diapositivas que había ordenadas.
         \end{description}
 
         \item Convertir subsecuencia ordenada con descripción en balda:
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
-                \item[Resultado Obtenido] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas. (Correcto)
+                \item[Acción:] Pulsar con el botón derecho sobre una subsecuencia y seleccionar en el menu la opción desempaquetar, teniendo la subsecuencia una descripción.
+                \item[Resultado Esperado:] Aparición de un mensaje y tras su confirmación, creación de una balda con descripción conteniendo todas las diapositivas que había ordenadas.
         \end{description}
 
-        \item Eliminar una balda:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
-                \item[Resultado Obtenido] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas. (Correcto)
+                \item[Acción:] Pulsar el botón de la balda que la elimina.
+                \item[Resultado Esperado:] Aparición de un mensaje solicitando confirmación de la acción y en su caso, desaparición de la balda y todas las diapositivas que contenía, de contenerlas.
         \end{description}
     \end{enumerate}
