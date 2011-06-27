@@ -8,7 +8,7 @@
 \chapterheader{Planificación del Proyecto}{Planificación del Proyecto}
 \label{chap:planificacion}
 
-\todo{Párrafo introductorio}
+En este capitulo se describe la planificación que tendrá el proyecto, mostrando en líneas generales su ámbito funcional, la metodología de desarrollo utilizada, las iteraciones programadas, los requisitos de alto nivel de la aplicación, el diseño de los artefactos base, y las herramientas utilizadas para la construcción de prototipos.
 
 \chaptertoc
 
@@ -70,7 +70,7 @@ Tras describir a grandes rasgos el funcionamiento de la aplicación, la siguiente
 %% NOTA(Pablo): Frase de introducción.
 %%==========================================================================================
 
-La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental Iterativo}. Se traba de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo de manera incremental, otorgando en cada iteración más funcionalidades al sistema.
+La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental Iterativo}\cite{ite2002}. Se traba de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo de manera incremental, otorgando en cada iteración más funcionalidades al sistema.
 %Buscar una cita de algún personaje famoso
 
 Esta metodología requiere, inicialmente, una buena descripción del sistema o aplicación a desarrollar. Es esencial que sea clara y lo más completa posible, pues a partir de ella se sustentará todo el proceso de desarrollo.
@@ -86,7 +86,7 @@ Basándose en la descripción se definen una serie de incrementos en donde cada un
 
 Dentro de cada iteración hay un proceso interno,
 %que puede considerarse un ciclo de vida en Cascada
-en el que pueden darse o no, las siguientes fases: analisis de los requisitos de esa iteración, diseño, implementacion y finalmente prueba del correcto funcionamiento. La primera iteración dará como resultado la version inicial de la aplicación con una funcionalidad muy básica, y solo cumpliendo los requisitos más básicos. A medida que vayan sucediendo iteraciones la aplicación ira cobrando funcionalidad. En la ultima iteración se obtendrá el producto final, el cual debe cumplir todos y cada uno de los requisitos.
+en el que pueden darse o no, las siguientes fases: análisis de los requisitos de esa iteración, diseño, implementación y finalmente prueba del correcto funcionamiento. La primera iteración dará como resultado la version inicial de la aplicación con una funcionalidad muy básica, y solo cumpliendo los requisitos más básicos. A medida que vayan sucediendo iteraciones la aplicación ira cobrando funcionalidad. En la ultima iteración se obtendrá el producto final, el cual debe cumplir todos y cada uno de los requisitos.
 
 La ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo es, que al ser la interfaz gráfica una parte imprescindible al igual que la usabilidad, se puede en cada incremento ver si la solución tomada es la adecuada para las expectativas esperadas, y en caso contrario corregirla antes de seguir avanzando en el desarrollo de la misma.
 
@@ -141,6 +141,8 @@ Las iteraciones planificadas son las siguientes:
 \section{Requisitos de Alto Nivel de la Aplicación}
 \label{sec:planning:requisitos}
 
+\begin{table}[!h]
+\begin{center}
 \begin{tabular}{|c|p{9cm}|}
   \hline
   % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
@@ -179,6 +181,12 @@ Las iteraciones planificadas son las siguientes:
   R16 & Se podrá cargar la aplicación a un estado previo por medio de un fichero \\
   \hline
 \end{tabular}
+
+\end{center}
+
+\caption{Tabla de requisitos de alto nivel}
+\label{sec:planning:requisitos:tabla}
+\end{table}
 
 \section{Diseño de los Artefactos Base del Proyecto}
 
