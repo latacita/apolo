@@ -8,7 +8,7 @@
 \chapterheader{Mejora de la interfaz visual}{Mejora de la interfaz visual}
 \label{chap:iteracion10}
 
-\todo{Párrafo introductorio}
+Este capitulo trata sobre la décima y ultima iteración del proyecto. En ella se realiza un cambio en todo el apartado gráfico de la aplicación, de manera que sera mucho mas atractiva virtualmente para el usuario. En esta capitulo se muestran los nuevos requisitos, tabla \ref{fig:ite5:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
 
 \chaptertoc
 
@@ -16,7 +16,7 @@
 \label{sec:iteracion10:porQueEstaIteracion}
     Esta iteración corresponde a la ultima planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho mas agradable a la vista.
 
-    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menu. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales. Evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
+    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una mas atractiva. Añadir opciones al menu superior. Inclusion de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menu. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales, evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
 
     También se cambio la apariencia de algunos Beans de manera que resultaran mas atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
@@ -27,11 +27,45 @@
 \section{Ingeniería de Requisitos}
 \label{sec:iteracion10:requisitos}
 
+     En esta sección se muestran el refinamiento de requisitos, así como la aportación de nuevos.
+
+     En esta iteración no se añade ninguna nueva funcionalidad, por lo que no se precisa de un diagrama de casos de uso. En cambio se se añaden algunos requisitos y se refinan otros para lograr que la interfaz visual sea visualmente atractiva y con ello lograr el objetivo de esta iteración.
+
     \subsection{Refinamiento de requisitos}
     \label{sec:iteracion10:refinamientoRequisitos}
 
+    Para lograr cumplir con los objetivos de esta iteración se definieron una serie de nuevos requisitos, los cuales estan reflejados en el cuadro \ref{fig:ite10:refinamiento}.
+
+    \begin{table}[!htb]
+        \begin{center}
+            \begin{tabular}{|c|p{9cm}|}
+              \hline
+              % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+              Numero & Nuevo Requisito \\
+              \hline \hline
+              R17 & Creación de un menu superior desde el que manejar la aplicación. \\
+              \hline
+              R18 & Inclusion de iconos de manera que faciliten el reconocimiento de las acciones. \\
+              \hline
+              R19 & Creación de mensajes de ayuda en cada control \\
+              \hline
+              R20 & Sustitución de salida de mensajes por consola a mensajes en ventana gráfica \\
+              \hline
+              R21 & Cambio en el aspecto visual del bean balda y paquete diapositiva. \\
+              \hline
+              R22 & Control de resoluciones. \\
+              \hline
+            \end{tabular}
+            \caption{Refinamiento de Requisitos Iteración 10}
+            \label{fig:ite10:refinamiento}
+        \end{center}
+    \end{table}
+
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
+
+    En esta sección se describe el proceso de implementación de la decima iteración así como las decisiones tomadas durante esta etapa, de manera que se satisfagan los requisitos descritos en la sección anterior.
+
     Al comenzar esta iteración ya se dispone de una aplicación completamente funcional pero con una interfaz pobre visualmente (ver figura \ref{fig:iteracion10:antes}). Por lo que en esta iteración solo se limitará a mejorar el apartado visual de la aplicación.
 
     \begin{figure}[!tb]
@@ -78,6 +112,8 @@
 \section{Pruebas}
 \label{sec:iteracion10:pruebas}
 
+    En esta sección se relatan las pruebas realizadas para la comprobación del cumplimiento de los requisitos descritos en la tabla \ref{fig:ite10:refinamiento}.
+
     Una vez concluida la fase de implementación, realizamos las pruebas necesarias para comprobar que todo funciona correctamente.
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
@@ -88,7 +124,7 @@
             \item[Resultado Esperado:] Interfaz mejorada visualmente.
         \end{description}
 
-        \item 
+        \item
             \begin{description}
                 \item[Acción:] Ejecución de los menus superiores
                 \item[Resultado Esperado:] Todas las opciones funcionan correctamente.
@@ -100,7 +136,7 @@
                 \item[Resultado Esperado:] Todos los iconos cargan correctamente.
             \end{description}
 
-        \item 
+        \item
             \begin{description}
                 \item[Acción:] Provocar mensajes de error o aviso
                 \item[Resultado Esperado:] Los mensajes de error aparecen en una ventana.
@@ -111,8 +147,8 @@
                 \item[Acción:] Carga de los componentes modificados.
                 \item[Resultado Esperado:] Nueva interfaz gráfica de componentes.
         \end{description}
-        
-        \item 
+
+        \item
             \begin{description}
                 \item[Acción:] Ejecución de Apolo en pantallas de baja resolución.
                 \item[Resultado Esperado:] Mensaje de aviso con la posibilidad de seguir ejecutando o detener el programa.
@@ -125,3 +161,8 @@
         \end{description}
     \end{enumerate}
 
+\section{Sumario}
+
+    Durante este capitulo se trato las acciones realizadas en la décima y ultima iteración del proyecto. En ella se cambia el aspecto visual te todos los componentes y se modifica algunos. Puede verse el aspecto anterior a esta iteración en la figura \ref{fig:iteracion10:antes} y posterior a la iteración en la figura \ref{fig:iteracion10:despues}.
+    
+    Para ello se mostraron los nuevos requisitos encontrados, las decisiones que se tomaron durante la fase de implementación y finalmente las pruebas que se llevaron a cabo para comprobar el correcto cambio visual de la aplicación.

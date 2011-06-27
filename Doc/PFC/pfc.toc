@@ -10,31 +10,36 @@
 \contentsline {section}{\numberline {2.5}Dise\~no de los Artefactos Base del Proyecto}{11}
 \contentsline {section}{\numberline {2.6}Herramientas utilizadas para el desarrollo de la aplicaci\'on}{12}
 \contentsline {section}{\numberline {2.7}Construcci\'on de Prototipos}{13}
+\contentsline {section}{\numberline {2.8}Sumario}{14}
 \contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }a usada}{17}
 \contentsline {section}{\numberline {3.1}Desarrollo de Software basado en Componentes}{17}
 \contentsline {section}{\numberline {3.2}Java beans como modelo de componentes}{18}
 \contentsline {section}{\numberline {3.3}Interfaces gr\'aficas}{19}
 \contentsline {section}{\numberline {3.4}Drag and Drop}{19}
+\contentsline {section}{\numberline {3.5}Sumario}{20}
 \contentsline {chapter}{\numberline {4}Creaci\'on de los primeros componentes}{21}
 \contentsline {section}{\numberline {4.1}Objetivos}{21}
-\contentsline {section}{\numberline {4.2}Ingenier\IeC {\'\i }a de Requisitos}{21}
-\contentsline {subsection}{\numberline {4.2.1}Casos de uso}{21}
-\contentsline {subsection}{\numberline {4.2.2}Refinamiento de requisitos}{22}
+\contentsline {section}{\numberline {4.2}Ingenier\IeC {\'\i }a de Requisitos}{22}
+\contentsline {subsection}{\numberline {4.2.1}Casos de uso}{22}
+\contentsline {subsection}{\numberline {4.2.2}Refinamiento de requisitos}{23}
 \contentsline {section}{\numberline {4.3}Implementaci\'on}{23}
 \contentsline {section}{\numberline {4.4}Pruebas}{24}
+\contentsline {section}{\numberline {4.5}Sumario}{25}
 \contentsline {chapter}{\numberline {5}Creaci\'on de subsecuencias}{27}
 \contentsline {section}{\numberline {5.1}Objetivos}{27}
 \contentsline {section}{\numberline {5.2}Ingenier\IeC {\'\i }a de Requisitos}{28}
 \contentsline {subsection}{\numberline {5.2.1}Casos de uso}{28}
-\contentsline {subsection}{\numberline {5.2.2}Refinamiento de requisitos}{28}
+\contentsline {subsection}{\numberline {5.2.2}Refinamiento de requisitos}{29}
 \contentsline {section}{\numberline {5.3}Implementaci\'on}{29}
-\contentsline {section}{\numberline {5.4}Pruebas}{31}
+\contentsline {section}{\numberline {5.4}Pruebas}{30}
+\contentsline {section}{\numberline {5.5}Sumario}{32}
 \contentsline {chapter}{\numberline {6}Mejora de la interfaz visual}{33}
 \contentsline {section}{\numberline {6.1}Objetivos}{33}
 \contentsline {section}{\numberline {6.2}Ingenier\IeC {\'\i }a de Requisitos}{34}
 \contentsline {subsection}{\numberline {6.2.1}Refinamiento de requisitos}{34}
-\contentsline {section}{\numberline {6.3}Implementaci\'on}{34}
+\contentsline {section}{\numberline {6.3}Implementaci\'on}{35}
 \contentsline {section}{\numberline {6.4}Pruebas}{36}
+\contentsline {section}{\numberline {6.5}Sumario}{38}
 \contentsline {chapter}{\numberline {7}Despliegue y Aceptaci\'on}{39}
 \contentsline {section}{\numberline {7.1}Despliegue de la Aplicaci\'on}{39}
 \contentsline {subsection}{\numberline {7.1.1}Creaci\'on de Instaladores}{40}

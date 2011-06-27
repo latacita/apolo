@@ -25,15 +25,41 @@
     Por ultimo se implemento un control de resolución. Apolo ha sido diseñado pensando en pantallas con resoluciones altas, por lo que si la pantalla tiene una resolución menor que 1024x768, Apolo mostrara un aviso informando al usuario que con esa resolución es posible que no trabaje cómodamente con Apolo. Dándole la posibilidad de cancelar la ejecución de Apolo, o continuar de todos modos.
 
 \section{Ingeniería de Requisitos}
+\label{sec:iteracion10:requisitos}
 
-    \section{Casos de uso}
-    \label{sec:iteracion10:casosDeUso}
-
-    \section{Refinamiento de requisitos}
+    \subsection{Refinamiento de requisitos}
     \label{sec:iteracion10:refinamientoRequisitos}
-
-\section{Diseño}
-\label{sec:iteracion10:diagramaDeClases}
+    
+    \begin{table}[!htb]
+        \begin{center}
+            \begin{tabular}{|c|p{9cm}|}
+              \hline
+              % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+              Numero & Nuevo Requisito \\
+              \hline \hline
+              R09.1 & Para indicar al sistema que se desea validar una balda o subsecuencia de diapositivas, se deberá pulsar un botón \\
+              \hline
+              R09.2 & No será posible añadir una balda si no hay sobre ella ninguna diapositiva. \\
+              \hline
+              R09.3 & A cada balda de la estantería, se la podrá dar un nombre o descripción, de manera que al usuario le resulte mas sencillo identificar que tipos de diapositivas van en ella \\
+              \hline
+              R09.3.1 & La descripción que posea la balda, la tendrá el subconjunto de diapositivas, de manera que pueda seguir siendo identificadas como tal \\
+              \hline
+              R09.4 & Debe ser posible que un usuario pueda volver a modificar la subsecuencia de diapositivas. Es decir, la subsecuencia debe poder volverse a la estantería como balda \\
+              \hline
+              R09.4.1 & Antes de proceder a convertir la estantería en balda, se debe mostrar un mensaje advirtiendo al usuario de la acción que va a realizar. \\
+              \hline
+              R09.4.2 & Cuando una subsecuencia se convierta en balda, esta debe contener todas las diapositivas que contenía la subsecuencia, y deben poder ser arrastradas de nuevo \\
+              \hline
+              R09.4.3 & La balda que aparecerá como resultado de un subconjunto de diapositivas, tendrá la misma descripción del subconjunto. \\
+              \hline
+              R10.1 & Antes de ser descartada se le debe preguntar al usuario si es esto lo que realmente desea. \\
+              \hline
+            \end{tabular}
+            \caption{Refinamiento de Requisitos Iteración 10}
+            \label{fig:ite10:refinamiento}
+        \end{center}
+    \end{table}
 
 \section{Implementación}
 \label{sec:iteracion10:implementacion}
@@ -87,40 +113,46 @@
 
     Para ello ejecutamos la aplicación y observamos si los resultados al ejecutar distintas acciones corresponden con los esperados.
     \begin{enumerate}
-        \item Cargar la interfaz:
+        \item
             \begin{description}
-            \item[Resultado Esperado] Interfaz mejorada visualmente.
-            \item[Resultado Obtenido] Interfaz mejorada visualmente. (Correcto)
+            \item[Acción:] Ejecutar Apolo.
+            \item[Resultado Esperado:] Interfaz mejorada visualmente.
         \end{description}
 
-        \item Funcionamiento de las opciones del menu superior:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Todas las opciones funcionan correctamente.
-                \item[Resultado Obtenido] Todas las opciones funcionan correctamente. (Correcto)
+                \item[Acción:] Ejecución de los menus superiores
+                \item[Resultado Esperado:] Todas las opciones funcionan correctamente.
             \end{description}
 
-        \item Visualización de iconos:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Todos los iconos cargan correctamente.
-                \item[Resultado Obtenido] Todos los iconos cargan correctamente. (Correcto)
+                \item[Acción:] Desplegar todos los menus y comprobar la correcta carga de los iconos.
+                \item[Resultado Esperado:] Todos los iconos cargan correctamente.
             \end{description}
 
-        \item Mensajes de error visuales, eliminación de la interacción con la consola:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Los mensajes de error aparecen en una ventana.
-                \item[Resultado Obtenido] Los mensajes de error aparecen en una ventana. (Correcto)
+                \item[Acción:] Provocar mensajes de error o aviso
+                \item[Resultado Esperado:] Los mensajes de error aparecen en una ventana.
         \end{description}
 
-        \item Modificación visual de Beans:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Nueva interfaz gráfica de beans.
-                \item[Resultado Obtenido] Nueva interfaz gráfica de beans. (Correcto)
+                \item[Acción:] Carga de los componentes modificados.
+                \item[Resultado Esperado:] Nueva interfaz gráfica de componentes.
         \end{description}
 
-        \item Control de comportamientos no esperados:
+        \item
             \begin{description}
-                \item[Resultado Esperado] Los comportamientos no esperados son controlados.
-                \item[Resultado Obtenido] Los comportamientos no esperados son controlados. (Correcto)
+                \item[Acción:] Ejecución de Apolo en pantallas de baja resolución.
+                \item[Resultado Esperado:] Mensaje de aviso con la posibilidad de seguir ejecutando o detener el programa.
+            \end{description}
+
+        \item
+            \begin{description}
+                \item[Acción:] Provocar comportamientos no esperados
+                \item[Resultado Esperado:] Los comportamientos no esperados son controlados.
         \end{description}
     \end{enumerate}
 
