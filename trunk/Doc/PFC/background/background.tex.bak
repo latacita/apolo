@@ -8,15 +8,18 @@
 \chapterheader{Tecnología usada}{Tecnología usada}
 \label{chap:introduction}
 
-El presente capítulo describe brevemente las tecnologías sobre las que se fundamenta el presente proyecto. Más concretamente, se explica el funcionamiento del software basado en componentes, en especial Java Beans. Así como el desarrollo de interfaces graficas en Java, y efecto de \emph{Drag and Drop}.
+El presente capítulo describe brevemente las tecnologías sobre las que se fundamenta el presente proyecto. Más concretamente, se explica el funcionamiento del software basado en componentes, en especial Java Beans. Así como el desarrollo de interfaces gráficas en Java, y efecto de \emph{Drag and Drop}.
 
 \chaptertoc
 
 \section{Desarrollo de Software basado en Componentes}
 
+
+En esta sección de hace una introducción a la programación basada en componentes, haciendo hincapié en las ventajas que supone su utilización.
+
 El proyecto se desarrollara bajo una programación orientada a componentes\cite{componentes}. Esta rama de la ingeniería software trata de construir sistemas a base de componentes funcionales, como si de un juego de piezas se tratase. Para ello cada componente debe tener una interfaz bien definida.
 
-El nivel de abstracción de de los componentes se considera mas alto que el de los objetos al agrupar unidades funcionales autonomamente. De esta manera se explota en gran medida las posibilidades de reutilización. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rápida y sencilla.
+El nivel de abstracción de los componentes se considera más alto que el de los objetos al agrupar unidades funcionales autónomamente. De esta manera se explota en gran medida las posibilidades de reutilización. Pudiendo utilizar componentes ya creados por otros, y/o en otros proyectos de manera rápida y sencilla.
 
 Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. Básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de \textbf{reusabilidad}.
 
@@ -24,9 +27,14 @@ Los componentes deben poder ser serializados para garantizar el envió del estado
 
 Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfática, es decir, se debe probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; también se debe prever el uso del componente de manera imprevista o incorrecta.
 
+En la siguiente sección se hablará de la programación basada en componentes aplicada a Java.
+
+
 \section{Java beans como modelo de componentes}
 
-JavaBeans\cite{java2,javac2} es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es mas que una clase de objetos con unas características especiales:
+En esta sección se habla de la tecnología JavaBeans desarrollada por Java.
+
+JavaBeans\cite{java2,javac2} es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es más que una clase de objetos con unas características especiales:
 
 \begin{enumerate}
 	\item Es una clase publica que implementa la interfaz serializable
@@ -34,7 +42,7 @@ JavaBeans\cite{java2,javac2} es la tecnología de componentes de Java, cada compo
 	\item Los eventos que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
 
-Las propiedades no son mas que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método \emph{get} para obtener el valor, y un \emph{set} para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
+Las propiedades no son más que atributos del objeto que pueden ser modificados y leídos por el entorno de desarrollo. Cada propiedad debe tener al menos un método \emph{get} para obtener el valor, y un \emph{set} para modificarlo. En caso de que no se implemente el método set se entenderá que es una propiedad de solo lectura.
 
 Existen varios tipos de propiedades:
 \begin{itemize}
@@ -44,13 +52,24 @@ Existen varios tipos de propiedades:
     \item Restringidas (Constrained): Similar a la Ligada salvo que los objetos notificados tienen la opción de vetar el cambio.
 \end{itemize}
 
-Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este este implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. Posteriormente, se realizara la conexión entre componentes, para que puedan realizar las acciones que se consideren oportunas.
+Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este esté implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. Posteriormente, se realizara la conexión entre componentes, para que puedan realizar las acciones que se consideren oportunas.
+
 
 \section{Interfaces gráficas}
+
+En esta sección se detalla la importancia de construir interfaces gráficas amigables con el usuario.
+
+Una interfaz gráfica debe ser lo más intuitiva que sea posible, de manera que el usuario que haga uso de ella, le sea muy fácil familiarizarse, y no le suponga mucho esfuerzo trabajar con ella.
+
+Una buena interfaz logra que el usuario se sienta cómodo y realice la interacción con la aplicación de manera no tediosa. Esto ayuda y aumenta la productividad, logrando que el usuario realice las acciones de una manera mucho más rápida que si la interfaz de usuario resulta incómoda.
+
+Por ello se desarrollará una interfaz gráfica de usuario, lo más sencilla posible utilizando para ello, los fundamentos de un buen diseño de interfaces explicados en varios libros.
 
 %\cite{javajfc1, javajfc2}
 
 \section{Drag and Drop}
+
+En la siguiente sección se describe el proceso que te adoptará para mostrar el efecto de \emph{Drag and Drop} en la aplicación.
 
 Un campo importante en el desarrollo de la aplicación será la decision de adoptar la forma de guiar al usuario a la hora de mover diapositivas por la aplicación. Esto es como representar visualmente el \emph{Drag and Drop}.
 
@@ -62,4 +81,10 @@ Al detener el arrastre del componente y soltar el botón izquierdo del ratón el c
 
 De esta manera que cada elemento detectará si el componente soltado se encuentra dentro de sus coordenadas, y si es así procederá a añadirlo a su lista.
 
-De esta manera tenemos dos posibles componentes movibles: la diapositiva y la subsecuencia. La diapositiva podrá ser depositada única y exclusivamente en baldas, y la subsecuencia en el Album. 
+De esta manera tenemos dos posibles componentes movibles: la diapositiva y la subsecuencia. La diapositiva podrá ser depositada única y exclusivamente en baldas, y la subsecuencia en el Album.
+
+\section{Sumario}
+
+El este capítulo se habló sobre la programación basada en componentes, indicando las ventajas que ello conlleva en el desarrollo de software y la reutilizacion de componentes. También se hablo de JavaBeans que sera la tecnología usada para desarrollar componentes en Java.
+
+Por otro lado, tambien se hablo de la creación de interfaces gráficas de usuario, las cuales deben ser sencillas para su uso, y sobre todo intuitivas, para que la curva de aprendizaje del usuario sea lo mas suave posible. Finalmente se describió el efecto de \emph{Drag and Drop} que se adoptara para la clasificación y ordenación de diapositivas 

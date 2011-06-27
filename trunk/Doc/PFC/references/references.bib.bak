@@ -4,49 +4,61 @@
 @BOOK{javac1,
   title = {Core java},
   publisher = {7º Edition},
-  editor = {},
+  year = {2004},
   author = {Cay S. Horstmann, Gary Cornell},
   volume = {1 - Fundamentos}
 }
 
 @BOOK{javac2,
   title = {Core java},
-  publisher = {Second Edition},
-  editor = {},
+  publisher = {7º Edition},
+  year = {2004},
   author = {Cay S. Horstmann, Gary Cornell},
   volume = {2 - Caracteristicas Avanzadas}
 }
 
-@BOOK{javajfc1,
-  title = {Graphix Java Mastering the JFC},
-  year = {},
-  author = {David M. Geary},
-  volume = {1 - AWT}
-}
-
 @BOOK{javajfc2,
   title = {Graphix Java Mastering the JFC},
-  year = {},
+  publisher = {Prentice Hall},
+  year = {1999},
   author = {David M. Geary},
   volume = {2 - Swing}
 }
 
+@BOOK{javajfc1,
+  title = {Graphix Java Mastering the JFC},
+  publisher = {Prentice Hall},
+  year = {1998},
+  author = {David M. Geary},
+  volume = {1 - AWT}
+}
+
 @BOOK{java2d,
   title = {Java 2D API Graphics},
-  editor = {},
   author = {Vicent J. Hardy}
 }
 
 @BOOK{swinghacks,
   title = {Swing Hacks: Tips and Tools for Killer GUIs},
+  publisher = {O'Reilly Media},
   year = {2005},
   author = {Joshua Marinacci, Joshua Marinacci}
+}
+
+@BOOK{ite2002,
+  title = {Agile and Iterative Development: A Manager's Guide},
+  publisher = {Addison-Wesley Professional},
+  year = {2003},
+  author = {Craig Larman},
+  owner = {Angel},
+  timestamp = {2011.06.27}
 }
 
 @BOOK{java1,
   title = {The java Class Libraries},
   publisher = {Second Edition},
-  editor = {},
+  year = {1998},
+  editor = {Addison-Wesley Professional},
   author = {Patric Chan, Rosanna Lee, Douglas Kramer},
   volume = {1}
 }
@@ -54,20 +66,25 @@
 @BOOK{java2,
   title = {The java Class Libraries},
   publisher = {Second Edition},
-  editor = {},
+  year = {1998},
+  editor = {Addison-Wesley Professional},
   author = {Patric Chan, Rosanna Lee, Douglas Kramer},
   volume = {2}
 }
 
 @BOOK{swing,
   title = {Swing: A Beginner's Guide (Beginner's Guide (Osborne Mcgraw Hill))},
+  publisher = {1º Edition},
   year = {2006},
+  editor = {McGraw-Hill Osborne Media},
   author = {Herbert Schildt}
 }
 
 @BOOK{javat,
   title = {The java Threads},
-  editor = {},
+  publisher = {Third Edition edition},
+  year = {2004},
+  editor = {O'Reilly Media},
   author = {Scott Oaks, Henry Wong}
 }
 

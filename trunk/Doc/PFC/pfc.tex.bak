@@ -85,25 +85,25 @@
 \input{background/background.tex}
 
 % Capítulo 4: Iteración 1
-% \input{iteracion1/iteracion1.tex}
+ \input{iteracion1/iteracion1.tex}
 
 % Capítulo 5: Iteración 5
-% \input{iteracion5/iteracion5.tex}
+ \input{iteracion5/iteracion5.tex}
 
 % Capítulo 6: Iteración 10
-% \input{iteracion10/iteracion10.tex}
+ \input{iteracion10/iteracion10.tex}
 
 % Capítulo 9: Despliegue y Aceptación
-% \input{despliegueAceptacion/despliegueAceptacion.tex}
+ \input{despliegueAceptacion/despliegueAceptacion.tex}
 
 % Capítulo 10: Discusión, Conclusiones y Trabajos Futuros
-% \input{conclusion/conclusion.tex}
+ \input{conclusion/conclusion.tex}
 
 % CONTENT: Appendices, if desired
-%\input{config/appendix.tex}
+\input{config/appendix.tex}
 
 % Appendix A:
-%\input{populo/populo.tex} % Appendix I
+\input{populo/populo.tex} % Appendix I
 
 
 % CONFIG: Bibliography style

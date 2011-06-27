@@ -7,6 +7,8 @@
 \chapterheader{Introducción}{Introducción}
 \label{chap:introduction}
 
+%%Introducion
+En este capítulo se describe una breve introducción al problema que pretende solventar este Proyecto Fin de Carrera. Tras la descripción se expone la estructura del documento.
 
 \chaptertoc
 
@@ -45,7 +47,7 @@ Tras este capítulo introductorio, el resto de la presente memoria se estructura 
 
 	Se observa la los casos de uso detectados, así como el refinamiento de requisitos, para posteriormente diseñar los componentes y finalmente implementarlos y probarlos.
 
-	\item[Capítulo 5: Iteración 5] En la quinta iteración se muestra la construcción de los últimos componentes de la aplicación, y de esta manera finalizar los requisitos de esta iteración, en la cual ya sera posible ordenar y clasificar fotografías, aun que de momento no se podrán exportar hasta algunas iteraciones después.
+	\item[Capítulo 5: Iteración 5] En la quinta iteración se muestra la construcción de los últimos componentes de la aplicación, y de esta manera finalizar los requisitos de esta iteración, en la cual ya será posible ordenar y clasificar fotografías, aunque de momento no se podrán exportar hasta algunas iteraciones después.
 
 	Se observa la los casos de uso detectados, así como el refinamiento de requisitos, para posteriormente diseñar los componentes y finalmente implementarlos y probarlos.
 
