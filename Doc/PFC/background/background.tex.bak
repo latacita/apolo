@@ -37,7 +37,7 @@ En esta sección se habla de la tecnología JavaBeans desarrollada por Java.
 JavaBeans\cite{java2,javac2} es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es más que una clase de objetos con unas características especiales:
 
 \begin{enumerate}
-	\item Es una clase publica que implementa la interfaz serializable
+	\item Es una clase publica que implementa la interfaz serializable.
 	\item Expone una serie de propiedades que pueden ser leídas y modificadas por el entorno de desarrollo.
 	\item Los eventos que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
@@ -46,13 +46,13 @@ Las propiedades no son más que atributos del objeto que pueden ser modificados y
 
 Existen varios tipos de propiedades:
 \begin{itemize}
-    \item Simples: Representa un único valor
-    \item Indexadas: Representa un array de valores
+    \item Simples: Representa un único valor.
+    \item Indexadas: Representa un array de valores.
     \item Ligadas (Bound): Notifican un cambio de la propiedad a otros objetos (listeners).
     \item Restringidas (Constrained): Similar a la Ligada salvo que los objetos notificados tienen la opción de vetar el cambio.
 \end{itemize}
 
-Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera que incremental. Es decir, nos centraremos en la creación de un componente, y cuando este esté implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. Posteriormente, se realizara la conexión entre componentes, para que puedan realizar las acciones que se consideren oportunas.
+Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nuestra aplicación de manera incremental. Es decir, nos centraremos en la creación de un componente, y cuando este esté implementado, procederemos al siguiente, de manera que el trabajo de diseño e implementación este repartido en fases. Posteriormente, se realizara la conexión entre componentes, para que puedan realizar las acciones que se consideren oportunas.
 
 
 \section{Interfaces gráficas}
@@ -63,28 +63,27 @@ Una interfaz gráfica debe ser lo más intuitiva que sea posible, de manera que el
 
 Una buena interfaz logra que el usuario se sienta cómodo y realice la interacción con la aplicación de manera no tediosa. Esto ayuda y aumenta la productividad, logrando que el usuario realice las acciones de una manera mucho más rápida que si la interfaz de usuario resulta incómoda.
 
-Por ello se desarrollará una interfaz gráfica de usuario, lo más sencilla posible utilizando para ello, los fundamentos de un buen diseño de interfaces explicados en varios libros.
-
-%\cite{javajfc1, javajfc2}
+Por ello se desarrollará una interfaz gráfica de usuario, lo más sencilla posible utilizando para lo cual, los fundamentos de un buen diseño de interfaces explicados en varios libros\cite{javajfc1,javajfc2}.
 
 \section{Drag and Drop}
 
 En la siguiente sección se describe el proceso que te adoptará para mostrar el efecto de \emph{Drag and Drop} en la aplicación.
 
-Un campo importante en el desarrollo de la aplicación será la decision de adoptar la forma de guiar al usuario a la hora de mover diapositivas por la aplicación. Esto es como representar visualmente el \emph{Drag and Drop}.
+Un campo importante en el desarrollo de la aplicación será la decisión de adoptar la forma de guiar al usuario a la hora de mover diapositivas por la aplicación. Esto es como representar visualmente el \emph{Drag and Drop}.
 
-Para ello se leyeron varios libros especializados\cite{swing,swinghacks} en interfaces gráficas, y se tomo la decision de adoptar un efecto que mostrase el fantasma\footnote{Aparición del componente semitransparente} de la diapositiva arrastrada, siguiendo en todo momento al cursor mientras este se desplaza. Una vez soltada el efecto fantasma debe desaparecer.
+Para ello se leyeron varios libros especializados\cite{swing,swinghacks} en interfaces gráficas, y se tomó la decisión de adoptar un efecto que mostrase el fantasma\footnote{Aparición del componente semitransparente} de la diapositiva arrastrada, siguiendo en todo momento al cursor mientras este se desplaza. Una vez soltada el efecto fantasma debe desaparecer.
 
 El sistema se basa en añadir al componente que se desea dotar de un efecto \emph{Drag and Drop} unos controladores de los eventos \emph{mover ratón y pulsaciones del ratón} de manera que podamos detectar esos eventos sobre el componente. Esos eventos internamente activaran un panel  de \emph{cristal} que se sitúa por encima del resto de componentes, y donde aparecerá el fantasma del componente movido, mientras este sea movido.
 
-Al detener el arrastre del componente y soltar el botón izquierdo del ratón el controlador desactivará el panel de \emph{cristal} y lanzara un evento a todos los elementos en los que se pueda depositar el elemento.
+Al detener el arrastre del componente y soltar el botón izquierdo del ratón el controlador desactivará el panel de \emph{cristal} y lanzara un evento a todos los componentes en los que se pueda depositar el elemento arrastrado.
 
-De esta manera que cada elemento detectará si el componente soltado se encuentra dentro de sus coordenadas, y si es así procederá a añadirlo a su lista.
+De esta manera que cada componente detectará si el elemento soltado se encuentra dentro de sus coordenadas, y si es así procederá a añadirlo a su lista.
 
-De esta manera tenemos dos posibles componentes movibles: la diapositiva y la subsecuencia. La diapositiva podrá ser depositada única y exclusivamente en baldas, y la subsecuencia en el Album.
+De esta manera tenemos dos posibles componentes movibles: la diapositiva y la subsecuencia. La diapositiva podrá ser depositada única y exclusivamente en baldas, y la subsecuencia en el Álbum.
+
 
 \section{Sumario}
 
-El este capítulo se habló sobre la programación basada en componentes, indicando las ventajas que ello conlleva en el desarrollo de software y la reutilizacion de componentes. También se hablo de JavaBeans que sera la tecnología usada para desarrollar componentes en Java.
+El este capítulo se habló sobre la programación basada en componentes, indicando las ventajas que ello conlleva en el desarrollo de software y la reutilización de componentes. También se habló de JavaBeans que será la tecnología usada para desarrollar componentes en Java.
 
-Por otro lado, tambien se hablo de la creación de interfaces gráficas de usuario, las cuales deben ser sencillas para su uso, y sobre todo intuitivas, para que la curva de aprendizaje del usuario sea lo mas suave posible. Finalmente se describió el efecto de \emph{Drag and Drop} que se adoptara para la clasificación y ordenación de diapositivas 
+Por otro lado, también se habló de la creación de interfaces gráficas de usuario, las cuales deben ser sencillas para su uso, y sobre todo intuitivas, para que la curva de aprendizaje del usuario sea lo más suave posible. Finalmente se describió el efecto de \emph{Drag and Drop} que se adoptara para la clasificación y ordenación de diapositivas.
