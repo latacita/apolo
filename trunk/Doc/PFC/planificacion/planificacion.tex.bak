@@ -46,19 +46,20 @@ El objetivo de Apolo es imitar en la medida de lo posible el funcionamiento de e
 \item Para empezar a clasificar y ordenar fotografías es necesario primero haberlas importado a la aplicación. Una vez importadas, % una carpeta o una serie de fotografías
 	estas aparecerán en la aplicación como un conjunto de diapositivas
 	esparcidas sobre una mesa. A esta zona la denominaremos precisamente \emph{Mesa}.
-\item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación o estanteria}. En esta zona se simularán una especie de baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
+\item El usuario puede a partir de ese momento empezar a seleccionar las diapositivas que considere adecuadas y arrastrarlas a la \emph{zona de clasificación o estantería}. En esta zona se simularán una especie de baldas, similares a los de la Figura~\ref{fig:plan:clasificador}, donde se puedan depositar las diapositivas arrastradas.
 \item El usuario puede en cualquier instante alterar el orden de las diapositivas en las estanterías simplemente arrastrando la diapositiva hacia el lugar que desee.
 \item También puede cambiar la diapositiva de estantería de la misma forma, arrastrándola y soltándola en la estantería deseada.
 \item Cada vez que el usuario haya conseguido ordenar de forma satisfactoria una secuencia de diapositivas, puede marcarla como subsecuencia ordenada y darle un nombre. A continuación, todas las diapositivas se agruparán en un paquete, el cual tendrá una portada representativa de la subsecuencia; y se moverán a una zona diferenciada que denominaremos de
-	\emph{subsecuencias ordenadas o album}. El aspecto de esta zona será como el
-	de una estantería diferenciada, donde se disponen las subsecuencias horizontalmente.
+	\emph{subsecuencias ordenadas o álbum}. El aspecto de esta zona será como el de una estantería
+    diferenciada, donde se disponen las subsecuencias horizontalmente.
 \item El usuario también puede descartar todas las diapositivas que se encuentren en una estantería, dejando éstas de aparecer en la aplicación.
-\item En la zona de \emph{subsecuencias ordenadas o album} se puede alterar el orden de las subsecuencias. Es decir, una subsecuencia recién añadida, y que inicialmente se situaría al final de la lista de subsecuencias, puede ser desplazada para colocarse entre dos subsecuencias ya existentes o al principio de la lista de subsecuencias.
+\item En la zona de \emph{subsecuencias ordenadas o álbum} se puede alterar el orden de las subsecuencias. Es decir, una subsecuencia recién añadida, y que inicialmente se situaría al final de la lista de subsecuencias, puede ser desplazada para colocarse entre dos subsecuencias ya existentes o al principio de la lista de subsecuencias.
 \item Cuando en la zona superior de la aplicación se encuentren todas las subsecuencias de diapositivas ordenadas de acuerdo a los deseos del usuario, éste podrá exportarlas a un directorio o carpeta a su elección. La aplicación entonces creará una copia de cada una de las fotografías seleccionadas en tal carpeta y las renombrará de manera que preserven el orden deseado.
 \item En ningún caso se modificarán o suprimirán las fotografías originales (las que se importan). En cada exportación se duplican tantas fotografías como sean necesarias.
 \item Debe ser posible guardar el estado actual de la aplicación en caso de que se tenga que interrumpir el proceso de clasificación y se desee continuarlo más tarde.
-\item El usuario, basándose en estos estados parciales de la aplicación, podrá crear albums de fotos de manera rápida. Solo deberá abrir el fichero que contiene la clasificación y orden de las diapositivas deseadas, y exportarlas a una determinada carpeta para obtener un conjunto de fotografías digitales en el orden deseado.
+\item El usuario, basándose en estos estados parciales de la aplicación, podrá crear álbums de fotos de manera rápida. Solo deberá abrir el fichero que contiene la clasificación y orden de las diapositivas deseadas, y exportarlas a una determinada carpeta para obtener un conjunto de fotografías digitales en el orden deseado.
 \end{enumerate}
+
 
 %%==========================================================================================
 %% NOTA(Pablo): Párrafo de enlace.
@@ -71,9 +72,9 @@ Tras describir a grandes rasgos el funcionamiento de la aplicación, la siguiente
 %%==========================================================================================
 %% NOTA(Pablo): Frase de introducción.
 %%==========================================================================================
-Esta sección muestra detalladamente la metodología de desarrollo que sera utilizada durante la construcción de la aplicación \emph{Apolo}
+Esta sección muestra detalladamente la metodología de desarrollo que será utilizada durante la construcción de la aplicación \emph{Apolo}.
 
-La metodología de desarrollo que se seguirá es la del \textbf{Modelo Incremental Iterativo}\cite{ite2002}. Se traba de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo de manera incremental, otorgando en cada iteración más funcionalidades al sistema.
+La metodología de desarrollo que se seguirá es la del \textbf{Modelo Iterativo Incremental}\cite{ite2002}. Se trata de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo mediante iteraciones, en cada una de las cuales, en base a incrementos, se otorgarán más funcionalidades al sistema
 %Buscar una cita de algún personaje famoso
 
 Esta metodología requiere, inicialmente, una buena descripción del sistema o aplicación a desarrollar. Es esencial que sea clara y lo más completa posible, pues a partir de ella se sustentará todo el proceso de desarrollo.
@@ -85,22 +86,23 @@ Esta metodología requiere, inicialmente, una buena descripción del sistema o apl
   \label{fig:plan:modeloItera}
 \end{figure}
 
-Basándose en la descripción se definen una serie de incrementos en donde cada uno añade más funcionalidades a la aplicación, y por tanto cumple con una serie de requisitos. Debe comenzarse con la funcionalidad más básica de la aplicación, de manera que pueda ir construyéndose incrementalmente, es decir que cada version incorpore a la anterior una funcionalidad nueva, la cual hará que se cumpla un requisito o varios.
+Basándose en la descripción se definen una serie de incrementos en donde cada uno añade más funcionalidades a la aplicación, y por tanto cumple con una serie de requisitos. Debe comenzarse con la funcionalidad más básica de la aplicación, de manera que pueda ir construyéndose incrementalmente, es decir que cada versión incorpore a la anterior una funcionalidad nueva, la cual hará que se cumpla un requisito o varios.
 
 Dentro de cada iteración hay un proceso interno,
 %que puede considerarse un ciclo de vida en Cascada
-en el que pueden darse o no, las siguientes fases: análisis de los requisitos de esa iteración, diseño, implementación y finalmente prueba del correcto funcionamiento. La primera iteración dará como resultado la version inicial de la aplicación con una funcionalidad muy básica, y solo cumpliendo los requisitos más básicos. A medida que vayan sucediendo iteraciones la aplicación ira cobrando funcionalidad. En la ultima iteración se obtendrá el producto final, el cual debe cumplir todos y cada uno de los requisitos.
+en el que pueden darse o no, las siguientes fases: análisis de los requisitos de esa iteración, diseño, implementación y finalmente prueba del correcto funcionamiento. La primera iteración dará como resultado la versión inicial de la aplicación con una funcionalidad muy básica, y solo cumpliendo los requisitos más básicos. A medida que vayan sucediendo iteraciones la aplicación ira cobrando funcionalidad. En la última iteración se obtendrá el producto final, el cual debe cumplir todos y cada uno de los requisitos.
 
-La ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo es, que al ser la interfaz gráfica una parte imprescindible al igual que la usabilidad, se puede en cada incremento ver si la solución tomada es la adecuada para las expectativas esperadas, y en caso contrario corregirla antes de seguir avanzando en el desarrollo de la misma.
+Las ventajas que tiene aplicar esta metodología al desarrollo del proyecto Apolo es, que al ser la interfaz gráfica una parte imprescindible al igual que la usabilidad, se puede en cada incremento ver si la solución tomada es la adecuada para las expectativas esperadas, y en caso contrario corregirla antes de seguir avanzando en el desarrollo de la misma.
 
 Además gracias a que es un modelo evolutivo, se permiten (y es más, se esperan) cambios en los requisitos en tiempo de desarrollo. Lo cual permite cierto margen de cambio en el funcionamiento de la aplicación.
+
 
 \section{Requisitos de Alto Nivel de la Aplicación}
 \label{sec:planning:requisitos}
 
 Esta sección muestra la identificación de los requisitos de alto nivel que ha de satisfacer nuestra aplicación software, de acuerdo a la descripción del ámbito funcional proporcionada en la Sección \ref{sec:plannning:ambito}
 
-Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec:planning:requisitos:tabla}
+Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec:planning:requisitos:tabla}.
 
 \begin{table}[tb]
     \begin{center}
@@ -121,9 +123,9 @@ Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec
               \hline
               R06 & Una vez soltada la diapositiva en la zona central, deberá permanecer allí anclada \\
               \hline
-              R07 & Se podrán recolocar las diapositivas dentro de cada estantería arrastrandolas\\
+              R07 & Se podrán recolocar las diapositivas dentro de cada estantería arrastrándolas\\
               \hline
-              R08 & Se podrá cambiar diapositivas entre estanterías arrastrandolas\\
+              R08 & Se podrá cambiar diapositivas entre estanterías arrastrándolas\\
               \hline
               R09 & Una balda, o subsecuencia de diapositivas, ya ordenada y clasificada, podrá ser almacenada en la zona superior de la aplicación  \\
               \hline
@@ -143,7 +145,7 @@ Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec
               \hline
         \end{tabular}
     \end{center}
-    \caption{Tabla de requisitos de alto nivel}
+    \caption{Requisitos de alto nivel}
     \label{sec:planning:requisitos:tabla}
 \end{table}
 
@@ -151,9 +153,10 @@ Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec
 \section{Iteraciones}
 \label{sec:planning:Iteraciones}
 
-En la siguiente sección se muestra las iteraciones planificadas a partir de la division de los requisitos de alto nivel encontrados, como puede verse en la sección \ref{sec:planning:requisitos}
+En la siguiente sección se muestran las iteraciones planificadas a partir de la división de los requisitos de alto nivel encontrados, como puede verse en la sección \ref{sec:planning:requisitos}
 
 Las iteraciones planificadas de acuerdo a la agrupación de funcionalidades son las siguientes:
+
 
 \begin{enumerate}
 	\item Importar fotografía, moverla (Drag \& Drop), visualizarla y descartarla. (Ver R01 y R02)
@@ -170,18 +173,19 @@ Las iteraciones planificadas de acuerdo a la agrupación de funcionalidades son l
 
 Por cada iteración pueden darse, si fueran necesarias cada una de las siguientes fases: análisis de los requisitos de esa iteración, diseño, implementación y finalmente prueba del correcto funcionamiento.
 
-Una vez descritas las iteraciones planteadas, en el siguiente capitulo se diseñaran los prototipos de los artefactos base del proyecto.
+Una vez descritas las iteraciones planteadas, en el siguiente capítulo se diseñaran los prototipos de los artefactos base del proyecto.
 
 \section{Diseño de los Artefactos Base del Proyecto}
 
-En este capitulo se describen los artefactos básicos de los que constara el proyecto.
+En este capítulo se describen los artefactos básicos de los que constara el proyecto.
 %%% Los artefactos comunes son:
 %%  - La interfaz gráfica
 %%  - Haces un diagrama de clases con las estructuras de datos
 
 Los artefactos básicos del proyecto Apolo son la interfaz gráfica y la representación de la fotografía como diapositiva dentro de la aplicación. Son los elementos más básicos para el funcionamiento de la aplicación.
 
-La representación de la fotografía como Diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentara evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
+La representación de la fotografía como una diapositiva conlleva un diseño de un componente que aparezca en la aplicación simulando ser una diapositiva, para ello se ha esquematizado el diseño del marco que tendrá que intentar evocar, lo máximo posible, el recuerdo de la diapositiva clásica. En la imagen \ref{fig:plan:esquemaMarcoDiapositiva} mostramos el diseño planteado.
+
 
 \begin{figure}[!tb]
  \begin{center}
@@ -192,15 +196,16 @@ La representación de la fotografía como Diapositiva conlleva un diseño de un com
  \end{center}
 \end{figure}
 
-La interfaz gráfica es un componente muy importante en el proyecto, pues se hace hincapié en en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas:
+La interfaz gráfica\cite{interfacesGUI} es un componente muy importante en el proyecto, pues se hace hincapié en que debe ser atractiva y con una curva de aprendizaje muy corta y de pendiente muy suave. Para ello se pensó que la aplicación constaría de tres zonas claramente diferenciadas:
 
 \begin{description}
-	\item[Mesa] Se encuentra en la zona inferior de la aplicación. En ella todas las fotografías importadas a la aplicación y con las que se desea trabajar. Aparecerán una a continuación de otra, de manera que el usuario sea capaz de seleccionar la que desee.
-	\item[Zona de Clasificación o Estantería] Esta en la zona central de la aplicación, esta compuesta por baldas donde el usuario podrá ir \emph{posando} las diapositivas que vaya arrastrando, de manera que vaya ordenando y clasificando según su gusto y criterio.
+	\item[Mesa] Se encuentra en la zona inferior de la aplicación. En ella todas las fotografías importadas a la aplicación y con las que se desea trabajar. Aparecerá una a continuación de otra, de manera que el usuario sea capaz de seleccionar la que desee.
+	\item[Zona de Clasificación o Estantería] Esta en la zona central de la aplicación, está compuesta por baldas donde el usuario podrá ir \emph{posando} las diapositivas que vaya arrastrando, de manera que vaya ordenando y clasificando según su gusto y criterio.
 	\item[Zona de Subsecuencias Ordenadas o Album] Se ubica en la parte superior de la aplicación, allí el usuario almacenará las subsecuencias que considere ya ordenadas, de manera que cuando desee exportar, serán estas, según el orden en el que se encuentren, las que serán exportadas.
 \end{description}
 
 La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer boceto de la interfaz gráfica de la aplicación, donde se pueden ver las diferentes zonas mencionadas en el listado anterior.
+
 
 %***
 % OK
@@ -208,7 +213,7 @@ La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer b
 \begin{figure}[!tb]
   % Requires \usepackage{graphicx}
   \includegraphics[width=\linewidth]{planificacion/images/MontajeInterfazGrafica.eps}\\
-  \caption{Esquema del Disenho Inicial de la Interfaz Gráfica.}
+  \caption{Esquema del Diseño Inicial de la Interfaz Gráfica.}
   \label{fig:plan:esquemaDisenhoInterfaz}
 \end{figure}
 
@@ -224,20 +229,22 @@ La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer b
 \end{figure}
 
 
-Para completar el diseño de los artefactos que componen la aplicación, se realizo a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDisenhoEstrucDatos} como se relacionan los componentes de la aplicación.
+Para completar el diseño de los artefactos que componen la aplicación, se realizó a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDisenhoEstrucDatos} como se relacionan los componentes de la aplicación.
 
-Una vez descritos los artefactos base de los que constara la aplicación, en el siguiente capitulo se hablara sobre las herramientas usadas para la implementación de los mismos.
+Una vez descritos los artefactos base de los que constara la aplicación, en el siguiente capítulo se hablara sobre las herramientas usadas para la implementación de los mismos.
+
 
 \section{Herramientas utilizadas para el desarrollo de la aplicación}
 
 En esta sección se describen las herramientas utilizadas para la creación de la aplicación.
 
-Para el diseño se ha utilizado la herramienta Magic Draw
-La implementación de la aplicación se desarrollo con ayuda del entorno de desarrollo Eclipse, junto con unos plungings para la creación de interfaces visuales y el control de versiones.
+Para el diseño UML\footnote{Unified Modeling Language}\cite{uml} se ha utilizado la herramienta Magic Draw
+La implementación de la aplicación se desarrolló con ayuda del entorno de desarrollo Eclipse\cite{eclipse}, junto con unos plugins para la creación de interfaces visuales y el control de versiones.
 
-Como repositorio donde almacenar las distintas versiones, se utilizo el servicio ofrecido por google code.
+Como repositorio donde almacenar las distintas versiones, se utilizó el servicio ofrecido por google code.
 
-El sistema operativo donde se desarrollará sera a parte igual en un sistema Microsoft Windows 7 y Ubuntu 10.10.
+El sistema operativo donde se desarrollará será a parte igual en un sistema \emph{Microsoft Windows 7}\cite{win7} y \emph{Ubuntu 10.10}\cite{ubun}.
+
 
 
 \section{Construcción de Prototipos}
@@ -245,7 +252,8 @@ El sistema operativo donde se desarrollará sera a parte igual en un sistema Micr
 En esta sección se detalla la construcción de un primer prototipo de diapositiva, donde se investigará que solución tomar para representar mejor el movimiento de \emph{Drag and Drop}.
 
 %%  Hacer una bean diapositiva, cargar una diapositiva y moverla
-El prototipo construido es una aplicación simple en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva y cual de todas esta arrastrando. Esto puede verse en la figura \ref{fig:plan:DnD}, este prototipo servirá para la investigar y conocer la técnica del \emph{Drag and Drop} algo fundamental en el uso de la aplicación si queremos que su uso resulte fácil y atractivo.
+El prototipo construido es una aplicación simple en la que aparece una diapositiva y esta puede ser arrastrada por la aplicación. Al arrastrarla entra en acción un efecto de \emph{Drag And Drop} el cual consiste en el la aparición del componente (en este caso la diapositiva) que se arrastra de forma translúcida siguiendo el movimiento del ratón, de esta manera ayuda al usuario a localizar con exactitud donde se arrastra la diapositiva y cuál de todas está arrastrando. Esto puede verse en la figura \ref{fig:plan:DnD}, este prototipo servirá para la investigar y conocer la técnica del \emph{Drag and Drop} algo fundamental en el uso de la aplicación si queremos que su uso resulte fácil y atractivo.
+
 
 \begin{center}
 	\begin{figure}
@@ -257,6 +265,6 @@ El prototipo construido es una aplicación simple en la que aparece una diapositi
 
 \section{Sumario}
 
-Durante este capitulo se ha descrito la planificación del proyecto fin de carrera, indicando el ámbito funcional en el que se encuentra, así como la metodología que se usará. También se describieron los requisitos de alto nivel y las distintas iteraciones de las que se compondrá el proceso de desarrollo.
+Durante este capítulo se ha descrito la planificación del proyecto fin de carrera, indicando el ámbito funcional en el que se encuentra, así como la metodología que se usará. También se describieron los requisitos de alto nivel y las distintas iteraciones de las que se compondrá el proceso de desarrollo.
 
-También se describió el diseño de los componentes mas básicos del proyecto así como las herramientas que se utilizaran para llevarlo acabo. Finalmente se mostró la construcción del prototipo con el que se ensayaran pruebas del \emph{Drag and Drop} 
+También se describió el diseño de los componentes más básicos del proyecto así como las herramientas que se utilizaran para llevarlo a cabo. Finalmente se mostró la construcción del prototipo con el que se ensayaran pruebas del \emph{Drag and Drop}. 
