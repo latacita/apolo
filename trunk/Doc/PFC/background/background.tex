@@ -8,11 +8,13 @@
 \chapterheader{Tecnología usada}{Tecnología usada}
 \label{chap:introduction}
 
-El presente capítulo describe brevemente las tecnologías sobre las que se fundamenta el presente proyecto. Más concretamente, se explica el funcionamiento del software basado en componentes, en especial Java Beans.
+El presente capítulo describe brevemente las tecnologías sobre las que se fundamenta el presente proyecto. Más concretamente, se explica el funcionamiento del software basado en componentes, en especial Java Beans. Así como el desarrollo de interfaces gráficas en Java, y efecto de \emph{Drag and Drop}.
 
 \chaptertoc
 
 \section{Desarrollo de Software basado en Componentes}
+
+En esta sección de hace una introducción a la programación basada en componentes, haciendo hincapié en las ventajas que supone su utilización.
 
 El proyecto se desarrollara bajo una programación orientada a componentes\cite{componentes}. Esta rama de la ingeniería software trata de construir sistemas a base de componentes funcionales, como si de un juego de piezas se tratase. Para ello cada componente debe tener una interfaz bien definida.
 
@@ -24,7 +26,11 @@ Los componentes deben poder ser serializados para garantizar el envió del estado
 
 Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfática, es decir, se debe probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; también se debe prever el uso del componente de manera imprevista o incorrecta.
 
+En la siguiente sección se hablará de la programación basada en componentes aplicada a Java.
+
 \section{Java beans como modelo de componentes}
+
+En esta sección se habla de la tecnología JavaBeans desarrollada por Java.
 
 JavaBeans\cite{java2,javac2} es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es mas que una clase de objetos con unas características especiales:
 
@@ -48,9 +54,19 @@ Gracias a esta tecnología podemos diseñar componentes que iremos añadiendo a nue
 
 \section{Interfaces gráficas}
 
+En esta sección se detalla la importancia de construir interfaces gráficas amigables con el usuario.
+
+Una interfaz gráfica debe ser lo mas intuitiva que sea posible, de manera que el usuario que haga uso de ella, le sea muy fácil familiarizarse, y no le suponga mucho esfuerzo trabajar con ella.
+
+Una buena interfaz logra que el usuario se sienta cómodo y realice la interacción con la aplicación de manera no tediosa. Esto ayuda y aumenta la productividad, logrando que el usuario realice las acciones de una manera mucho mas rápida que si la interfaz de usuario resulta incómoda.
+
+Por ello se desarrollará una interfaz gráfica de usuario, lo mas sencilla posible utilizando para ello, los fundamentos de un buen diseño de interfaces explicados en varios libros
+
 %\cite{javajfc1, javajfc2}
 
 \section{Drag and Drop}
+
+En la siguiente sección se describe el proceso que te adoptará para mostrar el efecto de \emph{Drag and Drop} en la aplicación.
 
 Un campo importante en el desarrollo de la aplicación será la decision de adoptar la forma de guiar al usuario a la hora de mover diapositivas por la aplicación. Esto es como representar visualmente el \emph{Drag and Drop}.
 

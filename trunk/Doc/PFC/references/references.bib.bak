@@ -1,19 +1,79 @@
-@BOOK{swing,
-  AUTHOR =       {Herbert Schildt},
-  TITLE =        {Swing: A Beginner's Guide (Beginner's Guide (Osborne Mcgraw Hill))},
-  YEAR =         {2006},
+% This file was created with JabRef 2.6.
+% Encoding: Cp1252
+
+@BOOK{javac1,
+  title = {Core java},
+  publisher = {7º Edition},
+  editor = {},
+  author = {Cay S. Horstmann, Gary Cornell},
+  volume = {1 - Fundamentos}
+}
+
+@BOOK{javac2,
+  title = {Core java},
+  publisher = {Second Edition},
+  editor = {},
+  author = {Cay S. Horstmann, Gary Cornell},
+  volume = {2 - Caracteristicas Avanzadas}
+}
+
+@BOOK{javajfc1,
+  title = {Graphix Java Mastering the JFC},
+  year = {},
+  author = {David M. Geary},
+  volume = {1 - AWT}
+}
+
+@BOOK{javajfc2,
+  title = {Graphix Java Mastering the JFC},
+  year = {},
+  author = {David M. Geary},
+  volume = {2 - Swing}
+}
+
+@BOOK{java2d,
+  title = {Java 2D API Graphics},
+  editor = {},
+  author = {Vicent J. Hardy}
 }
 
 @BOOK{swinghacks,
-  AUTHOR =       {Joshua Marinacci, Joshua Marinacci},
-  TITLE =        {Swing Hacks: Tips and Tools for Killer GUIs},
-  YEAR =         {2005},
+  title = {Swing Hacks: Tips and Tools for Killer GUIs},
+  year = {2005},
+  author = {Joshua Marinacci, Joshua Marinacci}
 }
 
 @BOOK{java1,
-  AUTHOR =       {Patric Chan, Rosanna Lee, Douglas Kramer},
-  editor =       {},
-  TITLE =        {The java Class Libraries},
-  PUBLISHER =    {Second},
-  volume =       {1},
+  title = {The java Class Libraries},
+  publisher = {Second Edition},
+  editor = {},
+  author = {Patric Chan, Rosanna Lee, Douglas Kramer},
+  volume = {1}
 }
+
+@BOOK{java2,
+  title = {The java Class Libraries},
+  publisher = {Second Edition},
+  editor = {},
+  author = {Patric Chan, Rosanna Lee, Douglas Kramer},
+  volume = {2}
+}
+
+@BOOK{swing,
+  title = {Swing: A Beginner's Guide (Beginner's Guide (Osborne Mcgraw Hill))},
+  year = {2006},
+  author = {Herbert Schildt}
+}
+
+@BOOK{javat,
+  title = {The java Threads},
+  editor = {},
+  author = {Scott Oaks, Henry Wong}
+}
+
+@BOOK{componentes,
+  title = {Component Software: Beyond Object-Oriented Programming},
+  publisher = {(2nd Edition)},
+  author = {Clemens Szyperski}
+}
+
