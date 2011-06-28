@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  28 JUN 2011 10:07
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  28 JUN 2011 11:58
 entering extended mode
 **C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -377,22 +377,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 ] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
@@ -401,28 +386,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 ] [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 ) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/toc.tex
 Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM pfc.toc on input line 2.
+
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode 
+Palabras Clave}{\reset@font\mtcPfont V}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode 
+Keywords}{\reset@font\mtcPfont VII}}
 Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc1.
 Package minitoc Info: I0033
@@ -443,12 +418,11 @@ Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc9.
 Package minitoc Info: I0033
 (minitoc)             Writing pfc.mtc10.
- [7
+[7
 
 ] [8
 
-]
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.toc [9])
+] (C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.toc [9])
 \tf@toc=\write4
  [10]
 (C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.lof)
@@ -527,11 +501,14 @@ Cap\'{\i }tulo 4.
 ]
 File: iteracion1/images/casoDeUso.eps Graphic file (type eps)
 
-<iteracion1/images/casoDeUso.eps> [22] [23]
+<iteracion1/images/casoDeUso.eps> [22]
 File: iteracion1/images/finIteracion.eps Graphic file (type eps)
+ <iteracion1/images/finIteracion.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<iteracion1/images/finIteracion.eps> [24])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [25] [26
+ [23]
+[24]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [25]
+[26
 
 ]
 Cap\'{\i }tulo 5.
@@ -617,12 +594,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3935 strings out of 494054
- 56174 string characters out of 3146218
+ 3934 strings out of 494054
+ 56159 string characters out of 3146218
  131526 words of memory out of 3000000
- 6819 multiletter control sequences out of 15000+200000
+ 6818 multiletter control sequences out of 15000+200000
  16286 words of font info for 61 fonts, out of 3000000 for 9000
  716 hyphenation exceptions out of 8191
- 34i,13n,43p,197060b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,13n,43p,197060b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (67 pages, 209572 bytes).
+Output written on pfc.dvi (67 pages, 210388 bytes).

@@ -223,7 +223,7 @@ La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer b
 
 \begin{figure}[!htb]
   % Requires \usepackage{graphicx}
-  \includegraphics[width=\linewidth]{planificacion/images/EstructuraDeDatos.eps}
+  \includegraphics[width=0.8\linewidth]{planificacion/images/EstructuraDeDatos.eps}
   \caption{Esquema del Diseño de la estructura de datos.}
   \label{fig:plan:esquemaDisenhoEstrucDatos}
 \end{figure}

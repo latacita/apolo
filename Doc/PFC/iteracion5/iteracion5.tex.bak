@@ -8,13 +8,13 @@
 \chapterheader{Creación de subsecuencias}{Creación de subsecuencias}
 \label{chap:iteracion5}
 
-Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina prácticamente el proceso de clasificar y ordenar fotografías, a partir de entonces el resto de iteraciones, añadirán más funcionalidades a los componentes ya desarrollados. Serán mostrados los casos de uso pertenecientes a esta iteración figura \ref{fig:ite5:casoDeUso}, así como los nuevos requisitos descubiertos, tabla \ref{fig:ite5:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
+Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina prácticamente el proceso de clasificar y ordenar fotografías, a partir de entonces el resto de iteraciones añadirán más funcionalidades a los componentes ya desarrollados. Serán mostrados los casos de uso pertenecientes a esta iteración figura \ref{fig:ite5:casoDeUso}, así como los nuevos requisitos descubiertos, tabla \ref{fig:ite5:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
 
 \chaptertoc
 
 \section{Objetivos}
     \label{sec:iteracion5:porQueEstaIteracion}
-    En la quinta iteración se encuentra la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Album}, el ultimo que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
+    En la quinta iteración se encuentra la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Álbum}, el ultimo que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
 
     Al final de esta iteración será posible hacer gran parte de la clasificación, pues ya estarán operativas las baldas, y el alojamiento de subsecuencias en la zona superior, por lo que la funcionalidad principal de la aplicación estará prácticamente finalizada, recordemos que es clasificar y organizar fotografías.
 
@@ -28,7 +28,7 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
 
     \begin{figure}[!tb]
         \begin{center}
-            \includegraphics[width=0.8\linewidth]{iteracion5/images/casosDeUso.eps}
+            \includegraphics[width=0.6\linewidth]{iteracion5/images/casosDeUso.eps}
             \caption{Casos de uso de la iteración 5}
             \label{fig:ite5:casoDeUso}
         \end{center}
@@ -39,7 +39,7 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
 
     \subsection{Refinamiento de requisitos}
     \label{sec:iteracion5:refinamientoRequisitos}
-    A consecuencia del análisis de requisitos de esta iteración surgieron una serie de refinamientos en los requisitos iniciales, así como nuevos requisitos. Ver la figura \ref{sec:iteracion5:refinamientoRequisitos}.
+    A consecuencia del análisis de requisitos de esta iteración surgieron una serie de refinamientos en los requisitos iniciales, así como nuevos requisitos. Ver la sección \ref{sec:iteracion5:refinamientoRequisitos}.
 
     \begin{table}[!htb]
         \begin{center}
@@ -78,7 +78,7 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
 
     En esta sección se describe el proceso de implementación de la quinta iteración así como las decisiones tomadas durante esta etapa, de manera que se satisfagan los requisitos descritos en la sección anterior.
 
-    Llegados a esta iteración ya disponemos de la aplicación con su mitad de funcionalidades implementadas, y su principal funcionalidad está prácticamente acabada\footnote{Clasificar y organizar fotografías}.
+    Llegados a esta iteración ya disponemos de la aplicación con su mitad de funcionalidades implementadas, y su principal funcionalidad está prácticamente acabada\footnote{Clasificar y organizar fotografías.}.
 
     Para proceder con la implementación de esta iteración, lo primero que se hizo fue diseñar y posteriormente crear los últimos componentes de la aplicación.
 
