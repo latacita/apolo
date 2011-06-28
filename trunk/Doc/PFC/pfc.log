@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  28 JUN 2011 15:58
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  28 JUN 2011 23:25
 entering extended mode
-**C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
-(C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
+**C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
+(C:/Users/Angel/Desktop/Apolo/Doc/PFC/pfc.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\itsas_pfc.cls
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\itsas_pfc.cls
 Document Class: itsas_pfc 2007/03/06 Itsas document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -103,8 +103,8 @@ Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
 Package babel Info: Making ' an active character on input line 657.
 ))
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/pfc_options.tex
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/pfc_options.tex
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
 \f@ncyO@erh=\skip51
@@ -129,7 +129,7 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -162,10 +162,10 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box30
 \rot@mess@toks=\toks21
 )
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
 Package: minitoc 2008/07/16 v60 Package minitoc (JPFD)
 
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty
 Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
@@ -185,7 +185,7 @@ Package minitoc Info: I0003
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
 
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc0)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -200,20 +200,20 @@ Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
 
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
 File: english.mld 2006/01/13
 )
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld
 File: english.mld 2006/01/13
 )
 Package minitoc Info: I0010
 (minitoc)             The spanish language is selected.
 (minitoc)              on input line 4911.
 
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\spanish.mld
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\spanish.mld
 File: spanish.mld 2008/04/03
 ))
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\epsf\epsf.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\epsf\epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read1
 \epsfframemargin=\dimen109
@@ -224,11 +224,11 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 \pspoints=\dimen116
-) (C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\textpos\textpos.sty
+) (C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\textpos\textpos.sty
 Package: textpos 2010/09/30 v1.7g
 
 Package: `textpos' 1.7g <2010 September 30>
-(C:\Users\PC\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+(C:\Users\Angel\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box33
@@ -245,8 +245,8 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TP@tbargs=\toks23
 \TP@prevdepth=\dimen124
 TextBlockOrigin set to 0pt x 0pt
-)) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/rename.tex)
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.aux
+)) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/rename.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux
 
 LaTeX Warning: Label `chap:introduction' multiply defined.
 
@@ -267,9 +267,10 @@ Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
  ABD: EveryShipout initializing macros
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/cover.tex
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/cover.tex
 File: images/ingInformatica.eps Graphic file (type eps)
- <images/ingInformatica.eps>
+
+<images/ingInformatica.eps>
 LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -288,7 +289,7 @@ Overfull \hbox (71.94475pt too wide) in paragraph at lines 38--38
 
 ] [2
 
-]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/supervisorApproval.tex
+]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/supervisorApproval.tex
 File: images/ingInformatica.eps Graphic file (type eps)
 
 <images/ingInformatica.eps>
@@ -348,12 +349,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-) (C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/firstPage.tex
-File: images/uc.eps Graphic file (type eps)
- <images/uc.eps>
 [3
 
-]
+] [4
+
+]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/firstPage.tex
+File: images/uc.eps Graphic file (type eps)
+
+<images/uc.eps>
 Overfull \hbox (40.99998pt too wide) in paragraph at lines 16--22
 [][][] 
  []
@@ -368,11 +371,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/begin.tex)
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1] [2
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/begin.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\cover/acknowledgements.tex [1
+
+] [2
 
 ])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\introduction/preface-lff.tex [3
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\introduction/preface-lff.tex [3
 
 ] [4
 
@@ -390,7 +395,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/toc.tex
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/toc.tex
 Package minitoc Info: I0024
 (minitoc)             PREPARING MINITOCS FROM pfc.toc on input line 2.
 
@@ -422,39 +427,39 @@ Package minitoc Info: I0033
 
 ] [8
 
-] (C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.toc [9])
+] (C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.toc [9])
 \tf@toc=\write4
  [10]
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.lof)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lof)
 \tf@lof=\write5
  [11
 
 ] [12
 
 ]
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.lot)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.lot)
 \tf@lot=\write6
  [13] [14
 
 ])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\Config/headers.tex)
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/chapters.tex)
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\introduction/introduction.tex
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\Config/headers.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/chapters.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\introduction/introduction.tex
 Cap\'{\i }tulo 1.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc1) [1
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc1) [1
 
 
 ]
-Overfull \hbox (2.9989pt too wide) in paragraph at lines 46--47
-[][]\OT1/cmr/m/n/10.95 En la pri-me-ra ite-ra-cion se mues-
+Overfull \hbox (4.2764pt too wide) in paragraph at lines 46--47
+[][]\OT1/cmr/m/n/10.95 Es la pri-me-ra ite-ra-cion, se mues-
  []
 
-[2]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex
+[2]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex
 [3] [4
 
 ]
 Cap\'{\i }tulo 2.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc2) [5
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc2) [5
 
 ]
 File: planificacion/images/clasificadorAnalogico.eps Graphic file (type eps)
@@ -491,16 +496,17 @@ File: planificacion/images/prototipo.eps Graphic file (type eps)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\background/background.tex [14] [15] [16
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\background/background.tex [14] [15]
+[16
 
 ]
 Cap\'{\i }tulo 3.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc3) [17
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc3) [17
 
 ] [18] [19])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex [20]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion1/iteracion1.tex [20]
 Cap\'{\i }tulo 4.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc4) [21
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc4) [21
 
 
 ]
@@ -512,12 +518,12 @@ File: iteracion1/images/finIteracion.eps Graphic file (type eps)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-[24]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [25]
+[24]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion5/iteracion5.tex [25]
 [26
 
 ]
 Cap\'{\i }tulo 5.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc5) [27
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc5) [27
 
 ]
 File: iteracion5/images/casosDeUso.eps Graphic file (type eps)
@@ -526,9 +532,9 @@ File: iteracion5/images/casosDeUso.eps Graphic file (type eps)
 File: iteracion5/images/finIteracion.eps Graphic file (type eps)
 
 <iteracion5/images/finIteracion.eps> [30] [31])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [32]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\iteracion10/iteracion10.tex [32]
 Cap\'{\i }tulo 6.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc6) [33
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc6) [33
 
 
 ] [34]
@@ -538,10 +544,10 @@ File: iteracion10/images/antes.eps Graphic file (type eps)
 File: iteracion10/images/despues.eps Graphic file (type eps)
  <iteracion10/images/despues.eps> [36]
 [37])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion.te
-x [38]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\despliegueAceptacion/despliegueAceptacion
+.tex [38]
 Cap\'{\i }tulo 7.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc7) [39
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc7) [39
 
 
 ]
@@ -554,26 +560,26 @@ File: despliegueAceptacion/images/web.eps Graphic file (type eps)
 Underfull \vbox (badness 3690) has occurred while \output is active []
 
  [42]
-[43]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [44]
+[43]) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\conclusion/conclusion.tex [44]
 Cap\'{\i }tulo 8.
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc8) [45
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.mtc8) [45
 
 
 ])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\config/appendix.tex)
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\populo/populo.tex [46]
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/appendix.tex)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\populo/populo.tex [46]
 Ap\'{e}ndice A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
-) (C:\Users\PC\Desktop\Apolo\Doc\PFC\config/bibliography.tex [47
+) (C:\Users\Angel\Desktop\Apolo\Doc\PFC\config/bibliography.tex [47
 
 ] [48
 
 ])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.bbl
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.bbl
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -593,18 +599,18 @@ Package minitoc(hints) Info: I0019
 (minitoc(hints))             No hints have been written 
 (minitoc(hints))             in the pfc.log file..
  [50]
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.aux)
+(C:\Users\Angel\Desktop\Apolo\Doc\PFC\pfc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3934 strings out of 494054
- 56159 string characters out of 3146218
+ 3934 strings out of 494020
+ 56510 string characters out of 3143905
  131526 words of memory out of 3000000
  6818 multiletter control sequences out of 15000+200000
  16286 words of font info for 61 fonts, out of 3000000 for 9000
- 716 hyphenation exceptions out of 8191
- 34i,13n,43p,197060b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 715 hyphenation exceptions out of 8191
+ 34i,13n,43p,197063b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (67 pages, 212060 bytes).
+Output written on pfc.dvi (68 pages, 214168 bytes).
