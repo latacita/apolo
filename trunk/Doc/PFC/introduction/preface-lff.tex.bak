@@ -1,32 +1,20 @@
 \cdpchapter{Resumen}
 
-El objetivo del presente proyecto fin de carrera para acceder al titulo de Ingeniería Informática de la Universidad de Cantabria,  es crear una aplicación software sencilla, usable y ligera para la clasificación de un conjunto de imágenes digitales. \newline
-
-La interfaz gráfica de dicha aplicación deberá ser lo más parecida posible a un clasificador retroiluminado de diapositivas analógicas. El usuario deberá interactuar con la aplicación como si un clasificador de este tipo se tratase. Una vez seleccionadas clasificadas y ordenadas las fotografías de una colección de imágenes, la aplicación debe permitir exportarlas a una carpeta concreta como un conjunto de archivos, ordenadas de manera adecuada.
-\newline
-
-Las aplicaciones existentes actualmente no tienen como finalidad principal la ordenación y clasificación de fotografías, por lo que, aunque muchas de ellas son capaces de clasificar y ordenar fotografías, no permiten renombrar las imágenes de manera efectiva, y para su ejecución requieren gran cantidad de recursos del sistema.
-\newline
-
-El finalidad del proyecto es crear un software capaz clasificar y organizar fotografías con un consumo de recursos bajo y una curva de aprendizaje muy suave.
-\newline
-
-El software será desarrollado en Java, utilizando un desarrollo basado en componentes, adoptando una metodología iterativa e incremental.
+El objetivo del presente Proyecto Fin de Carrera es crear una aplicación software sencilla, usable y ligera para la clasificación de un conjunto de imágenes digitales.
 
 
-\cdpchapter{Preface} 
+La interfaz gráfica de dicha aplicación debe ser lo más parecida posible a un clasificador retroiluminado de diapositivas analógicas. El usuario debe interactuar con la aplicación como si un clasificador de este tipo se tratase. Una vez seleccionadas clasificadas y ordenadas las fotografías de una colección de imágenes, la aplicación debe permitir exportarlas a una carpeta concreta como un conjunto de archivos, ordenadas de manera adecuada.
 
-The purpose of this Thesis Project, part of the Computer Engineering degree from the
-University of Cantabria, is to create a simple software application, usable for the classification of a set of digital images.
-\newline
+Las aplicaciones existentes actualmente no tienen como finalidad principal la ordenación y clasificación de fotografías, por lo que, aunque muchas de ellas son capaces de clasificar y ordenar fotografías, no permiten renombrar las imágenes de manera efectiva. Además, para su ejecución requieren gran cantidad de recursos del sistema.
 
-The Graphic User Interface of the application should be as close as possible to a analog backlit slide sorter. The user must interact with the application as a classifier of that kind. Once photographs from a collection are classified, ordered and selected, the application should be able to export to a particular folder as a set of files, sorted properly.
-\newline
+La finalidad del proyecto es crear un software capaz de clasificar y organizar fotografías con un consumo de recursos bajo y una curva de aprendizaje muy suave. El software será desarrollado en Java, utilizando un desarrollo basado en componentes, adoptando una metodología iterativa e incremental.
 
-Existing applications do not currently have as main purpose the management photos, many of them are able to classify and sort pictures, but you can't rename images in an effective way, and usually require significant system's resources to run properly.
-\newline
+\cdpchapter{Preface}
 
-The project aims to create a software that can sort and organize photos with a low usage of system's resources and a very soft learning curve.
-\newline
+This Master Thesis aims to create a simple software application, with a high usability degree, for the ordering classification of a set of digital images.
 
-The software will be developed in Java using a component-based development, adopting an iterative and incremental approach. 
+The application user interface should be as similar as possible to the traditional backlight slide sorters commonly used for the selection, classification and ordering of analogic slides. The user must interact with the application such as if he or she were using one of these classical slide sorters. Once a set photographs from a collection has been properly classified, ordered and selected, the application will have to be able to export these images to a folder specified by the user, ensuring that the ordering between these images is kept.
+
+Similar state-of-art applications do not have as a main goal keeping the ordering between images once they are exported. Most of these applications are able to classify and sort pictures, but the ordering is lost when the images are displayed outside the application. Moreover, these application are often too much heavyweight, demanding a high amount of computer resources.
+
+Thus, the project aims to create a lightweight and usable software application that can sort and organise photos, and whose learning curve is very small. The software will be developed in Java using a component-based development approach. An iterative and incremental software development process is followed. 

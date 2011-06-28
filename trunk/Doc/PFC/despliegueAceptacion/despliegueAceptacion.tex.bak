@@ -28,7 +28,7 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
         Para facilitar la instalación en equipos \emph{Microsoft Windows y Linux} se crearan instaladores que facilitarán el proceso a los futuros usuarios. De esta manera dejarán de preocuparse de donde se instalan y donde se encuentran a la hora de ejecutarlos, pues el propio instalador se encargará de añadir los accesos directos que se consideren oportunos, ya sea en el menú de programas o en el escritorio.
 
         \subsubsection{Sistemas Microsoft Windows}
-            Para los sistemas \emph{Microsoft Windows} se ha utilizado la herramienta \emph{Launch4j} que no es más que un wrapper que envuelve el ejecutable \emph{jar} en un ejecutable \emph{exe} para facilitar la ejecución del mismo en entornos \emph{Microsoft Windows}, de manera que si en el sistema operativo no esta asociada la extensión \emph{jar} con la maquina virtual de Java, el ejecutable \emph{exe} le indique que debe lanzar la máquina virtual con el ejecutable embebido \emph{jar}.
+            Para los sistemas \emph{Microsoft Windows} se ha utilizado la herramienta \emph{Launch4j} que no es más que un \emph{wrapper} que envuelve el ejecutable \emph{jar} en un ejecutable \emph{exe} para facilitar la ejecución del mismo en entornos \emph{Microsoft Windows}, de manera que si en el sistema operativo no esta asociada la extensión \emph{jar} con la maquina virtual de Java, el ejecutable \emph{exe} le indique que debe lanzar la máquina virtual con el ejecutable embebido \emph{jar}.
 
             A continuación se creó un instalador con la herramienta gratuita \emph{Inno Setup} la cual crea un archivo ejecutable con el programa a instalar así como sus archivos dependientes, todo empaquetado y comprimido en un único archivo.
 
@@ -39,7 +39,7 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
         \subsubsection{Sistemas Linux basados en Debian}
             Para los sistemas Linux basados en \emph{Debian} se creará un paquete \emph{deb} que facilite la instalación del mismo.
 
-            Para crear el paquete se utilizó la herramienta \emph{dpkg} la cual permite crear paquetes e instalarlos en el sistema. El comando utilizado es el siguiente: \emph{sudo dkpg -b deb/ apolo.deb} estando en deb todo el sistema de fichero que se desea crear, así como la configuración de la post-instalación y la post-eliminación.
+            Para crear el paquete se utilizó la herramienta \emph{dpkg}\cite{deb} la cual permite crear paquetes e instalarlos en el sistema. El comando utilizado es el siguiente: \emph{sudo dkpg -b deb/ apolo.deb} estando en deb todo el sistema de fichero que se desea crear, así como la configuración de la post-instalación y la post-eliminación.
 
             Además, en los últimos sistemas operativos basados en \emph{Debian} es posible instalar el paquete sin utilizar comandos de consola, directamente en el centro de software o haciendo doble click en el paquete, depende de la configuración del sistema.
 
@@ -47,8 +47,7 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
             Para el resto de sistemas se dejará a disposición un archivo \emph{tar} en el que se encontrara el archivo ejecutable \emph{jar} Apolo junto con la carpeta \emph{recursos} para que una vez descomprimido y si el sistema dispone de máquina virtual de Java versión 1.6.0 o superior sea ejecutable.
 
     \subsection{Creación de la web}
-        Para una mayor difusión de la aplicación se creó una página \textbf{\emph{http://www.angeltezanos.com/Apolo}}
-        dentro del dominio \emph{www.angeltezanos.com} en la cual se puede encontrar toda la información y descargas de Apolo.
+        Se creó una página \textbf{\emph{http://www.angeltezanos.com/Apolo}} para una mayor difusión de la aplicación, en la cual se puede encontrar toda la información y descargas de Apolo.
 
         \begin{figure}[!tb]
             \begin{center}
@@ -60,9 +59,9 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
 
         Se trató de crear una web que fuera sencilla y a la vez muy práctica, mostrando una imagen llamativa y agradable de Apolo en todas las secciones.
 
-        Se aprovechó el servicio de \emph{Google Analytics} para conocer los visitantes de la web y su procedencia, así como el número de descargas realizadas.
+        Se aprovechó el servicio de \emph{Google Analytics}\cite{analytics} para conocer los visitantes de la web y su procedencia, así como el número de descargas realizadas.
 
-        Con el fin de facilitar el aprendizaje del software se crearon una seria de videotutoriales, los cuales muestran como realizar la mayoría de las tareas. De esta manera un usuario, puede conocer cómo realizar una acción sin tener que leerse el manual, o incluso conocer el funcionamiento de la aplicación sin tener que instalarla.
+        Con el fin de facilitar el aprendizaje del software se crearon una seria de videotutoriales visibles en la web, los cuales muestran como realizar la mayoría de las tareas. De esta manera un usuario, puede conocer cómo realizar una acción sin tener que leerse el manual, o incluso conocer el funcionamiento de la aplicación sin tener que instalarla.
 
 \section{Aceptación de la Aplicación}
 \label{sec:despliegueAceptacion:aceptacion}
@@ -76,12 +75,12 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
 
         Tanto en equipos Microsoft Windows como equipos Linux, la instalación del software como la desinstalación fue correcta, y en todos los casos se encontró un acceso a la aplicación en el menú de programas.
 
-        Al ejecutar el programa instalado se descubrió un nuevo problema, pues en equipos Linux no cargaba la carpeta de recursos. Así que se pospuso las siguientes fases y comenzó a analizar la situación de la aplicación, y el motivo por el cual la aplicación no se ejecutaba como se esperaba.
+        Al ejecutar el programa instalado se descubrió un nuevo problema, pues en equipos Linux no cargaba la carpeta de recursos. Así que se pospuso las siguientes fases y comenzó a analizar la situación de la aplicación, y el motivo por el cual \emph{Apolo} no se ejecutaba como se esperaba.
 
     \subsubsection{Problemas encontrados}
         Analizando la aplicación y haciendo uso de depuradores, se descubrió que la aplicación buscaba la carpeta de recursos en una localización errónea. Sin embargo la localización de los recursos en windows resultaba correcta.
 
-        Investigando la causa, se descubrió que el problema se trataba de la distinta forma de trabajar con rutas relativas de \emph{Microsoft Windows y Linux} pues mientras que en \emph{Microsoft Windows} la path relativa que devuelve la máquina virtual es el directorio donde se encuentra el ejecutable \emph{jar}, en \emph{Linux} la path relativa que devuelve la maquina virtual de java es el directorio de usuario, normalmente \emph{/home/user}.
+        Investigando la causa, se descubrió que el problema se trataba de la distinta forma de trabajar con rutas relativas de \emph{Microsoft Windows y Linux} pues mientras que en \emph{Microsoft Windows} el path relativo que devuelve la máquina virtual es el directorio donde se encuentra el ejecutable \emph{jar}, en \emph{Linux} el path relativo que devuelve la maquina virtual de java es el directorio de usuario, normalmente \emph{/home/user}.
 
     \subsubsection{Solución de los problemas encontrados}
         Una vez localizada la causa del mal funcionamiento, se decidió abandonar el uso de rutas relativas, y cambiarlas por absolutas, de manera que nos saltásemos la falta de convención de las distintas implementaciones de la máquina virtual de java para los distintos sistemas.
