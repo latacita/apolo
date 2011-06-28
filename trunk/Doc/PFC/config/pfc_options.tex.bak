@@ -2,16 +2,16 @@
 % Potentially useful packages (rec = recommended, opt = optional)
 %
 \usepackage{fancyhdr}          % (rec)  allows for the customization of various header/footer parameters
-% \usepackage{courier}           % (opt)  uses that font by default
-% \usepackage{setspace}          % (opt)  allows for inter-line space changing
+% \usepackage{courier}         % (opt)  uses that font by default
+% \usepackage{setspace}        % (opt)  allows for inter-line space changing
 \usepackage{longtable}         % (opt)  allows for multi-page tables
-% \usepackage{lscape}            % (opt)  allows for the use of \landscape
+% \usepackage{lscape}          % (opt)  allows for the use of \landscape
 \usepackage{color}             % (opt)  various color-related commands (like \color)
 \usepackage{rotating}          % (opt)  allows for PS and EPS rotation
-% \usepackage{textcomp}          % (opt)  allows for euro sign, with \texteuro
-\usepackage{minitoc}           % (opt)  allows for per-chapter tables of contents
+% \usepackage{textcomp}        % (opt)  allows for euro sign, with \texteuro
+\usepackage[spanish]{minitoc}           % (opt)  allows for per-chapter tables of contents
 \usepackage{epsf}              % (opt)  allow for certain EPS manipulations
-%\usepackage[utf8x]{inputenc}   % (opt)  allows for some text editors to show \'{a} as á, and so on.
+%\usepackage[utf8x]{inputenc}  % (opt)  allows for some text editors to show \'{a} as á, and so on.
 \usepackage[absolute]{textpos} % (rec)  allows for arbitrary positioning of text (required for default cover page)
 % \usepackage{srcltx}            % (opt)  allows to pass from .dvi back to the .tex
 %
@@ -19,9 +19,10 @@
 % that a further 1 inch is added to the margins given here. The given values are
 % the default ones for A4 paper, and itsas_pfc.cls style.
 %
-%\setlength{\oddsidemargin}{10pt}     % left margin for odd (right) pages
-%\setlength{\evensidemargin}{52pt}    % left margin for even (left) pages
-%\setlength{\textwidth}{390pt}        % width of the text body
+\setlength{\oddsidemargin}{10pt}     %{0.3in}     % left margin for odd (right) pages
+\setlength{\evensidemargin}{52pt}    %{0.3in}    % left margin for even (left) pages
+\setlength{\textwidth}{6in}        % width of the text body
+
 
 %
 % Recommended to improve the automatic positioning of figures.
