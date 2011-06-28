@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  28 JUN 2011 13:29
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.3.4)  28 JUN 2011 15:58
 entering extended mode
 **C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
 (C:/Users/PC/Desktop/Apolo/Doc/PFC/pfc.tex
@@ -444,8 +444,13 @@ Cap\'{\i }tulo 1.
 (C:\Users\PC\Desktop\Apolo\Doc\PFC\pfc.mtc1) [1
 
 
-] [2])
-(C:\Users\PC\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex [3] [4
+]
+Overfull \hbox (2.9989pt too wide) in paragraph at lines 46--47
+[][]\OT1/cmr/m/n/10.95 En la pri-me-ra ite-ra-cion se mues-
+ []
+
+[2]) (C:\Users\PC\Desktop\Apolo\Doc\PFC\planificacion/planificacion.tex
+[3] [4
 
 ]
 Cap\'{\i }tulo 2.
@@ -602,4 +607,4 @@ Here is how much of TeX's memory you used:
  716 hyphenation exceptions out of 8191
  34i,13n,43p,197060b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on pfc.dvi (67 pages, 210948 bytes).
+Output written on pfc.dvi (67 pages, 212060 bytes).

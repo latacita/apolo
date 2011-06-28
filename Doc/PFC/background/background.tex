@@ -23,7 +23,7 @@ El nivel de abstracción de los componentes se considera más alto que el de los o
 
 Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. Básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de \textbf{reusabilidad}.
 
-Los componentes deben poder ser serializados para garantizar el envió del estado del objeto a través de flujos de datos.
+Los componentes deben poder ser serializados para garantizar el envío del estado del objeto a través de flujos de datos.
 
 Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfática, es decir, se debe probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; también se debe prever el uso del componente de manera imprevista o incorrecta.
 
@@ -37,7 +37,7 @@ En esta sección se habla de la tecnología JavaBeans\cite{java2,javac2} desarroll
 JavaBeans es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es más que una clase de objetos con unas características especiales:
 
 \begin{enumerate}
-	\item Es una clase publica que implementa la interfaz serializable.
+	\item Es una clase pública que implementa la interfaz serializable.
 	\item Expone una serie de propiedades que pueden ser leídas y modificadas por el entorno de desarrollo.
 	\item Los eventos que posea pueden ser capturados y asociados a una serie de acciones.
 \end{enumerate}
@@ -67,17 +67,17 @@ Por ello se desarrollará una interfaz gráfica de usuario, lo más sencilla posibl
 
 \section{Drag and Drop}
 
-En la siguiente sección se describe el proceso que te adoptará para mostrar el efecto de \emph{Drag and Drop} en la aplicación.
+En la siguiente sección se describe el proceso que se adoptará para mostrar el efecto de \emph{Drag and Drop} en la aplicación.
 
 Un campo importante en el desarrollo de la aplicación será la decisión de adoptar la forma de guiar al usuario a la hora de mover diapositivas por la aplicación. Esto es como representar visualmente el \emph{Drag and Drop}.
 
 Para ello se leyeron varios libros especializados\cite{swing,swinghacks} en interfaces gráficas, y se tomó la decisión de adoptar un efecto que mostrase el fantasma\footnote{Aparición del componente semitransparente} de la diapositiva arrastrada, siguiendo en todo momento al cursor mientras este se desplaza. Una vez soltada el efecto fantasma debe desaparecer.
 
-El sistema se basa en añadir al componente que se desea dotar de un efecto \emph{Drag and Drop} unos controladores de los eventos \emph{mover ratón y pulsaciones del ratón} de manera que podamos detectar esos eventos sobre el componente. Esos eventos internamente activaran un panel  de \emph{cristal} que se sitúa por encima del resto de componentes, y donde aparecerá el fantasma del componente movido, mientras este sea movido.
+El sistema se basa en añadir al componente, que se desea dotar de un efecto \emph{Drag and Drop}, unos controladores de los eventos \emph{mover ratón y pulsaciones del ratón} de manera que podamos detectar esos eventos sobre el componente. Esos eventos internamente activaran un panel  de \emph{cristal} que se sitúa por encima del resto de componentes, y donde aparecerá el fantasma del componente movido, mientras este sea movido.
 
-Al detener el arrastre del componente y soltar el botón izquierdo del ratón el controlador desactivará el panel de \emph{cristal} y lanzara un evento a todos los componentes en los que se pueda depositar el elemento arrastrado.
+Al detener el arrastre del componente y soltar el botón izquierdo del ratón, el controlador desactivará el panel de \emph{cristal} y lanzará un evento a todos los componentes en los que se pueda depositar el elemento arrastrado.
 
-De esta manera que cada componente detectará si el elemento soltado se encuentra dentro de sus coordenadas, y si es así procederá a añadirlo a su lista.
+De esta manera, cada componente detectará si el elemento soltado se encuentra dentro de sus coordenadas, y si es así, procederá a añadirlo a su lista.
 
 De esta manera tenemos dos posibles componentes movibles: la diapositiva y la subsecuencia. La diapositiva podrá ser depositada única y exclusivamente en baldas, y la subsecuencia en el Álbum.
 

@@ -8,7 +8,7 @@
 \chapterheader{Creación de los primeros componentes}{Creación de los primeros componentes}
 \label{chap:iteracion1}
 
-Este capítulo trata sobre la primera iteración del proyecto. En ella se desarrolla los componentes más básicos de la aplicación, de forma que el resto de componentes se apoyaran en los creados en esta iteración. Serán mostrados los casos de uso pertenecientes a esta iteración figura \ref{fig:ite1:casoDeUso}, así como los nuevos requisitos descubiertos, tabla \ref{fig:ite1:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
+Este capítulo trata sobre la primera iteración del proyecto. En ella se desarrolla los componentes más básicos de la aplicación, de forma que el resto de componentes se apoyaran en los creados en esta iteración. Serán mostrados los casos de uso pertenecientes a esta iteración figura \ref{fig:ite1:casoDeUso}, así como los nuevos requisitos descubiertos, tabla \ref{fig:ite1:refinamiento}. A continuación se mostrará el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
 
 \chaptertoc
 
@@ -18,7 +18,7 @@ Este capítulo trata sobre la primera iteración del proyecto. En ella se desarrol
 
 \section{Ingeniería de Requisitos}
 
-En esta sección se muestran los casos de uso que la correspondes y el refinamiento de requisitos, así como la aportación de nuevos.
+En esta sección se muestran los casos de uso que correspondientes y el refinamiento de requisitos, así como la aportación de nuevos.
 
     \subsection{Casos de uso}
     \label{sec:iteracion1:casosDeUso}
@@ -32,8 +32,8 @@ En esta sección se muestran los casos de uso que la correspondes y el refinamien
             \end{center}
         \end{figure}
 
-        Un usuario debe poder importar una fotografía a la aplicación, y que una vez seleccionada esta aparezca en la mesa. Este es el primer caso de uso detectado.
-        El segundo es que el usuario sea capaz de moverla, y con ello activar los eventos de \emph{Drag and Drop}. Como tercer caso de uno esta, la posibilidad de visualizar la diapositiva, esto es ver la imagen que representa, y no la miniatura que se hizo de ella. Como último caso de uso detectado en esta iteración, está la necesidad de poder descartar diapositivas que no queramos que se encuentren en nuestra aplicación.
+        Un usuario debe poder importar una fotografía a la aplicación, y que una vez seleccionada ésta aparezca en la mesa. Este es el primer caso de uso detectado.
+        El segundo es que el usuario sea capaz de moverla, y con ello activar los eventos de \emph{Drag and Drop}. Como tercer caso de uso, está la posibilidad de visualizar la diapositiva, esto es ver la imagen que representa, y no la miniatura que se hizo de ella. Como último caso de uso detectado en esta iteración, está la necesidad de poder descartar diapositivas que no queramos que se encuentren en nuestra aplicación.
 
     \subsection{Refinamiento de requisitos}
     \label{sec:iteracion1:refinamientoRequisitos}
@@ -45,7 +45,7 @@ En esta sección se muestran los casos de uso que la correspondes y el refinamien
                 % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
                 Numero & Nuevo Requisito \\
                 \hline \hline
-                R01.1 & La importación de Diapositivas debe hacerse desde un hilo aparte, para que no se congele la interfaz de usuario, y este pueda realizar otras operaciones durante el proceso. \\
+                R01.1 & La importación de Diapositivas debe hacerse desde un hilo aparte, para que no se congele la interfaz de usuario, y éste pueda realizar otras operaciones durante el proceso. \\
                 \hline
                 R01.2 & Debe poderse importar más de una fotografía a la vez. De manera que el usuario no deba importar una por una. \\
                 \hline
@@ -69,7 +69,7 @@ En esta sección se muestran los casos de uso que la correspondes y el refinamien
 
     Una vez finalizada \emph{GUIMesa.java} se procedió desarrollar el método que importa una fotografía e integrar está a la ventana principal. Al utilizar la técnica de desarrollo por componentes resulta sumamente sencillo añadir este tipo de widgets o componentes visuales a la ventana principal. Todo este proceso se creó en un nuevo thread\cite{javat}.
 
-    Posteriormente se implementó el resto de componentes necesarios para la realización de la primera iteración, esto es: un menú desde el que se ofrezca la opción de importar fotografía, un menú en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se optó por delegar la acción al programa que tenga el sistema operativo asignado por defecto para esa tarea.
+    Posteriormente, se implementó el resto de componentes necesarios para la realización de la primera iteración, esto es: un menú desde el que se ofrezca la opción de importar fotografía, un menú en cada diapositiva para poder descartarla o visualizarla. Para visualizarla, se optó por delegar la acción al programa que tenga el sistema operativo asignado por defecto para esa tarea.
 
     Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion1:finaliteracion}.
 
