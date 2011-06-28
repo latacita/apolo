@@ -8,7 +8,7 @@
 \chapterheader{Mejora de la interfaz visual}{Mejora de la interfaz visual}
 \label{chap:iteracion10}
 
-Este capítulo trata sobre la décima y última iteración del proyecto. En ella se realiza un cambio en todo el apartado gráfico de la aplicación, de manera que será mucho más atractiva virtualmente para el usuario. En esta capitulo se muestran los nuevos requisitos, tabla \ref{fig:ite5:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
+Este capítulo trata sobre la décima y última iteración del proyecto. En ella se realiza un cambio en todo el apartado gráfico de la aplicación, de manera que será mucho más atractiva virtualmente para el usuario. En esta capítulo se muestran los nuevos requisitos, tabla \ref{fig:ite5:refinamiento}. A continuación se mostrara el proceso de implementación, y finalmente las pruebas realizadas, para comprobar el correcto funcionamiento y cumplimiento de los requisitos.
 
 \chaptertoc
 
@@ -16,7 +16,7 @@ Este capítulo trata sobre la décima y última iteración del proyecto. En ella se 
 \label{sec:iteracion10:porQueEstaIteracion}
     Esta iteración corresponde a la última planificada para el desarrollo de la aplicación. En ella se pulirán todos los aspectos visuales de la aplicación. De manera que quede mucho más agradable a la vista.
 
-    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una más atractiva. Añadir opciones al menú superior. Inclusión de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menú. Adición de mensajes informadores sobre cada control que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales, evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
+    Básicamente esta es una iteración cuya finalidad es cambiar la apariencia básica de la interfaz gráfica, por una más atractiva. Añadir opciones al menú superior. Inclusión de iconos que faciliten el reconocimiento de las acciones de cada botón u opciones de menú. Adición de mensajes informadores sobre cada control, que aparezcan tras dejar el cursor encima. Cambio del formato de mensajes de error que salían por consola, por unos visuales, evitando de esta manera cualquier tipo de interacción del usuario con la consola de Java.
 
     También se cambió la apariencia de algunos Beans de manera que resultaran más atractivos visualmente, y se añadió algunas funcionalidades extra, claramente sin modificar las ya existentes.
 
@@ -48,9 +48,9 @@ Este capítulo trata sobre la décima y última iteración del proyecto. En ella se 
               \hline
               R18 & Inclusión de iconos de manera que faciliten el reconocimiento de las acciones. \\
               \hline
-              R19 & Creación de mensajes de ayuda en cada control \\
+              R19 & Creación de mensajes de ayuda en cada control. \\
               \hline
-              R20 & Sustitución de salida de mensajes por consola a mensajes en ventana gráfica \\
+              R20 & Sustitución de salida de mensajes por consola a mensajes en ventana gráfica. \\
               \hline
               R21 & Cambio en el aspecto visual del bean balda y paquete diapositiva. \\
               \hline
@@ -96,12 +96,12 @@ Este capítulo trata sobre la décima y última iteración del proyecto. En ella se 
 
     Finalmente se solucionó los pequeños bugs que aparecieron según se iba probando la aplicación en distintas manos:
     \begin{itemize}
-      \item Imposibilitar un nombre en blanco en el dialogo guardar estado
-      \item Imposibilitar guardar un estado y no seleccionar al menos una zona
+      \item Imposibilitar un nombre en blanco en el dialogo guardar estado.
+      \item Imposibilitar guardar un estado y no seleccionar al menos una zona.
       \item Mostrar mensaje de error si el sistema no tiene visualizador o editor por defecto asignado.
     \end{itemize}
 
-    La interfaz resultante puede verse en la figura \ref{fig:iteracion10:despues}
+    La interfaz resultante puede verse en la figura \ref{fig:iteracion10:despues}.
 
     \begin{figure}[!tb]
             \begin{center}
@@ -129,7 +129,7 @@ Este capítulo trata sobre la décima y última iteración del proyecto. En ella se 
 
         \item
             \begin{description}
-                \item[Acción:] Ejecución de los menús superiores
+                \item[Acción:] Ejecución de los menús superiores.
                 \item[Resultado Esperado:] Todas las opciones funcionan correctamente.
             \end{description}
 
@@ -141,7 +141,7 @@ Este capítulo trata sobre la décima y última iteración del proyecto. En ella se 
 
         \item
             \begin{description}
-                \item[Acción:] Provocar mensajes de error o aviso
+                \item[Acción:] Provocar mensajes de error o aviso.
                 \item[Resultado Esperado:] Los mensajes de error aparecen en una ventana.
         \end{description}
 
@@ -159,7 +159,7 @@ Este capítulo trata sobre la décima y última iteración del proyecto. En ella se 
 
         \item
             \begin{description}
-                \item[Acción:] Provocar comportamientos no esperados
+                \item[Acción:] Provocar comportamientos no esperados.
                 \item[Resultado Esperado:] Los comportamientos no esperados son controlados.
         \end{description}
     \end{enumerate}

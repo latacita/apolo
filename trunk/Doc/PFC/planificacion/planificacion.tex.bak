@@ -17,7 +17,7 @@ En este capítulo se describe la planificación que tendrá el proyecto, mostrando 
 
 En esta sección se describe el ámbito funcional de la aplicación \emph{Apolo} la cual consiste en un clasificador y organizador de fotografías.
 
-El objetivo general de la aplicación \emph{Apolo} es ofrecer al usuario la posibilidad de ordenar cómodamente sus fotografías digitales, de acuerdo al criterio que este elija, y descartar las que no satisfagan la calidad esperada o deseada.
+El objetivo general de la aplicación \emph{Apolo} es ofrecer al usuario la posibilidad de ordenar cómodamente sus fotografías digitales, de acuerdo al criterio que éste elija, y descartar las que no satisfagan la calidad esperada o deseada.
 
 Actualmente gracias a la incorporación de una cámara fotográfica a casi cualquier aparato electrónico, podemos tomar fotografías en prácticamente cualquier instante de nuestra vida. Eso unido a que ya no es necesario un proceso de revelado, nos impulsa a almacenar bastantes fotografías, muchas de ellas totalmente innecesarias. La mayoría de las veces, las fotografías de interés se encuentran mezcladas con fotografías que no salieron como se esperaba (movidas, mal enfocadas o sobreexpuestas). Otras veces, el orden en el que se almacenan no es el deseado para su exposición, o nos gustaría filtrar algunas de ellas. Por ejemplo, tras un viaje de negocios puede que no sea el mismo conjunto de fotos el que deseemos enseñar a nuestro jefe que a nuestros amigos.
 
@@ -25,7 +25,7 @@ Mantener las fotografías almacenadas de este modo no resulta práctico. Si el usu
 
 Para resolver estos problemas y hacer esta tarea menos tediosa, nace la idea de Apolo, un \emph{Clasificador de Imágenes Digitales inspirado en los Clasificadores de Diapositivas de la Fotografía Analógica}.
 
-Los clasificadores de fotografía analógicos, tal como el que aparece en la Figura~\ref{fig:plan:clasificador}, no es más que una superficie retroiluminada, e inclinada generalmente, con unas filas al estilo de baldas, donde es posible depositar las diapositivas. De esta manera gracias a la luz que emite es posible visualizar la imagen de la diapositiva mientras esta permanece posada en la balda.
+Los clasificadores de fotografía analógicos, tal como el que aparece en la Figura~\ref{fig:plan:clasificador}, no es más que una superficie retroiluminada, e inclinada generalmente, con unas filas al estilo de baldas, donde es posible depositar las diapositivas. De esta manera gracias a la luz que emite es posible visualizar la imagen de la diapositiva mientras ésta permanece posada en la balda.
 
 \begin{figure}[!tb]
   \begin{center}
@@ -74,7 +74,7 @@ Tras describir a grandes rasgos el funcionamiento de la aplicación, la siguiente
 %%==========================================================================================
 Esta sección muestra detalladamente la metodología de desarrollo que será utilizada durante la construcción de la aplicación \emph{Apolo}.
 
-La metodología de desarrollo que se seguirá es la del \textbf{Modelo Iterativo Incremental}\cite{ite2002}. Se trata de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo mediante iteraciones, en cada una de las cuales, en base a incrementos, se otorgarán más funcionalidades al sistema
+La metodología de desarrollo que se seguirá es la del \textbf{Modelo Iterativo Incremental}\cite{ite2002}. Se trata de un proceso de desarrollo evolutivo, en el cual la aplicación se irá construyendo mediante iteraciones, en cada una de las cuales, en base a incrementos, se otorgarán más funcionalidades al sistema.
 %Buscar una cita de algún personaje famoso
 
 Esta metodología requiere, inicialmente, una buena descripción del sistema o aplicación a desarrollar. Es esencial que sea clara y lo más completa posible, pues a partir de ella se sustentará todo el proceso de desarrollo.
@@ -100,7 +100,7 @@ Además gracias a que es un modelo evolutivo, se permiten (y es más, se esperan) 
 \section{Requisitos de Alto Nivel de la Aplicación}
 \label{sec:planning:requisitos}
 
-Esta sección muestra la identificación de los requisitos de alto nivel que ha de satisfacer nuestra aplicación software, de acuerdo a la descripción del ámbito funcional proporcionada en la Sección \ref{sec:plannning:ambito}
+Esta sección muestra la identificación de los requisitos de alto nivel que ha de satisfacer nuestra aplicación software, de acuerdo a la descripción del ámbito funcional proporcionada en la Sección \ref{sec:plannning:ambito}.
 
 Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec:planning:requisitos:tabla}.
 
@@ -111,37 +111,37 @@ Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec
               % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
               Referencia & Requisito \\
               \hline  \hline
-              R01 & Una fotografía deberá ser representada como una diapositiva \\
+              R01 & Una fotografía deberá ser representada como una diapositiva. \\
               \hline
-              R02 & La diapositiva podrá visualizarse o descartarse\\
+              R02 & La diapositiva podrá visualizarse o descartarse. \\
               \hline
-              R03 & La aplicación importará las fotografías para trabajar con ellas \\
+              R03 & La aplicación importará las fotografías para trabajar con ellas. \\
               \hline
-              R04 & Tras la importación aparecerán todas ellas en la zona baja de la aplicación \\
+              R04 & Tras la importación aparecerán todas ellas en la zona baja de la aplicación. \\
               \hline
-              R05 & Las diapositivas deberán poderse arrastrar hasta la zona media de la aplicación donde habrá unas zonas donde depositarlas (baldas) \\
+              R05 & Las diapositivas deberán poderse arrastrar hasta la zona media de la aplicación donde habrá unas zonas donde depositarlas (baldas). \\
               \hline
-              R06 & Una vez soltada la diapositiva en la zona central, deberá permanecer allí anclada \\
+              R06 & Una vez soltada la diapositiva en la zona central, deberá permanecer allí anclada. \\
               \hline
-              R07 & Se podrán recolocar las diapositivas dentro de cada estantería arrastrándolas\\
+              R07 & Se podrán recolocar las diapositivas dentro de cada estantería arrastrándolas. \\
               \hline
-              R08 & Se podrá cambiar diapositivas entre estanterías arrastrándolas\\
+              R08 & Se podrá cambiar diapositivas entre estanterías arrastrándolas. \\
               \hline
-              R09 & Una balda, o subsecuencia de diapositivas, ya ordenada y clasificada, podrá ser almacenada en la zona superior de la aplicación  \\
+              R09 & Una balda, o subsecuencia de diapositivas, ya ordenada y clasificada, podrá ser almacenada en la zona superior de la aplicación.  \\
               \hline
-              R10 & Una balda, o subsecuencia de diapositivas, podrá ser descartada \\
+              R10 & Una balda, o subsecuencia de diapositivas, podrá ser descartada. \\
               \hline
-              R11 & En la zona superior, se podrá reordenar subsecuencias de diapositivas \\
+              R11 & En la zona superior, se podrá reordenar subsecuencias de diapositivas. \\
               \hline
-              R12 & Se podrá exportar la clasificación y ordenación a un directorio \\
+              R12 & Se podrá exportar la clasificación y ordenación a un directorio. \\
               \hline
-              R13 & La exportación deberá conservar el orden fijado durante el uso de la aplicación \\
+              R13 & La exportación deberá conservar el orden fijado durante el uso de la aplicación. \\
               \hline
-              R14 & No se modificarán las fotografías originales, se copiarán  \\
+              R14 & No se modificarán las fotografías originales, se copiarán.  \\
               \hline
-              R15 & Se podrá guardar el estado de la aplicación en un fichero \\
+              R15 & Se podrá guardar el estado de la aplicación en un fichero. \\
               \hline
-              R16 & Se podrá cargar la aplicación a un estado previo por medio de un fichero \\
+              R16 & Se podrá cargar la aplicación a un estado previo por medio de un fichero. \\
               \hline
         \end{tabular}
     \end{center}
@@ -153,7 +153,7 @@ Los requisitos de alto nivel encontrados son los descritos en el cuadro \ref{sec
 \section{Iteraciones}
 \label{sec:planning:Iteraciones}
 
-En la siguiente sección se muestran las iteraciones planificadas a partir de la división de los requisitos de alto nivel encontrados, como puede verse en la sección \ref{sec:planning:requisitos}
+En la siguiente sección se muestran las iteraciones planificadas a partir de la división de los requisitos de alto nivel encontrados, como puede verse en la sección \ref{sec:planning:requisitos}.
 
 Las iteraciones planificadas de acuerdo a la agrupación de funcionalidades son las siguientes:
 
@@ -223,7 +223,9 @@ La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer b
 
 \begin{figure}[!htb]
   % Requires \usepackage{graphicx}
-  \includegraphics[width=0.8\linewidth]{planificacion/images/EstructuraDeDatos.eps}
+  \begin{center}
+    \includegraphics[width=0.8\linewidth]{planificacion/images/EstructuraDeDatos.eps}
+  \end{center}
   \caption{Esquema del Diseño de la estructura de datos.}
   \label{fig:plan:esquemaDisenhoEstrucDatos}
 \end{figure}
@@ -231,7 +233,7 @@ La imagen de la Figura~\ref{fig:plan:esquemaDisenhoInterfaz} muestra un primer b
 
 Para completar el diseño de los artefactos que componen la aplicación, se realizó a muy alto nivel la estructura de datos que tendrá \emph{Apolo}. Puede verse en la figura \ref{fig:plan:esquemaDisenhoEstrucDatos} como se relacionan los componentes de la aplicación.
 
-Una vez descritos los artefactos base de los que constara la aplicación, en el siguiente capítulo se hablara sobre las herramientas usadas para la implementación de los mismos.
+Una vez descritos los artefactos base de los que constará la aplicación, en el siguiente capítulo se hablará sobre las herramientas usadas para la implementación de los mismos.
 
 
 \section{Herramientas utilizadas para el desarrollo de la aplicación}

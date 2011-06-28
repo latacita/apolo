@@ -37,7 +37,7 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
             Además se indicó que durante esta instalación el sistema informe de la licencia de uso y hasta que el usuario no la acepte, no podrá proseguir con la instalación.
 
         \subsubsection{Sistemas Linux basados en Debian}
-            Para los sistemas Linux basados en \emph{Debian} se creará un paquete \emph{deb} que facilite la instalación del mismo.
+            Para los sistemas Linux basados en \emph{Debian}, se creará un paquete \emph{deb} que facilite la instalación del mismo.
 
             Para crear el paquete se utilizó la herramienta \emph{dpkg}\cite{deb} la cual permite crear paquetes e instalarlos en el sistema. El comando utilizado es el siguiente: \emph{sudo dkpg -b deb/ apolo.deb} estando en deb todo el sistema de fichero que se desea crear, así como la configuración de la post-instalación y la post-eliminación.
 
@@ -75,7 +75,7 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
 
         Tanto en equipos Microsoft Windows como equipos Linux, la instalación del software como la desinstalación fue correcta, y en todos los casos se encontró un acceso a la aplicación en el menú de programas.
 
-        Al ejecutar el programa instalado se descubrió un nuevo problema, pues en equipos Linux no cargaba la carpeta de recursos. Así que se pospuso las siguientes fases y comenzó a analizar la situación de la aplicación, y el motivo por el cual \emph{Apolo} no se ejecutaba como se esperaba.
+        Al ejecutar el programa instalado se descubrió un nuevo problema, en sistemas Linux no cargaba la carpeta de recursos. Así que se pospuso las siguientes fases y se comenzó a analizar la situación de la aplicación, y el motivo por el cual \emph{Apolo} no se ejecutaba como se esperaba.
 
     \subsubsection{Problemas encontrados}
         Analizando la aplicación y haciendo uso de depuradores, se descubrió que la aplicación buscaba la carpeta de recursos en una localización errónea. Sin embargo la localización de los recursos en windows resultaba correcta.
@@ -87,7 +87,7 @@ Este capítulo trata sobre el proceso de despliegue y aceptación de la aplicación
 
         El problema de trabajar con rutas absolutas es que los programas no pueden ubicarse en otro directorio de donde se definió su uso, ya que las rutas absolutas dejarían de ser correctas. Por lo que teníamos otro problema.
 
-        Finalmente se decidió trabajar con una solución mixta, pues se trabaja con rutas absolutas, pero se definen en la inicialización del sistema. Es decir, se creó una rutina que devuelve el directorio donde se encuentra el fichero ejecutable \emph{jar} y a partir de esta ruta se construye el path donde se encuentra el resto de recursos.
+        Finalmente se decidió trabajar con una solución mixta, se trabajará con rutas absolutas, pero se definen en la inicialización del sistema. Es decir, se creó una rutina que devuelve el directorio donde se encuentra el fichero ejecutable \emph{jar} y a partir de esta ruta se construye el path donde se encuentra el resto de recursos.
 
         Una vez implementados los cambios, se comprobó que efectivamente tanto en sistemas Linux como Windows, la ejecución del programa era correcta, así como la carga de todos los recursos.
 

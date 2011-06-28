@@ -23,7 +23,7 @@ El nivel de abstracción de los componentes se considera más alto que el de los o
 
 Cada componente software es un elemento o pieza del sistema final que ofrece un servicio y es capaz de comunicarse con el resto de componentes. Básicamente un componente es un objeto escrito siguiendo unas especificaciones, si las cumple adquiere la característica de \textbf{reusabilidad}.
 
-Los componentes deben poder ser serializados para garantizar el envió del estado del objeto a través de flujos de datos.
+Los componentes deben poder ser serializados para garantizar el envío del estado del objeto a través de flujos de datos.
 
 Para que un componente este bien diseñado requiere un esfuerzo en la fase de diseño, pues se debe tener en cuenta que puede ser reutilizado por muchos programas, debe estar debidamente documentado, probado de manera enfática, es decir, se debe probar la validez de las entradas y que sea capaz de mostrar mensajes de error claros y oportunos; también se debe prever el uso del componente de manera imprevista o incorrecta.
 
@@ -32,9 +32,9 @@ En la siguiente sección se hablará de la programación basada en componentes apli
 
 \section{Java beans como modelo de componentes}
 
-En esta sección se habla de la tecnología JavaBeans desarrollada por Java.
+En esta sección se habla de la tecnología JavaBeans\cite{java2,javac2} desarrollada por Java.
 
-JavaBeans\cite{java2,javac2} es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es más que una clase de objetos con unas características especiales:
+JavaBeans es la tecnología de componentes de Java, cada componente se le conoce como bean, un bean no es más que una clase de objetos con unas características especiales:
 
 \begin{enumerate}
 	\item Es una clase publica que implementa la interfaz serializable.

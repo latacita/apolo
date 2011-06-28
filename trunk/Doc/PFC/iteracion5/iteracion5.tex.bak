@@ -14,7 +14,7 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
 
 \section{Objetivos}
     \label{sec:iteracion5:porQueEstaIteracion}
-    En la quinta iteración se encuentra la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Álbum}, el ultimo que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
+    En la quinta iteración se encuentra la aplicación a la mitad de su implementación, con la mitad de sus requisitos ya resueltos. En esta iteración se añade el nuevo componente \emph{Álbum}, el último que queda de añadir a la aplicación. A partir de entonces el resto de iteraciones consistirán en ir añadiendo funcionalidades a la aplicación de manera que se vayan cumpliendo los requisitos pedidos.
 
     Al final de esta iteración será posible hacer gran parte de la clasificación, pues ya estarán operativas las baldas, y el alojamiento de subsecuencias en la zona superior, por lo que la funcionalidad principal de la aplicación estará prácticamente finalizada, recordemos que es clasificar y organizar fotografías.
 
@@ -24,7 +24,7 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
 
     \subsection{Casos de uso}
     \label{sec:iteracion5:casosDeUso}
-    Los casos de uso de la quinta iteración corresponden a las acciones de añadir el conjunto de diapositivas de una balda a la zona superior, \emph{Álbum}, manteniendo el orden, y de esta forma validar un subconjunto de diapositivas. El otro caso de uso será deshacerse de la balda y de esta manera suprimir las diapositivas que se encuentren en la balda. Ver Figura \ref{fig:ite5:casoDeUso}
+    Los casos de uso de la quinta iteración corresponden a las acciones de añadir el conjunto de diapositivas de una balda a la zona superior, \emph{Álbum}, manteniendo el orden, y de esta forma validar un subconjunto de diapositivas. El otro caso de uso será deshacerse de la balda y de esta manera suprimir las diapositivas que se encuentren en la balda. Ver Figura \ref{fig:ite5:casoDeUso}.
 
     \begin{figure}[!tb]
         \begin{center}
@@ -48,19 +48,19 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
               % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
               Numero & Nuevo Requisito \\
               \hline \hline
-              R09.1 & Para indicar al sistema que se desea validar una balda o subsecuencia de diapositivas, se deberá pulsar un botón \\
+              R09.1 & Para indicar al sistema que se desea validar una balda o subsecuencia de diapositivas, se deberá pulsar un botón. \\
               \hline
               R09.2 & No será posible añadir una balda si no hay sobre ella ninguna diapositiva. \\
               \hline
-              R09.3 & A cada balda de la estantería, se la podrá dar un nombre o descripción, de manera que al usuario le resulte más sencillo identificar qué tipos de diapositivas van en ella \\
+              R09.3 & A cada balda de la estantería, se la podrá dar un nombre o descripción, de manera que al usuario le resulte más sencillo identificar qué tipos de diapositivas van en ella. \\
               \hline
-              R09.3.1 & La descripción que posea la balda, la tendrá el subconjunto de diapositivas, de manera que pueda seguir siendo identificadas como tal \\
+              R09.3.1 & La descripción que posea la balda, la tendrá el subconjunto de diapositivas, de manera que pueda seguir siendo identificadas como tal. \\
               \hline
-              R09.4 & Debe ser posible que un usuario pueda volver a modificar la subsecuencia de diapositivas. Es decir, la subsecuencia debe poder volverse a la estantería como balda \\
+              R09.4 & Debe ser posible que un usuario pueda volver a modificar la subsecuencia de diapositivas. Es decir, la subsecuencia debe poder volverse a la estantería como balda. \\
               \hline
               R09.4.1 & Antes de proceder a convertir la estantería en balda, se debe mostrar un mensaje advirtiendo al usuario de la acción que va a realizar. \\
               \hline
-              R09.4.2 & Cuando una subsecuencia se convierta en balda, esta debe contener todas las diapositivas que contenía la subsecuencia, y deben poder ser arrastradas de nuevo \\
+              R09.4.2 & Cuando una subsecuencia se convierta en balda, ésta debe contener todas las diapositivas que contenía la subsecuencia, y deben poder ser arrastradas de nuevo. \\
               \hline
               R09.4.3 & La balda que aparecerá como resultado de un subconjunto de diapositivas, tendrá la misma descripción del subconjunto. \\
               \hline
@@ -90,7 +90,7 @@ Este capítulo trata sobre la quinta iteración del proyecto. Con ella se termina 
 
     Se dotó de la posibilidad de añadir una descripción a las baldas, por lo que hubo que modificar el componente \emph{Balda} para que esto fuera posible. Gracias al diseño por componentes, fue un cambio relativamente sencillo, pero que dota de un detalle bastante útil a la aplicación.
 
-    Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion5:finaliteracion}
+    Puede verse el aspecto de la aplicación al final de la iteración en la figura \ref{fig:iteracion5:finaliteracion}.
 
     \begin{figure}[!tb]
             \begin{center}
