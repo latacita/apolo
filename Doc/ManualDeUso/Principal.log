@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  17 JUN 2011 12:09
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.6.14)  29 JUN 2011 10:25
 entering extended mode
 **C:/Users/Angel/Desktop/Apolo/Doc/ManualDeUso/Principal.tex
 (C:/Users/Angel/Desktop/Apolo/Doc/ManualDeUso/Principal.tex
@@ -509,7 +509,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 518.
 (C:\Users\Angel\Desktop\Apolo\Doc\ManualDeUso\Principal.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 518.
 Package rerunfilecheck Info: File `Principal.out' has not changed.
-(rerunfilecheck)             Checksum: F8C04FD19434CA290154CB57165ABA7A;2163.
+(rerunfilecheck)             Checksum: 8BDA73D89D8DF515D19C63B1702C1A72;2166.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -518,10 +518,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5987 strings out of 494020
  89552 string characters out of 3143905
- 172236 words of memory out of 3000000
+ 172242 words of memory out of 3000000
  9126 multiletter control sequences out of 15000+200000
  65931 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  33i,8n,28p,162196b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Principal.dvi (27 pages, 85464 bytes).
+Output written on Principal.dvi (27 pages, 85636 bytes).
